@@ -558,3 +558,24 @@ textarea{min-height:104px;resize:vertical}
   .hero.hero-bridge::before{background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-mid) 50%,transparent 75%)}
   .hero-intro{padding:48px 0 40px}
 }
+/* v5: show the whole landscape; keep text on the sky above the railing at any width */
+.hero.hero-bridge{aspect-ratio:3/2;max-height:1300px;padding:clamp(40px,5.2vw,120px) 0 0;
+  background:url("img/bridge-landscape.webp") center bottom/contain no-repeat,linear-gradient(90deg,#FBF4E8 0%,#F5F1EA 55%,#E6EDF0 100%)}
+.hero.hero-bridge h1{font-size:clamp(2.3rem,4.1vw,4.6rem);max-width:20ch}
+.hero.hero-bridge .actions{margin-top:clamp(20px,2.2vw,40px)}
+.hero.hero-bridge::before{background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-mid) 32%,transparent 52%)}
+:root[data-theme="dark"] .hero.hero-bridge{background-color:#141A17}
+@media (max-width:1000px){
+  .hero.hero-bridge{aspect-ratio:auto;max-height:none;padding:48px 0 calc(66.7vw - 8px);background:url("img/bridge-landscape.webp") center bottom/100% auto no-repeat,var(--paper)}
+  .hero.hero-bridge::before{background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-top) 45%,transparent 70%)}
+}
+@media (max-width:640px){
+  .hero.hero-bridge{padding:36px 0 calc(66.7vw - 8px)}
+}
+/* v5b: crop empty sky, two-line headline on desktop */
+@media (min-width:1001px){
+  .hero.hero-bridge{aspect-ratio:9/5;max-height:none;padding-top:clamp(40px,4vw,96px);
+    background:url("img/bridge-landscape.webp") center bottom/cover no-repeat,#FBF5EA}
+  .hero.hero-bridge h1{max-width:none;font-size:clamp(2.4rem,4.4vw,5rem)}
+  .hero.hero-bridge h1 .l{display:block}
+}
