@@ -57,9 +57,27 @@ s=rep(s,'''        <p class="small">Раздел готовится к публ�
         </div>''')
 # glows
 s=rep(s,'''<section class="section final">
-    <div class="wrap">''','''<section class="section final bridge">
     <div class="wrap">
-      <img class="bridge-art" src="img/bridge-landscape.webp" width="1600" height="1066" loading="lazy" decoding="async" alt="Мост через реку — путь пациента от дома к лечению и обратно">''')
+      <h2>Начните с врачебной оценки — она ни к чему не обязывает</h2>
+      <p class="lead">Отправьте документы — врач-гематолог оценит ситуацию и объяснит, какой маршрут подходит именно вам.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#apply">Получить врачебную оценку</a>
+        <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
+        <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
+      </div>
+    </div>''','''<section class="section final bridge">
+    <div class="wrap final-grid">
+      <div>
+        <h2>Начните с врачебной оценки — она ни к чему не обязывает</h2>
+        <p class="lead">Отправьте документы — врач-гематолог оценит ситуацию и объяснит, какой маршрут подходит именно вам.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#apply">Получить врачебную оценку</a>
+          <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
+          <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
+        </div>
+      </div>
+      <img class="illus" src="img/hero-bridge.webp" width="1400" height="934" loading="lazy" decoding="async" alt="Врач-гематолог обсуждает с пациенткой документы на мосту между домом и клиникой">
+    </div>''')
 s=rep(s,'''<p class="lead">Ответ на этот вопрос даёт врач-гематолог после изучения документов. Мы не продаём поездку — мы помогаем принять клиническое решение.</p>''','''<p class="lead">Ответ на этот вопрос даёт врач-гематолог после изучения документов. Мы не продаём поездку — мы помогаем принять клиническое решение.</p>
         <img class="illus" src="img/consultation.webp" width="900" height="900" loading="lazy" decoding="async" alt="Врач-гематолог спокойно обсуждает с пациенткой результаты обследования">''')
 s=rep(s,'''<div>
@@ -113,7 +131,7 @@ s=rep(s,"""<p class="lead">Программу ведёт профильная к
         <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в собственной лаборатории центра">
       </div>""")
 s=rep(s,'<meta name="viewport" content="width=device-width, initial-scale=1">','<meta name="viewport" content="width=device-width, initial-scale=1">\n<meta name="robots" content="noindex, nofollow">')
-s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-10-19.2</p>')
+s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-10-19.3</p>')
 s=rep(s,'<meta name="robots" content="noindex, nofollow">','<meta name="robots" content="noindex, nofollow">\n<meta http-equiv="Cache-Control" content="no-cache">')
 # js
 s=rep(s,'''  window.addEventListener('hashchange', route);''',open(B+'extra.js',encoding='utf-8').read()+'''  window.addEventListener('hashchange', route);''')

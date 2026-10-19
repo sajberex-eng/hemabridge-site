@@ -158,7 +158,7 @@ main{min-height:70vh}
 
 /* ---------- hero ---------- */
 .hero{padding:48px 0 40px;background:var(--paper)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,11fr) minmax(0,10fr);gap:48px;align-items:center}
+.hero-grid{display:block;max-width:640px}
 .hero h1{margin:0 0 22px;font-size:clamp(2.2rem,3.7vw,3.3rem)}
 .hero-art{margin:0;position:relative}
 .hero-art img{display:block;width:100%;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
@@ -542,6 +542,27 @@ textarea{min-height:104px;resize:vertical}
 .head-grid.wide .illus{max-width:520px}
 .page-head .head-grid .illus{box-shadow:var(--shadow)}
 @media (max-width:1000px){ .head-grid.wide{grid-template-columns:1fr} .page-head .head-grid .illus{max-width:420px} }
+
+/* hero: bridge landscape as background, text on the sky */
+.hero.hero-bridge{position:relative;isolation:isolate;padding:64px 0 300px;background:var(--paper) url("img/bridge-landscape.webp") center bottom/cover no-repeat;min-height:720px}
+.hero.hero-bridge::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-mid) 48%,transparent 72%)}
+:root{--hero-veil-top:rgba(251,247,240,.82);--hero-veil-mid:rgba(251,247,240,.45)}
+:root[data-theme="dark"]{--hero-veil-top:rgba(20,26,23,.9);--hero-veil-mid:rgba(20,26,23,.6)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--hero-veil-top:rgba(20,26,23,.9);--hero-veil-mid:rgba(20,26,23,.6)} }
+:root[data-theme="dark"] .hero.hero-bridge{background-color:#141A17}
+.final-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,520px);gap:56px;align-items:center}
+.final-grid .illus{margin:0;max-width:520px;box-shadow:var(--shadow)}
+@media (max-width:1000px){
+  .hero.hero-bridge{padding:48px 0 280px;min-height:0;background-position:58% bottom}
+  .final-grid{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:640px){
+  .hero.hero-bridge{padding:36px 0 230px;background-size:auto 640px;background-position:60% bottom}
+  .hero.hero-bridge::before{background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-top) 55%,transparent 80%)}
+}
+.hero.hero-bridge .hero-grid{max-width:720px}
+.hero.hero-bridge .hero-copy{background:color-mix(in srgb,var(--paper) 72%,transparent);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);border:1px solid color-mix(in srgb,var(--surface) 60%,transparent);border-radius:var(--radius-lg);padding:36px 40px;box-shadow:0 20px 50px -24px rgba(60,44,28,.35)}
+@media (max-width:640px){ .hero.hero-bridge .hero-copy{padding:24px 20px;border-radius:var(--radius)} }
 </style>
 </head>
 <body>
@@ -592,7 +613,7 @@ textarea{min-height:104px;resize:vertical}
 
 <!-- ================= ГЛАВНАЯ ================= -->
 <div class="page" data-page="home" data-title="Врачебная маршрутизация пациентов с заболеваниями крови">
-  <section class="hero glow">
+  <section class="hero hero-bridge">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <h1>Один пациент. Один маршрут. Команда врачей в двух странах.</h1>
@@ -604,9 +625,6 @@ textarea{min-height:104px;resize:vertical}
         </div>
         <p class="byline">Программа гематологов и онкогематологов Центра гематологии</p>
       </div>
-      <figure class="hero-art">
-        <img src="img/hero-bridge.webp" width="1400" height="934" alt="Врач-гематолог обсуждает с пациенткой документы на мосту между домом и клиникой" fetchpriority="high" decoding="async">
-      </figure>
     </div>
   </section>
 
@@ -918,15 +936,17 @@ textarea{min-height:104px;resize:vertical}
   </section>
 
   <section class="section final bridge">
-    <div class="wrap">
-      <img class="bridge-art" src="img/bridge-landscape.webp" width="1600" height="1066" loading="lazy" decoding="async" alt="Мост через реку — путь пациента от дома к лечению и обратно">
-      <h2>Начните с врачебной оценки — она ни к чему не обязывает</h2>
-      <p class="lead">Отправьте документы — врач-гематолог оценит ситуацию и объяснит, какой маршрут подходит именно вам.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#apply">Получить врачебную оценку</a>
-        <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
-        <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
+    <div class="wrap final-grid">
+      <div>
+        <h2>Начните с врачебной оценки — она ни к чему не обязывает</h2>
+        <p class="lead">Отправьте документы — врач-гематолог оценит ситуацию и объяснит, какой маршрут подходит именно вам.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#apply">Получить врачебную оценку</a>
+          <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
+          <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
+        </div>
       </div>
+      <img class="illus" src="img/hero-bridge.webp" width="1400" height="934" loading="lazy" decoding="async" alt="Врач-гематолог обсуждает с пациенткой документы на мосту между домом и клиникой">
     </div>
   </section>
 </div>
@@ -1690,7 +1710,7 @@ textarea{min-height:104px;resize:vertical}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · версия 2026-10-19.2</p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · версия 2026-10-19.3</p>
     </div>
   </div>
 </footer>
