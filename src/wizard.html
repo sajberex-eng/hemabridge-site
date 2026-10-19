@@ -1,0 +1,61 @@
+      <form class="form" data-demo data-wizard novalidate>
+        <span class="demo-flag">Демонстрационная форма — данные никуда не отправляются</span>
+        <ol class="wz-progress" aria-label="Шаги заявки">
+          <li class="now"><span>Суть обращения</span></li>
+          <li><span>О пациенте</span></li>
+          <li><span>Согласие</span></li>
+        </ol>
+        <div class="wz-step active" data-wz-step="1">
+          <p class="wz-reassure">Три коротких шага. Можно вернуться назад и исправить ответы.</p>
+          <fieldset>
+            <legend>Что вам нужно</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="req" value="eval" required checked> Оценка необходимости лечения за рубежом</label>
+              <label class="radio"><input type="radio" name="req" value="second"> Второе мнение</label>
+              <label class="radio"><input type="radio" name="req" value="tkm"> Трансплантация костного мозга</label>
+              <label class="radio"><input type="radio" name="req" value="cart"> CAR-T-терапия</label>
+              <label class="radio"><input type="radio" name="req" value="drug"> Недоступный препарат</label>
+              <label class="radio"><input type="radio" name="req" value="other"> Другая сложная ситуация</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Как с вами связаться</legend>
+            <div class="form-grid">
+              <div><label for="a-phone">Телефон</label><input id="a-phone" type="tel" required autocomplete="tel" placeholder="+7"></div>
+              <div><label for="a-mail">E-mail <span class="opt">(необязательно)</span></label><input id="a-mail" type="email" autocomplete="email"></div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="wz-step" data-wz-step="2">
+          <fieldset>
+            <legend>Пациент</legend>
+            <div class="form-grid">
+              <div class="full"><label for="a-name">ФИО пациента</label><input id="a-name" type="text" required autocomplete="name"></div>
+              <div><label for="a-age">Возраст</label><input id="a-age" type="number" min="0" max="120" required></div>
+              <div><label for="a-city">Город, страна</label><input id="a-city" type="text" required></div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Медицинская информация</legend>
+            <div class="form-grid">
+              <div><label for="a-dx">Диагноз</label><input id="a-dx" type="text" required></div>
+              <div><label for="a-date">Дата установления диагноза <span class="opt">(если знаете)</span></label><input id="a-date" type="date"></div>
+              <div class="full"><label for="a-why">Причина обращения</label><textarea id="a-why" required></textarea></div>
+              <div class="full"><label for="a-prev">Предшествующая терапия <span class="opt">(необязательно)</span></label><textarea id="a-prev"></textarea></div>
+              <div class="full"><label for="a-cur">Текущая терапия <span class="opt">(необязательно)</span></label><textarea id="a-cur"></textarea></div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="wz-step" data-wz-step="3">
+          <div class="upload" aria-disabled="true"><strong>Загрузка документов</strong>Будет доступна после юридической экспертизы и проверки информационной безопасности. Пока координатор свяжется с вами и подскажет, как безопасно передать документы.</div>
+          <div class="disclaimer">Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</div>
+          <label class="check"><input type="checkbox" required> <span>Я даю согласие на обработку персональных и медицинских данных в соответствии с <a href="#legal">политикой конфиденциальности</a></span></label>
+          <div class="actions wz-final"><button class="btn btn-primary" type="submit">Отправить на врачебную оценку</button></div>
+        </div>
+        <div class="wz-nav">
+          <button class="btn btn-ghost" type="button" data-wz-prev hidden>Назад</button>
+          <p class="wz-hint" data-wz-count>Шаг 1 из 3</p>
+          <button class="btn btn-primary" type="button" data-wz-next>Далее</button>
+        </div>
+        <div class="form-result" role="status"></div>
+      </form>
