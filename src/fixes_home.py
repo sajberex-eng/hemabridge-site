@@ -34,3 +34,19 @@ s=s[:k]+s[k:].replace('HLA-типирование','<abbr title="Анализ н
 # comparison table labels for the stacked phone layout
 s=_re.sub(r'(<tr><th scope="row">[^<]*</th>)<td>',r'\1<td data-label="Типичная модель медицинского туризма">',s)
 s=s.replace('<td class="us">','<td class="us" data-label="HemaBridge">')
+# plain-language wording for patients (approved by the user)
+def _who(m):
+    return '<p class="who">Кто отвечает: '+m.group(1).replace('врачебное ядро','гематологи программы')+'</p>'
+s=_re.sub(r'<p class="who">Ответственный: ([^<]*)</p>',_who,s)
+for a_,b_ in [
+  ('<li><h3>Досбор диагностики в Казахстане','<li><h3>Дополнительные анализы в Казахстане'),
+  ('врач–врач коммуникация и shared care.','врач–врач коммуникация и совместное ведение пациента.'),
+  ('контрольные точки мониторинга и shared care с лечащим врачом','контрольные точки мониторинга и совместное ведение с лечащим врачом'),
+  ('работает модель shared care — совместного ведения пациента','работает модель совместного ведения пациента'),
+  ('<span>Shared care</span>','<span>Совместное ведение</span>'),
+  ('<strong>Shared care</strong><p>','<strong>Совместное ведение</strong><p>'),
+  ('<dt>Shared care</dt>','<dt>Совместное ведение</dt>'),
+  ('<li><strong>Shared care</strong>Совместное ведение после возвращения.</li>','<li><strong>Совместное ведение</strong>После возвращения пациента — вместе с врачами в Казахстане.</li>'),
+]:
+    assert a_ in s, a_
+    s=s.replace(a_,b_)
