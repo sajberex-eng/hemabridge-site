@@ -28,3 +28,8 @@ s=rep(s,"  initLang();\n","  initLang();\n  if(document.fonts && document.fonts.
 # 4. dynamic panels are written by the script, not translated in place
 s=rep(s,'<div class="rt-body" id="rtBody">','<div class="rt-body" id="rtBody" data-i18n-skip>')
 s=s.replace('<div class="form-result" role="status"></div>','<div class="form-result" role="status" data-i18n-skip></div>')
+
+# links to the clinic's own site open it in the language chosen here (/ru, /kk, /en)
+s=s.replace('<a class="btn btn-ghost" href="https://hemcenter.kz" rel="noopener">','<a class="btn btn-ghost" href="https://hemcenter.kz/ru" data-hc rel="noopener">')
+s=s.replace('<a href="https://hemcenter.kz" rel="noopener">hemcenter.kz</a>','<a href="https://hemcenter.kz/ru" data-hc rel="noopener">hemcenter.kz</a>')
+assert s.count('data-hc')>=2

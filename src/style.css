@@ -671,3 +671,24 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
 [id]{scroll-margin-top:92px}
 .outcomes li::before{display:grid;place-items:center;font-size:15px;line-height:1}
 .outcomes li::before,.rt-detail .big,.steps>li::before{font-family:var(--font);font-variant-numeric:lining-nums tabular-nums}
+
+/* ---- language layout fixes ---- */
+h1,h2,h3,h4,p,li,dt,dd,td,th,summary,.btn{overflow-wrap:break-word}
+.fields dt{overflow-wrap:anywhere;hyphens:auto}
+@media (min-width:1001px) and (max-width:1180px){
+  html[lang="kk"] .nav a,html[lang="kk"] .more summary{padding:9px 7px;font-size:.875rem}
+  html[lang="kk"] .header-row{gap:12px}
+}
+html[lang="kk"] .page-head h1{max-width:28ch}
+@media (max-width:820px){
+  .route-scroll{display:none}
+  .rt-list{display:grid;gap:6px;list-style:none;margin:8px 0 0;padding:0;position:relative}
+  .rt-list::before{content:"";position:absolute;left:27px;top:18px;bottom:18px;width:2px;background:var(--line-strong)}
+  .rt-list button{position:relative;display:grid;grid-template-columns:40px 22px 1fr;align-items:center;gap:10px;width:100%;min-height:52px;padding:6px 12px 6px 8px;border:1px solid transparent;border-radius:var(--radius-sm);background:none;color:var(--ink);font:600 .98rem/1.3 var(--font);text-align:left;cursor:pointer;transition:background-color .18s var(--ease),border-color .18s var(--ease)}
+  .rt-list svg{width:40px;height:40px;padding:8px;border-radius:50%;background:var(--raised);border:2px solid var(--clinic);fill:none;stroke:var(--clinic);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;--ico-fill:var(--accent-wash);position:relative}
+  .rt-list .abroad svg{border-color:var(--clinic-lit);background:var(--tile-3)}
+  .rt-list .n{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+  .rt-list button[aria-pressed="true"]{background:var(--accent-wash);border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+  .rt-list button[aria-pressed="true"] svg{background:var(--accent-ink);border-color:var(--accent-ink);stroke:var(--on-accent);--ico-fill:transparent}
+}
+html[lang="kk"] .fields{grid-template-columns:46% 1fr}

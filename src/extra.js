@@ -70,12 +70,13 @@
     done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
   };
   // every Russian string used by this script, so the translation tool can list them
-  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
     .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.w]); }, []));
   refreshDynamic = function(){
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
     var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Этапы маршрута'));
+    Array.prototype.forEach.call(document.querySelectorAll('form[data-wizard]'), function(f){ if(f._refreshCount) f._refreshCount(); });
     if(stops.length) paintStep(rtCur);
   };
   if(stops.length){
@@ -102,13 +103,14 @@
     var prev = f.querySelector('[data-wz-prev]'), next = f.querySelector('[data-wz-next]'), count = f.querySelector('[data-wz-count]');
     var cur = 0;
     f.classList.add('is-wizard');
+    f._refreshCount = function(){ count.textContent = tr('Шаг ' + (cur + 1) + ' из ' + steps.length); };
     function go(i, focus){
       cur = i;
       steps.forEach(function(s, k){ s.classList.toggle('active', k === i); });
       marks.forEach(function(m, k){ m.className = k < i ? 'done' : k === i ? 'now' : ''; if(k === i){ m.setAttribute('aria-current','step'); } else { m.removeAttribute('aria-current'); } });
       prev.hidden = i === 0;
       next.hidden = i === steps.length - 1;
-      count.textContent = 'Шаг ' + (i + 1) + ' из ' + steps.length;
+      count.textContent = tr('Шаг ' + (i + 1) + ' из ' + steps.length);
       f.classList.remove('was-checked');
       if(focus){
         var top = f.getBoundingClientRect().top + scrollY - 96;

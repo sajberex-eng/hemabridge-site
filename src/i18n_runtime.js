@@ -47,6 +47,8 @@
         if(el.getAttribute(a) !== v) el.setAttribute(a, v);
       });
     }
+    var hc = {ru: 'ru', en: 'en', kk: 'kk'}[LANG] || 'ru';
+    Array.prototype.forEach.call(document.querySelectorAll('a[data-hc]'), function(a){ a.setAttribute('href', 'https://hemcenter.kz/' + hc); });
     var ver = document.querySelector('.ver');
     if(ver) ver.textContent = tr('версия') + ' ' + ver.getAttribute('data-v');
     [['meta[name="description"]', 'content'], ['meta[property="og:title"]', 'content'], ['meta[property="og:description"]', 'content']].forEach(function(pair){
