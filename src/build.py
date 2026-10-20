@@ -124,7 +124,9 @@ s=rep(s,'<meta name="viewport" content="width=device-width, initial-scale=1">','
 s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-10-20.2</p>')
 s=rep(s,'<meta name="robots" content="noindex, nofollow">','<meta name="robots" content="noindex, nofollow">\n<meta http-equiv="Cache-Control" content="no-cache">')
 exec(open(B+'fixes_home.py',encoding='utf-8').read())
+exec(open(B+'i18n_patch.py',encoding='utf-8').read())
 # js
 s=rep(s,'''  window.addEventListener('hashchange', route);''',open(B+'extra.js',encoding='utf-8').read()+'''  window.addEventListener('hashchange', route);''')
 open(B+'../index.html','w',encoding='utf-8').write(s)
 print('ok', len(s))
+exec(open(B+'write_i18n.py',encoding='utf-8').read())

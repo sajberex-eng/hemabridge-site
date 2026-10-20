@@ -18,9 +18,9 @@
   function paintStep(i){
     var s = STEPS[i];
     document.getElementById('rtNum').textContent = i + 1;
-    document.getElementById('rtTitle').innerHTML = esc(s.t) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(p) + '</span>'; }).join('');
-    document.getElementById('rtText').textContent = s.d;
-    document.getElementById('rtWho').textContent = 'Кто отвечает: ' + s.w;
+    document.getElementById('rtTitle').innerHTML = esc(tr(s.t)) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(tr(p)) + '</span>'; }).join('');
+    document.getElementById('rtText').textContent = tr(s.d);
+    document.getElementById('rtWho').textContent = tr('Кто отвечает') + ': ' + tr(s.w);
   }
   function selectStep(i, focus){
     if(i < 0 || i >= STEPS.length) return;
@@ -47,23 +47,41 @@
   if(stops.length && rtScroll){
     var list = document.createElement('ol');
     list.className = 'rt-list';
-    list.setAttribute('aria-label', 'Этапы маршрута');
+    list.setAttribute('aria-label', tr('Этапы маршрута'));
+    list.setAttribute('data-i18n-skip', '');
     STEPS.forEach(function(st, k){
       var li = document.createElement('li');
       var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
       li.className = abroad ? 'abroad' : '';
       var b = document.createElement('button');
       b.type = 'button';
-      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(st.t) + '</span>';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(tr(st.t)) + '</span>';
       b.addEventListener('click', function(){ selectStep(k); document.getElementById('rtDetail').scrollIntoView({block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth'}); });
       li.appendChild(b); list.appendChild(li); rtItems.push(b);
     });
     rtScroll.parentNode.insertBefore(list, rtScroll.nextSibling);
   }
+  function labelStops(){
+    stops.forEach(function(g, k){ g.setAttribute('aria-label', tr('Этап') + ' ' + (k + 1) + ': ' + tr(STEPS[k].t)); });
+  }
+  var FORM_MSG = {
+    step: 'Заполните обязательные поля на этом шаге. Первое незаполненное поле выделено.',
+    all: 'Заполните обязательные поля и подтвердите согласие. Первое незаполненное поле выделено.',
+    done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
+  };
+  // every Russian string used by this script, so the translation tool can list them
+  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.w]); }, []));
+  refreshDynamic = function(){
+    labelStops();
+    rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
+    var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Этапы маршрута'));
+    if(stops.length) paintStep(rtCur);
+  };
   if(stops.length){
+    labelStops();
     stops.forEach(function(g, k){
       g.setAttribute('role', 'button');
-      g.setAttribute('aria-label', 'Этап ' + (k + 1) + ': ' + STEPS[k].t);
       g.addEventListener('click', function(){ selectStep(k); });
       g.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); selectStep(k); }
@@ -105,7 +123,7 @@
       if(bad){
         f.classList.add('was-checked');
         out.style.borderColor = 'var(--accent)';
-        out.textContent = 'Заполните обязательные поля на этом шаге. Первое незаполненное поле выделено.';
+        out.textContent = tr(FORM_MSG.step);
         out.classList.add('show');
         bad.focus();
         return;

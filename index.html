@@ -823,7 +823,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
           <div class="big"><span id="rtNum">1</span><span class="of">/9</span></div>
-          <div class="rt-body" id="rtBody">
+          <div class="rt-body" id="rtBody" data-i18n-skip>
             <h3 id="rtTitle">Обращение и документы <span class="place">Казахстан</span></h3>
             <p id="rtText">Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p>
             <p class="who" id="rtWho">Кто отвечает: координатор документооборота</p>
@@ -1492,7 +1492,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
         <div class="upload" aria-disabled="true"><strong>Защищённая загрузка документов</strong>Будет доступна после юридической экспертизы и проверки информационной безопасности.</div>
         <label class="check"><input type="checkbox" required> <span>Пациент проинформирован о направлении и дал согласие на передачу медицинских данных</span></label>
         <div class="actions"><button class="btn btn-primary" type="submit">Направить пациента</button></div>
-        <div class="form-result" role="status"></div>
+        <div class="form-result" role="status" data-i18n-skip></div>
       </form>
     </div>
   </section>
@@ -1742,7 +1742,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
           <p class="wz-hint" data-wz-count>Шаг 1 из 3</p>
           <button class="btn btn-primary" type="button" data-wz-next>Далее</button>
         </div>
-        <div class="form-result" role="status"></div>
+        <div class="form-result" role="status" data-i18n-skip></div>
       </form>
     </div>
   </section>
@@ -1796,41 +1796,6 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   </section>
 </div>
 
-<!-- ================= KZ / EN заглушки ================= -->
-<div class="page" data-page="kz" data-title="Қазақша нұсқа" lang="kk" hidden>
-  <section class="placeholder-page">
-    <div class="wrap">
-      <h1>Қазақша нұсқа дайындалуда</h1>
-      <p class="lead">Сайттың қазақ тіліндегі нұсқасы жақын арада жарияланады. Әзірге орыс тіліндегі нұсқаны пайдалана аласыз.</p>
-      <div class="actions"><a class="btn btn-primary" href="#home" data-lang-link="ru">Орыс тіліндегі нұсқа</a></div>
-    </div>
-  </section>
-</div>
-
-<div class="page" data-page="en" data-title="English — for partner clinics" lang="en" hidden>
-  <section class="placeholder-page">
-    <div class="wrap split">
-      <div>
-        <h1>English version in preparation</h1>
-        <p class="lead">The English site will be a dedicated resource for partner clinics and physicians.</p>
-        <div class="actions"><a class="btn btn-primary" href="#home" data-lang-link="ru">Russian version</a></div>
-      </div>
-      <div>
-        <h2>Planned sections</h2>
-        <ol class="steps compact">
-          <li><h3>Who we are</h3></li>
-          <li><h3>Clinical referral</h3></li>
-          <li><h3>Patient preparation</h3></li>
-          <li><h3>Physician-to-physician communication</h3></li>
-          <li><h3>Shared care</h3></li>
-          <li><h3>Post-treatment follow-up</h3></li>
-          <li><h3>Partnerships</h3></li>
-        </ol>
-      </div>
-    </div>
-  </section>
-</div>
-
 </main>
 
 <footer class="site-footer" id="contacts-block">
@@ -1861,7 +1826,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · версия 2026-10-20.2</p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-10-20.2"></span></p>
     </div>
   </div>
 </footer>
@@ -1876,9 +1841,116 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   var more = document.querySelector('.more');
   var line = document.getElementById('rtLine');
 
-  function setLang(code){
-    langBtns.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang === code ? 'true' : 'false'); });
+  /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
+  var VERSION = '2026-10-20.2';
+  var DICTS = {};
+  var LANG = 'ru';                         // dictionary key: ru | en | kk
+  var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
+  var KEY2HTML = {ru: 'ru', en: 'en', kk: 'kk'};
+  var refreshDynamic = null;
+  var curPage = null;
+  var textOrig = new WeakMap(), attrOrig = new WeakMap();
+  var ATTR_SEL = '[alt],[aria-label],[title],[placeholder],[data-label]';
+  var ATTR_NAMES = ['alt', 'aria-label', 'title', 'placeholder', 'data-label'];
+  function norm(x){ return x.replace(/\s+/g, ' ').trim(); }
+  function tr(x){
+    if(LANG === 'ru' || !x) return x;
+    var d = DICTS[LANG];
+    if(!d) return x;
+    var k = norm(x);
+    return Object.prototype.hasOwnProperty.call(d, k) ? d[k] : x;
   }
+  function skipped(el){ return !!(el && el.closest && el.closest('[data-i18n-skip]')); }
+  function eachText(cb){
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n;
+    while((n = w.nextNode())){
+      var p = n.parentNode, tag = p && p.nodeName;
+      if(!/\S/.test(n.nodeValue) || tag === 'SCRIPT' || tag === 'STYLE' || skipped(p)) continue;
+      cb(n);
+    }
+  }
+  function applyDom(){
+    eachText(function(n){
+      var o = textOrig.get(n);
+      if(o === undefined){ o = n.nodeValue; textOrig.set(n, o); }
+      var m = /^(\s*)([\s\S]*?)(\s*)$/.exec(o);
+      var t = m[1] + tr(m[2]) + m[3];
+      if(n.nodeValue !== t) n.nodeValue = t;
+    });
+    var els = document.querySelectorAll(ATTR_SEL);
+    for(var i = 0; i < els.length; i++){
+      var el = els[i];
+      if(el.classList.contains('rt-stop') || el.classList.contains('theme-btn') || skipped(el) && el.nodeName !== 'svg') continue;
+      var store = attrOrig.get(el);
+      if(!store){ store = {}; attrOrig.set(el, store); }
+      ATTR_NAMES.forEach(function(a){
+        if(!el.hasAttribute(a)) return;
+        if(store[a] === undefined) store[a] = el.getAttribute(a);
+        var v = tr(store[a]);
+        if(el.getAttribute(a) !== v) el.setAttribute(a, v);
+      });
+    }
+    var ver = document.querySelector('.ver');
+    if(ver) ver.textContent = tr('версия') + ' ' + ver.getAttribute('data-v');
+    [['meta[name="description"]', 'content'], ['meta[property="og:title"]', 'content'], ['meta[property="og:description"]', 'content']].forEach(function(pair){
+      var m = document.querySelector(pair[0]);
+      if(!m) return;
+      if(!m.hasAttribute('data-orig')) m.setAttribute('data-orig', m.getAttribute(pair[1]));
+      m.setAttribute(pair[1], tr(m.getAttribute('data-orig')));
+    });
+  }
+  function setPageTitle(){
+    if(curPage) document.title = tr(curPage.dataset.title) + ' — HemaBridge · ' + tr('Центр гематологии');
+  }
+  function loadDict(key, cb){
+    if(key === 'ru' || DICTS[key]) return cb();
+    var s = document.createElement('script');
+    s.src = 'i18n/' + key + '.js?v=' + VERSION;
+    s.onload = function(){ DICTS[key] = window['__I18N_' + key] || {}; cb(); };
+    s.onerror = function(){ cb(); };
+    document.head.appendChild(s);
+  }
+  function setLang(code, persist){
+    var key = BTN2KEY[code] || 'ru';
+    var btn = key === 'kk' ? 'kz' : key;
+    langBtns.forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang === btn ? 'true' : 'false'); });
+    loadDict(key, function(){
+      LANG = key;
+      document.documentElement.lang = KEY2HTML[key];
+      applyDom();
+      setPageTitle();
+      if(typeof syncThemeBtn === 'function') syncThemeBtn();
+      if(refreshDynamic) refreshDynamic();
+      Array.prototype.forEach.call(document.querySelectorAll('.form-result.show'), function(r){ r.classList.remove('show'); });
+    });
+    if(persist){ try{ localStorage.setItem('hb-lang', btn); }catch(e){} }
+  }
+  function initLang(){
+    var q = (location.search.match(/[?&]lang=(ru|kz|kk|en)/) || [])[1];
+    if(q === 'kk') q = 'kz';
+    var saved = null;
+    try{ saved = localStorage.getItem('hb-lang'); }catch(e){}
+    var want = q || saved || 'ru';
+    if(want !== 'ru') setLang(want, !!q); else applyDom();
+  }
+  // used by the extraction tool: every Russian string the page can show
+  window.__i18nKeys = function(){
+    var seen = {}, out = [];
+    function add(k, ctx){ k = norm(k); if(!/[A-Za-zА-Яа-яЁё]/.test(k) || seen[k]) return; seen[k] = 1; out.push({key: k, ctx: ctx}); }
+    eachText(function(n){
+      var p = n.parentNode, b = p.closest ? (p.closest('button,a,label,th,td,li,p,h1,h2,h3,h4,dt,dd,summary,figcaption,span,strong,div') || p) : p;
+      var kind = p.closest && p.closest('svg') ? 'svg-label' : p.closest && p.closest('.btn') ? 'button' : p.closest && p.closest('.nav,.more-panel,.foot-grid') ? 'nav' : 'text';
+      add(n.nodeValue, {kind: kind, para: norm(b.textContent).slice(0, 220)});
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(ATTR_SEL), function(el){
+      ATTR_NAMES.forEach(function(a){ if(el.hasAttribute(a) && !el.classList.contains('rt-stop') && !el.classList.contains('theme-btn')) add(el.getAttribute(a), {kind: 'attr:' + a, para: norm(el.textContent || '').slice(0, 120)}); });
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-title]'), function(el){ add(el.dataset.title, {kind: 'page-title', para: ''}); });
+    ['meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]'].forEach(function(sel){ var m = document.querySelector(sel); if(m) add(m.getAttribute('content'), {kind: 'meta', para: ''}); });
+    (window.__i18nDyn || []).forEach(function(k){ add(k, {kind: 'script', para: ''}); });
+    add('Центр гематологии', {kind: 'page-title', para: 'suffix of the browser tab title'});
+    return out;
+  };
 
   function drawRoute(){
     if(!line) return;
@@ -1889,6 +1961,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
 
   function route(){
     var id = (location.hash || '#home').slice(1);
+    if(id === 'kz' || id === 'en'){ setLang(id, true); history.replaceState(null, '', '#home'); id = 'home'; }
     var target = document.querySelector('[data-page="' + id + '"]');
     if(!target){
       // anchor inside a page, e.g. #referral-form
@@ -1901,9 +1974,8 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
     navLinks.forEach(function(a){
       if(a.getAttribute('href') === '#' + pid){ a.setAttribute('aria-current','page'); } else { a.removeAttribute('aria-current'); }
     });
-    document.title = target.dataset.title + ' — HemaBridge · Центр гематологии';
-    setLang(pid === 'kz' ? 'kz' : pid === 'en' ? 'en' : 'ru');
-    document.documentElement.lang = pid === 'kz' ? 'kk' : pid === 'en' ? 'en' : 'ru';
+    curPage = target;
+    setPageTitle();
     nav.classList.remove('open'); burger.setAttribute('aria-expanded','false');
     if(more) more.open = false;
     var anchor = document.getElementById(id);
@@ -1922,7 +1994,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
     if(!themeBtn) return;
     var t = currentTheme();
     themeBtn.dataset.state = t;
-    themeBtn.setAttribute('aria-label', t === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
+    themeBtn.setAttribute('aria-label', t === 'dark' ? tr('Включить светлую тему') : tr('Включить тёмную тему'));
   }
   syncThemeBtn();
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncThemeBtn);
@@ -1956,9 +2028,9 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   function paintStep(i){
     var s = STEPS[i];
     document.getElementById('rtNum').textContent = i + 1;
-    document.getElementById('rtTitle').innerHTML = esc(s.t) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(p) + '</span>'; }).join('');
-    document.getElementById('rtText').textContent = s.d;
-    document.getElementById('rtWho').textContent = 'Кто отвечает: ' + s.w;
+    document.getElementById('rtTitle').innerHTML = esc(tr(s.t)) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(tr(p)) + '</span>'; }).join('');
+    document.getElementById('rtText').textContent = tr(s.d);
+    document.getElementById('rtWho').textContent = tr('Кто отвечает') + ': ' + tr(s.w);
   }
   function selectStep(i, focus){
     if(i < 0 || i >= STEPS.length) return;
@@ -1985,23 +2057,41 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   if(stops.length && rtScroll){
     var list = document.createElement('ol');
     list.className = 'rt-list';
-    list.setAttribute('aria-label', 'Этапы маршрута');
+    list.setAttribute('aria-label', tr('Этапы маршрута'));
+    list.setAttribute('data-i18n-skip', '');
     STEPS.forEach(function(st, k){
       var li = document.createElement('li');
       var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
       li.className = abroad ? 'abroad' : '';
       var b = document.createElement('button');
       b.type = 'button';
-      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(st.t) + '</span>';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(tr(st.t)) + '</span>';
       b.addEventListener('click', function(){ selectStep(k); document.getElementById('rtDetail').scrollIntoView({block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth'}); });
       li.appendChild(b); list.appendChild(li); rtItems.push(b);
     });
     rtScroll.parentNode.insertBefore(list, rtScroll.nextSibling);
   }
+  function labelStops(){
+    stops.forEach(function(g, k){ g.setAttribute('aria-label', tr('Этап') + ' ' + (k + 1) + ': ' + tr(STEPS[k].t)); });
+  }
+  var FORM_MSG = {
+    step: 'Заполните обязательные поля на этом шаге. Первое незаполненное поле выделено.',
+    all: 'Заполните обязательные поля и подтвердите согласие. Первое незаполненное поле выделено.',
+    done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
+  };
+  // every Russian string used by this script, so the translation tool can list them
+  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.w]); }, []));
+  refreshDynamic = function(){
+    labelStops();
+    rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
+    var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Этапы маршрута'));
+    if(stops.length) paintStep(rtCur);
+  };
   if(stops.length){
+    labelStops();
     stops.forEach(function(g, k){
       g.setAttribute('role', 'button');
-      g.setAttribute('aria-label', 'Этап ' + (k + 1) + ': ' + STEPS[k].t);
       g.addEventListener('click', function(){ selectStep(k); });
       g.addEventListener('keydown', function(e){
         if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); selectStep(k); }
@@ -2043,7 +2133,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
       if(bad){
         f.classList.add('was-checked');
         out.style.borderColor = 'var(--accent)';
-        out.textContent = 'Заполните обязательные поля на этом шаге. Первое незаполненное поле выделено.';
+        out.textContent = tr(FORM_MSG.step);
         out.classList.add('show');
         bad.focus();
         return;
@@ -2072,6 +2162,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   });
   window.addEventListener('hashchange', route);
   route();
+  initLang();
 
   burger.addEventListener('click', function(){
     var open = nav.classList.toggle('open');
@@ -2087,13 +2178,7 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
     }
   });
 
-  langBtns.forEach(function(b){
-    b.addEventListener('click', function(){
-      var code = b.dataset.lang;
-      if(code === 'ru'){ if(location.hash === '#kz' || location.hash === '#en') location.hash = 'home'; }
-      else { location.hash = code; }
-    });
-  });
+  langBtns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang, true); }); });
 
   Array.prototype.slice.call(document.querySelectorAll('form[data-demo]')).forEach(function(f){
     f.addEventListener('submit', function(e){
@@ -2102,13 +2187,13 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
       if(!f.checkValidity()){
         var bad = f.querySelector(':invalid');
         out.style.borderColor = 'var(--accent)';
-        out.textContent = 'Заполните обязательные поля и подтвердите согласие. Первое незаполненное поле выделено.';
+        out.textContent = tr(FORM_MSG.all);
         out.classList.add('show');
         if(bad) bad.focus();
         return;
       }
       out.style.borderColor = 'var(--ok)';
-      out.textContent = 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.';
+      out.textContent = tr(FORM_MSG.done);
       out.classList.add('show');
       f.reset();
     });
