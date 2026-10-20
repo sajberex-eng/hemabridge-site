@@ -52,8 +52,8 @@
   "kk": "Дәрігерлер мен топ"
  },
  "О программе": {
-  "en": "About",
-  "kk": "Біз туралы"
+  "en": "About the program",
+  "kk": "Бағдарлама туралы"
  },
  "Партнёрам-клиникам": {
   "en": "For partner clinics",
@@ -116,7 +116,7 @@
   "kk": "Сіздің маршрутыңыз"
  },
  "Нажмите на этап, чтобы узнать, что на нём происходит": {
-  "en": "Click a step to see what happens at it",
+  "en": "Click a stage to see what happens there",
   "kk": "Кезеңде не болатынын білу үшін оны басыңыз"
  },
  "Клинический маршрут пациента": {
@@ -124,7 +124,7 @@
   "kk": "Науқас маршруты"
  },
  "Маршрут начинается и заканчивается в Казахстане. После врачебной оценки возможно лечение в Казахстане без поездки. Зарубежный этап включает согласование врач–врач, организацию и лечение, затем передачу случая и наблюдение дома.": {
-  "en": "The route starts and ends in Kazakhstan. After the medical evaluation, treatment in Kazakhstan without any trip is possible. The stage abroad includes a doctor-to-doctor agreement, organization and treatment, then handing the case back and follow-up at home.",
+  "en": "The route starts and ends in Kazakhstan. After the medical evaluation, treatment may be possible in Kazakhstan without travel. The stage abroad includes doctor-to-doctor agreement, arrangements and treatment, followed by case handover and follow-up at home.",
   "kk": "Маршрут Қазақстанда басталып, Қазақстанда аяқталады. Дәрігерлік бағалаудан кейін сапарсыз Қазақстанда емделу мүмкін. Шетелдегі кезең дәрігерден дәрігерге келісуді, ұйымдастыру мен емделуді қамтиды, содан кейін жағдайды тапсыру және үйде бақылау жүреді."
  },
  "Партнёрский центр": {
@@ -136,11 +136,11 @@
   "kk": "Қазақстан"
  },
  "Контроль и телемедицина": {
-  "en": "Follow-up checks & telemedicine",
-  "kk": "Бақылау және телемедицина"
+  "en": "Checkups & telemedicine",
+  "kk": "Бақылау, телемедицина"
  },
  "Лечение в Казахстане — поездка не нужна": {
-  "en": "Treatment in Kazakhstan — no trip needed",
+  "en": "Treatment in Kazakhstan, no travel",
   "kk": "Қазақстанда емделу — сапар қажет емес"
  },
  "Документы": {
@@ -180,7 +180,7 @@
   "kk": "Бақылау"
  },
  "Маршрут начинается и заканчивается дома. Зарубежный этап — только одна из его частей и только по врачебному решению.": {
-  "en": "The route begins and ends at home. The stage abroad is only one part of it, and only when a doctor decides so.",
+  "en": "The route begins and ends at home. The stage abroad is only one part of it, and only on a doctor's decision.",
   "kk": "Маршрут үйде басталып, үйде аяқталады. Шетелдік кезең — оның бір бөлігі ғана және тек дәрігердің шешімі бойынша."
  },
  "Чем мы помогаем": {
@@ -268,7 +268,7 @@
   "kk": "Оралғаннан кейінгі бақылау"
  },
  "Дома вас ведёт ваш врач, а связь с клиникой сохраняется: анализы и телемедицина.": {
-  "en": "At home, your doctor continues your care, and the link with the clinic remains: tests and telemedicine.",
+  "en": "At home, your doctor continues your care, and you stay connected with the clinic through tests and telemedicine.",
   "kk": "Үйде сізді өз дәрігеріңіз жүргізеді, ал клиникамен байланыс сақталады: талдаулар және телемедицина."
  },
  "Как устроена преемственность": {
@@ -316,7 +316,7 @@
   "kk": "Мемлекеттік жолдау тетігі"
  },
  "Мы поможем понять, может ли случай рассматриваться в рамках государственного маршрута.": {
-  "en": "We will help you understand whether the case can be considered under the state pathway.",
+  "en": "We will help you understand whether the case can be considered under the state route.",
   "kk": "Жағдайды мемлекеттік маршрут аясында қарауға бола ма, соны түсінуге көмектесеміз."
  },
  "Отказ от поездки — нормальный итог оценки.": {
@@ -349,7 +349,7 @@
  },
  "Запрос пациента и выбор клиники": {
   "en": "Patient's request and choice of clinic",
-  "kk": "Науқастың сұранысы және клиника таңдау"
+  "kk": "Науқастың өтініші және клиника таңдау"
  },
  "Врачебная оценка клинической ситуации": {
   "en": "Medical evaluation of the clinical situation",
@@ -400,11 +400,11 @@
   "kk": "Жолдаушы тараптың рөлі"
  },
  "Привлечь пациента и направить на лечение или диагностику": {
-  "en": "Attract a patient and refer them for treatment or diagnostics",
+  "en": "Bring in patients and refer them for treatment or diagnostics",
   "kk": "Науқасты тартып, емдеуге немесе диагностикаға жолдау"
  },
  "Вести пациента на всех этапах — до поездки, во время лечения и после возвращения": {
-  "en": "Care for the patient at every stage: before the trip, during treatment and after return",
+  "en": "Care for the patient at every stage: before the trip, during treatment and after they return",
   "kk": "Науқасты барлық кезеңде жүргізу — сапарға дейін, ем кезінде және оралғаннан кейін"
  },
  "Основание для поездки": {
@@ -413,7 +413,7 @@
  },
  "Запрос пациента": {
   "en": "Patient's request",
-  "kk": "Науқастың сұранысы"
+  "kk": "Науқастың өтініші"
  },
  "Клинические показания и согласованный с партнёрской клиникой план": {
   "en": "Clinical indications and a plan agreed with the partner clinic",
@@ -433,7 +433,7 @@
  },
  "Лабораторные исследования в лаборатории центра": {
   "en": "Laboratory tests in the center's laboratory",
-  "kk": "Орталық зертханасындағы зертханалық зерттеулер"
+  "kk": "Орталықтың зертханасында жүргізілетін зертханалық зерттеулер"
  },
  "-типирование пациента и родственников": {
   "en": "-typing of the patient and relatives",
@@ -452,7 +452,7 @@
   "kk": "Ісікке қарсы терапияның бір бөлігі"
  },
  "Инструментальная диагностика": {
-  "en": "Instrumental diagnostics",
+  "en": "Imaging and functional diagnostics",
   "kk": "Аспаптық диагностика"
  },
  "Медицинское резюме и пакет документов": {
@@ -505,7 +505,7 @@
  },
  "Диагноз и вопрос, с которым пришла семья": {
   "en": "The diagnosis and the question the family came with",
-  "kk": "Диагноз және отбасы келген сұрақ"
+  "kk": "Диагноз және отбасы қандай сұрақпен жүгінгені"
  },
  "Решение врачей": {
   "en": "The doctors' decision",
@@ -520,7 +520,7 @@
   "kk": "Үйге оралу"
  },
  "Как идёт наблюдение после лечения": {
-  "en": "How follow-up goes after treatment",
+  "en": "How follow-up works after treatment",
   "kk": "Емнен кейінгі бақылау қалай жүреді"
  },
  "Первые истории готовятся к публикации — только с согласия пациентов.": {
@@ -625,7 +625,7 @@
  },
  "Врач–врач обсуждение структурированного медицинского резюме, план лечения и предварительная смета от центра.": {
   "en": "A doctor-to-doctor discussion of a structured medical summary, a treatment plan and a preliminary cost estimate from the center.",
-  "kk": "Құрылымдалған медициналық түйіндемені дәрігер мен дәрігердің талқылауы, емдеу жоспары және орталықтың алдын ала сметасы."
+  "kk": "Құрылымдалған медициналық түйіндемені дәрігерлер арасында талқылау, емдеу жоспары және орталықтың алдын ала сметасы."
  },
  "Организация поездки": {
   "en": "Trip arrangements",
@@ -637,7 +637,7 @@
  },
  "Кто отвечает: операционный блок": {
   "en": "Responsible: operations team",
-  "kk": "Жауапты: операциялық бөлім"
+  "kk": "Жауапты: операциялық топ"
  },
  "Мы остаёмся на связи с лечащей командой центра и с пациентом.": {
   "en": "We stay in touch with the center's treating team and with the patient.",
@@ -653,7 +653,7 @@
  },
  "Выписка, план наблюдения и рекомендации передаются лечащему врачу в Казахстане в согласованном формате.": {
   "en": "The discharge summary, follow-up plan and recommendations are handed over to the attending physician in Kazakhstan in an agreed format.",
-  "kk": "Үзінді көшірме, бақылау жоспары және ұсынымдар Қазақстандағы емдеуші дәрігерге келісілген форматта беріледі."
+  "kk": "Шығару эпикризі, бақылау жоспары және ұсынымдар Қазақстандағы емдеуші дәрігерге келісілген форматта беріледі."
  },
  "Долгосрочное наблюдение и обратная связь": {
   "en": "Long-term follow-up and feedback",
@@ -676,7 +676,7 @@
   "kk": "биоматериалды серіктес зертханаға жіберу арқылы талдауларды бақылау"
  },
  "телемедицинские консилиумы по сложным вопросам и при отклонениях": {
-  "en": "telemedicine teleconsultations on complex issues and when results deviate",
+  "en": "teleconsultations on complex issues or if results are abnormal",
   "kk": "күрделі мәселелер бойынша және ауытқулар болған кезде телемедициналық консилиумдар"
  },
  "Кто отвечает: гематологи программы, лечащий врач, партнёрский центр": {
@@ -712,7 +712,7 @@
   "kk": "Психолог емдеуші дәрігерді немесе психиатрды алмастырмайды. Клиникалық маңызы бар жағдайларда біз бейінді маманның консультациясын ұйымдастырамыз."
  },
  "/ Заболевания": {
-  "en": "/ Conditions",
+  "en": "/ Diseases",
   "kk": "/ Аурулар"
  },
  "Заболевания системы крови": {
@@ -724,7 +724,7 @@
   "kk": "Ауру туралы қысқаша және емдеудің шетелдік кезеңі қандай жағдайларда талқыланатыны туралы."
  },
  "Дата актуализации: сентябрь 2026. Материалы проходят медицинскую редактуру.": {
-  "en": "Last updated: September 2026. Materials undergo medical editing.",
+  "en": "Last updated: September 2026. Content undergoes medical review.",
   "kk": "Жаңартылған күні: 2026 жылғы қыркүйек. Материалдар медициналық редакциядан өтеді."
  },
  "Острые лейкозы": {
@@ -752,7 +752,7 @@
   "kk": "Ерте"
  },
  "-типирование пациента и родственников, подготовка к донорскому поиску": {
-  "en": "typing of the patient and relatives, preparation for the donor search",
+  "en": "-typing of the patient and relatives, preparation for the donor search",
   "kk": "-типтеу (науқас пен туыстары), донор іздеуге дайындық"
  },
  "Второе мнение по диагнозу и группе риска": {
@@ -772,8 +772,8 @@
   "kk": "Созылмалы миелолейкоз, созылмалы лимфолейкоз және басқалары"
  },
  "Большинство пациентов с хроническими лейкозами получают лечение в Казахстане. Вопрос о внешнем этапе возникает при резистентности, непереносимости терапии или прогрессировании.": {
-  "en": "Most patients with chronic leukemias are treated in Kazakhstan. The question of a stage abroad arises with resistance, intolerance to therapy or disease progression.",
-  "kk": "Созылмалы лейкоздары бар науқастардың көпшілігі Қазақстанда ем алады. Сыртқы кезең туралы мәселе резистенттілік, терапияны көтере алмау немесе ауру үдегенде туындайды."
+  "en": "Most patients with chronic leukemias are treated in Kazakhstan. A stage abroad is considered in cases of resistance or intolerance to therapy, or disease progression.",
+  "kk": "Созылмалы лейкоздары бар науқастардың көпшілігі Қазақстанда ем алады. Шетелдік кезең туралы мәселе резистенттілік, терапияны көтере алмау немесе ауру үдегенде туындайды."
  },
  "Экспертная оценка при неудаче терапии": {
   "en": "Expert evaluation when therapy fails",
@@ -785,7 +785,7 @@
  },
  "Доступ к препаратам, недоступным в стране": {
   "en": "Access to medicines not available in Kazakhstan",
-  "kk": "Қазақстанда қолжетімсіз дәрілерге қолжетімділік"
+  "kk": "Қазақстанда қолжетімсіз дәрілерге қол жеткізу"
  },
  "Оценка показаний к ТКМ или клеточной терапии": {
   "en": "Assessing the indications for BMT or cell therapy",
@@ -804,7 +804,7 @@
   "kk": "Лимфомалар — ағымы мен емдеу тәсілдері әртүрлі аурулардың үлкен тобы. Терапияны дәл таңдау үшін дұрыс морфологиялық және иммуногистохимиялық диагноз ерекше маңызды."
  },
  "Пересмотр гистологии и второе мнение при редких и спорных вариантах": {
-  "en": "Histology review and second opinion for rare and borderline cases",
+  "en": "Histology review and second opinion for rare or uncertain cases",
   "kk": "Сирек және даулы нұсқаларда гистологияны қайта қарау және екінші пікір"
  },
  "Оценка показаний к аутологичной ТКМ": {
@@ -812,12 +812,12 @@
   "kk": "Аутологиялық СКТ көрсетілімдерін бағалау"
  },
  "Оценка кандидатуры на CAR-T при рецидивах и рефрактерном течении": {
-  "en": "Assessing candidacy for CAR-T in relapsed and refractory disease",
+  "en": "Assessing candidacy for CAR-T in relapsed or refractory disease",
   "kk": "Қайталанулар мен рефрактерлі ағым кезінде CAR-T терапиясына үміткерлікті бағалау"
  },
  "Доступ к недоступным препаратам и клиническим исследованиям": {
   "en": "Access to medicines not available in Kazakhstan and to clinical trials",
-  "kk": "Қазақстанда қолжетімсіз дәрілерге және клиникалық зерттеулерге қолжетімділік"
+  "kk": "Қазақстанда қолжетімсіз дәрілерге және клиникалық зерттеулерге қол жеткізу"
  },
  "Множественная миелома": {
   "en": "Multiple myeloma",
@@ -849,7 +849,7 @@
  },
  "Тактика зависит от группы риска. Для пациентов высокого риска аллогенная трансплантация остаётся единственным потенциально радикальным методом.": {
   "en": "The approach depends on the risk group. For high-risk patients, allogeneic transplantation remains the only potentially curative method.",
-  "kk": "Емдеу тактикасы қауіп тобына байланысты. Жоғары қауіпті науқастар үшін аллогендік транспланттау әлеуетті радикалды жалғыз әдіс болып қала береді."
+  "kk": "Емдеу тактикасы қауіп тобына байланысты. Жоғары қауіпті науқастар үшін аллогендік транспланттау радикалды нәтиже беруі мүмкін жалғыз әдіс болып қала береді."
  },
  "Стратификация риска с использованием молекулярных данных": {
   "en": "Risk stratification using molecular data",
@@ -872,7 +872,7 @@
   "kk": "Емдеу иммуносупрессивті терапия мен аллогендік транспланттауды қамтиды. Таңдау аурудың ауырлығына, жасқа және сәйкес донордың болуына байланысты."
  },
  "-типирование пациента и семьи": {
-  "en": "typing of the patient and family",
+  "en": "-typing of the patient and family",
   "kk": "-типтеу (науқас пен отбасы мүшелері)"
  },
  "Оценка показаний и организация алло-ТКМ": {
@@ -904,7 +904,7 @@
   "kk": "Емдеуді қайда және қалай жалғастыру керектігін анықтау"
  },
  "Информация носит ознакомительный характер и не заменяет консультацию врача. Сведения о доступности препаратов и методов проверяются на дату обращения.": {
-  "en": "This information is for general guidance only and does not replace a doctor's consultation. The availability of medicines and methods is checked as of the date of your request.",
+  "en": "This information is for general information only and does not replace a doctor's consultation. The availability of medicines and methods is checked as of the date of your request.",
   "kk": "Ақпарат танысу үшін берілген және дәрігер консультациясын алмастырмайды. Дәрілер мен әдістердің қолжетімділігі туралы мәліметтер өтініш берілген күнгі жағдай бойынша тексеріледі."
  },
  "/ Технологии": {
@@ -932,7 +932,7 @@
   "kk": "Гемопоэздік бағаналы жасушаларды аутологиялық және аллогендік транспланттау."
  },
  "-типирование, подбор донора и подготовку можно выполнить в Центре гематологии, не выезжая в партнёрскую клинику: пациент отправляется туда уже с готовыми материалами, на саму трансплантацию. После неё работает модель совместного ведения пациента клиникой и врачами в Казахстане, с контролем анализов и телемедицинскими консилиумами.": {
-  "en": "typing, donor matching and preparation can be done at the Hematology Center without traveling to the partner clinic: the patient goes there with everything already prepared, for the transplantation itself. Afterwards, a shared care model operates between the clinic and doctors in Kazakhstan, with lab test monitoring and telemedicine teleconsultations.",
+  "en": "-typing, donor matching and preparation can be done at the Hematology Center without traveling to the partner clinic: the patient goes there with everything already prepared, for the transplantation itself. Afterwards, the clinic and doctors in Kazakhstan provide shared care, with lab test monitoring and teleconsultations.",
   "kk": "-типтеуді, донор іріктеуді және дайындықты серіктес клиникаға бармай-ақ Гематология орталығында жүргізуге болады: науқас ол жаққа дайын материалдармен, тек транспланттаудың өзіне барады. Одан кейін клиника мен Қазақстандағы дәрігерлердің науқасты бірлесіп жүргізу (shared care) моделі жұмыс істейді: талдаулар бақыланады, телемедициналық консилиумдар өткізіледі."
  },
  "Показания": {
@@ -977,7 +977,7 @@
  },
  "Зарубежный этап": {
   "en": "Stage abroad",
-  "kk": "Шетелдегі кезең"
+  "kk": "Шетелдік кезең"
  },
  "Недоступные препараты": {
   "en": "Medicines not available in Kazakhstan",
@@ -1012,7 +1012,7 @@
   "kk": "Шетелдік маман"
  },
  "Заключение": {
-  "en": "Conclusion",
+  "en": "Expert report",
   "kk": "Қорытынды"
  },
  "Решение о маршруте": {
@@ -1036,7 +1036,7 @@
   "kk": "Серіктес клиникалар"
  },
  "Мы не составляем рейтингов «лучших клиник мира». Центр выбирается под клиническую задачу конкретного пациента.": {
-  "en": "We do not compile rankings of the “best clinics in the world”. The center is chosen to fit the clinical needs of each individual patient.",
+  "en": "We do not compile rankings of the “best clinics in the world.” The center is chosen to fit the clinical needs of each individual patient.",
   "kk": "Біз «әлемдегі ең үздік клиникалар» рейтингін жасамаймыз. Орталық нақты науқастың клиникалық міндетіне қарай таңдалады."
  },
  "Каждый центр проходит оценку по внутренней матрице до публикации на сайте.": {
@@ -1109,7 +1109,7 @@
  },
  "Русский, английский, координатор для семьи": {
   "en": "Russian, English, a coordinator for the family",
-  "kk": "Орыс және ағылшын тілдері, отбасыға арналған үйлестіруші"
+  "kk": "Орыс және ағылшын тілдері, отбасына арналған үйлестіруші"
  },
  "Центры": {
   "en": "Centers",
@@ -1141,7 +1141,7 @@
  },
  "Профиль": {
   "en": "Profile",
-  "kk": "Бейіні"
+  "kk": "Бейін"
  },
  "Центр трансплантации костного мозга в составе группы клиник": {
   "en": "Bone marrow transplantation center within a group of clinics",
@@ -1161,7 +1161,7 @@
  },
  "JACIE — программа ТКМ; JCI — госпиталь": {
   "en": "JACIE — BMT program; JCI — hospital",
-  "kk": "JACIE — СКТ бағдарламасы; JCI — госпиталь"
+  "kk": "JACIE — СКТ бағдарламасы; JCI — аурухана"
  },
  "Объёмы": {
   "en": "Volumes",
@@ -1208,7 +1208,7 @@
   "kk": "Medipol Mega"
  },
  "Переговоры": {
-  "en": "Negotiations",
+  "en": "In negotiation",
   "kk": "Келіссөздер"
  },
  "Университетский многопрофильный госпитальный комплекс": {
@@ -1301,7 +1301,7 @@
  },
  "Операционный блок": {
   "en": "Operations team",
-  "kk": "Операциялық бөлім"
+  "kk": "Операциялық топ"
  },
  "Логистика, организация поездки, связь с семьёй": {
   "en": "Logistics, travel arrangements, communication with the family",
@@ -1313,7 +1313,7 @@
  },
  "Полнота пакета, перевод, версии документов": {
   "en": "Completeness of the document package, translation, document versions",
-  "kk": "Құжаттар пакетінің толықтығы, аударма, құжат нұсқалары"
+  "kk": "Құжаттар топтамасының толықтығы, аударма, құжат нұсқалары"
  },
  "Юрист по международным договорам": {
   "en": "International contracts lawyer",
@@ -1412,7 +1412,7 @@
   "kk": "Көрсетілген дәрі Қазақстанда қолжетімсіз"
  },
  "Спорный или редкий диагноз, нужен пересмотр материала": {
-  "en": "Disputed or rare diagnosis; the material needs to be reviewed",
+  "en": "Uncertain or rare diagnosis; the material needs to be reviewed",
   "kk": "Даулы немесе сирек диагноз, материалды қайта қарау қажет"
  },
  "Пациент или семья сами рассматривают лечение за рубежом и нуждаются во врачебной оценке": {
@@ -1432,7 +1432,7 @@
   "kk": "Гистологиялық және иммуногистохимиялық қорытындылар"
  },
  "Миелограмма, иммунофенотипирование, цитогенетика, молекулярные исследования": {
-  "en": "Myelogram, immunophenotyping, cytogenetics, molecular tests",
+  "en": "Bone marrow aspirate (myelogram), immunophenotyping, cytogenetics, molecular tests",
   "kk": "Миелограмма, иммунофенотиптеу, цитогенетика, молекулалық зерттеулер"
  },
  "Данные КТ/ПЭТ-КТ с описанием": {
@@ -1444,8 +1444,8 @@
   "kk": "Жүргізілген терапияның күндері мен жауабы көрсетілген тізімі"
  },
  "Актуальные анализы крови и биохимия": {
-  "en": "Recent blood tests and biochemistry",
-  "kk": "Өзекті қан талдаулары және биохимия"
+  "en": "Recent blood counts and blood chemistry",
+  "kk": "Соңғы қан талдаулары және биохимиялық талдау"
  },
  "Clinical summary": {
   "en": "Clinical summary",
@@ -1461,7 +1461,7 @@
  },
  "Диагноз по актуальной классификации, дата установления": {
   "en": "Diagnosis according to the current classification, and date of diagnosis",
-  "kk": "Өзекті жіктеме бойынша диагноз, қойылған күні"
+  "kk": "Қолданыстағы жіктеме бойынша диагноз, қойылған күні"
  },
  "Анамнез заболевания и сопутствующие состояния": {
   "en": "History of the disease and comorbidities",
@@ -1485,11 +1485,11 @@
  },
  "Форма направления": {
   "en": "Referral form",
-  "kk": "Жолдама формасы"
+  "kk": "Жолдама нысаны"
  },
  "Демонстрационная форма — данные никуда не отправляются": {
   "en": "Demo form: data is not sent anywhere",
-  "kk": "Демонстрациялық форма — деректер ешқайда жіберілмейді"
+  "kk": "Демонстрациялық нысан — деректер ешқайда жіберілмейді"
  },
  "Направляющий врач": {
   "en": "Referring physician",
@@ -1541,7 +1541,7 @@
  },
  "Будет доступна после юридической экспертизы и проверки информационной безопасности.": {
   "en": "Will be available after legal review and an information security check.",
-  "kk": "Заңдық сараптама мен ақпараттық қауіпсіздік тексеруінен кейін қолжетімді болады."
+  "kk": "Құқықтық сараптама мен ақпараттық қауіпсіздік тексерісінен кейін қолжетімді болады."
  },
  "Пациент проинформирован о направлении и дал согласие на передачу медицинских данных": {
   "en": "The patient has been informed about the referral and has consented to the transfer of medical data",
@@ -1668,7 +1668,7 @@
   "kk": "Бағдарлама денсаулық сақтау жүйесін алмастырмайды, оны толықтырады: науқас сапарға дейін де, одан кейін де Қазақстандағы дәрігерлердің бақылауында болады."
  },
  "В центре — не поездка и не зарубежная клиника, а пациент, его клиническая задача и непрерывность лечения.": {
-  "en": "At the center is not the trip or the clinic abroad, but the patient, their clinical need and the continuity of treatment.",
+  "en": "The focus is not on the trip or the clinic abroad, but on the patient, their clinical need and the continuity of treatment.",
   "kk": "Басты назарда — сапар да, шетелдік клиника да емес, науқас, оның клиникалық міндеті және емнің үздіксіздігі."
  },
  "Этические принципы": {
@@ -1676,7 +1676,7 @@
   "kk": "Этикалық қағидаттар"
  },
  "Мы публично берём на себя эти обязательства.": {
-  "en": "We publicly commit to these obligations.",
+  "en": "We make these commitments publicly.",
   "kk": "Біз осы міндеттемелерді жария түрде өз мойнымызға аламыз."
  },
  "Не обещаем излечение или гарантированный результат": {
@@ -1685,7 +1685,7 @@
  },
  "Не используем страх и искусственную срочность": {
   "en": "We do not use fear or artificial urgency",
-  "kk": "Қорқынышты және жасанды асығыстықты пайдаланбаймыз"
+  "kk": "Қорқыныш пен жасанды асығыстықты пайдаланбаймыз"
  },
  "Не публикуем проценты успеха без источника, периода и описания популяции": {
   "en": "We do not publish success rates without the source, period and description of the population",
@@ -1705,7 +1705,7 @@
  },
  "Раскрываем характер финансовых отношений с партнёрами": {
   "en": "We disclose the nature of our financial relationships with partners",
-  "kk": "Серіктестермен қаржылық қарым-қатынастардың сипатын ашып көрсетеміз"
+  "kk": "Серіктестермен қаржылық қатынастардың сипатын ашып көрсетеміз"
  },
  "Не публикуем утверждения о статусе центра без документального подтверждения": {
   "en": "We do not publish claims about a center's status without documentary proof",
@@ -1792,7 +1792,7 @@
   "kk": "Тізім нақтылануда"
  },
  "/ Стоимость": {
-  "en": "/ Costs",
+  "en": "/ Cost",
   "kk": "/ Құны"
  },
  "Стоимость и финансовая прозрачность": {
@@ -1836,20 +1836,20 @@
   "kk": "Сүйемелдеу құны"
  },
  "Условия публикуются после утверждения финансовой модели центром.": {
-  "en": "Terms will be published after the center approves the financial model.",
+  "en": "Terms will be published after the Hematology Center approves the financial model.",
   "kk": "Шарттар орталық қаржылық модельді бекіткеннен кейін жарияланады."
  },
  "На утверждении": {
   "en": "Pending approval",
-  "kk": "Бекітілу үстінде"
+  "kk": "Бекітілуде"
  },
  "Раскрытие финансовых отношений.": {
   "en": "Disclosure of financial relationships.",
-  "kk": "Қаржылық қарым-қатынастарды ашу."
+  "kk": "Қаржылық қатынастарды ашу."
  },
  "Если программа получает вознаграждение от зарубежных центров, характер этих отношений будет раскрыт здесь в юридически допустимом объёме. Финансовые условия не влияют на врачебный выбор центра.": {
   "en": "If the program receives remuneration from centers abroad, the nature of these relationships will be disclosed here to the extent legally permitted. Financial terms do not influence the medical choice of a center.",
-  "kk": "Егер бағдарлама шетелдік орталықтардан сыйақы алатын болса, бұл қарым-қатынастардың сипаты осы жерде заң жол беретін көлемде ашылады. Қаржылық шарттар орталықты дәрігерлік таңдауға әсер етпейді."
+  "kk": "Егер бағдарлама шетелдік орталықтардан сыйақы алатын болса, бұл қатынастардың сипаты осы жерде заң рұқсат ететін көлемде ашылады. Қаржылық шарттар орталықты дәрігерлік таңдауға әсер етпейді."
  },
  "Государственный маршрут": {
   "en": "The state route",
@@ -1892,8 +1892,8 @@
   "kk": "Бағалау үшін қандай құжаттар қажет?"
  },
  "Выписки, заключения, результаты гистологии, анализов и исследований, перечень проведённой терапии. Полный список — в разделе": {
-  "en": "Discharge summaries, medical reports, histology, test and examination results, and a list of the treatment received. The full list is in the section",
-  "kk": "Үзінді көшірмелер, қорытындылар, гистология, талдаулар мен зерттеулер нәтижелері, жүргізілген ем тізімі. Толық тізімді мына бөлімнен қараңыз:"
+  "en": "Discharge summaries, medical reports, histology, test and examination results, and a list of the treatment received. The full list is under",
+  "kk": "Шығару эпикриздері, қорытындылар, гистология, талдаулар мен зерттеулер нәтижелері, жүргізілген ем тізімі. Толық тізімді мына бөлімнен қараңыз:"
  },
  "«Для врачей»": {
   "en": "“For doctors”",
@@ -1905,14 +1905,14 @@
  },
  "Нет. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.": {
   "en": "No. Sending documents does not mean that treatment is automatically prescribed or that the need for treatment abroad is confirmed.",
-  "kk": "Жоқ. Құжаттарды жіберу емнің автоматты түрде тағайындалуын немесе шетелде емделу қажеттілігінің расталуын білдірмейді."
+  "kk": "Жоқ. Құжаттарды жіберу емнің автоматты түрде тағайындалатынын немесе шетелде емделу қажеттілігінің расталатынын білдірмейді."
  },
  "Сколько стоит лечение?": {
   "en": "How much does treatment cost?",
   "kk": "Емделу қанша тұрады?"
  },
  "Медицинскую смету формирует зарубежный центр после изучения документов. Мы разделяем медицинскую стоимость, организационные расходы и стоимость сопровождения. Подробнее — в разделе": {
-  "en": "The medical estimate is prepared by the center abroad after reviewing the documents. We separate medical costs, logistics costs and the cost of support. More details in the section",
+  "en": "The medical estimate is prepared by the center abroad after reviewing the documents. We separate medical costs, logistics costs and the cost of support. For more details, see",
   "kk": "Медициналық сметаны шетелдік орталық құжаттарды зерделегеннен кейін жасайды. Біз медициналық құнды, ұйымдастыру шығындарын және сүйемелдеу құнын бөлек көрсетеміз. Толығырақ мына бөлімде:"
  },
  "Можно ли получить квоту на лечение за рубежом?": {
@@ -2213,7 +2213,7 @@
  },
  "Отдельная линия программы — уточняется": {
   "en": "Dedicated program line: to be confirmed",
-  "kk": "Бағдарламаның жеке желісі — нақтыланады"
+  "kk": "Бағдарламаның бөлек телефон желісі — нақтылануда"
  },
  "Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».": {
   "en": "The information on this website is for general information only and does not replace a doctor's consultation. Sending documents does not mean that treatment is automatically prescribed or that the need for treatment abroad is confirmed. The nature of our financial relationships with partners is disclosed in the “Cost” section.",
@@ -2256,7 +2256,7 @@
   "kk": "Науқас құжаттары және дәрігерлік бағалау"
  },
  "Два диалоговых окна — второе мнение": {
-  "en": "Two dialogue bubbles — second opinion",
+  "en": "Two speech bubbles — second opinion",
   "kk": "Екі диалог терезесі — екінші пікір"
  },
  "Пакет для трансплантации и капля": {
@@ -2285,7 +2285,7 @@
  },
  "Как будет устроена история пациента": {
   "en": "How a patient story will be structured",
-  "kk": "Науқас тарихы қалай құрылады"
+  "kk": "Науқас оқиғасы қалай баяндалады"
  },
  "Микроскоп и пробирки в собственной лаборатории центра": {
   "en": "Microscope and test tubes in the center's own laboratory",
@@ -2329,11 +2329,11 @@
  },
  "Врачебная маршрутизация пациентов с заболеваниями крови": {
   "en": "Medical routing for patients with blood diseases",
-  "kk": "Қан аурулары бар науқастарды дәрігерлік бағыттау"
+  "kk": "Қан аурулары бар науқастарды дәрігерлік маршруттау"
  },
  "Программа врачей-гематологов и онкогематологов Центра гематологии по международной маршрутизации пациентов с заболеваниями крови: оценка гематолога, подготовка в Казахстане, ТКМ, CAR-T, второе мнение, недоступные препараты, наблюдение после возвращения.": {
   "en": "A program of hematologists and oncohematologists at the Hematology Center for international routing of patients with blood diseases: hematologist evaluation, preparation in Kazakhstan, BMT, CAR-T, second opinion, medicines not available in Kazakhstan, follow-up after return.",
-  "kk": "Гематология орталығының гематолог және онкогематолог дәрігерлерінің қан аурулары бар науқастарды халықаралық бағыттау бағдарламасы: гематолог бағалауы, Қазақстанда дайындық, СКТ, CAR-T, екінші пікір, Қазақстанда қолжетімсіз дәрілер, оралғаннан кейінгі бақылау."
+  "kk": "Гематология орталығының гематолог және онкогематолог дәрігерлерінің қан аурулары бар науқастарды халықаралық маршруттау бағдарламасы: гематолог бағалауы, Қазақстанда дайындық, СКТ, CAR-T, екінші пікір, Қазақстанда қолжетімсіз дәрілер, оралғаннан кейінгі бақылау."
  },
  "HemaBridge — программа Центра гематологии": {
   "en": "HemaBridge — a Hematology Center program",
@@ -2392,7 +2392,7 @@
   "kk": "серіктес орталық, бағдарлама гематологтары"
  },
  "Наблюдение продолжается в Казахстане, а связь с партнёрской клиникой не прерывается: контрольные анализы, повторные консультации и телемедицинские консилиумы.": {
-  "en": "Follow-up continues in Kazakhstan, and contact with the partner clinic is maintained: follow-up tests, repeat consultations and telemedicine teleconsultations.",
+  "en": "Follow-up continues in Kazakhstan, and contact with the partner clinic is maintained: follow-up tests, repeat consultations and teleconsultations.",
   "kk": "Бақылау Қазақстанда жалғасады, ал серіктес клиникамен байланыс үзілмейді: бақылау талдаулары, қайталама консультациялар және телемедициналық консилиумдар."
  },
  "гематологи программы, лечащий врач, партнёрский центр": {
