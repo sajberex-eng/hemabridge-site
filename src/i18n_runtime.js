@@ -56,6 +56,16 @@
       m.setAttribute(pair[1], tr(m.getAttribute('data-orig')));
     });
   }
+  // diagram labels must fit between neighbouring stops: shrink the font a little when a translation is longer
+  function fitSvgLabels(){
+    var labels = document.querySelectorAll('.rt-stop .lbl');
+    for(var i = 0; i < labels.length; i++){
+      var l = labels[i];
+      l.style.fontSize = '';
+      var len = l.getComputedTextLength ? l.getComputedTextLength() : 0;
+      if(len > 96) l.style.fontSize = Math.max(9.5, 13.5 * 96 / len).toFixed(2) + 'px';
+    }
+  }
   function setPageTitle(){
     if(curPage) document.title = tr(curPage.dataset.title) + ' — HemaBridge · ' + tr('Центр гематологии');
   }
@@ -78,6 +88,7 @@
       setPageTitle();
       if(typeof syncThemeBtn === 'function') syncThemeBtn();
       if(refreshDynamic) refreshDynamic();
+      fitSvgLabels();
       Array.prototype.forEach.call(document.querySelectorAll('.form-result.show'), function(r){ r.classList.remove('show'); });
     });
     if(persist){ try{ localStorage.setItem('hb-lang', btn); }catch(e){} }

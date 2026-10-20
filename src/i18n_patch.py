@@ -22,6 +22,9 @@ old_btn=_re.search(r"  langBtns\.forEach\(function\(b\)\{\n    b\.addEventListen
 assert old_btn
 s=s.replace(old_btn.group(0),"  langBtns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang, true); }); });\n")
 s=rep(s,"  window.addEventListener('hashchange', route);\n  route();\n","  window.addEventListener('hashchange', route);\n  route();\n  initLang();\n")
+# diagram label fitting also when the home page becomes visible / fonts arrive
+s=rep(s,"    curPage = target;\n    setPageTitle();\n","    curPage = target;\n    setPageTitle();\n    fitSvgLabels();\n")
+s=rep(s,"  initLang();\n","  initLang();\n  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitSvgLabels);\n")
 # 4. dynamic panels are written by the script, not translated in place
 s=rep(s,'<div class="rt-body" id="rtBody">','<div class="rt-body" id="rtBody" data-i18n-skip>')
 s=s.replace('<div class="form-result" role="status"></div>','<div class="form-result" role="status" data-i18n-skip></div>')
