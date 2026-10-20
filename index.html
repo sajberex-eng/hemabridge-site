@@ -606,6 +606,98 @@ textarea{min-height:104px;resize:vertical}
   .hero.hero-bridge h1{max-width:none;font-size:clamp(2.4rem,4.4vw,5rem)}
   .hero.hero-bridge h1 .l{display:block}
 }
+/* ---- impeccable critique fixes ---- */
+:root{--warn:#8A5212}
+.ph{opacity:1;color:var(--muted)}
+.card{box-shadow:0 1px 2px color-mix(in srgb,var(--ink) 5%,transparent)}
+.rt-detail .big .of{font-size:1rem;color:var(--muted);font-weight:600;margin-left:2px}
+.rt-pager button{width:44px;height:44px}
+.burger{min-height:44px}
+.trio > div > a{display:inline-block;padding:10px 0}
+abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:help}
+/* outcomes: numbered, not radio-like */
+.outcomes{counter-reset:o}
+.outcomes li{counter-increment:o}
+.outcomes li::before{content:counter(o);width:28px;height:28px;margin-top:0;border:0;border-radius:8px;background:var(--clinic-wash);color:var(--clinic);font:700 .9rem/28px var(--display);text-align:center}
+.outcomes li.first::before{background:var(--accent-ink);color:var(--on-accent);border:0}
+/* closing band */
+.closing{background:var(--clinic-wash)}
+.section.closing:nth-of-type(even){background:var(--clinic-wash)}
+.closing-row{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.closing-row h2{margin-bottom:.3em}
+.closing-row .lead{margin:0}
+.closing-row .actions{margin-top:0}
+/* mobile-only menu entries */
+.nav .nav-mobile{display:none}
+/* dark hero: feather the daylight image into the page */
+:root[data-theme="dark"] .hero.hero-bridge::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,var(--paper));z-index:0}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .hero.hero-bridge::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,var(--paper));z-index:0} }
+/* vertical stop list (phones only) */
+.rt-list{display:none}
+@media (min-width:641px) and (max-width:1000px){
+  .route-scroll{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent)}
+}
+@media (max-width:1000px){
+  .nav .nav-mobile{display:block;font-weight:600}
+  .nav .nav-mobile[href="#apply"]{color:var(--accent-ink)}
+}
+@media (max-width:640px){
+  .route-scroll{display:none}
+  .rt-list{display:grid;gap:6px;list-style:none;margin:8px 0 0;padding:0;position:relative}
+  .rt-list::before{content:"";position:absolute;left:27px;top:18px;bottom:18px;width:2px;background:var(--line-strong)}
+  .rt-list button{position:relative;display:grid;grid-template-columns:40px 22px 1fr;align-items:center;gap:10px;width:100%;min-height:52px;padding:6px 12px 6px 8px;border:1px solid transparent;border-radius:var(--radius-sm);background:none;color:var(--ink);font:600 .98rem/1.3 var(--font);text-align:left;cursor:pointer;transition:background-color .18s var(--ease),border-color .18s var(--ease)}
+  .rt-list svg{width:40px;height:40px;padding:8px;border-radius:50%;background:var(--raised);border:2px solid var(--clinic);fill:none;stroke:var(--clinic);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;--ico-fill:var(--accent-wash);position:relative}
+  .rt-list .abroad svg{border-color:var(--clinic-lit);background:var(--tile-3)}
+  .rt-list .n{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+  .rt-list button[aria-pressed="true"]{background:var(--accent-wash);border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+  .rt-list button[aria-pressed="true"] svg{background:var(--accent-ink);border-color:var(--accent-ink);stroke:var(--on-accent);--ico-fill:transparent}
+  .rt-detail .big .of{font-size:.85rem}
+  /* comparison table → stacked cards */
+  .table-scroll{border:0;background:none;overflow:visible}
+  .table-scroll table{min-width:0}
+  .table-scroll thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .table-scroll tbody tr{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+  .table-scroll tbody th{width:auto;border:0;padding:16px 18px 6px}
+  .table-scroll tbody td{border:0;padding:6px 18px 14px}
+  .table-scroll tbody td.us{order:1;background:var(--accent-wash);margin:0 10px;border-radius:var(--radius-sm);padding:10px 14px}
+  .table-scroll tbody td:not(.us){order:2;font-size:.92rem}
+  .table-scroll tbody td::before{content:attr(data-label);display:block;font-size:.76rem;font-weight:600;color:var(--muted);margin-bottom:2px}
+  .table-scroll tbody td.us::before{color:var(--accent-ink)}
+  .site-footer li a{display:inline-block;padding:6px 0}
+  .closing-row .actions{width:100%}
+}
+/* ---- hero v6: one calm screen, bridge frames the text ---- */
+@media (min-width:1001px){
+  .hero.hero-bridge{aspect-ratio:auto;height:calc(100svh - 76px);min-height:600px;max-height:940px;
+    padding:clamp(56px,11vh,132px) 0 0;
+    background:url("img/bridge-landscape.webp") center 78%/cover no-repeat,#FBF5EA}
+  .hero.hero-bridge h1{font-size:clamp(2.6rem,min(4.3vw,7.4vh),4.8rem);line-height:1.06;letter-spacing:-.025em}
+}
+.hero.hero-bridge{text-align:center}
+.hero.hero-bridge h1{text-wrap:balance}
+.hero.hero-bridge .actions{gap:14px}
+.hero.hero-bridge .btn-ghost{background:color-mix(in srgb,var(--surface) 62%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-color:color-mix(in srgb,var(--line-strong) 80%,transparent)}
+.hero.hero-bridge .btn-ghost:hover{background:var(--surface)}
+.hero.hero-bridge::before{background:radial-gradient(ellipse 60% 55% at 50% 22%,var(--hero-veil-top) 0%,var(--hero-veil-mid) 45%,transparent 75%)}
+/* soft hand-off into the next block, both themes */
+.hero.hero-bridge::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72px;background:linear-gradient(transparent,var(--paper));z-index:0;pointer-events:none}
+.hero-intro{padding-top:56px}
+@media (max-width:1000px){
+  .hero.hero-bridge::before{background:linear-gradient(180deg,var(--hero-veil-top) 0%,var(--hero-veil-top) 40%,transparent 66%)}
+}
+/* hero v6b: even dusk dimming in dark, full-bleed sky on phones */
+:root[data-theme="dark"] .hero.hero-bridge::before{background:linear-gradient(180deg,rgba(20,26,23,.78) 0%,rgba(20,26,23,.6) 45%,rgba(20,26,23,.38) 100%)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .hero.hero-bridge::before{background:linear-gradient(180deg,rgba(20,26,23,.78) 0%,rgba(20,26,23,.6) 45%,rgba(20,26,23,.38) 100%)} }
+@media (max-width:1000px){
+  .hero.hero-bridge{padding:48px 0 min(62vw,420px);background:url("img/bridge-landscape.webp") 50% 100%/cover no-repeat,#FBF5EA}
+}
+@media (max-width:640px){
+  .hero.hero-bridge{padding:36px 0 300px;background-position:46% 100%}
+  .hero.hero-bridge .actions{gap:10px}
+}
+[id]{scroll-margin-top:92px}
+.outcomes li::before{display:grid;place-items:center;font-size:15px;line-height:1}
+.outcomes li::before,.rt-detail .big,.steps>li::before{font-family:var(--font);font-variant-numeric:lining-nums tabular-nums}
 </style>
 </head>
 <body>
@@ -638,6 +730,8 @@ textarea{min-height:104px;resize:vertical}
           <a href="#cabinet">Личный кабинет</a>
         </div>
       </details>
+      <a class="nav-mobile" href="#apply">Получить врачебную оценку</a>
+      <a class="nav-mobile" href="tel:+77770793165">Позвонить: <span class="num">+7 777 079 3165</span></a>
       <div class="lang" role="group" aria-label="Язык сайта">
         <button type="button" data-lang="ru" aria-pressed="true">RU</button>
         <button type="button" data-lang="kz" aria-pressed="false">KZ</button>
@@ -661,7 +755,7 @@ textarea{min-height:104px;resize:vertical}
       <h1><span class="l">Один пациент. Один маршрут.</span> <span class="l">Команда врачей в двух странах.</span></h1>
       <div class="actions">
         <a class="btn btn-primary" href="#apply">Получить врачебную оценку <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
+        <a class="btn btn-ghost" href="#apply" data-req="second">Получить второе мнение</a>
         <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
       </div>
     </div>
@@ -689,8 +783,7 @@ textarea{min-height:104px;resize:vertical}
           <h2>Ваш маршрут</h2>
           <p>Нажмите на этап, чтобы узнать, что на нём происходит</p>
         </div>
-        <p class="route-hint">Схему можно прокрутить вбок →</p>
-        <div class="route-scroll">
+                <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
             <desc id="rt-desc">Маршрут начинается и заканчивается в Казахстане. После врачебной оценки возможно лечение в Казахстане без поездки. Зарубежный этап включает согласование врач–врач, организацию и лечение, затем передачу случая и наблюдение дома.</desc>
@@ -729,11 +822,11 @@ textarea{min-height:104px;resize:vertical}
           </svg>
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
-          <div class="big" id="rtNum">2</div>
+          <div class="big"><span id="rtNum">1</span><span class="of">/9</span></div>
           <div class="rt-body" id="rtBody">
-            <h3 id="rtTitle">Врачебная оценка <span class="place">Казахстан</span></h3>
-            <p id="rtText">Гематолог изучает случай и формулирует клинический вопрос: что нужно пациенту и где это может быть сделано.</p>
-            <p class="who" id="rtWho">Ответственный: врачебное ядро</p>
+            <h3 id="rtTitle">Обращение и документы <span class="place">Казахстан</span></h3>
+            <p id="rtText">Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p>
+            <p class="who" id="rtWho">Ответственный: координатор документооборота</p>
           </div>
           <div class="rt-pager">
             <button type="button" id="rtPrev" aria-label="Предыдущий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
@@ -796,7 +889,7 @@ textarea{min-height:104px;resize:vertical}
           </svg>
           <div class="body">
             <h3>Трансплантация костного мозга</h3>
-            <p>Показания, HLA-типирование и подбор донора, подготовка у нас, наблюдение после ТКМ.</p>
+            <p>Показания, <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование и подбор донора, подготовка у нас, наблюдение после ТКМ.</p>
             <span class="go">Этапы маршрута</span>
           </div>
         </a>
@@ -821,7 +914,7 @@ textarea{min-height:104px;resize:vertical}
 
         
 
-        <a class="card" href="#route">
+        <a class="card" href="#kz-prep">
           <svg class="pic" viewBox="0 0 160 90" role="img" aria-label="Пробирки и отметки о выполненной подготовке" style="background:var(--tile-1)">
             <rect width="160" height="90" fill="var(--tile-1)"/>
             <g stroke="var(--clinic)" stroke-width="2" fill="var(--surface)">
@@ -834,7 +927,7 @@ textarea{min-height:104px;resize:vertical}
           </svg>
           <div class="body">
             <h3>Подготовка в Казахстане</h3>
-            <p>Анализы, HLA-типирование и часть лечения — в нашем центре, без поездки.</p>
+            <p>Анализы, <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование и часть лечения — в нашем центре, без поездки.</p>
             <span class="go">Что можно сделать дома</span>
           </div>
         </a>
@@ -893,12 +986,12 @@ textarea{min-height:104px;resize:vertical}
         <table>
           <thead><tr><th scope="col"><span class="visually-hidden">Параметр</span></th><th scope="col">Типичная модель медицинского туризма</th><th scope="col" class="us">HemaBridge</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Начало пути</th><td>Запрос пациента и выбор клиники</td><td class="us">Врачебная оценка клинической ситуации</td></tr>
-            <tr><th scope="row">Чем заканчивается</th><td>Часто — выпиской из клиники</td><td class="us">Передачей случая и долгосрочным наблюдением</td></tr>
-            <tr><th scope="row">Специализация</th><td>Все направления медицины</td><td class="us">Только гематология и онкогематология</td></tr>
-            <tr><th scope="row">Диагностика и подготовка</th><td>Выполняются в зарубежной клинике и оплачиваются отдельно</td><td class="us">Выполняются в Центре гематологии: верификация диагноза, лабораторные исследования, HLA-типирование, подбор донора</td></tr>
-            <tr><th scope="row">Роль направляющей стороны</th><td>Привлечь пациента и направить на лечение или диагностику</td><td class="us">Вести пациента на всех этапах — до поездки, во время лечения и после возвращения</td></tr>
-            <tr><th scope="row">Основание для поездки</th><td>Запрос пациента</td><td class="us">Клинические показания и согласованный с партнёрской клиникой план</td></tr>
+            <tr><th scope="row">Начало пути</th><td data-label="Типичная модель медицинского туризма">Запрос пациента и выбор клиники</td><td class="us" data-label="HemaBridge">Врачебная оценка клинической ситуации</td></tr>
+            <tr><th scope="row">Чем заканчивается</th><td data-label="Типичная модель медицинского туризма">Часто — выпиской из клиники</td><td class="us" data-label="HemaBridge">Передачей случая и долгосрочным наблюдением</td></tr>
+            <tr><th scope="row">Специализация</th><td data-label="Типичная модель медицинского туризма">Все направления медицины</td><td class="us" data-label="HemaBridge">Только гематология и онкогематология</td></tr>
+            <tr><th scope="row">Диагностика и подготовка</th><td data-label="Типичная модель медицинского туризма">Выполняются в зарубежной клинике и оплачиваются отдельно</td><td class="us" data-label="HemaBridge">Выполняются в Центре гематологии: верификация диагноза, лабораторные исследования, <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование, подбор донора</td></tr>
+            <tr><th scope="row">Роль направляющей стороны</th><td data-label="Типичная модель медицинского туризма">Привлечь пациента и направить на лечение или диагностику</td><td class="us" data-label="HemaBridge">Вести пациента на всех этапах — до поездки, во время лечения и после возвращения</td></tr>
+            <tr><th scope="row">Основание для поездки</th><td data-label="Типичная модель медицинского туризма">Запрос пациента</td><td class="us" data-label="HemaBridge">Клинические показания и согласованный с партнёрской клиникой план</td></tr>
           </tbody>
         </table>
       </div>
@@ -907,7 +1000,7 @@ textarea{min-height:104px;resize:vertical}
 
   
 
-  <section class="section kz">
+  <section class="section kz" id="kz-prep">
     <div class="wrap split">
       <div>
         <h2>Не всё лечение начинается за границей</h2>
@@ -917,7 +1010,7 @@ textarea{min-height:104px;resize:vertical}
         <ul class="kz-list">
           <li>Верификация диагноза</li>
           <li>Лабораторные исследования в лаборатории центра</li>
-          <li>HLA-типирование пациента и родственников</li>
+          <li><abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование пациента и родственников</li>
           <li>Подбор донора и подготовка к донорскому поиску</li>
           <li>Стабилизация состояния пациента</li>
           <li>Часть противоопухолевой терапии</li>
@@ -966,26 +1059,21 @@ textarea{min-height:104px;resize:vertical}
         <p class="lead">Программу ведёт профильная клиника, которая каждый день занимается диагностикой и лечением заболеваний крови. Маршрутизация — продолжение этой работы, а не отдельная посредническая услуга.</p>
         <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в собственной лаборатории центра">
       </div>
-      <div class="cols-3" style="margin-top:34px">
-        <div class="tpl">
-          <h3>Профиль и статус</h3>
-          <p class="small">Частная профильная клиника гематологии и онкогематологии.</p>
-          <span class="pending">Формулировка о статусе — на проверке</span>
-          <p class="small" style="margin-top:12px">Утверждения вида «первая» или «единственная» публикуем только с документальным подтверждением.</p>
-        </div>
-        <div class="tpl">
-          <h3>Филиалы</h3>
-          <p class="small">Города и адреса филиалов, режим работы, как попасть на приём.</p>
-          <span class="pending">Список уточняется</span>
-        </div>
-        <div class="tpl">
-          <h3>Собственная лаборатория</h3>
-          <p class="small">Перечень исследований, которые выполняются в лаборатории центра, — включая те, что нужны для подготовки к ТКМ и клеточной терапии.</p>
-          <span class="pending">Перечень уточняется</span>
-        </div>
-      </div>
       <div class="note"><p>Благодаря собственной лаборатории и профильным врачам значительная часть диагностики и подготовки выполняется в центре — пациенту не нужно оплачивать эти исследования в зарубежной клинике.</p></div>
       <div class="actions"><a class="btn btn-ghost" href="https://hemcenter.kz" rel="noopener">Сайт Центра гематологии</a></div>
+    </div>
+  </section>
+
+  <section class="section closing">
+    <div class="wrap closing-row">
+      <div>
+        <h2>Остались вопросы?</h2>
+        <p class="lead">Позвоните координатору программы — подскажем, с чего начать и какие документы собрать.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+77770793165"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="num">+7 777 079 3165</span></a>
+        <a class="btn btn-ghost" href="#apply">Получить врачебную оценку</a>
+      </div>
     </div>
   </section>
 
@@ -1063,7 +1151,7 @@ textarea{min-height:104px;resize:vertical}
         <div>
           <p>Острые лейкозы развиваются быстро и требуют интенсивного лечения. Для части пациентов в первой или последующей ремиссии обсуждается аллогенная трансплантация костного мозга.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
-            <ul class="plain"><li>Оценка показаний к алло-ТКМ и времени её проведения</li><li>Раннее HLA-типирование пациента и родственников, подготовка к донорскому поиску</li><li>Второе мнение по диагнозу и группе риска</li><li>Оценка кандидатуры на CAR-T при рецидивирующем или рефрактерном В-ОЛЛ</li></ul>
+            <ul class="plain"><li>Оценка показаний к алло-ТКМ и времени её проведения</li><li>Раннее <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование пациента и родственников, подготовка к донорскому поиску</li><li>Второе мнение по диагнозу и группе риска</li><li>Оценка кандидатуры на CAR-T при рецидивирующем или рефрактерном В-ОЛЛ</li></ul>
           </div>
         </div>
       </article>
@@ -1108,7 +1196,7 @@ textarea{min-height:104px;resize:vertical}
         <div>
           <p>Лечение включает иммуносупрессивную терапию и аллогенную трансплантацию. Выбор зависит от тяжести, возраста и наличия совместимого донора.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
-            <ul class="plain"><li>Раннее HLA-типирование пациента и семьи</li><li>Оценка показаний и организация алло-ТКМ</li><li>Исключение наследственных синдромов костномозговой недостаточности</li></ul>
+            <ul class="plain"><li>Раннее <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование пациента и семьи</li><li>Оценка показаний и организация алло-ТКМ</li><li>Исключение наследственных синдромов костномозговой недостаточности</li></ul>
           </div>
         </div>
       </article>
@@ -1143,7 +1231,7 @@ textarea{min-height:104px;resize:vertical}
     <div class="wrap">
       <div class="flow-block" id="tkm">
         <h2>Трансплантация костного мозга (ТКМ)</h2>
-        <p>Аутологичная и аллогенная трансплантация гемопоэтических стволовых клеток. HLA-типирование, подбор донора и подготовку можно выполнить в Центре гематологии, не выезжая в партнёрскую клинику: пациент отправляется туда уже с готовыми материалами, на саму трансплантацию. После неё работает модель shared care — совместного ведения пациента клиникой и врачами в Казахстане, с контролем анализов и телемедицинскими консилиумами.</p>
+        <p>Аутологичная и аллогенная трансплантация гемопоэтических стволовых клеток. <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование, подбор донора и подготовку можно выполнить в Центре гематологии, не выезжая в партнёрскую клинику: пациент отправляется туда уже с готовыми материалами, на саму трансплантацию. После неё работает модель shared care — совместного ведения пациента клиникой и врачами в Казахстане, с контролем анализов и телемедицинскими консилиумами.</p>
         <ol class="flow"><li><span>Показания</span></li><li><span>HLA и подбор донора</span></li><li><span>Подготовка в центре</span></li><li><span>Согласование</span></li><li><span>Трансплантация</span></li><li><span>Shared care</span></li><li><span>Контроль и телемедицина</span></li></ol>
       </div>
       <div class="flow-block" id="cart">
@@ -1501,6 +1589,29 @@ textarea{min-height:104px;resize:vertical}
       </ul>
     </div>
   </section>
+  <section class="section">
+    <div class="wrap">
+      <h2>О Центре гематологии</h2>
+      <div class="cols-3">
+        <div class="tpl">
+          <h3>Профиль и статус</h3>
+          <p class="small">Частная профильная клиника гематологии и онкогематологии.</p>
+          <span class="pending">Формулировка о статусе — на проверке</span>
+          <p class="small" style="margin-top:12px">Утверждения вида «первая» или «единственная» публикуем только с документальным подтверждением.</p>
+        </div>
+        <div class="tpl">
+          <h3>Филиалы</h3>
+          <p class="small">Города и адреса филиалов, режим работы, как попасть на приём.</p>
+          <span class="pending">Список уточняется</span>
+        </div>
+        <div class="tpl">
+          <h3>Собственная лаборатория</h3>
+          <p class="small">Перечень исследований, которые выполняются в лаборатории центра, — включая те, что нужны для подготовки к ТКМ и клеточной терапии.</p>
+          <span class="pending">Перечень уточняется</span>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <!-- ================= СТОИМОСТЬ ================= -->
@@ -1550,7 +1661,7 @@ textarea{min-height:104px;resize:vertical}
       <details><summary>Означает ли отправка документов, что мне назначат лечение за рубежом?</summary><div><p>Нет. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p></div></details>
       <details><summary>Сколько стоит лечение?</summary><div><p>Медицинскую смету формирует зарубежный центр после изучения документов. Мы разделяем медицинскую стоимость, организационные расходы и стоимость сопровождения. Подробнее — в разделе <a href="#cost">«Стоимость»</a>.</p></div></details>
       <details><summary>Можно ли получить квоту на лечение за рубежом?</summary><div><p>Решение о государственном направлении принимают уполномоченные органы. Мы помогаем понять возможный маршрут и подготовить документы, но не обещаем квоту.</p></div></details>
-      <details><summary>Можно ли часть лечения пройти в Казахстане?</summary><div><p>Часто да: верификация диагноза, исследования, HLA-типирование, стабилизация, часть терапии и подготовка документов.</p></div></details>
+      <details><summary>Можно ли часть лечения пройти в Казахстане?</summary><div><p>Часто да: верификация диагноза, исследования, <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование, стабилизация, часть терапии и подготовка документов.</p></div></details>
       <details><summary>Кто будет наблюдать меня после возвращения?</summary><div><p>Ваш лечащий врач в Казахстане вместе с врачебным ядром программы, по плану наблюдения, согласованному с зарубежным центром.</p></div></details>
       <details><summary>Как защищены мои медицинские данные?</summary><div><p>Защищённая загрузка документов будет запущена только после юридической экспертизы и проверки информационной безопасности. Данные передаются с вашего согласия.</p></div></details>
       <details><summary>Мой врач может направить меня к вам?</summary><div><p>Да. Для врачей есть отдельная форма направления и профессиональный канал связи.</p></div></details>
@@ -1750,7 +1861,7 @@ textarea{min-height:104px;resize:vertical}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · версия 2026-10-19.5</p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · версия 2026-10-20.1</p>
     </div>
   </div>
 </footer>
@@ -1839,7 +1950,7 @@ textarea{min-height:104px;resize:vertical}
   ];
   var stops = Array.prototype.slice.call(document.querySelectorAll('.rt-stop'));
   var rtBody = document.getElementById('rtBody');
-  var rtCur = 1, rtTimer;
+  var rtCur = 0, rtTimer, rtItems = [];
   var reduce = matchMedia('(prefers-reduced-motion: reduce)');
   function esc(x){ return x.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function paintStep(i){
@@ -1853,6 +1964,7 @@ textarea{min-height:104px;resize:vertical}
     if(i < 0 || i >= STEPS.length) return;
     rtCur = i;
     stops.forEach(function(g, k){ g.setAttribute('aria-pressed', k === i ? 'true' : 'false'); g.setAttribute('tabindex', k === i ? '0' : '-1'); });
+    rtItems.forEach(function(b, k){ b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
     document.getElementById('rtPrev').disabled = i === 0;
     document.getElementById('rtNext').disabled = i === STEPS.length - 1;
     if(focus) stops[i].focus({preventScroll: true});
@@ -1868,6 +1980,24 @@ textarea{min-height:104px;resize:vertical}
     rtBody.classList.add('swap');
     rtTimer = setTimeout(function(){ paintStep(i); rtBody.classList.remove('swap'); }, 140);
   }
+  // phones: the wide map becomes a vertical list of the same nine stops
+  var rtScroll = document.querySelector('.route-scroll');
+  if(stops.length && rtScroll){
+    var list = document.createElement('ol');
+    list.className = 'rt-list';
+    list.setAttribute('aria-label', 'Этапы маршрута');
+    STEPS.forEach(function(st, k){
+      var li = document.createElement('li');
+      var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
+      li.className = abroad ? 'abroad' : '';
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(st.t) + '</span>';
+      b.addEventListener('click', function(){ selectStep(k); document.getElementById('rtDetail').scrollIntoView({block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth'}); });
+      li.appendChild(b); list.appendChild(li); rtItems.push(b);
+    });
+    rtScroll.parentNode.insertBefore(list, rtScroll.nextSibling);
+  }
   if(stops.length){
     stops.forEach(function(g, k){
       g.setAttribute('role', 'button');
@@ -1881,8 +2011,8 @@ textarea{min-height:104px;resize:vertical}
     });
     document.getElementById('rtPrev').addEventListener('click', function(){ selectStep(rtCur - 1); });
     document.getElementById('rtNext').addEventListener('click', function(){ selectStep(rtCur + 1); });
-    selectStep(1);
-    paintStep(1); rtBody.classList.remove('swap');
+    selectStep(0);
+    paintStep(0); rtBody.classList.remove('swap');
   }
 
   // multi-step application form
@@ -1932,6 +2062,14 @@ textarea{min-height:104px;resize:vertical}
     go(0);
   });
 
+
+  // "второе мнение" buttons open the form with that request preselected
+  document.addEventListener('click', function(e){
+    var r = e.target.closest('[data-req]');
+    if(!r) return;
+    var radio = document.querySelector('form[data-wizard] input[name="req"][value="' + r.getAttribute('data-req') + '"]');
+    if(radio) radio.checked = true;
+  });
   window.addEventListener('hashchange', route);
   route();
 

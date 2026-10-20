@@ -12,7 +12,7 @@
   ];
   var stops = Array.prototype.slice.call(document.querySelectorAll('.rt-stop'));
   var rtBody = document.getElementById('rtBody');
-  var rtCur = 1, rtTimer;
+  var rtCur = 0, rtTimer, rtItems = [];
   var reduce = matchMedia('(prefers-reduced-motion: reduce)');
   function esc(x){ return x.replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function paintStep(i){
@@ -26,6 +26,7 @@
     if(i < 0 || i >= STEPS.length) return;
     rtCur = i;
     stops.forEach(function(g, k){ g.setAttribute('aria-pressed', k === i ? 'true' : 'false'); g.setAttribute('tabindex', k === i ? '0' : '-1'); });
+    rtItems.forEach(function(b, k){ b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
     document.getElementById('rtPrev').disabled = i === 0;
     document.getElementById('rtNext').disabled = i === STEPS.length - 1;
     if(focus) stops[i].focus({preventScroll: true});
@@ -41,6 +42,24 @@
     rtBody.classList.add('swap');
     rtTimer = setTimeout(function(){ paintStep(i); rtBody.classList.remove('swap'); }, 140);
   }
+  // phones: the wide map becomes a vertical list of the same nine stops
+  var rtScroll = document.querySelector('.route-scroll');
+  if(stops.length && rtScroll){
+    var list = document.createElement('ol');
+    list.className = 'rt-list';
+    list.setAttribute('aria-label', 'Этапы маршрута');
+    STEPS.forEach(function(st, k){
+      var li = document.createElement('li');
+      var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
+      li.className = abroad ? 'abroad' : '';
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(st.t) + '</span>';
+      b.addEventListener('click', function(){ selectStep(k); document.getElementById('rtDetail').scrollIntoView({block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth'}); });
+      li.appendChild(b); list.appendChild(li); rtItems.push(b);
+    });
+    rtScroll.parentNode.insertBefore(list, rtScroll.nextSibling);
+  }
   if(stops.length){
     stops.forEach(function(g, k){
       g.setAttribute('role', 'button');
@@ -54,8 +73,8 @@
     });
     document.getElementById('rtPrev').addEventListener('click', function(){ selectStep(rtCur - 1); });
     document.getElementById('rtNext').addEventListener('click', function(){ selectStep(rtCur + 1); });
-    selectStep(1);
-    paintStep(1); rtBody.classList.remove('swap');
+    selectStep(0);
+    paintStep(0); rtBody.classList.remove('swap');
   }
 
   // multi-step application form
@@ -105,3 +124,11 @@
     go(0);
   });
 
+
+  // "второе мнение" buttons open the form with that request preselected
+  document.addEventListener('click', function(e){
+    var r = e.target.closest('[data-req]');
+    if(!r) return;
+    var radio = document.querySelector('form[data-wizard] input[name="req"][value="' + r.getAttribute('data-req') + '"]');
+    if(radio) radio.checked = true;
+  });

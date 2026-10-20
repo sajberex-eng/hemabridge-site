@@ -3,7 +3,7 @@
       <h1><span class="l">Один пациент. Один маршрут.</span> <span class="l">Команда врачей в двух странах.</span></h1>
       <div class="actions">
         <a class="btn btn-primary" href="#apply">Получить врачебную оценку <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#apply">Получить второе мнение</a>
+        <a class="btn btn-ghost" href="#apply" data-req="second">Получить второе мнение</a>
         <a class="btn btn-ghost" href="#partners">Стать партнёром</a>
       </div>
     </div>
@@ -31,8 +31,7 @@
           <h2>Ваш маршрут</h2>
           <p>Нажмите на этап, чтобы узнать, что на нём происходит</p>
         </div>
-        <p class="route-hint">Схему можно прокрутить вбок →</p>
-        <div class="route-scroll">
+                <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
             <desc id="rt-desc">Маршрут начинается и заканчивается в Казахстане. После врачебной оценки возможно лечение в Казахстане без поездки. Зарубежный этап включает согласование врач–врач, организацию и лечение, затем передачу случая и наблюдение дома.</desc>
@@ -71,11 +70,11 @@
           </svg>
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
-          <div class="big" id="rtNum">2</div>
+          <div class="big"><span id="rtNum">1</span><span class="of">/9</span></div>
           <div class="rt-body" id="rtBody">
-            <h3 id="rtTitle">Врачебная оценка <span class="place">Казахстан</span></h3>
-            <p id="rtText">Гематолог изучает случай и формулирует клинический вопрос: что нужно пациенту и где это может быть сделано.</p>
-            <p class="who" id="rtWho">Ответственный: врачебное ядро</p>
+            <h3 id="rtTitle">Обращение и документы <span class="place">Казахстан</span></h3>
+            <p id="rtText">Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p>
+            <p class="who" id="rtWho">Ответственный: координатор документооборота</p>
           </div>
           <div class="rt-pager">
             <button type="button" id="rtPrev" aria-label="Предыдущий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
