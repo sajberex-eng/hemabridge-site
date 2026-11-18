@@ -750,3 +750,11 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 [data-page="physicians"] .ticks li::after{top:16px}
 [data-page="physicians"] .cols-2{gap:32px}
 @media (max-width:640px){[data-page="physicians"] .section{padding:44px 0}[data-page="physicians"] .page-head{padding:32px 0 28px}}
+/* follow-up plans (cost page) */
+#followup{border-top:1px solid var(--line)}
+#followup .split{align-items:start}
+.fu-when{display:block;margin-top:4px;font-family:var(--font);font-size:.82rem;font-weight:400;color:var(--muted)}
+#followup td{color:var(--ink);line-height:1.6}
+.fu-algo{counter-reset:fu;margin:0;padding:0;list-style:none}
+.fu-algo li{counter-increment:fu;position:relative;padding:0 0 14px 40px}
+.fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
