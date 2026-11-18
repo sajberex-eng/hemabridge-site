@@ -728,3 +728,9 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   .stage-meta{grid-template-columns:1fr;gap:2px}
   .stage-meta dd{margin-bottom:8px}
 }
+/* five-step route: programme services vs clinic's responsibility */
+.place.ours{background:var(--accent-wash);color:var(--accent-ink)}
+.stage.ext{background:transparent;border-style:dashed}
+.stage.ext::before{background:var(--sunk);color:var(--muted)}
+.rt-stop.ext .disc{stroke-dasharray:4 4}
+.stage > details:first-of-type{margin-top:12px}

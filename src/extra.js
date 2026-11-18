@@ -9,11 +9,12 @@
     var s = STEPS[i];
     document.getElementById('rtNum').textContent = i + 1;
     document.getElementById('rtTitle').textContent = tr(s.t);
-    document.getElementById('rtTags').innerHTML = s.p.map(function(p){ return '<span class="place' + (p === 'Партнёрский центр' ? ' abroad' : '') + '">' + esc(tr(p)) + '</span>'; }).join(' ');
+    document.getElementById('rtTags').innerHTML = s.p.map(function(p){ return '<span class="place' + (p === 'Услуга HemaBridge' ? ' ours' : '') + '">' + esc(tr(p)) + '</span>'; }).join(' ');
     document.getElementById('rtText').textContent = tr(s.d);
-    document.getElementById('rtWho').textContent = tr('Вы получаете') + ': ' + tr(s.g);
+    document.getElementById('rtWho').textContent = s.g ? tr('Вы получаете') + ': ' + tr(s.g) : (s.n ? tr(s.n) : '');
+    document.getElementById('rtOf').textContent = '/' + STEPS.length;
     var more = document.getElementById('rtMore');
-    more.textContent = tr('Подробнее об этапе');
+    more.textContent = tr('Подробнее о шаге');
     more.setAttribute('href', '#stage-' + (i + 1));
   }
   function selectStep(i, focus){
@@ -41,7 +42,7 @@
   if(stops.length && rtScroll){
     var list = document.createElement('ol');
     list.className = 'rt-list';
-    list.setAttribute('aria-label', tr('Этапы маршрута'));
+    list.setAttribute('aria-label', tr('Шаги маршрута'));
     list.setAttribute('data-i18n-skip', '');
     STEPS.forEach(function(st, k){
       var li = document.createElement('li');
@@ -49,14 +50,14 @@
       li.className = abroad ? 'abroad' : '';
       var b = document.createElement('button');
       b.type = 'button';
-      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + (k + 1) + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(tr(st.t)) + '</span>';
+      b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i' + st.i + '"/></svg><span class="n">' + (k + 1) + '</span><span class="t">' + esc(tr(st.t)) + '</span>';
       b.addEventListener('click', function(){ selectStep(k); document.getElementById('rtDetail').scrollIntoView({block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth'}); });
       li.appendChild(b); list.appendChild(li); rtItems.push(b);
     });
     rtScroll.parentNode.insertBefore(list, rtScroll.nextSibling);
   }
   function labelStops(){
-    stops.forEach(function(g, k){ g.setAttribute('aria-label', tr('Этап') + ' ' + (k + 1) + ': ' + tr(STEPS[k].t)); });
+    stops.forEach(function(g, k){ g.setAttribute('aria-label', tr('Шаг') + ' ' + (k + 1) + ': ' + tr(STEPS[k].t)); });
   }
   var FORM_MSG = {
     step: 'Заполните обязательные поля на этом шаге. Первое незаполненное поле выделено.',
@@ -64,12 +65,12 @@
     done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
   };
   // every Russian string used by this script, so the translation tool can list them
-  window.__i18nDyn = ['Вы получаете', 'Подробнее об этапе', 'Этап', 'Этапы маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
-    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g], x.p); }, []));
+  window.__i18nDyn = ['Вы получаете', 'Подробнее о шаге', 'Шаг', 'Шаги маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g || '', x.n || ''], x.p); }, []));
   refreshDynamic = function(){
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
-    var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Этапы маршрута'));
+    var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Шаги маршрута'));
     Array.prototype.forEach.call(document.querySelectorAll('form[data-wizard]'), function(f){ if(f._refreshCount) f._refreshCount(); });
     if(stops.length) paintStep(rtCur);
   };

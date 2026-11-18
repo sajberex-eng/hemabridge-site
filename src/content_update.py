@@ -6,21 +6,21 @@ import json as _json, html as _html, os as _os
 def _e(x): return _html.escape(x, quote=True)
 _R = _json.load(open(B + 'route.json', encoding='utf-8'))
 _C = _json.load(open(B + 'contacts.json', encoding='utf-8'))
-_T = _R['first_tranche']
+_T = _R['service']
 
-# ---------- 1. Route page: nine stages ----------
+# ---------- 1. Route page: five steps ----------
 def _ul(items): return '<ul class="plain">' + ''.join('<li>%s</li>' % _e(i) for i in items) + '</ul>'
-def _tags(st): return ''.join('<span class="place%s">%s</span>' % (' abroad' if t == 'Партнёрский центр' else '', _e(t)) for t in st['tags'])
+def _tags(st): return ''.join('<span class="place%s">%s</span>' % (' ours' if t == 'Услуга HemaBridge' else '', _e(t)) for t in st['tags'])
 _cards = ''
 for _i, _st in enumerate(_R['stages'], 1):
-    _meta = '<dt>Где</dt><dd>%s</dd><dt>Оплата</dt><dd>%s</dd>' % (_e(_st['where']), _e(_st['pay']))
-    if _st.get('term'): _meta += '<dt>Срок</dt><dd>%s</dd>' % _e(_st['term'])
-    _meta += '<dt>Кто отвечает</dt><dd>%s</dd>' % _e(_st['who'])
-    _cards += '''        <li class="stage" id="stage-%d">
-          <h3>%s</h3>
-          <p class="rt-tags">%s</p>
-          <p>%s</p>
-          <p class="gets"><strong>Вы получаете:</strong> %s</p>
+    _body = '<p>%s</p>' % _e(_st['text'])
+    if _st.get('gets'): _body += '\n          <p class="gets"><strong>Вы получаете:</strong> %s</p>' % _e(_st['gets'])
+    if _st.get('note'): _body += '\n          <p class="gets">%s</p>' % _e(_st['note'])
+    if _st.get('happens'):
+        _meta = '<dt>Где</dt><dd>%s</dd><dt>Оплата</dt><dd>%s</dd>' % (_e(_st['where']), _e(_st['pay']))
+        if _st.get('term'): _meta += '<dt>Срок</dt><dd>%s</dd>' % _e(_st['term'])
+        _meta += '<dt>Кто отвечает</dt><dd>%s</dd>' % _e(_st['who'])
+        _body += """
           <details>
             <summary>Подробнее</summary>
             <dl class="stage-meta">%s</dl>
@@ -30,39 +30,42 @@ for _i, _st in enumerate(_R['stages'], 1):
               <div><h4>Что делаем мы</h4>%s</div>
               <div><h4>Что вы получаете</h4>%s</div>
             </div>
-          </details>
+          </details>""" % (_meta, _ul(_st['happens']), _ul(_st['you']), _ul(_st['we']), _ul(_st['get']))
+    _cards += """        <li class="stage%s" id="stage-%d">
+          <h3>%s</h3>
+          <p class="rt-tags">%s</p>
+          %s
         </li>
-''' % (_i, _e(_st['title']), _tags(_st), _e(_st['text']), _e(_st['gets']), _meta,
-       _ul(_st['happens']), _ul(_st['you']), _ul(_st['we']), _ul(_st['get']))
+""" % ('' if _st['ours'] else ' ext', _i, _e(_st['title']), _tags(_st), _body)
 
-_route = '''  <section class="section">
+_route = """  <section class="section">
     <div class="wrap">
       <div class="split">
         <div>
-          <h2>Девять этапов</h2>
-          <p>Маршрут может завершиться на любом этапе. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.</p>
+          <h2>Пять шагов</h2>
+          <p>Маршрут может завершиться на любом шаге. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.</p>
           <a class="btn btn-primary" href="#apply">Оставить заявку</a>
         </div>
         <div>
-          <p>Первые два этапа бесплатные: вы отправляете документы и знакомитесь с программой. Медицинская работа начинается на третьем этапе, после вашего согласия и оплаты первого транша. Дальнейшие шаги оплачиваются только тогда, когда вы выбрали конкретный вариант лечения.</p>
-          <p>Вы можете отказаться после «Знакомства с программой» или после получения предложения, и это нормально.</p>
-          <div class="note"><p><strong>Первый транш — %s.</strong> Это услуга «%s». В неё входят этапы 3–5: подготовка случая, консилиумы с центрами, предложение и план.</p></div>
+          <p>Услуги программы — это первый, второй и пятый шаги: консультация врача, международные консилиумы с отчётом и наблюдение после возвращения.</p>
+          <p>Договор на лечение вы заключаете напрямую с зарубежной клиникой. Лечение, его оплата и организация поездки — зона ответственности клиники.</p>
+          <div class="note"><p><strong>Консилиумы и отбор клиник — %s.</strong> Полное название услуги: «%s». Оплачивается после принятия договора-оферты. Консультация до этого бесплатна.</p></div>
         </div>
       </div>
       <ol class="stages">
 %s      </ol>
     </div>
   </section>
-''' % (_e(_T['price']), _e(_T['name']), _cards)
+""" % (_e(_T['price']), _e(_T['name']), _cards)
 _a = s.index('  <section class="section">\n    <div class="wrap split">\n      <div>\n        <h2>Девять этапов</h2>')
 _b = s.rindex('  <section class="section">', 0, s.index('<h2>Психологическое сопровождение</h2>'))
 s = s[:_a] + _route + s[_b:]
 s = rep(s, '<p class="lead">Каждый этап имеет ответственного. Медицинские решения принимает врачебное ядро, организационные — операционная команда.</p>',
-        '<p class="lead">Девять этапов: от заявки до наблюдения дома. Первые два этапа бесплатны, решение о продолжении всегда за вами.</p>')
+        '<p class="lead">Пять шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.</p>')
 
-# ---------- 2. Cost page: the first tranche is priced ----------
+# ---------- 2. Cost page: programme services ----------
 s = rep(s, '<h2>Стоимость сопровождения</h2><p>Условия публикуются после утверждения финансовой модели центром.</p><span class="pending">На утверждении</span>',
-        '<h2>Стоимость сопровождения</h2><p><strong>Первый транш — %s.</strong> Услуга «%s»: подготовка случая, консилиумы с центрами, предложение и план.</p><p>Стоимость следующих этапов зависит от выбранного варианта и указывается в документе «Предложение и план».</p><p><a href="#route">Что входит в каждый этап</a></p>' % (_e(_T['price']), _e(_T['name'])))
+        '<h2>Услуги программы</h2><p><strong>Консультация врача — бесплатно.</strong></p><p><strong>Консилиумы и отбор клиник — %s.</strong> Услуга «%s»: поиск клиник, консилиумы, перевод документов при необходимости и отчёт.</p><p><strong>Диспансерное наблюдение после возвращения</strong> — стоимость рассчитывается.</p><p><a href="#route">Что входит в каждый шаг</a></p>' % (_e(_T['price']), _e(_T['name'])))
 
 # ---------- 3. Contacts: separate slots for patients and partners ----------
 def _tel(v): return '<a href="tel:%s">%s</a>' % (_e(''.join(c for c in v if c.isdigit() or c == '+')), _e(v))
@@ -132,7 +135,7 @@ s = s[:_p] + _blk + s[_pe:]
 
 # ---------- 5. Legal page: the public offer ----------
 s = rep(s, '<li><strong>Договор с пациентом (оферта)</strong><span class="pending">На юридической экспертизе</span></li>',
-        '<li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту и оплатили первый транш. Ссылку на оферту вы получаете после «Знакомства с программой», до любой оплаты.<br><span class="pending">Текст оферты готовится к публикации</span></li>')
+        '<li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту и оплатили услугу. С офертой вы знакомитесь после консультации врача, до любой оплаты.<br><span class="pending">Текст оферты готовится к публикации</span></li>')
 
 # ---------- 6. Clinics page: candidate centres with sources ----------
 _K = _json.load(open(B + 'clinics.json', encoding='utf-8'))
