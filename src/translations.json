@@ -2410,5 +2410,1017 @@
  "Шаг 3 из 3": {
   "en": "Step 3 of 3",
   "kk": "3-қадам (барлығы 3)"
+ },
+ "Маршрут из девяти этапов начинается и заканчивается в Казахстане. Этапы с первого по шестой проходят дома и онлайн. После этапа «Предложение» возможно лечение в Казахстане без поездки. В партнёрском центре проходит только лечение, затем передача случая и наблюдение дома.": {
+  "en": "The nine-step route starts and ends in Kazakhstan. Steps one to six take place at home and online. After the “Proposal” step, treatment in Kazakhstan without travel is possible. Only the treatment itself takes place at the partner center, followed by handover of the case and follow-up at home.",
+  "kk": "Тоғыз кезеңнен тұратын маршрут Қазақстанда басталып, Қазақстанда аяқталады. Біріншіден алтыншыға дейінгі кезеңдер үйде және онлайн өтеді. «Ұсыныс» кезеңінен кейін сапарсыз Қазақстанда емделу мүмкін. Серіктес орталықта тек ем жүргізіледі, содан кейін жағдай қайта беріліп, үйде бақылау жалғасады."
+ },
+ "Заявка": {
+  "en": "Request",
+  "kk": "Өтінім"
+ },
+ "Знакомство": {
+  "en": "Intro",
+  "kk": "Танысу"
+ },
+ "Консилиумы": {
+  "en": "Conferences",
+  "kk": "Консилиум"
+ },
+ "Предложение": {
+  "en": "Proposal",
+  "kk": "Ұсыныс"
+ },
+ "Маршрут может завершиться на любом этапе. Первые два этапа бесплатны, решение о продолжении всегда за вами.": {
+  "en": "The route can end at any step. The first two steps are free, and the decision to continue is always yours.",
+  "kk": "Маршрут кез келген кезеңде аяқталуы мүмкін. Алғашқы екі кезең тегін, ал жалғастыру туралы шешімді әрқашан Сіз қабылдайсыз."
+ },
+ "Девять этапов: от заявки до наблюдения дома. Первые два этапа бесплатны, решение о продолжении всегда за вами.": {
+  "en": "Nine steps: from your request to follow-up at home. The first two steps are free, and the decision to continue is always yours.",
+  "kk": "Тоғыз кезең: өтінімнен үйдегі бақылауға дейін. Алғашқы екі кезең тегін, ал жалғастыру туралы шешімді әрқашан Сіз қабылдайсыз."
+ },
+ "Маршрут может завершиться на любом этапе. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.": {
+  "en": "The route can end at any step. If the case conferences show that treatment is possible in Kazakhstan, there is no need to travel.",
+  "kk": "Маршрут кез келген кезеңде аяқталуы мүмкін. Егер консилиумдар емнің Қазақстанда мүмкін екенін көрсетсе, сапардың қажеті жоқ."
+ },
+ "Оставить заявку": {
+  "en": "Submit a request",
+  "kk": "Өтінім қалдыру"
+ },
+ "Первые два этапа бесплатные: вы отправляете документы и знакомитесь с программой. Медицинская работа начинается на третьем этапе, после вашего согласия и оплаты первого транша. Дальнейшие шаги оплачиваются только тогда, когда вы выбрали конкретный вариант лечения.": {
+  "en": "The first two steps are free: you send your documents and get introduced to the program. Medical work begins at step three, after you agree and pay the first installment. Further steps are paid only once you have chosen a specific treatment option.",
+  "kk": "Алғашқы екі кезең тегін: Сіз құжаттарыңызды жібересіз және бағдарламамен танысасыз. Медициналық жұмыс үшінші кезеңде, Сіздің келісіміңізден және бірінші транш төленгеннен кейін басталады. Келесі қадамдар Сіз нақты емдеу нұсқасын таңдағанда ғана төленеді."
+ },
+ "Вы можете отказаться после «Знакомства с программой» или после получения предложения, и это нормально.": {
+  "en": "You can decline after the “Introduction to the program” or after receiving the proposal, and that is perfectly fine.",
+  "kk": "Сіз «Бағдарламамен танысу» кезеңінен кейін немесе ұсынысты алғаннан кейін бас тарта аласыз, бұл қалыпты жағдай."
+ },
+ "Первый транш — 50 000 тенге.": {
+  "en": "The first installment is 50,000 KZT.",
+  "kk": "Бірінші транш — 50 000 теңге."
+ },
+ "Это услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ». В неё входят этапы 3–5: подготовка случая, консилиумы с центрами, предложение и план.": {
+  "en": "This is the service “International case conferences and selection of clinics for possible CAR-T therapy/BMT”. It covers steps 3–5: case preparation, case conferences with the centers, and the proposal and plan.",
+  "kk": "Бұл — «Халықаралық консилиумдар өткізу және CAR-T терапиясы/СКТ мүмкіндігі бойынша клиникаларды іріктеу» қызметі. Оған 3–5 кезеңдер кіреді: жағдайды дайындау, орталықтармен консилиумдар, ұсыныс және жоспар."
+ },
+ "Заявка и документы": {
+  "en": "Request and documents",
+  "kk": "Өтінім және құжаттар"
+ },
+ "Онлайн": {
+  "en": "Online",
+  "kk": "Онлайн"
+ },
+ "Бесплатно": {
+  "en": "Free",
+  "kk": "Тегін"
+ },
+ "Заполните короткую форму и приложите документы, которые у вас есть. Если чего-то не хватает, мы подскажем.": {
+  "en": "Fill in a short form and attach the documents you have. If anything is missing, we will let you know.",
+  "kk": "Қысқа нысанды толтырып, қолыңыздағы құжаттарды тіркеңіз. Бірдеңе жетіспесе, біз айтамыз."
+ },
+ "Вы получаете:": {
+  "en": "You receive:",
+  "kk": "Сіз аласыз:"
+ },
+ "подтверждение в WhatsApp с номером обращения.": {
+  "en": "a WhatsApp confirmation with your case number.",
+  "kk": "өтініш нөмірі көрсетілген WhatsApp арқылы растау."
+ },
+ "Подробнее": {
+  "en": "Learn more",
+  "kk": "Толығырақ"
+ },
+ "Где": {
+  "en": "Where",
+  "kk": "Қайда"
+ },
+ "Онлайн, на сайте": {
+  "en": "Online, on the website",
+  "kk": "Онлайн, сайтта"
+ },
+ "Оплата": {
+  "en": "Payment",
+  "kk": "Төлем"
+ },
+ "Администратор": {
+  "en": "Administrator",
+  "kk": "Әкімші"
+ },
+ "Что происходит": {
+  "en": "What happens",
+  "kk": "Не болады"
+ },
+ "Вы заполняете короткую форму: как к вам обращаться, номер телефона с WhatsApp и в двух-трёх предложениях, с чем вы обращаетесь.": {
+  "en": "You fill in a short form: how we should address you, a phone number with WhatsApp, and two or three sentences about why you are contacting us.",
+  "kk": "Сіз қысқа нысанды толтырасыз: Сізге қалай жүгінуге болатынын, WhatsApp бар телефон нөмірін және не себепті хабарласып отырғаныңызды екі-үш сөйлеммен жазасыз."
+ },
+ "К заявке вы прикладываете документы, которые есть на руках. Если чего-то нет, это не повод откладывать обращение: недостающее мы подскажем позже.": {
+  "en": "You attach the documents you have on hand to your request. If something is missing, that is no reason to delay contacting us: we will tell you later what else is needed.",
+  "kk": "Өтінімге қолыңыздағы құжаттарды тіркейсіз. Бірдеңе болмаса, бұл хабарласуды кейінге қалдыруға себеп емес: жетіспейтінін кейінірек айтамыз."
+ },
+ "Перед отправкой вы знакомитесь с пользовательским соглашением и согласием на обработку персональных данных и отмечаете галочку.": {
+  "en": "Before sending, you read the user agreement and the consent to personal data processing and tick the box.",
+  "kk": "Жіберер алдында Сіз пайдаланушы келісімімен және дербес деректерді өңдеуге келісіммен танысып, белгі қоясыз."
+ },
+ "Что делаете вы": {
+  "en": "What you do",
+  "kk": "Сіз не істейсіз"
+ },
+ "Заполнить форму. Обратиться может сам пациент или родственник с согласия пациента.": {
+  "en": "Fill in the form. The patient or a relative, with the patient's consent, can contact us.",
+  "kk": "Нысанды толтыру. Науқастың өзі немесе науқастың келісімімен туысы хабарласа алады."
+ },
+ "Приложить документы: выписки из стационара, заключения гематолога, результаты анализов крови и костного мозга, гистологии и иммуногистохимии, молекулярных и цитогенетических исследований, описания КТ, ПЭТ-КТ и МРТ, сведения о проведённом лечении.": {
+  "en": "Attach documents: hospital discharge summaries, hematologist's reports, blood and bone marrow test results, histology and immunohistochemistry, molecular and cytogenetic tests, CT, PET-CT and MRI reports, and information about treatment received.",
+  "kk": "Құжаттарды тіркеу: стационардан шығару эпикриздері, гематолог қорытындылары, қан және сүйек кемігі талдауларының нәтижелері, гистология және иммуногистохимия, молекулалық және цитогенетикалық зерттеулер, КТ, ПЭТ-КТ және МРТ сипаттамалары, жүргізілген ем туралы мәліметтер."
+ },
+ "Проверить, что номер телефона указан верно и на нём есть WhatsApp.": {
+  "en": "Check that your phone number is correct and has WhatsApp.",
+  "kk": "Телефон нөмірінің дұрыс көрсетілгенін және онда WhatsApp бар екенін тексеру."
+ },
+ "Что делаем мы": {
+  "en": "What we do",
+  "kk": "Біз не істейміз"
+ },
+ "Принимаем заявку и документы, регистрируем обращение под номером.": {
+  "en": "We accept your request and documents and register your case under a number.",
+  "kk": "Өтінім мен құжаттарды қабылдап, өтінішті нөмірмен тіркейміз."
+ },
+ "Администратор проверяет, что документы открываются и читаются, и при необходимости уточняет детали в WhatsApp.": {
+  "en": "The administrator checks that the documents open and are readable and, if needed, clarifies details on WhatsApp.",
+  "kk": "Әкімші құжаттардың ашылатынын және оқылатынын тексереді, қажет болса, мәліметтерді WhatsApp арқылы нақтылайды."
+ },
+ "Медицинский куратор получает ваши документы для просмотра перед первым созвоном.": {
+  "en": "The medical curator receives your documents to review before the first call.",
+  "kk": "Медициналық куратор алғашқы қоңырау алдында қарап шығу үшін құжаттарыңызды алады."
+ },
+ "Что вы получаете": {
+  "en": "What you receive",
+  "kk": "Сіз не аласыз"
+ },
+ "Сообщение в WhatsApp о том, что документы получены, с номером обращения.": {
+  "en": "A WhatsApp message confirming that your documents have been received, with your case number.",
+  "kk": "Құжаттардың алынғаны туралы өтініш нөмірі көрсетілген WhatsApp хабарламасы."
+ },
+ "Сообщение от администратора: он предложит время для «Знакомства с программой».": {
+  "en": "A message from the administrator offering a time for the “Introduction to the program”.",
+  "kk": "Әкімшіден хабарлама: ол «Бағдарламамен танысу» үшін уақыт ұсынады."
+ },
+ "Знакомство с программой": {
+  "en": "Introduction to the program",
+  "kk": "Бағдарламамен танысу"
+ },
+ "15 минут": {
+  "en": "15 minutes",
+  "kk": "15 минут"
+ },
+ "Короткий видеозвонок: объясняем, как работает программа и чем она может помочь вам. Это не медицинская консультация.": {
+  "en": "A short video call: we explain how the program works and how it can help you. This is not a medical consultation.",
+  "kk": "Қысқа бейнеқоңырау: бағдарламаның қалай жұмыс істейтінін және оның Сізге қалай көмектесе алатынын түсіндіреміз. Бұл медициналық кеңес емес."
+ },
+ "предложение в WhatsApp со стоимостью и сроками следующего этапа.": {
+  "en": "a WhatsApp proposal with the cost and timing of the next step.",
+  "kk": "келесі кезеңнің құны мен мерзімдері көрсетілген WhatsApp арқылы ұсыныс."
+ },
+ "Онлайн, видеозвонок": {
+  "en": "Online, video call",
+  "kk": "Онлайн, бейнеқоңырау"
+ },
+ "Медицинский куратор (врач) и администратор": {
+  "en": "Medical curator (a physician) and administrator",
+  "kk": "Медициналық куратор (дәрігер) және әкімші"
+ },
+ "Медицинский куратор заранее просматривает ваши документы, поэтому разговор идёт предметно.": {
+  "en": "The medical curator reviews your documents in advance, so the conversation is focused on your case.",
+  "kk": "Медициналық куратор құжаттарыңызды алдын ала қарап шығады, сондықтан әңгіме нақты болады."
+ },
+ "Мы рассказываем, как устроен маршрут, какие этапы возможны в вашей ситуации, кто за что отвечает, сколько это занимает времени и сколько стоит следующий этап.": {
+  "en": "We explain how the route works, which steps are possible in your situation, who is responsible for what, how long it takes and how much the next step costs.",
+  "kk": "Біз маршруттың қалай құрылғанын, Сіздің жағдайыңызда қандай кезеңдер мүмкін екенін, кім неге жауап беретінін, бұл қанша уақыт алатынын және келесі кезеңнің қанша тұратынын айтамыз."
+ },
+ "Вы задаёте вопросы. К звонку можно подключить близкого человека.": {
+  "en": "You ask questions. A close family member or friend can join the call.",
+  "kk": "Сіз сұрақтар қоясыз. Қоңырауға жақын адамыңызды қосуға болады."
+ },
+ "На этом звонке мы не ставим диагноз и не назначаем лечение. Медицинскую позицию формируют консилиумы на следующих этапах.": {
+  "en": "On this call we do not make a diagnosis or prescribe treatment. The medical position is formed by the case conferences at the following steps.",
+  "kk": "Бұл қоңырауда біз диагноз қоймаймыз және ем тағайындамаймыз. Медициналық ұстанымды келесі кезеңдердегі консилиумдар қалыптастырады."
+ },
+ "Выбрать удобное время звонка.": {
+  "en": "Choose a convenient time for the call.",
+  "kk": "Қоңырау үшін ыңғайлы уақытты таңдау."
+ },
+ "Подготовить вопросы, которые для вас важны.": {
+  "en": "Prepare the questions that matter to you.",
+  "kk": "Өзіңіз үшін маңызды сұрақтарды дайындау."
+ },
+ "После звонка спокойно принять решение, продолжать ли маршрут.": {
+  "en": "After the call, calmly decide whether to continue the route.",
+  "kk": "Қоңыраудан кейін маршрутты жалғастыру-жалғастырмау туралы асықпай шешім қабылдау."
+ },
+ "Объясняем порядок работы, роли команды и условия.": {
+  "en": "We explain how we work, the team's roles and the terms.",
+  "kk": "Жұмыс тәртібін, команданың рөлдерін және шарттарды түсіндіреміз."
+ },
+ "Определяем, какие консилиумы и с какими по профилю центрами имеет смысл провести.": {
+  "en": "We determine which case conferences make sense and with centers of which specialty.",
+  "kk": "Қандай консилиумдарды және қандай бейіндегі орталықтармен өткізудің мәні бар екенін анықтаймыз."
+ },
+ "Отправляем вам письменное предложение.": {
+  "en": "We send you a written proposal.",
+  "kk": "Сізге жазбаша ұсыныс жібереміз."
+ },
+ "Короткое предложение в WhatsApp: какие консилиумы планируются и с каким профилем центров (без названий клиник на этом этапе), стоимость первого этапа работы, сроки и ссылка на оферту.": {
+  "en": "A short proposal on WhatsApp: which case conferences are planned and with what type of centers (no clinic names at this step), the cost of the first stage of work, the timing and a link to the offer.",
+  "kk": "WhatsApp арқылы қысқа ұсыныс: қандай консилиумдар және қандай бейіндегі орталықтармен жоспарланып отыр (бұл кезеңде клиника атауларынсыз), жұмыстың бірінші кезеңінің құны, мерзімдері және офертаға сілтеме."
+ },
+ "Время подумать. Отказ на этом этапе — нормальный исход, и он ничего вам не стоит.": {
+  "en": "Time to think. Declining at this step is a normal outcome, and it costs you nothing.",
+  "kk": "Ойлануға уақыт. Бұл кезеңде бас тарту — қалыпты нәтиже, және ол Сізге ешқандай шығын әкелмейді."
+ },
+ "Подготовка случая": {
+  "en": "Case preparation",
+  "kk": "Жағдайды дайындау"
+ },
+ "Первый транш": {
+  "en": "First installment",
+  "kk": "Бірінші транш"
+ },
+ "Готовим ваш случай к обсуждению с зарубежными врачами. Недостающие исследования делаются дома, до любой поездки.": {
+  "en": "We prepare your case for discussion with doctors abroad. Any missing tests are done at home, before any travel.",
+  "kk": "Жағдайыңызды шетелдік дәрігерлермен талқылауға дайындаймыз. Жетіспейтін зерттеулер кез келген сапарға дейін үйде жасалады."
+ },
+ "медицинское резюме и, если нужно, список недостающих исследований.": {
+  "en": "a medical summary and, if needed, a list of missing tests.",
+  "kk": "медициналық түйіндеме және қажет болса, жетіспейтін зерттеулер тізімі."
+ },
+ "Входит в первый транш. Дополнительные анализы, если они нужны, оплачиваются отдельно": {
+  "en": "Included in the first installment. Additional tests, if needed, are paid separately",
+  "kk": "Бірінші траншқа кіреді. Қажет болса, қосымша талдаулар бөлек төленеді"
+ },
+ "Медицинский куратор, гематологи программы": {
+  "en": "Medical curator, the program's hematologists",
+  "kk": "Медициналық куратор, бағдарлама гематологтары"
+ },
+ "Вы принимаете оферту и оплачиваете первый транш. С этого момента начинается платная медицинская часть работы.": {
+  "en": "You accept the offer and pay the first installment. From this point the paid medical part of the work begins.",
+  "kk": "Сіз офертаны қабылдап, бірінші траншты төлейсіз. Осы сәттен бастап жұмыстың ақылы медициналық бөлігі басталады."
+ },
+ "Медицинский куратор формулирует клинический вопрос: что именно нужно решить и какие варианты стоит рассмотреть.": {
+  "en": "The medical curator formulates the clinical question: what exactly needs to be decided and which options are worth considering.",
+  "kk": "Медициналық куратор клиникалық сұрақты тұжырымдайды: нақты не шешілуі керек және қандай нұсқаларды қарастырған жөн."
+ },
+ "Составляется структурированное медицинское резюме в едином формате, понятном зарубежным врачам.": {
+  "en": "A structured medical summary is prepared in a standard format that doctors abroad understand.",
+  "kk": "Шетелдік дәрігерлерге түсінікті бірыңғай форматта құрылымдалған медициналық түйіндеме жасалады."
+ },
+ "Если для решения не хватает данных, мы говорим, какие исследования нужны и где их сделать в Казахстане. Например, это может быть пересмотр гистологических препаратов, молекулярно-генетические или цитогенетические исследования, HLA-типирование, КТ или ПЭТ-КТ.": {
+  "en": "If there is not enough data to decide, we tell you which tests are needed and where to have them done in Kazakhstan. For example, this may be a review of histology slides, molecular genetic or cytogenetic tests, HLA typing, CT or PET-CT.",
+  "kk": "Шешім қабылдауға деректер жетіспесе, қандай зерттеулер қажет екенін және оларды Қазақстанда қайда жасауға болатынын айтамыз. Мысалы, бұл гистологиялық препараттарды қайта қарау, молекулалық-генетикалық немесе цитогенетикалық зерттеулер, HLA-типтеу, КТ немесе ПЭТ-КТ болуы мүмкін."
+ },
+ "Документы переводятся на английский или на язык центра.": {
+  "en": "Documents are translated into English or the center's language.",
+  "kk": "Құжаттар ағылшын тіліне немесе орталықтың тіліне аударылады."
+ },
+ "Принять оферту и оплатить первый транш.": {
+  "en": "Accept the offer and pay the first installment.",
+  "kk": "Офертаны қабылдап, бірінші траншты төлеу."
+ },
+ "При необходимости сдать дополнительные анализы и прислать результаты.": {
+  "en": "If needed, take additional tests and send the results.",
+  "kk": "Қажет болса, қосымша талдаулар тапсырып, нәтижелерін жіберу."
+ },
+ "Ответить на уточняющие вопросы куратора.": {
+  "en": "Answer the curator's follow-up questions.",
+  "kk": "Куратордың нақтылау сұрақтарына жауап беру."
+ },
+ "Готовим медицинское резюме и полный переведённый пакет документов.": {
+  "en": "We prepare the medical summary and a complete translated document package.",
+  "kk": "Медициналық түйіндемені және аударылған құжаттардың толық топтамасын дайындаймыз."
+ },
+ "Подсказываем, где и как сделать недостающие исследования.": {
+  "en": "We advise where and how to do the missing tests.",
+  "kk": "Жетіспейтін зерттеулерді қайда және қалай жасауға болатынын айтамыз."
+ },
+ "Понятный список недостающих исследований, если они нужны.": {
+  "en": "A clear list of missing tests, if any are needed.",
+  "kk": "Қажет болса, жетіспейтін зерттеулердің түсінікті тізімі."
+ },
+ "Готовый к обсуждению случай, оформленный так, чтобы центры могли ответить предметно.": {
+  "en": "A case ready for discussion, presented so that the centers can give a specific answer.",
+  "kk": "Орталықтар нақты жауап бере алатындай етіп рәсімделген, талқылауға дайын жағдай."
+ },
+ "Консилиумы с центрами": {
+  "en": "Case conferences with the centers",
+  "kk": "Орталықтармен консилиумдар"
+ },
+ "Дистанционно": {
+  "en": "Remotely",
+  "kk": "Қашықтан"
+ },
+ "Медицинский куратор обсуждает ваш случай с врачами нескольких профильных центров. Это и есть медицинская консультация.": {
+  "en": "The medical curator discusses your case with doctors from several specialized centers. This is the medical consultation itself.",
+  "kk": "Медициналық куратор жағдайыңызды бірнеше бейінді орталықтың дәрігерлерімен талқылайды. Медициналық кеңес дәл осы."
+ },
+ "ответы центров: метод, план, сроки и предварительная смета.": {
+  "en": "the centers' responses: method, plan, timing and a preliminary cost estimate.",
+  "kk": "орталықтардың жауаптары: әдіс, жоспар, мерзімдер және алдын ала смета."
+ },
+ "Дистанционно: Казахстан и партнёрские центры": {
+  "en": "Remotely: Kazakhstan and partner centers",
+  "kk": "Қашықтан: Қазақстан және серіктес орталықтар"
+ },
+ "Входит в первый транш": {
+  "en": "Included in the first installment",
+  "kk": "Бірінші траншқа кіреді"
+ },
+ "Мы выбираем несколько центров под вашу клиническую задачу. Центр выбирается по внутренней матрице отбора: аккредитация, опыт и объёмы по нужному методу, прозрачность результатов, готовность к общению врач–врач. Коммерческие условия не являются критерием выбора.": {
+  "en": "We choose several centers for your clinical question. Each center is selected using an internal selection matrix: accreditation, experience and volume in the required method, transparency of results, and willingness to communicate doctor to doctor. Commercial terms are not a selection criterion.",
+  "kk": "Сіздің клиникалық міндетіңізге сай бірнеше орталықты таңдаймыз. Орталық ішкі іріктеу матрицасы бойынша таңдалады: аккредиттеу, қажетті әдіс бойынша тәжірибе мен көлем, нәтижелердің ашықтығы, дәрігер–дәрігер форматында қарым-қатынасқа дайындық. Коммерциялық шарттар таңдау өлшемі болып табылмайды."
+ },
+ "Консилиумы проходят в формате врач–врач: ваш случай обсуждают специалисты, а не менеджеры.": {
+  "en": "Case conferences are held doctor to doctor: your case is discussed by specialists, not managers.",
+  "kk": "Консилиумдар дәрігер–дәрігер форматында өтеді: жағдайыңызды менеджерлер емес, мамандар талқылайды."
+ },
+ "Каждый центр отвечает, может ли он помочь, каким методом, по какому плану, в какие сроки и с какой предварительной сметой.": {
+  "en": "Each center answers whether it can help, with which method, according to what plan, in what timeframe and with what preliminary cost estimate.",
+  "kk": "Әр орталық көмектесе ала ма, қандай әдіспен, қандай жоспар бойынша, қандай мерзімде және қандай алдын ала сметамен — соған жауап береді."
+ },
+ "Если консилиум покажет, что равноценное лечение возможно в Казахстане, этот вариант тоже рассматривается.": {
+  "en": "If the case conference shows that equivalent treatment is possible in Kazakhstan, this option is considered too.",
+  "kk": "Егер консилиум баламалы емді Қазақстанда алуға болатынын көрсетсе, бұл нұсқа да қарастырылады."
+ },
+ "Оставаться на связи: центры могут запросить дополнительные данные.": {
+  "en": "Stay in touch: the centers may request additional information.",
+  "kk": "Байланыста болыңыз: орталықтар қосымша деректер сұрауы мүмкін."
+ },
+ "Сообщать куратору об изменениях самочувствия или лечения.": {
+  "en": "Tell the curator about any changes in your condition or treatment.",
+  "kk": "Жағдайыңыздағы немесе емдегі өзгерістер туралы кураторға хабарлаңыз."
+ },
+ "Представляем ваш случай центрам и ведём переписку с ними.": {
+  "en": "We present your case to the centers and handle the correspondence with them.",
+  "kk": "Сіздің жағдайыңызды орталықтарға ұсынып, олармен хат алмасуды жүргіземіз."
+ },
+ "Собираем и сравниваем ответы центров по одним и тем же критериям.": {
+  "en": "We collect the centers' replies and compare them against the same criteria.",
+  "kk": "Орталықтардың жауаптарын жинап, оларды бірдей өлшемдер бойынша салыстырамыз."
+ },
+ "Сообщения о ходе консилиумов от администратора.": {
+  "en": "Updates on the case conferences from the administrator.",
+  "kk": "Консилиумдардың барысы туралы әкімшіден хабарламалар."
+ },
+ "Итоги консилиумов передаются вам в виде предложения на следующем этапе.": {
+  "en": "The results of the case conferences are given to you as a proposal at the next stage.",
+  "kk": "Консилиумдардың қорытындылары келесі кезеңде сізге ұсыныс түрінде беріледі."
+ },
+ "Предложение и план": {
+  "en": "Proposal and plan",
+  "kk": "Ұсыныс және жоспар"
+ },
+ "Вы получаете 2–3 варианта и разбираете их с медицинским куратором. Решение принимаете вы.": {
+  "en": "You receive 2–3 options and go through them with the medical curator. The decision is yours.",
+  "kk": "Сіз 2–3 нұсқа аласыз және оларды медициналық куратормен бірге талдайсыз. Шешімді сіз қабылдайсыз."
+ },
+ "документ «Предложение и план дальнейших действий».": {
+  "en": "the document “Proposal and plan of further actions”.",
+  "kk": "«Ұсыныс және одан арғы іс-қимыл жоспары» құжаты."
+ },
+ "Онлайн: документ и видеозвонок": {
+  "en": "Online: document and video call",
+  "kk": "Онлайн: құжат және бейнеқоңырау"
+ },
+ "Входит в первый транш. Следующий транш оплачивается, только если вы выбрали вариант": {
+  "en": "Included in the first installment. The next installment is paid only if you choose an option",
+  "kk": "Бірінші траншқа кіреді. Келесі транш нұсқаны таңдаған жағдайда ғана төленеді"
+ },
+ "Медицинский куратор, администратор": {
+  "en": "Medical curator, administrator",
+  "kk": "Медициналық куратор, әкімші"
+ },
+ "Мы готовим документ «Предложение и план дальнейших действий» с 2–3 вариантами.": {
+  "en": "We prepare the document “Proposal and plan of further actions” with 2–3 options.",
+  "kk": "2–3 нұсқасы бар «Ұсыныс және одан арғы іс-қимыл жоспары» құжатын дайындаймыз."
+ },
+ "По каждому варианту указаны центр и страна (или лечение в Казахстане), метод лечения, ориентировочные сроки, стоимость лечения по смете центра и стоимость наших услуг, что нужно сделать до поездки и условия следующего транша.": {
+  "en": "For each option we state the center and country (or treatment in Kazakhstan), the treatment method, the approximate timeframe, the cost of treatment according to the center's estimate and the cost of our services, what needs to be done before the trip, and the terms of the next installment.",
+  "kk": "Әр нұсқа бойынша орталық пен ел (немесе Қазақстандағы ем), емдеу әдісі, болжамды мерзімдер, орталық сметасы бойынша емнің құны және біздің қызметтеріміздің құны, сапарға дейін не істеу керектігі және келесі транштың шарттары көрсетіледі."
+ },
+ "На видеозвонке медицинский куратор разбирает с вами варианты, их плюсы и минусы и отвечает на вопросы.": {
+  "en": "On the video call, the medical curator goes through the options with you, including their pros and cons, and answers your questions.",
+  "kk": "Бейнеқоңырау кезінде медициналық куратор сізбен бірге нұсқаларды, олардың артықшылықтары мен кемшіліктерін талдап, сұрақтарыңызға жауап береді."
+ },
+ "Изучить предложение, при желании вместе с семьёй и лечащим врачом.": {
+  "en": "Review the proposal, with your family and attending physician if you wish.",
+  "kk": "Ұсыныспен танысыңыз, қаласаңыз, отбасыңызбен және емдеуші дәрігеріңізбен бірге."
+ },
+ "Выбрать вариант или отказаться от продолжения.": {
+  "en": "Choose an option or decide not to continue.",
+  "kk": "Нұсқаны таңдаңыз немесе жалғастырудан бас тартыңыз."
+ },
+ "Объясняем различия между вариантами простым языком.": {
+  "en": "We explain the differences between the options in plain language.",
+  "kk": "Нұсқалар арасындағы айырмашылықтарды қарапайым тілмен түсіндіреміз."
+ },
+ "После вашего выбора согласовываем с центром дальнейшие шаги.": {
+  "en": "Once you have chosen, we agree the next steps with the center.",
+  "kk": "Сіз таңдау жасағаннан кейін келесі қадамдарды орталықпен келісеміз."
+ },
+ "Письменное предложение с вариантами. Оно остаётся у вас, даже если вы решите не продолжать.": {
+  "en": "A written proposal with the options. It stays with you even if you decide not to continue.",
+  "kk": "Нұсқалары бар жазбаша ұсыныс. Жалғастырмауды шешсеңіз де, ол сізде қалады."
+ },
+ "Ответы на ваши вопросы на видеозвонке.": {
+  "en": "Answers to your questions on the video call.",
+  "kk": "Бейнеқоңырау кезінде сұрақтарыңызға жауаптар."
+ },
+ "По выбранному варианту": {
+  "en": "Depending on the chosen option",
+  "kk": "Таңдалған нұсқа бойынша"
+ },
+ "Готовим поездку, чтобы вы приехали в центр с полным пакетом документов и понятным планом.": {
+  "en": "We prepare the trip so that you arrive at the center with a complete set of documents and a clear plan.",
+  "kk": "Орталыққа құжаттардың толық топтамасымен және түсінікті жоспармен баруыңыз үшін сапарды дайындаймыз."
+ },
+ "памятку поездки: даты, адреса, контакты.": {
+  "en": "a travel guide: dates, addresses, contacts.",
+  "kk": "сапар жадынамасы: күндер, мекенжайлар, байланыс деректері."
+ },
+ "Следующий транш по выбранному варианту. Лечение оплачивается по смете центра": {
+  "en": "The next installment for the chosen option. Treatment is paid according to the center's estimate",
+  "kk": "Таңдалған нұсқа бойынша келесі транш. Ем орталық сметасы бойынша төленеді"
+ },
+ "Администратор (операционный блок), медицинский куратор": {
+  "en": "Administrator (operations team), medical curator",
+  "kk": "Әкімші (операциялық топ), медициналық куратор"
+ },
+ "Подтверждаем с центром дату госпитализации или первого визита.": {
+  "en": "We confirm the date of admission or first visit with the center.",
+  "kk": "Ауруханаға жатқызу немесе алғашқы келу күнін орталықпен растаймыз."
+ },
+ "Получаем от центра приглашение и помогаем с визой, если она нужна.": {
+  "en": "We obtain an invitation from the center and help with a visa if one is needed.",
+  "kk": "Орталықтан шақыру аламыз және қажет болса, визаны рәсімдеуге көмектесеміз."
+ },
+ "По вашему желанию помогаем с билетами, проживанием и переводчиком на месте.": {
+  "en": "If you wish, we help with tickets, accommodation and an interpreter on site.",
+  "kk": "Қалауыңыз бойынша билеттер, тұрғын үй және жергілікті аудармашы мәселесінде көмектесеміз."
+ },
+ "Передаём центру полный пакет документов до вашего приезда.": {
+  "en": "We send the center the complete set of documents before you arrive.",
+  "kk": "Сіз келгенге дейін құжаттардың толық топтамасын орталыққа жібереміз."
+ },
+ "Если перед поездкой нужна подготовка или стабилизация состояния, она проводится в Казахстане вместе с вашим лечащим врачом.": {
+  "en": "If preparation or stabilization of your condition is needed before the trip, it is done in Kazakhstan together with your attending physician.",
+  "kk": "Егер сапар алдында дайындық немесе жағдайды тұрақтандыру қажет болса, ол Қазақстанда емдеуші дәрігеріңізбен бірге жүргізіледі."
+ },
+ "По желанию подключаем психологическое сопровождение для вас и семьи (отдельная услуга).": {
+  "en": "If you wish, we arrange psychological support for you and your family (a separate service).",
+  "kk": "Қалауыңыз бойынша сізге және отбасыңызға психологиялық қолдау ұйымдастырамыз (жеке қызмет)."
+ },
+ "Оплатить следующий транш и лечение по согласованному порядку.": {
+  "en": "Pay the next installment and for treatment as agreed.",
+  "kk": "Келесі траншты және емді келісілген тәртіппен төлеңіз."
+ },
+ "Подготовить паспорт и документы для визы.": {
+  "en": "Prepare your passport and the documents for the visa.",
+  "kk": "Төлқұжатыңызды және виза үшін құжаттарды дайындаңыз."
+ },
+ "Согласовать с лечащим врачом в Казахстане приём лекарств до отъезда.": {
+  "en": "Agree with your attending physician in Kazakhstan on what medicines to take before departure.",
+  "kk": "Сапарға дейін дәрі қабылдауды Қазақстандағы емдеуші дәрігеріңізбен келісіңіз."
+ },
+ "Координируем все организационные шаги с центром.": {
+  "en": "We coordinate all organizational steps with the center.",
+  "kk": "Барлық ұйымдастыру қадамдарын орталықпен үйлестіреміз."
+ },
+ "Составляем для вас памятку поездки.": {
+  "en": "We put together a travel guide for you.",
+  "kk": "Сізге арнап сапар жадынамасын құрастырамыз."
+ },
+ "Памятку: даты, адреса, контакты центра и куратора, что взять с собой (документы, лекарства, результаты исследований).": {
+  "en": "A travel guide: dates, addresses, contacts for the center and the curator, and what to take with you (documents, medicines, test results).",
+  "kk": "Жадынама: күндер, мекенжайлар, орталық пен кураторның байланыс деректері, өзіңізбен не алу керек (құжаттар, дәрілер, зерттеу нәтижелері)."
+ },
+ "Подтверждение от центра о дате приёма.": {
+  "en": "Confirmation of the appointment date from the center.",
+  "kk": "Қабылдау күні туралы орталықтың растауы."
+ },
+ "Лечение в центре": {
+  "en": "Treatment at the center",
+  "kk": "Орталықта емделу"
+ },
+ "По смете центра": {
+  "en": "According to the center's estimate",
+  "kk": "Орталық сметасы бойынша"
+ },
+ "Лечение проводит центр по согласованному плану. Мы на связи с вами и с вашими врачами.": {
+  "en": "The center carries out treatment according to the agreed plan. We stay in touch with you and your doctors.",
+  "kk": "Емді орталық келісілген жоспар бойынша жүргізеді. Біз сізбен және дәрігерлеріңізбен байланыстамыз."
+ },
+ "постоянный контакт с куратором на всё время лечения.": {
+  "en": "ongoing contact with the curator throughout your treatment.",
+  "kk": "бүкіл ем кезеңінде куратормен тұрақты байланыс."
+ },
+ "Лечение по смете центра. Наше сопровождение входит в выбранный вариант": {
+  "en": "Treatment according to the center's estimate. Our support is included in the chosen option",
+  "kk": "Ем орталық сметасы бойынша. Біздің сүйемелдеуіміз таңдалған нұсқаға кіреді"
+ },
+ "Срок": {
+  "en": "Duration",
+  "kk": "Мерзімі"
+ },
+ "Определяется методом лечения и указывается в плане центра": {
+  "en": "Depends on the treatment method and is stated in the center's plan",
+  "kk": "Емдеу әдісіне байланысты және орталық жоспарында көрсетіледі"
+ },
+ "Партнёрский центр, медицинский куратор": {
+  "en": "Partner center, medical curator",
+  "kk": "Серіктес орталық, медициналық куратор"
+ },
+ "Центр проводит лечение по плану, который был согласован на консилиуме.": {
+  "en": "The center carries out treatment according to the plan agreed at the case conference.",
+  "kk": "Орталық емді консилиумда келісілген жоспар бойынша жүргізеді."
+ },
+ "Медицинский куратор поддерживает связь с лечащими врачами центра и знает о ключевых решениях.": {
+  "en": "The medical curator stays in contact with the center's attending physicians and is aware of key decisions.",
+  "kk": "Медициналық куратор орталықтың емдеуші дәрігерлерімен байланыс сақтайды және негізгі шешімдерден хабардар болады."
+ },
+ "Если план лечения меняется, мы обсуждаем это с вами и помогаем разобраться.": {
+  "en": "If the treatment plan changes, we discuss it with you and help you understand it.",
+  "kk": "Егер ем жоспары өзгерсе, біз оны сізбен талқылаймыз және түсінуге көмектесеміз."
+ },
+ "Проходить лечение и сообщать куратору о вопросах и трудностях.": {
+  "en": "Undergo treatment and tell the curator about any questions or difficulties.",
+  "kk": "Ем қабылдаңыз және сұрақтар мен қиындықтар туралы кураторға хабарлаңыз."
+ },
+ "Остаёмся на связи с центром и с вами.": {
+  "en": "We stay in touch with the center and with you.",
+  "kk": "Орталықпен де, сізбен де байланыста боламыз."
+ },
+ "Объясняем происходящее на понятном вам языке.": {
+  "en": "We explain what is happening in a language you understand.",
+  "kk": "Не болып жатқанын өзіңізге түсінікті тілде түсіндіреміз."
+ },
+ "Помогаем решать организационные вопросы на месте.": {
+  "en": "We help resolve organizational issues on site.",
+  "kk": "Жергілікті ұйымдастыру мәселелерін шешуге көмектесеміз."
+ },
+ "Постоянный контакт с куратором на всё время лечения.": {
+  "en": "Ongoing contact with the curator throughout your treatment.",
+  "kk": "Бүкіл ем кезеңінде куратормен тұрақты байланыс."
+ },
+ "Понимание того, что происходит и что будет дальше.": {
+  "en": "An understanding of what is happening and what comes next.",
+  "kk": "Не болып жатқанын және әрі қарай не болатынын түсіну."
+ },
+ "Возвращение и передача": {
+  "en": "Return and handover",
+  "kk": "Оралу және тапсыру"
+ },
+ "Выписку и план наблюдения передаём вашему лечащему врачу в Казахстане.": {
+  "en": "We hand over the discharge summary and follow-up plan to your attending physician in Kazakhstan.",
+  "kk": "Шығару эпикризі мен бақылау жоспарын Қазақстандағы емдеуші дәрігеріңізге тапсырамыз."
+ },
+ "переведённую выписку и график контрольных точек.": {
+  "en": "a translated discharge summary and a schedule of checkpoints.",
+  "kk": "аударылған шығару эпикризі және бақылау нүктелерінің кестесі."
+ },
+ "Входит в выбранный вариант": {
+  "en": "Included in the chosen option",
+  "kk": "Таңдалған нұсқаға кіреді"
+ },
+ "Медицинский куратор": {
+  "en": "Medical curator",
+  "kk": "Медициналық куратор"
+ },
+ "До выписки получаем от центра выписку, рекомендации и план наблюдения.": {
+  "en": "Before discharge, we obtain the discharge summary, recommendations and follow-up plan from the center.",
+  "kk": "Шығарылғанға дейін орталықтан шығару эпикризін, ұсынымдарды және бақылау жоспарын аламыз."
+ },
+ "Переводим документы и передаём их вашему лечащему врачу в Казахстане в согласованном формате.": {
+  "en": "We translate the documents and hand them over to your attending physician in Kazakhstan in an agreed format.",
+  "kk": "Құжаттарды аударып, Қазақстандағы емдеуші дәрігеріңізге келісілген форматта тапсырамыз."
+ },
+ "При необходимости организуем разговор врач–врач между центром и вашим лечащим врачом.": {
+  "en": "If needed, we arrange a doctor-to-doctor conversation between the center and your attending physician.",
+  "kk": "Қажет болса, орталық пен емдеуші дәрігеріңіз арасында дәрігер мен дәрігердің сөйлесуін ұйымдастырамыз."
+ },
+ "Проверяем, что назначенные лекарства и анализы доступны вам дома.": {
+  "en": "We check that the prescribed medicines and tests are available to you at home.",
+  "kk": "Тағайындалған дәрілер мен талдаулардың үйде сізге қолжетімді екенін тексереміз."
+ },
+ "Сообщить контакты лечащего врача в Казахстане и дать согласие на передачу ему документов.": {
+  "en": "Provide the contact details of your attending physician in Kazakhstan and consent to the documents being shared with them.",
+  "kk": "Қазақстандағы емдеуші дәрігеріңіздің байланыс деректерін беріңіз және оған құжаттарды беруге келісім беріңіз."
+ },
+ "Готовим и передаём пакет документов после лечения.": {
+  "en": "We prepare and hand over the set of documents after treatment.",
+  "kk": "Емнен кейінгі құжаттар топтамасын дайындап, тапсырамыз."
+ },
+ "Составляем график контрольных точек.": {
+  "en": "We draw up a schedule of checkpoints.",
+  "kk": "Бақылау нүктелерінің кестесін құрамыз."
+ },
+ "Переведённую выписку и план наблюдения с датами контрольных точек.": {
+  "en": "A translated discharge summary and a follow-up plan with checkpoint dates.",
+  "kk": "Аударылған шығару эпикризі және бақылау нүктелерінің күндері көрсетілген бақылау жоспары."
+ },
+ "Понимание, к кому обращаться дома и в какой ситуации.": {
+  "en": "An understanding of whom to contact at home and in which situation.",
+  "kk": "Үйде кімге және қандай жағдайда жүгіну керектігін түсіну."
+ },
+ "Долгосрочное наблюдение": {
+  "en": "Long-term follow-up",
+  "kk": "Ұзақ мерзімді бақылау"
+ },
+ "Казахстан и центр": {
+  "en": "Kazakhstan and the center",
+  "kk": "Қазақстан және орталық"
+ },
+ "Наблюдение продолжается дома, а связь с центром не прерывается.": {
+  "en": "Follow-up continues at home, and contact with the center is maintained.",
+  "kk": "Бақылау үйде жалғасады, ал орталықпен байланыс үзілмейді."
+ },
+ "врачи в Казахстане и в центре видят одну и ту же картину.": {
+  "en": "doctors in Kazakhstan and at the center see the same picture.",
+  "kk": "Қазақстандағы және орталықтағы дәрігерлер бірдей жағдайды көреді."
+ },
+ "Казахстан и партнёрский центр": {
+  "en": "Kazakhstan and the partner center",
+  "kk": "Қазақстан және серіктес орталық"
+ },
+ "Длительность и частота визитов определяются планом наблюдения, согласованным с центром": {
+  "en": "The duration and frequency of visits are set by the follow-up plan agreed with the center",
+  "kk": "Келу ұзақтығы мен жиілігі орталықпен келісілген бақылау жоспарымен анықталады"
+ },
+ "Медицинский куратор, ваш лечащий врач, партнёрский центр": {
+  "en": "Medical curator, your attending physician, partner center",
+  "kk": "Медициналық куратор, емдеуші дәрігеріңіз, серіктес орталық"
+ },
+ "Контрольные точки мониторинга и совместное ведение с вашим лечащим врачом.": {
+  "en": "Monitoring checkpoints and shared care with your attending physician.",
+  "kk": "Мониторингтің бақылау нүктелері және емдеуші дәрігеріңізбен бірлесіп жүргізу (shared care)."
+ },
+ "Повторные консультации в партнёрском центре по графику наблюдения.": {
+  "en": "Repeat consultations at the partner center according to the follow-up schedule.",
+  "kk": "Бақылау кестесі бойынша серіктес орталықта қайталама консультациялар."
+ },
+ "Контроль анализов с пересылкой биоматериала в партнёрскую лабораторию, если это нужно.": {
+  "en": "Test monitoring, with samples sent to a partner laboratory if needed.",
+  "kk": "Талдауларды бақылау, қажет болса, биоматериалды серіктес зертханаға жіберу арқылы."
+ },
+ "Телемедицинские консилиумы по сложным вопросам и при отклонениях от плана.": {
+  "en": "Telemedicine case conferences on complex issues and when there are deviations from the plan.",
+  "kk": "Күрделі мәселелер бойынша және жоспардан ауытқулар болғанда телемедициналық консилиумдар."
+ },
+ "Приходить на контрольные визиты и сдавать анализы по графику.": {
+  "en": "Attend follow-up visits and have your tests done on schedule.",
+  "kk": "Бақылау қабылдауларына келіп, талдауларды кесте бойынша тапсырыңыз."
+ },
+ "Сообщать куратору о любых изменениях самочувствия.": {
+  "en": "Tell the curator about any changes in how you feel.",
+  "kk": "Әл-ауқатыңыздағы кез келген өзгерістер туралы кураторға хабарлаңыз."
+ },
+ "Следим за графиком наблюдения и напоминаем о контрольных точках.": {
+  "en": "We keep track of the follow-up schedule and remind you of check-up dates.",
+  "kk": "Бақылау кестесін қадағалап, бақылау нүктелерін еске саламыз."
+ },
+ "Передаём результаты центру и организуем телеконсилиум, если что-то идёт не по плану.": {
+  "en": "We send the results to the center and arrange a teleconsultation if something does not go to plan.",
+  "kk": "Нәтижелерді орталыққа жібереміз және бірдеңе жоспар бойынша жүрмесе, телеконсилиум ұйымдастырамыз."
+ },
+ "Непрерывность лечения: врачи в Казахстане и в центре видят одну и ту же картину.": {
+  "en": "Continuity of treatment: doctors in Kazakhstan and at the center see the same picture.",
+  "kk": "Емнің үздіксіздігі: Қазақстандағы және орталықтағы дәрігерлер бірдей көріністі көреді."
+ },
+ "Эти центры сейчас проходят проверку по матрице отбора. Партнёрами они станут только после подписания меморандума.": {
+  "en": "These centers are currently being reviewed against our selection matrix. They will become partners only after a memorandum is signed.",
+  "kk": "Бұл орталықтар қазір іріктеу матрицасы бойынша тексеруден өтуде. Олар меморандумға қол қойылғаннан кейін ғана серіктес болады."
+ },
+ "Сведения взяты с официальных сайтов клиник и государственных порталов, актуальны на ноябрь 2026. Пометка «по данным клиники» означает, что мы ещё не получили независимого подтверждения. Клинику под ваш случай подбирают врачи на этапе консилиумов.": {
+  "en": "The information is taken from the clinics' official websites and government portals and is current as of November 2026. The note “as reported by the clinic” means that we have not yet received independent confirmation. The clinic for your case is chosen by doctors at the case conference stage.",
+  "kk": "Мәліметтер клиникалардың ресми сайттарынан және мемлекеттік порталдардан алынды, 2026 жылғы қарашадағы жағдай бойынша өзекті. «Клиниканың дерегі бойынша» белгісі біздің әлі тәуелсіз растау алмағанымызды білдіреді. Сіздің жағдайыңызға клиниканы консилиумдар кезеңінде дәрігерлер іріктейді."
+ },
+ "Частная группа больниц (с 1989 года), центр трансплантации костного мозга": {
+  "en": "Private hospital group (since 1989), bone marrow transplantation center",
+  "kk": "Жеке ауруханалар тобы (1989 жылдан бері), сүйек кемігін транспланттау орталығы"
+ },
+ "Аутологичная и аллогенная": {
+  "en": "Autologous and allogeneic",
+  "kk": "Аутологиялық және аллогендік"
+ },
+ "JCI — Istanbul Florence Nightingale Hospital, с 2013 года; JACIE — по данным клиники, год и область не указаны": {
+  "en": "JCI — Istanbul Florence Nightingale Hospital, since 2013; JACIE — as reported by the clinic, year and scope not stated",
+  "kk": "JCI — Istanbul Florence Nightingale Hospital, 2013 жылдан бері; JACIE — клиниканың дерегі бойынша, жылы мен саласы көрсетілмеген"
+ },
+ "По данным клиники — более 100 трансплантаций в год; общее число на разных страницах клиники указано по-разному (от 1100 до 1500)": {
+  "en": "As reported by the clinic, more than 100 transplants a year; the total number is given differently on different pages of the clinic's website (from 1,100 to 1,500)",
+  "kk": "Клиниканың дерегі бойынша — жылына 100-ден астам транспланттау; жалпы саны клиника сайтының әр бетінде әртүрлі көрсетілген (1100-ден 1500-ге дейін)"
+ },
+ "Оснащение": {
+  "en": "Facilities",
+  "kk": "Жабдықталуы"
+ },
+ "Отделение ТКМ с HEPA-фильтрацией воздуха": {
+  "en": "BMT unit with HEPA air filtration",
+  "kk": "Ауаны HEPA-сүзгілеуі бар СКТ бөлімшесі"
+ },
+ "Иностранным пациентам": {
+  "en": "For international patients",
+  "kk": "Шетелдік пациенттерге"
+ },
+ "Международный центр, переводчики и трансфер; среди языков команды — русский и английский": {
+  "en": "International center, interpreters and transfers; the team's languages include Russian and English",
+  "kk": "Халықаралық орталық, аудармашылар мен трансфер; топ сөйлейтін тілдердің арасында орыс және ағылшын тілдері бар"
+ },
+ "Источники:": {
+  "en": "Sources:",
+  "kk": "Дереккөздер:"
+ },
+ "florence.com.tr": {
+  "en": "florence.com.tr",
+  "kk": "florence.com.tr"
+ },
+ "Университетская больница Istanbul Medipol University, комплекс открыт в 2012 году": {
+  "en": "Istanbul Medipol University teaching hospital, complex opened in 2012",
+  "kk": "Istanbul Medipol University университеттік ауруханасы, кешен 2012 жылы ашылған"
+ },
+ "Аутологичная и аллогенная; отдельные отделения для взрослых и для детей": {
+  "en": "Autologous and allogeneic; separate units for adults and for children",
+  "kk": "Аутологиялық және аллогендік; ересектер мен балаларға арналған жеке бөлімшелер"
+ },
+ "Структура центра": {
+  "en": "Center structure",
+  "kk": "Орталық құрылымы"
+ },
+ "Амбулаторная и стационарная службы, аферез, лаборатория обработки стволовых клеток, блок интенсивной терапии": {
+  "en": "Outpatient and inpatient services, apheresis, stem cell processing laboratory, intensive care unit",
+  "kk": "Амбулаториялық және стационарлық қызметтер, аферез, бағаналы жасушаларды өңдеу зертханасы, қарқынды терапия блогы"
+ },
+ "JCI по стандартам Academic Medical Center, с 2014 года — по данным клиники": {
+  "en": "JCI under Academic Medical Center standards, since 2014 — as reported by the clinic",
+  "kk": "Academic Medical Center стандарттары бойынша JCI, 2014 жылдан бері — клиниканың дерегі бойынша"
+ },
+ "Международный центр с услугами перевода; у центра ТКМ есть страница на русском языке": {
+  "en": "International center with interpreting services; the BMT center has a page in Russian",
+  "kk": "Аударма қызметтері бар халықаралық орталық; СКТ орталығының орыс тіліндегі беті бар"
+ },
+ "medipol.com.tr": {
+  "en": "medipol.com.tr",
+  "kk": "medipol.com.tr"
+ },
+ "medipolglobal.com": {
+  "en": "medipolglobal.com",
+  "kk": "medipolglobal.com"
+ },
+ "Acıbadem": {
+  "en": "Acıbadem",
+  "kk": "Acıbadem"
+ },
+ "Страна, города": {
+  "en": "Country, cities",
+  "kk": "Ел, қалалар"
+ },
+ "Турция: Стамбул, Адана, Анкара": {
+  "en": "Turkey: Istanbul, Adana, Ankara",
+  "kk": "Түркия: Стамбул, Адана, Анкара"
+ },
+ "Частная группа больниц; центры ТКМ для взрослых и для детей": {
+  "en": "Private hospital group; BMT centers for adults and for children",
+  "kk": "Жеке ауруханалар тобы; ересектер мен балаларға арналған СКТ орталықтары"
+ },
+ "Доступна; клетки производятся в лаборатории Acıbadem Labcell — по данным клиники": {
+  "en": "Available; cells are manufactured at the Acıbadem Labcell laboratory — as reported by the clinic",
+  "kk": "Қолжетімді; жасушалар Acıbadem Labcell зертханасында өндіріледі — клиниканың дерегі бойынша"
+ },
+ "JCI — больницы Adana и Maslak (с 2010), Atakent (с 2017), Altunizade (с 2019) — по данным клиники": {
+  "en": "JCI — Adana and Maslak hospitals (since 2010), Atakent (since 2017), Altunizade (since 2019) — as reported by the clinic",
+  "kk": "JCI — Adana және Maslak ауруханалары (2010 жылдан бері), Atakent (2017 жылдан бері), Altunizade (2019 жылдан бері) — клиниканың дерегі бойынша"
+ },
+ "Представительство в Астане, поддержка на русском и английском; русскоязычный сайт": {
+  "en": "Office in Astana, support in Russian and English; Russian-language website",
+  "kk": "Астанадағы өкілдік, орыс және ағылшын тілдерінде қолдау; орыс тіліндегі сайт"
+ },
+ "acibadem.com.tr": {
+  "en": "acibadem.com.tr",
+  "kk": "acibadem.com.tr"
+ },
+ "acibademinternational.com": {
+  "en": "acibademinternational.com",
+  "kk": "acibademinternational.com"
+ },
+ "acibadem.com.ru": {
+  "en": "acibadem.com.ru",
+  "kk": "acibadem.com.ru"
+ },
+ "Max Healthcare (Saket)": {
+  "en": "Max Healthcare (Saket)",
+  "kk": "Max Healthcare (Saket)"
+ },
+ "Индия, Нью-Дели (Сакет)": {
+  "en": "India, New Delhi (Saket)",
+  "kk": "Үндістан, Нью-Дели (Сакет)"
+ },
+ "Max Super Speciality Hospital, Saket — многопрофильная больница сети Max Healthcare; East Block — подразделение Devki Devi Foundation": {
+  "en": "Max Super Speciality Hospital, Saket — a multi-specialty hospital in the Max Healthcare network; East Block is a unit of the Devki Devi Foundation",
+  "kk": "Max Super Speciality Hospital, Saket — Max Healthcare желісінің көпбейінді ауруханасы; East Block — Devki Devi Foundation бөлімшесі"
+ },
+ "Аутологичная, аллогенная, гаплоидентичная; есть детская ТКМ": {
+  "en": "Autologous, allogeneic, haploidentical; pediatric BMT available",
+  "kk": "Аутологиялық, аллогендік, гаплоидентті; балалар СКТ-сы бар"
+ },
+ "Проводится для отдельных пациентов с опухолями крови — по данным клиники": {
+  "en": "Performed for selected patients with blood cancers — as reported by the clinic",
+  "kk": "Қан ісіктері бар жекелеген пациенттерге жүргізіледі — клиниканың дерегі бойынша"
+ },
+ "JCI и NABH — по данным клиники": {
+  "en": "JCI and NABH — as reported by the clinic",
+  "kk": "JCI және NABH — клиниканың дерегі бойынша"
+ },
+ "Палаты с HEPA-фильтрацией": {
+  "en": "Rooms with HEPA filtration",
+  "kk": "HEPA-сүзгілеуі бар палаталар"
+ },
+ "Международный отдел: координатор, приглашение для медицинской визы, трансфер; переводчики, включая русский язык": {
+  "en": "International department: coordinator, invitation for a medical visa, transfers; interpreters, including Russian",
+  "kk": "Халықаралық бөлім: үйлестіруші, медициналық визаға шақыру, трансфер; аудармашылар, оның ішінде орыс тілі"
+ },
+ "healinindia.gov.in": {
+  "en": "healinindia.gov.in",
+  "kk": "healinindia.gov.in"
+ },
+ "Минский НПЦ хирургии, трансплантологии и гематологии": {
+  "en": "Minsk Scientific and Practical Center for Surgery, Transplantology and Hematology",
+  "kk": "Минск хирургия, трансплантология және гематология ғылыми-практикалық орталығы"
+ },
+ "Беларусь, Минск": {
+  "en": "Belarus, Minsk",
+  "kk": "Беларусь, Минск"
+ },
+ "Государственный научно-практический центр; Республиканский центр гематологии и пересадки костного мозга работает с 1993 года": {
+  "en": "State scientific and practical center; the Republican Center for Hematology and Bone Marrow Transplantation has been operating since 1993",
+  "kk": "Мемлекеттік ғылыми-практикалық орталық; Республикалық гематология және сүйек кемігін транспланттау орталығы 1993 жылдан бері жұмыс істейді"
+ },
+ "Аутологичная, аллогенная родственная и неродственная": {
+  "en": "Autologous, allogeneic related and unrelated",
+  "kk": "Аутологиялық, аллогендік туыстық және туыстық емес"
+ },
+ "Услуга заявлена на сайте центра, в том числе при множественной миеломе": {
+  "en": "The service is listed on the center's website, including for multiple myeloma",
+  "kk": "Қызмет орталықтың сайтында көрсетілген, оның ішінде көптік миелома кезінде"
+ },
+ "Более 2000 трансплантаций за время работы — по данным центра, период не указан": {
+  "en": "More than 2,000 transplants over the years of operation — as reported by the center, period not stated",
+  "kk": "Жұмыс істеген уақыт ішінде 2000-нан астам транспланттау — орталықтың дерегі бойынша, кезеңі көрсетілмеген"
+ },
+ "Структура": {
+  "en": "Structure",
+  "kk": "Құрылымы"
+ },
+ "Гематологические отделения, отделение ТКМ, лаборатория HLA-типирования, собственное производство клеточных продуктов": {
+  "en": "Hematology departments, BMT unit, HLA typing laboratory, in-house production of cell products",
+  "kk": "Гематология бөлімшелері, СКТ бөлімшесі, HLA-типтеу зертханасы, жасушалық өнімдерді өз өндірісі"
+ },
+ "Платная помощь иностранным гражданам по отдельному прейскуранту; обслуживание на русском языке": {
+  "en": "Paid care for foreign nationals under a separate price list; service in Russian",
+  "kk": "Шетел азаматтарына жеке прейскурант бойынша ақылы көмек; орыс тілінде қызмет көрсету"
+ },
+ "Беларусь": {
+  "en": "Belarus",
+  "kk": "Беларусь"
+ },
+ "msth.by": {
+  "en": "msth.by",
+  "kk": "msth.by"
+ },
+ "msthps.by": {
+  "en": "msthps.by",
+  "kk": "msthps.by"
+ },
+ "Скачать опросник": {
+  "en": "Download questionnaire",
+  "kk": "Сауалнаманы жүктеу"
+ },
+ "Контакты для партнёров": {
+  "en": "Contacts for partners",
+  "kk": "Серіктестерге арналған байланыс"
+ },
+ "Опросник для клиник": {
+  "en": "Questionnaire for clinics",
+  "kk": "Клиникаларға арналған сауалнама"
+ },
+ "С опросника начинается отбор центра. По нему наши врачи сравнивают клиники по одним и тем же критериям.": {
+  "en": "Center selection begins with the questionnaire. Our doctors use it to compare clinics against the same criteria.",
+  "kk": "Орталықты іріктеу сауалнамадан басталады. Ол арқылы біздің дәрігерлер клиникаларды бірдей өлшемдер бойынша салыстырады."
+ },
+ "Скачать опросник (RU, .xlsx)": {
+  "en": "Download questionnaire (RU, .xlsx)",
+  "kk": "Сауалнаманы жүктеу (RU, .xlsx)"
+ },
+ "Download questionnaire (EN, .xlsx)": {
+  "en": "Download questionnaire (EN, .xlsx)",
+  "kk": "Download questionnaire (EN, .xlsx)"
+ },
+ "Файл Excel, 97 вопросов на четырёх закладках.": {
+  "en": "Excel file, 97 questions on four tabs.",
+  "kk": "Excel файлы, төрт бетте 97 сұрақ."
+ },
+ "1. Медицинская информация": {
+  "en": "1. Medical information",
+  "kk": "1. Медициналық ақпарат"
+ },
+ "Опыт программы, нозологии, трансплантация, поиск донора, результаты лечения, клеточная терапия, диагностика, инфраструктура — 58 вопросов.": {
+  "en": "Program experience, diagnoses, transplantation, donor search, treatment outcomes, cell therapy, diagnostics, infrastructure — 58 questions.",
+  "kk": "Бағдарлама тәжірибесі, нозологиялар, транспланттау, донор іздеу, емдеу нәтижелері, жасушалық терапия, диагностика, инфрақұрылым — 58 сұрақ."
+ },
+ "2. Организационные вопросы": {
+  "en": "2. Organizational matters",
+  "kk": "2. Ұйымдастыру мәселелері"
+ },
+ "Общие сведения, совместное ведение, логистика, юридические вопросы — 24 вопроса.": {
+  "en": "General information, shared care, logistics, legal matters — 24 questions.",
+  "kk": "Жалпы мәліметтер, бірлесіп жүргізу (shared care), логистика, құқықтық мәселелер — 24 сұрақ."
+ },
+ "3. Финансовая сторона": {
+  "en": "3. Financial matters",
+  "kk": "3. Қаржылық жағы"
+ },
+ "Пакетные цены, состав пакета, депозит и порядок оплаты — 9 вопросов.": {
+  "en": "Package prices, package contents, deposit and payment terms — 9 questions.",
+  "kk": "Пакеттік бағалар, пакет құрамы, депозит және төлем тәртібі — 9 сұрақ."
+ },
+ "4. Данные клиники": {
+  "en": "4. Clinic data",
+  "kk": "4. Клиника деректері"
+ },
+ "Сильные стороны, преимущества для пациентов и ограничения — 6 вопросов.": {
+  "en": "Strengths, benefits for patients and limitations — 6 questions.",
+  "kk": "Күшті жақтары, пациенттер үшін артықшылықтары және шектеулері — 6 сұрақ."
+ },
+ "Как заполнить и отправить.": {
+  "en": "How to fill in and send it.",
+  "kk": "Қалай толтырып, жіберуге болады."
+ },
+ "Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл отправьте на почту для партнёров.": {
+  "en": "Enter answers in the “Clinic's answer” column and give the source and date next to them. Questions with “Critical” priority are mandatory: without answers to them we cannot recommend the center to patients. Send the completed file to the partners' e-mail address.",
+  "kk": "Жауаптар «Клиниканың жауабы» бағанына енгізіледі, қасына дереккөз бен күнін көрсетіңіз. «Өте маңызды» басымдығы бар сұрақтар міндетті: оларға жауапсыз біз орталықты пациенттерге ұсына алмаймыз. Толтырылған файлды серіктестерге арналған поштаға жіберіңіз."
+ },
+ "Для вопросов о сотрудничестве и отправки заполненного опросника.": {
+  "en": "For questions about cooperation and sending the completed questionnaire.",
+  "kk": "Ынтымақтастық туралы сұрақтар және толтырылған сауалнаманы жіберу үшін."
+ },
+ "будет добавлен": {
+  "en": "to be added",
+  "kk": "қосылады"
+ },
+ "Услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ»: подготовка случая, консилиумы с центрами, предложение и план.": {
+  "en": "Service “International case conferences and selection of clinics for possible CAR-T therapy/BMT”: case preparation, case conferences with centers, proposal and plan.",
+  "kk": "«Халықаралық консилиумдар өткізу және CAR-T терапиясы/СКТ мүмкіндігі бойынша клиникаларды іріктеу» қызметі: жағдайды дайындау, орталықтармен консилиумдар, ұсыныс және жоспар."
+ },
+ "Стоимость следующих этапов зависит от выбранного варианта и указывается в документе «Предложение и план».": {
+  "en": "The cost of the next stages depends on the option chosen and is stated in the “Proposal and plan” document.",
+  "kk": "Келесі кезеңдердің құны таңдалған нұсқаға байланысты және «Ұсыныс және жоспар» құжатында көрсетіледі."
+ },
+ "Что входит в каждый этап": {
+  "en": "What each stage includes",
+  "kk": "Әр кезеңге не кіреді"
+ },
+ "Публичный договор-оферта": {
+  "en": "Public offer agreement",
+  "kk": "Жария оферта шарты"
+ },
+ "Платная часть программы начинается после того, как вы приняли оферту и оплатили первый транш. Ссылку на оферту вы получаете после «Знакомства с программой», до любой оплаты.": {
+  "en": "The paid part of the program begins after you have accepted the offer and paid the first installment. You receive the link to the offer after the “Introduction to the program”, before any payment.",
+  "kk": "Бағдарламаның ақылы бөлігі Сіз офертаны қабылдап, бірінші траншты төлегеннен кейін басталады. Оферта сілтемесін «Бағдарламамен танысудан» кейін, кез келген төлемге дейін аласыз."
+ },
+ "Текст оферты готовится к публикации": {
+  "en": "The text of the offer is being prepared for publication",
+  "kk": "Оферта мәтіні жариялауға дайындалуда"
+ },
+ "Контакты для пациентов": {
+  "en": "Contacts for patients",
+  "kk": "Пациенттерге арналған байланыс"
+ },
+ "WhatsApp:": {
+  "en": "WhatsApp:",
+  "kk": "WhatsApp:"
+ },
+ "версия 2026-11-18.1": {
+  "en": "version 2026-11-18.1",
+  "kk": "нұсқа 2026-11-18.1"
+ },
+ "Вы получаете": {
+  "en": "You receive",
+  "kk": "Сіз аласыз"
+ },
+ "Подробнее об этапе": {
+  "en": "More about this stage",
+  "kk": "Кезең туралы толығырақ"
+ },
+ "Файл Excel на русском, казахском и английском языках: 97 вопросов на четырёх закладках.": {
+  "en": "An Excel file in Russian, Kazakh and English: 97 questions on four tabs.",
+  "kk": "Орыс, қазақ және ағылшын тілдеріндегі Excel файлы: төрт қойындыда 97 сұрақ."
  }
 }

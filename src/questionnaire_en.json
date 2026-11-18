@@ -1,0 +1,610 @@
+{
+ "sheets": [
+  {
+   "tab": "1. Medical",
+   "title": "1. Medical information",
+   "rows": [
+    {
+     "n": "1.1",
+     "sub": "Program experience and quality",
+     "q": "Year the hematology service and the HSCT program were established",
+     "prio": "Important"
+    },
+    {
+     "n": "1.2",
+     "sub": "Program experience and quality",
+     "q": "International accreditation: JCI, JACIE (FACT-JACIE), FACT — for which programs (HSCT, cell therapy), validity period",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.3",
+     "sub": "Program experience and quality",
+     "q": "Membership in EBMT / CIBMTR / APBMT; does the hospital report data to the registry",
+     "prio": "Important"
+    },
+    {
+     "n": "1.4",
+     "sub": "Program experience and quality",
+     "q": "Participation in hematology clinical trials: active trials, phases, are foreign patients enrolled",
+     "prio": "Important"
+    },
+    {
+     "n": "1.5",
+     "sub": "Program experience and quality",
+     "q": "Hematology and HSCT publications over the past 5 years, leading specialists (full name, area of expertise)",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.6",
+     "sub": "Experience by disease",
+     "q": "AML: number of new patients per year (adults / children)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.7",
+     "sub": "Experience by disease",
+     "q": "ALL, including Ph+: number of new patients per year (adults / children)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.8",
+     "sub": "Experience by disease",
+     "q": "MDS, CMML: number of patients per year",
+     "prio": "Important"
+    },
+    {
+     "n": "1.9",
+     "sub": "Experience by disease",
+     "q": "CML, Ph-negative MPN, myelofibrosis: number of patients per year",
+     "prio": "Important"
+    },
+    {
+     "n": "1.10",
+     "sub": "Experience by disease",
+     "q": "Lymphomas: Hodgkin lymphoma, aggressive and indolent NHL, T-cell lymphomas, primary CNS lymphomas — number of patients per year",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.11",
+     "sub": "Experience by disease",
+     "q": "Multiple myeloma, AL amyloidosis: number of patients per year",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.12",
+     "sub": "Experience by disease",
+     "q": "Aplastic anemia, PNH: number of patients, availability of IST (ATG) and complement inhibitors",
+     "prio": "Important"
+    },
+    {
+     "n": "1.13",
+     "sub": "Experience by disease",
+     "q": "Hemoglobinopathies (thalassemia, sickle cell anemia): experience with HSCT and other treatment methods",
+     "prio": "Important"
+    },
+    {
+     "n": "1.14",
+     "sub": "Experience by disease",
+     "q": "Hemophilia and other coagulopathies, including those with inhibitors; orthopedic surgery in patients with hemophilia",
+     "prio": "Important"
+    },
+    {
+     "n": "1.15",
+     "sub": "Experience by disease",
+     "q": "Primary immunodeficiencies, histiocytoses, inherited bone marrow failure syndromes",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.16",
+     "sub": "Experience by disease",
+     "q": "Pediatric hematology and HSCT: is there a pediatric unit, from what age are patients accepted, number of pediatric HSCTs per year",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.17",
+     "sub": "Transplantation (HSCT)",
+     "q": "Total HSCTs per year over the last 3 years (auto / allo)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.18",
+     "sub": "Transplantation (HSCT)",
+     "q": "Allo-HSCT from an HLA-identical related donor: number per year",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.19",
+     "sub": "Transplantation (HSCT)",
+     "q": "Allo-HSCT from an unrelated donor: number per year",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.20",
+     "sub": "Transplantation (HSCT)",
+     "q": "Haploidentical HSCT: number per year, approach (post-transplant cyclophosphamide, TCRαβ/CD19 depletion)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.21",
+     "sub": "Transplantation (HSCT)",
+     "q": "Cord blood transplantation: do you perform it, number per year",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.22",
+     "sub": "Transplantation (HSCT)",
+     "q": "Auto-HSCT: number per year, for which diseases; tandem HSCT for myeloma",
+     "prio": "Important"
+    },
+    {
+     "n": "1.23",
+     "sub": "Transplantation (HSCT)",
+     "q": "Age limits for auto- and allo-HSCT; reduced-intensity conditioning (RIC) regimens for older patients",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.24",
+     "sub": "Transplantation (HSCT)",
+     "q": "Eligibility criteria for HSCT: disease status (remission, MRD), comorbidity (HCT-CI), ECOG; do you accept patients who are not in remission",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.25",
+     "sub": "Transplantation (HSCT)",
+     "q": "Graft source (bone marrow / PBSC); who performs donor collection and where",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.26",
+     "sub": "Transplantation (HSCT)",
+     "q": "GVHD prophylaxis: standard regimens (ATG, cyclophosphamide, etc.), treatment of steroid-refractory GVHD (ruxolitinib, photopheresis)",
+     "prio": "Important"
+    },
+    {
+     "n": "1.27",
+     "sub": "Transplantation (HSCT)",
+     "q": "Possibility of a second HSCT in case of relapse or graft failure",
+     "prio": "Important"
+    },
+    {
+     "n": "1.28",
+     "sub": "Donor search",
+     "q": "Access to donor registries: which ones (WMDA, DKMS, national)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.29",
+     "sub": "Donor search",
+     "q": "Average time from search initiation to unrelated-donor HSCT",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.30",
+     "sub": "Donor search",
+     "q": "HLA typing of the patient and relatives: do you accept typing performed in Kazakhstan; what resolution and which loci are required",
+     "prio": "Important"
+    },
+    {
+     "n": "1.31",
+     "sub": "Donor search",
+     "q": "Requirements for a related donor: work-up (can it be done on our side), travel, length of stay, age",
+     "prio": "Important"
+    },
+    {
+     "n": "1.32",
+     "sub": "Treatment outcomes",
+     "q": "Transplant-related mortality (NRM/TRM) at day 100 and at 1 year: auto / allo related / unrelated / haplo",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.33",
+     "sub": "Treatment outcomes",
+     "q": "Overall survival (OS) and relapse-free survival at 1 and 3 years after allo-HSCT for the main diseases",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.34",
+     "sub": "Treatment outcomes",
+     "q": "Relapse rate after allo-HSCT; post-transplant maintenance therapy",
+     "prio": "Important"
+    },
+    {
+     "n": "1.35",
+     "sub": "Treatment outcomes",
+     "q": "Incidence of grade II–IV and III–IV acute GVHD, chronic GVHD",
+     "prio": "Important"
+    },
+    {
+     "n": "1.36",
+     "sub": "Treatment outcomes",
+     "q": "Incidence of graft failure and graft rejection; time to engraftment",
+     "prio": "Important"
+    },
+    {
+     "n": "1.37",
+     "sub": "Treatment outcomes",
+     "q": "Induction outcomes in AML and ALL (complete remission rate, MRD negativity), early mortality",
+     "prio": "Important"
+    },
+    {
+     "n": "1.38",
+     "sub": "Treatment outcomes",
+     "q": "Source of outcome data (internal registry, EBMT/CIBMTR report, publications) and the years covered",
+     "prio": "Important"
+    },
+    {
+     "n": "1.39",
+     "sub": "Cell and innovative therapies",
+     "q": "CAR-T: is it available; which products (commercial, manufactured in-house, within clinical trials); for which indications (B-ALL, DLBCL, myeloma, etc.)",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.40",
+     "sub": "Cell and innovative therapies",
+     "q": "CAR-T: number of procedures per year, time from apheresis to infusion, incidence of grade III–IV CRS and ICANS",
+     "prio": "Important"
+    },
+    {
+     "n": "1.41",
+     "sub": "Cell and innovative therapies",
+     "q": "Bispecific antibodies (blinatumomab, teclistamab, glofitamab, epcoritamab, etc.) and antibody–drug conjugates (inotuzumab, etc.)",
+     "prio": "Important"
+    },
+    {
+     "n": "1.42",
+     "sub": "Cell and innovative therapies",
+     "q": "Targeted therapy (FLT3, IDH, BCL2, menin, BTK inhibitors, etc.): availability and regulatory approval in your country",
+     "prio": "Important"
+    },
+    {
+     "n": "1.43",
+     "sub": "Cell and innovative therapies",
+     "q": "Donor lymphocyte infusions (DLI), virus-specific T cells, extracorporeal photopheresis",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.44",
+     "sub": "Cell and innovative therapies",
+     "q": "Gene therapy (thalassemia, sickle cell anemia, hemophilia)",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.45",
+     "sub": "Diagnostics",
+     "q": "MRD: flow cytometry (sensitivity, number of colors), PCR-MRD, NGS-MRD; at which time points after HSCT",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.46",
+     "sub": "Diagnostics",
+     "q": "Molecular genetics: NGS panels for myeloid and lymphoid neoplasms, turnaround time",
+     "prio": "Important"
+    },
+    {
+     "n": "1.47",
+     "sub": "Diagnostics",
+     "q": "Cytogenetics and FISH: panels, turnaround time",
+     "prio": "Important"
+    },
+    {
+     "n": "1.48",
+     "sub": "Diagnostics",
+     "q": "Chimerism monitoring: method (STR, qPCR, NGS), sensitivity, schedule",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.49",
+     "sub": "Diagnostics",
+     "q": "Histology and IHC review: is it mandatory; do you accept digital slides and our blocks/slides",
+     "prio": "Important"
+    },
+    {
+     "n": "1.50",
+     "sub": "Diagnostics",
+     "q": "Which of our test results do you accept without repeating them, and how recent must they be",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.51",
+     "sub": "Diagnostics",
+     "q": "PET-CT, MRI: availability and waiting times",
+     "prio": "For reference"
+    },
+    {
+     "n": "1.52",
+     "sub": "Infrastructure and safety",
+     "q": "Number of hematology and HSCT beds; isolation rooms with HEPA filtration and positive pressure",
+     "prio": "Important"
+    },
+    {
+     "n": "1.53",
+     "sub": "Infrastructure and safety",
+     "q": "ICU experienced in managing hematology patients; dialysis, mechanical ventilation, ECMO in the same building",
+     "prio": "Critical"
+    },
+    {
+     "n": "1.54",
+     "sub": "Infrastructure and safety",
+     "q": "24/7 on-call hematologist / transplant physician service; nurse-to-patient ratio in the HSCT unit",
+     "prio": "Important"
+    },
+    {
+     "n": "1.55",
+     "sub": "Infrastructure and safety",
+     "q": "Transfusion medicine: irradiated and leukoreduced components, platelet availability, are donors from the patient's family required",
+     "prio": "Important"
+    },
+    {
+     "n": "1.56",
+     "sub": "Infrastructure and safety",
+     "q": "Apheresis, cryobank, cell processing laboratory",
+     "prio": "Important"
+    },
+    {
+     "n": "1.57",
+     "sub": "Infrastructure and safety",
+     "q": "Infection control: infectious disease specialist, local antimicrobial resistance patterns, incidence of invasive fungal infections; availability of antifungal and antiviral drugs (posaconazole, letermovir, etc.)",
+     "prio": "Important"
+    },
+    {
+     "n": "1.58",
+     "sub": "Infrastructure and safety",
+     "q": "Supportive services: psychologist, nutritionist, rehabilitation, palliative care, fertility preservation",
+     "prio": "For reference"
+    }
+   ]
+  },
+  {
+   "tab": "2. Organizational",
+   "title": "2. Organizational matters",
+   "rows": [
+    {
+     "n": "2.1",
+     "sub": "General information about the hospital",
+     "q": "Full name, city, country; type of hospital (public, private, university)",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.2",
+     "sub": "General information about the hospital",
+     "q": "National status (reference center, center of competence, etc.)",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.3",
+     "sub": "Shared patient management",
+     "q": "Willingness to consult on de-identified data (without full name, IIN (individual identification number), date of birth) and on digital slides without personal labeling",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.4",
+     "sub": "Shared patient management",
+     "q": "Response time for a de-identified request: preliminary treatment plan and cost estimate",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.5",
+     "sub": "Shared patient management",
+     "q": "Online case conferences with our physicians: are they possible, language, who participates on the hospital's side, cost",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.6",
+     "sub": "Shared patient management",
+     "q": "Time from patient consent to admission; is there a waiting list for HSCT / CAR-T",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.7",
+     "sub": "Shared patient management",
+     "q": "Willingness to agree on the division of treatment phases: what we do in Kazakhstan before departure (induction, additional work-up) and after return",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.8",
+     "sub": "Shared patient management",
+     "q": "Discharge summary and discharge recommendations: language, timing, format; do they include the conditioning protocol, doses, follow-up plan",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.9",
+     "sub": "Shared patient management",
+     "q": "Communication after return: teleconsultations for our physicians, cost, response time; who makes decisions in case of relapse or GVHD",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.10",
+     "sub": "Shared patient management",
+     "q": "Procedure for complications after return: on-call physician contact, possibility of readmission and its terms",
+     "prio": "Important"
+    },
+    {
+     "n": "2.11",
+     "sub": "Shared patient management",
+     "q": "Russian-speaking coordinator or interpreter for the patient; languages spoken by physicians",
+     "prio": "Important"
+    },
+    {
+     "n": "2.12",
+     "sub": "Shared patient management",
+     "q": "List of documents required from the patient for admission: language, is a certified translation required",
+     "prio": "Important"
+    },
+    {
+     "n": "2.13",
+     "sub": "Shared patient management",
+     "q": "Experience with patients from Kazakhstan and the CIS: number per year, diseases",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.14",
+     "sub": "Logistics",
+     "q": "Average length of stay: inpatient and outpatient phase near the hospital (auto-HSCT, allo-HSCT, CAR-T)",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.15",
+     "sub": "Logistics",
+     "q": "Is the patient required to stay near the hospital after discharge (until day 100, etc.); can the patient return earlier under our follow-up",
+     "prio": "Critical"
+    },
+    {
+     "n": "2.16",
+     "sub": "Logistics",
+     "q": "Accommodation near the hospital: does the hospital assist, monthly cost, housing requirements after HSCT",
+     "prio": "Important"
+    },
+    {
+     "n": "2.17",
+     "sub": "Logistics",
+     "q": "Visa support (invitation letter) for the patient, donor and accompanying persons; processing times",
+     "prio": "Important"
+    },
+    {
+     "n": "2.18",
+     "sub": "Logistics",
+     "q": "How many accompanying persons are allowed and needed; requirements for them",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.19",
+     "sub": "Logistics",
+     "q": "Travel: direct flights from Astana / Almaty, travel time; arrangement of medical transport for a critically ill patient",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.20",
+     "sub": "Legal matters",
+     "q": "Has a memorandum been signed with our Center, its term, are there confidentiality obligations",
+     "prio": "Important"
+    },
+    {
+     "n": "2.21",
+     "sub": "Legal matters",
+     "q": "Language of the contract with the patient, governing law, claims procedure",
+     "prio": "Important"
+    },
+    {
+     "n": "2.22",
+     "sub": "Legal matters",
+     "q": "Hospital liability insurance toward the patient",
+     "prio": "For reference"
+    },
+    {
+     "n": "2.23",
+     "sub": "Legal matters",
+     "q": "Patient confidentiality and data protection policy",
+     "prio": "Important"
+    },
+    {
+     "n": "2.24",
+     "sub": "Legal matters",
+     "q": "Contact person for our Center: full name, position, email, phone",
+     "prio": "Important"
+    }
+   ]
+  },
+  {
+   "tab": "3. Finances",
+   "title": "3. Financial aspects",
+   "rows": [
+    {
+     "n": "3.1",
+     "sub": "Costs",
+     "q": "Cost of unrelated donor search and activation, graft delivery",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.2",
+     "sub": "Costs",
+     "q": "Package price for auto-HSCT (currency)",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.3",
+     "sub": "Costs",
+     "q": "Package price for allo-HSCT: from a related / unrelated / haploidentical donor",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.4",
+     "sub": "Costs",
+     "q": "Package price for CAR-T; cost of a course of induction chemotherapy",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.5",
+     "sub": "Costs",
+     "q": "What is and is not included in the package: drugs, transfusions, ICU, tests, outpatient phase, readmissions",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.6",
+     "sub": "Costs",
+     "q": "Policy when costs exceed the package: how charges are calculated, is the patient notified in advance, average actual bill for allo-HSCT",
+     "prio": "Critical"
+    },
+    {
+     "n": "3.7",
+     "sub": "Costs",
+     "q": "Cost per ICU day and of high-cost drugs (defibrotide, letermovir, ATG, ruxolitinib, etc.)",
+     "prio": "Important"
+    },
+    {
+     "n": "3.8",
+     "sub": "Costs",
+     "q": "Deposit and prepayment, currency and payment methods, refund of unused funds",
+     "prio": "Important"
+    },
+    {
+     "n": "3.9",
+     "sub": "Costs",
+     "q": "Installment plans, discounts, work with insurance companies and charitable foundations",
+     "prio": "For reference"
+    }
+   ]
+  },
+  {
+   "tab": "4. Hospital data",
+   "title": "4. Information from the hospital: strengths and weaknesses",
+   "rows": [
+    {
+     "n": "4.1",
+     "sub": "Strengths",
+     "q": "In which areas of hematology and HSCT does the hospital consider itself a leader in the country / region",
+     "prio": "Important"
+    },
+    {
+     "n": "4.2",
+     "sub": "Strengths",
+     "q": "Unique technologies, programs or drugs not available at most centers",
+     "prio": "Important"
+    },
+    {
+     "n": "4.3",
+     "sub": "Advantages for patients",
+     "q": "For which patient categories (disease, age, disease status) is the hospital the most preferable choice, and why",
+     "prio": "Critical"
+    },
+    {
+     "n": "4.4",
+     "sub": "Limitations",
+     "q": "Which patients does the hospital not accept or accept with restrictions (age, disease status, active infections, comorbidity)",
+     "prio": "Critical"
+    },
+    {
+     "n": "4.5",
+     "sub": "Limitations",
+     "q": "Weaknesses and limitations the patient should know about in advance (waiting lists, language barrier, unavailable treatments or drugs)",
+     "prio": "Important"
+    },
+    {
+     "n": "4.6",
+     "sub": "Strengths",
+     "q": "Which of its advantages does the hospital consider most important for patients from Kazakhstan",
+     "prio": "For reference"
+    }
+   ]
+  }
+ ]
+}
