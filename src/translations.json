@@ -2443,10 +2443,6 @@
   "en": "Public offer agreement",
   "kk": "Жария оферта шарты"
  },
- "Текст оферты готовится к публикации": {
-  "en": "The text of the offer is being prepared for publication",
-  "kk": "Оферта мәтіні жариялауға дайындалуда"
- },
  "Контакты для пациентов": {
   "en": "Contacts for patients",
   "kk": "Пациенттерге арналған байланыс"
@@ -2467,10 +2463,6 @@
   "en": "Click a step to see what happens there",
   "kk": "Қадамда не болатынын білу үшін оны басыңыз"
  },
- "Маршрут из пяти шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.": {
-  "en": "The five-step route starts and ends in Kazakhstan. The doctor's consultation and the international case conferences are program services. After the case conferences, treatment in Kazakhstan without travel may be possible. The contract with the clinic and treatment abroad are the clinic's responsibility. After you return, follow-up care continues in Kazakhstan.",
-  "kk": "Бес қадамнан тұратын маршрут Қазақстанда басталып, Қазақстанда аяқталады. Дәрігер кеңесі мен халықаралық консилиумдар — бағдарлама қызметтері. Консилиумдардан кейін сапарсыз Қазақстанда емделу мүмкін. Клиникамен шарт және шетелде емделу — клиниканың жауапкершілік аймағы. Оралғаннан кейін Қазақстанда диспансерлік бақылау жүреді."
- },
  "Зарубежная клиника": {
   "en": "Clinic abroad",
   "kk": "Шетелдік клиника"
@@ -2487,25 +2479,9 @@
   "en": "Contract",
   "kk": "Шарт"
  },
- "Услуги программы — консультация, консилиумы и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.": {
-  "en": "Program services are the consultation, the case conferences and follow-up after your return. You sign the treatment contract directly with the clinic.",
-  "kk": "Бағдарлама қызметтері — кеңес, консилиумдар және оралғаннан кейінгі бақылау. Емделу шартын Сіз клиникамен тікелей жасасасыз."
- },
- "Пять шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.": {
-  "en": "Five steps: from the doctor's consultation to follow-up at home. The consultation is free, and the decision to continue is always yours.",
-  "kk": "Бес қадам: дәрігер кеңесінен үйдегі бақылауға дейін. Кеңес тегін, ал жалғастыру туралы шешімді әрқашан Сіз қабылдайсыз."
- },
- "Пять шагов": {
-  "en": "Five steps",
-  "kk": "Бес қадам"
- },
  "Маршрут может завершиться на любом шаге. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.": {
   "en": "The route can end at any step. If the case conferences show that treatment is possible in Kazakhstan, there is no need to travel.",
   "kk": "Маршрут кез келген қадамда аяқталуы мүмкін. Егер консилиумдар емнің Қазақстанда мүмкін екенін көрсетсе, сапардың қажеті жоқ."
- },
- "Услуги программы — это первый, второй и пятый шаги: консультация врача, международные консилиумы с отчётом и наблюдение после возвращения.": {
-  "en": "The program services are the first, second and fifth steps: the doctor's consultation, international case conferences with a report, and follow-up after your return.",
-  "kk": "Бағдарлама қызметтері — бірінші, екінші және бесінші қадамдар: дәрігер кеңесі, есеппен бірге халықаралық консилиумдар және оралғаннан кейінгі бақылау."
  },
  "Договор на лечение вы заключаете напрямую с зарубежной клиникой. Лечение, его оплата и организация поездки — зона ответственности клиники.": {
   "en": "You sign the treatment contract directly with the clinic abroad. The treatment, its payment and travel arrangements are the clinic's responsibility.",
@@ -2550,10 +2526,6 @@
  "Врач знакомится с пациентом и родственниками и выясняет, какая помощь нужна.": {
   "en": "The doctor meets the patient and relatives and finds out what help is needed.",
   "kk": "Дәрігер науқаспен және туыстарымен танысып, қандай көмек қажет екенін анықтайды."
- },
- "Если мы вместе решаем идти по программе, вы принимаете договор-оферту, и мы оформляем услугу следующего шага.": {
-  "en": "If we decide together to proceed with the program, you accept the offer agreement and we arrange the service for the next step.",
-  "kk": "Егер бағдарлама бойынша жалғастыруды бірге шешсек, Сіз оферта шартын қабылдайсыз, ал біз келесі қадамның қызметін рәсімдейміз."
  },
  "Подготовить документы: выписки, заключения гематолога, результаты анализов, гистологии, описания КТ и ПЭТ-КТ, сведения о проведённом лечении.": {
   "en": "Prepare your documents: discharge summaries, hematologist's reports, lab results, histology, CT and PET-CT reports, and information about previous treatment.",
@@ -2611,10 +2583,6 @@
   "en": "The program's hematologists",
   "kk": "Бағдарлама гематологтары"
  },
- "Вы принимаете договор-оферту и оплачиваете услугу. С этого момента начинается платная работа.": {
-  "en": "You accept the offer agreement and pay for the service. From this point the paid work begins.",
-  "kk": "Сіз оферта шартын қабылдап, қызметке ақы төлейсіз. Осы сәттен бастап ақылы жұмыс басталады."
- },
  "Мы подбираем клиники под вашу клиническую задачу.": {
   "en": "We select clinics suited to your clinical needs.",
   "kk": "Сіздің клиникалық мәселеңізге сай клиникаларды іріктейміз."
@@ -2630,10 +2598,6 @@
  "Если консилиумы покажут, что нужное лечение возможно в Казахстане, мы скажем об этом прямо.": {
   "en": "If the case conferences show that the treatment you need is possible in Kazakhstan, we will tell you so directly.",
   "kk": "Егер консилиумдар қажетті емнің Қазақстанда мүмкін екенін көрсетсе, біз бұл туралы тура айтамыз."
- },
- "Принять договор-оферту и оплатить услугу.": {
-  "en": "Accept the offer agreement and pay for the service.",
-  "kk": "Оферта шартын қабылдап, қызметке ақы төлеу."
  },
  "Оставаться на связи: клиники могут запросить дополнительные данные.": {
   "en": "Stay in touch: the clinics may ask for additional information.",
@@ -2767,14 +2731,6 @@
   "en": "What each step includes",
   "kk": "Әр қадамға не кіреді"
  },
- "Платная часть программы начинается после того, как вы приняли оферту и оплатили услугу. С офертой вы знакомитесь после консультации врача, до любой оплаты.": {
-  "en": "The paid part of the program begins after you have accepted the offer and paid for the service. You see the offer after the doctor's consultation, before any payment.",
-  "kk": "Бағдарламаның ақылы бөлігі Сіз офертаны қабылдап, қызметке ақы төлегеннен кейін басталады. Офертамен Сіз дәрігер кеңесінен кейін, кез келген төлемге дейін танысасыз."
- },
- "версия 2026-11-18.2": {
-  "en": "version 2026-11-18.2",
-  "kk": "нұсқа 2026-11-18.2"
- },
  "Шаги маршрута": {
   "en": "Route steps",
   "kk": "Маршрут қадамдары"
@@ -2786,5 +2742,93 @@
  "Шаг": {
   "en": "Step",
   "kk": "Қадам"
+ },
+ "Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.": {
+  "en": "The six-step route starts and ends in Kazakhstan. The doctor's consultation and the international case conferences are program services. After the case conferences, treatment in Kazakhstan with no travel may be possible. The contract with the clinic and treatment abroad are the clinic's responsibility. After your return comes follow-up care in Kazakhstan.",
+  "kk": "Алты қадамнан тұратын маршрут Қазақстанда басталып, Қазақстанда аяқталады. Дәрігер кеңесі мен халықаралық консилиумдар — бағдарлама қызметтері. Консилиумдардан кейін сапарсыз Қазақстанда емделу мүмкін болуы ықтимал. Клиникамен шарт және шетелде емделу — клиниканың жауапкершілік аймағы. Оралғаннан кейін — Қазақстандағы диспансерлік бақылау."
+ },
+ "Оферта": {
+  "en": "Offer",
+  "kk": "Оферта"
+ },
+ "Услуги программы — консультация, консилиумы по договору-оферте и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.": {
+  "en": "The program's services are the consultation, the case conferences under the offer agreement, and follow-up care after your return. You sign the treatment contract directly with the clinic.",
+  "kk": "Бағдарлама қызметтері — кеңес, оферта шарты бойынша консилиумдар және оралғаннан кейінгі бақылау. Емдеу шартын Сіз клиникамен тікелей жасасасыз."
+ },
+ "Шесть шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.": {
+  "en": "Six steps: from the doctor's consultation to follow-up care at home. The consultation is free, and the decision to continue is always yours.",
+  "kk": "Алты қадам: дәрігер кеңесінен үйдегі бақылауға дейін. Кеңес тегін, ал жалғастыру туралы шешімді әрқашан Сіз қабылдайсыз."
+ },
+ "Шесть шагов": {
+  "en": "Six steps",
+  "kk": "Алты қадам"
+ },
+ "Услуги программы — это консультация врача, международные консилиумы с отчётом и наблюдение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.": {
+  "en": "The program's services are the doctor's consultation, the international case conferences with a report, and follow-up care after your return. The paid part begins only after you have accepted the offer agreement.",
+  "kk": "Бағдарлама қызметтері — дәрігер кеңесі, есебі бар халықаралық консилиумдар және оралғаннан кейінгі бақылау. Ақылы бөлік Сіз оферта шартын қабылдағаннан кейін ғана басталады."
+ },
+ "Если мы вместе решаем идти по программе, следующий шаг — договор-оферта.": {
+  "en": "If we decide together to go ahead with the program, the next step is the offer agreement.",
+  "kk": "Егер бағдарлама бойынша жүруді бірге шешсек, келесі қадам — оферта шарты."
+ },
+ "Договор-оферта": {
+  "en": "Offer agreement",
+  "kk": "Оферта шарты"
+ },
+ "До любой оплаты": {
+  "en": "Before any payment",
+  "kk": "Кез келген төлемге дейін"
+ },
+ "Если после консультации мы вместе решаем идти по программе, вы знакомитесь с публичным договором-офертой и принимаете его. Только после этого оформляется платная услуга.": {
+  "en": "If after the consultation we decide together to go ahead with the program, you read the public offer agreement and accept it. Only then is the paid service arranged.",
+  "kk": "Егер кеңестен кейін бағдарлама бойынша жүруді бірге шешсек, Сіз жария оферта шартымен танысып, оны қабылдайсыз. Ақылы қызмет содан кейін ғана ресімделеді."
+ },
+ "Текст оферты можно прочитать заранее.": {
+  "en": "You can read the text of the offer in advance.",
+  "kk": "Оферта мәтінін алдын ала оқуға болады."
+ },
+ "Посмотреть текст оферты": {
+  "en": "View the text of the offer",
+  "kk": "Оферта мәтінін қарау"
+ },
+ "Вы оплачиваете услугу по принятой оферте. С этого момента начинается платная работа.": {
+  "en": "You pay for the service under the accepted offer. From this point the paid work begins.",
+  "kk": "Сіз қабылданған оферта бойынша қызмет ақысын төлейсіз. Осы сәттен бастап ақылы жұмыс басталады."
+ },
+ "Оплатить услугу.": {
+  "en": "Pay for the service.",
+  "kk": "Қызмет ақысын төлеу."
+ },
+ "Платная часть программы начинается после того, как вы приняли оферту. С офертой вы знакомитесь после консультации врача, до любой оплаты.": {
+  "en": "The paid part of the program begins after you have accepted the offer. You read the offer after the doctor's consultation, before any payment.",
+  "kk": "Бағдарламаның ақылы бөлігі Сіз офертаны қабылдағаннан кейін басталады. Офертамен Сіз дәрігер кеңесінен кейін, кез келген төлемге дейін танысасыз."
+ },
+ "Приложение № 1. Согласие пациента и Доверенные лица (PDF, проект)": {
+  "en": "Appendix 1. Patient consent and Authorized persons (PDF in Russian, draft)",
+  "kk": "№ 1 қосымша. Науқастың келісімі және Сенім білдірілген тұлғалар (PDF, орыс тілінде, жоба)"
+ },
+ "Основной текст оферты готовится к публикации": {
+  "en": "The main text of the offer is being prepared for publication",
+  "kk": "Офертаның негізгі мәтіні жариялауға дайындалуда"
+ },
+ "Официальные правила": {
+  "en": "Official rules",
+  "kk": "Ресми қағидалар"
+ },
+ "Квоты на лечение в Казахстане и за рубежом": {
+  "en": "Quotas for treatment in Kazakhstan and abroad",
+  "kk": "Қазақстанда және шетелде емделуге арналған квоталар"
+ },
+ "— портал электронного правительства eGov.kz": {
+  "en": "— the eGov.kz e-government portal (in Russian)",
+  "kk": "— eGov.kz электрондық үкімет порталы"
+ },
+ "Правила направления граждан на лечение за рубеж": {
+  "en": "Rules for referring citizens for treatment abroad",
+  "kk": "Азаматтарды шетелге емделуге жіберу қағидалары"
+ },
+ "— приказ Министра здравоохранения от 26 мая 2021 года № ҚР ДСМ-45, актуальная редакция на «Әділет»": {
+  "en": "— Order of the Minister of Health No. ҚР ДСМ-45 of May 26, 2021, current version on the Adilet legal database (in Russian)",
+  "kk": "— Денсаулық сақтау министрінің 2021 жылғы 26 мамырдағы № ҚР ДСМ-45 бұйрығы, «Әділет» жүйесіндегі қолданыстағы редакциясы"
  }
 }

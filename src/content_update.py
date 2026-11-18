@@ -16,6 +16,7 @@ for _i, _st in enumerate(_R['stages'], 1):
     _body = '<p>%s</p>' % _e(_st['text'])
     if _st.get('gets'): _body += '\n          <p class="gets"><strong>Вы получаете:</strong> %s</p>' % _e(_st['gets'])
     if _st.get('note'): _body += '\n          <p class="gets">%s</p>' % _e(_st['note'])
+    if _st.get('link'): _body += '\n          <p class="rt-more"><a href="%s">%s</a></p>' % (_e(_st['link'][0]), _e(_st['link'][1]))
     if _st.get('happens'):
         _meta = '<dt>Где</dt><dd>%s</dd><dt>Оплата</dt><dd>%s</dd>' % (_e(_st['where']), _e(_st['pay']))
         if _st.get('term'): _meta += '<dt>Срок</dt><dd>%s</dd>' % _e(_st['term'])
@@ -42,12 +43,12 @@ _route = """  <section class="section">
     <div class="wrap">
       <div class="split">
         <div>
-          <h2>Пять шагов</h2>
+          <h2>Шесть шагов</h2>
           <p>Маршрут может завершиться на любом шаге. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.</p>
           <a class="btn btn-primary" href="#apply">Оставить заявку</a>
         </div>
         <div>
-          <p>Услуги программы — это первый, второй и пятый шаги: консультация врача, международные консилиумы с отчётом и наблюдение после возвращения.</p>
+          <p>Услуги программы — это консультация врача, международные консилиумы с отчётом и наблюдение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.</p>
           <p>Договор на лечение вы заключаете напрямую с зарубежной клиникой. Лечение, его оплата и организация поездки — зона ответственности клиники.</p>
           <div class="note"><p><strong>Консилиумы и отбор клиник — %s.</strong> Полное название услуги: «%s». Оплачивается после принятия договора-оферты. Консультация до этого бесплатна.</p></div>
         </div>
@@ -61,7 +62,7 @@ _a = s.index('  <section class="section">\n    <div class="wrap split">\n      <
 _b = s.rindex('  <section class="section">', 0, s.index('<h2>Психологическое сопровождение</h2>'))
 s = s[:_a] + _route + s[_b:]
 s = rep(s, '<p class="lead">Каждый этап имеет ответственного. Медицинские решения принимает врачебное ядро, организационные — операционная команда.</p>',
-        '<p class="lead">Пять шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.</p>')
+        '<p class="lead">Шесть шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.</p>')
 
 # ---------- 2. Cost page: programme services ----------
 s = rep(s, '<h2>Стоимость сопровождения</h2><p>Условия публикуются после утверждения финансовой модели центром.</p><span class="pending">На утверждении</span>',
@@ -135,7 +136,7 @@ s = s[:_p] + _blk + s[_pe:]
 
 # ---------- 5. Legal page: the public offer ----------
 s = rep(s, '<li><strong>Договор с пациентом (оферта)</strong><span class="pending">На юридической экспертизе</span></li>',
-        '<li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту и оплатили услугу. С офертой вы знакомитесь после консультации врача, до любой оплаты.<br><span class="pending">Текст оферты готовится к публикации</span></li>')
+        '<li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту. С офертой вы знакомитесь после консультации врача, до любой оплаты.<br><a href="docs/hemabridge-offer-appendix-1-ru.pdf" target="_blank" rel="noopener">Приложение № 1. Согласие пациента и Доверенные лица (PDF, проект)</a><br><span class="pending">Основной текст оферты готовится к публикации</span></li>')
 
 # ---------- 6. Clinics page: candidate centres with sources ----------
 _K = _json.load(open(B + 'clinics.json', encoding='utf-8'))
@@ -155,3 +156,16 @@ _b = s.index('<div class="note"', _a)
 s = s[:_a] + '<div class="tpl-grid clinics-grid">\n' + _cl + '      </div>\n      ' + s[_b:]
 s = rep(s, '<p class="small">Эти центры сейчас проходят проверку по матрице отбора. Мы публикуем только те сведения, которые подтверждены первоисточником, — остальные поля заполняются по мере проверки.</p>',
         '<p class="lead">Эти центры сейчас проходят проверку по матрице отбора. Партнёрами они станут только после подписания меморандума.</p><p class="small">Сведения взяты с официальных сайтов клиник и государственных порталов, актуальны на %s. Пометка «по данным клиники» означает, что мы ещё не получили независимого подтверждения. Клинику под ваш случай подбирают врачи на этапе консилиумов.</p>' % _e(_K['checked']))
+
+# ---------- 7. Clinics page shows the centres first; the selection matrix moves to the partners page ----------
+_cp = s.index('<div class="page" data-page="clinics"')
+_ma = s.index('  <section class="section">\n    <div class="wrap">\n      <h2>Как мы отбираем центры</h2>', _cp)
+_mb = s.index('  <section class="section">', _ma + 10)
+_matrix = s[_ma:_mb].replace('<section class="section">', '<section class="section" id="selection">', 1)
+s = s[:_ma] + s[_mb:]
+s = rep(s, '  <section class="section" id="questionnaire">', _matrix + '  <section class="section" id="questionnaire">')
+s = rep(s, '<a href="#clinics">Как мы отбираем центры</a>', '<a href="#selection">Как мы отбираем центры</a>')
+
+# ---------- 8. State route: links to the official rules ----------
+s = rep(s, '<div class="note"><p>Мы не обещаем квоту или государственное финансирование. Решение о направлении принимают уполномоченные государственные органы.</p></div>',
+        '<div class="note"><p>Мы не обещаем квоту или государственное финансирование. Решение о направлении принимают уполномоченные государственные органы.</p></div>\n        <h3 class="gov-h">Официальные правила</h3>\n        <ul class="plain gov-links">\n          <li><a href="https://egov.kz/cms/ru/articles/health_care/2Fkvota" target="_blank" rel="noopener">Квоты на лечение в Казахстане и за рубежом</a> — портал электронного правительства eGov.kz</li>\n          <li><a href="https://adilet.zan.kz/rus/docs/V2100022866" target="_blank" rel="noopener">Правила направления граждан на лечение за рубеж</a> — приказ Министра здравоохранения от 26 мая 2021 года № ҚР ДСМ-45, актуальная редакция на «Әділет»</li>\n        </ul>')

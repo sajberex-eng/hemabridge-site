@@ -34,7 +34,7 @@
                 <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
-            <desc id="rt-desc">Маршрут из пяти шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.</desc>
+            <desc id="rt-desc">Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.</desc>
             <defs>
               <symbol id="i1" viewBox="0 0 24 24"><path style="fill:var(--ico-fill);stroke:none" d="M7 3h7l4 4v14H7z"/><path d="M7 3h7l4 4v14H7z M14 3v4h4 M9.8 12h5.4 M9.8 15.6h5.4"/></symbol>
               <symbol id="i2" viewBox="0 0 24 24"><circle style="fill:var(--ico-fill);stroke:none" cx="18.5" cy="11" r="2.4"/><path d="M5 3.5v4.5a4 4 0 0 0 8 0V3.5 M9 12v2.5a4.8 4.8 0 0 0 9.5 0V13.4"/><circle cx="18.5" cy="11" r="2.4"/></symbol>
@@ -49,24 +49,25 @@
             <rect class="rt-band abroad" x="0" y="52" width="1000" height="84" rx="16"/>
             <rect class="rt-band" x="0" y="190" width="1000" height="84" rx="16"/>
             <text class="rt-band-label" x="18" y="74">Зарубежная клиника</text>
-            <text class="rt-band-label" x="635" y="262" text-anchor="middle">Казахстан</text>
-            <path class="rt-branch" d="M320 256 C320 312 350 318 390 318 L410 318"/>
+            <text class="rt-band-label" x="690" y="262" text-anchor="middle">Казахстан</text>
+            <path class="rt-branch" d="M410 256 C410 312 440 318 480 318 L500 318"/>
             <path class="rt-branch" d="M932 212 C985 192 990 150 990 124"/>
             <path class="rt-branch" d="M983 134 L990 118 L997 134" stroke-dasharray="0"/>
             <text class="rt-branch-label" x="996" y="40" text-anchor="end">Контрольные исследования</text>
-            <text class="rt-branch-label" x="418" y="323">Лечение в Казахстане — поездка не нужна</text>
-            <path class="rt-line rt-draw" id="rtLine" d="M110 232 L530 232 C635 232 635 94 740 94 C830 94 830 232 920 232"/>
+            <text class="rt-branch-label" x="508" y="323">Лечение в Казахстане — поездка не нужна</text>
+            <path class="rt-line rt-draw" id="rtLine" d="M90 232 L570 232 C660 232 660 94 750 94 C835 94 835 232 920 232"/>
             <g id="rtStops">
-              <g class="rt-stop" data-step="0" transform="translate(110 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Консультация</text></g>
-              <g class="rt-stop" data-step="1" transform="translate(320 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Консилиумы</text></g>
-              <g class="rt-stop ext" data-step="2" transform="translate(530 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Договор</text></g>
-              <g class="rt-stop ext" data-step="3" transform="translate(740 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
-              <g class="rt-stop" data-step="4" transform="translate(920 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
+              <g class="rt-stop" data-step="0" transform="translate(90 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Консультация</text></g>
+              <g class="rt-stop" data-step="1" transform="translate(250 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Оферта</text></g>
+              <g class="rt-stop" data-step="2" transform="translate(410 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Консилиумы</text></g>
+              <g class="rt-stop ext" data-step="3" transform="translate(570 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Договор</text></g>
+              <g class="rt-stop ext" data-step="4" transform="translate(750 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
+              <g class="rt-stop" data-step="5" transform="translate(920 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
             </g>
           </svg>
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
-          <div class="big"><span id="rtNum">1</span><span class="of" id="rtOf">/5</span></div>
+          <div class="big"><span id="rtNum">1</span><span class="of" id="rtOf">/6</span></div>
           <div class="rt-body" id="rtBody">
             <h3 id="rtTitle">Консультация врача</h3>
             <p class="rt-tags" id="rtTags"></p>
@@ -79,7 +80,7 @@
             <button type="button" id="rtNext" aria-label="Следующий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
-        <figcaption class="small">Услуги программы — консультация, консилиумы и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.</figcaption>
+        <figcaption class="small">Услуги программы — консультация, консилиумы по договору-оферте и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.</figcaption>
       </figure>
     </div>
   </section>
