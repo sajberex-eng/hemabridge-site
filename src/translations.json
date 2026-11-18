@@ -1475,10 +1475,6 @@
   "en": "We do not publish personal data without consent",
   "kk": "Келісімсіз дербес деректерді жарияламаймыз"
  },
- "Раскрываем характер финансовых отношений с партнёрами": {
-  "en": "We disclose the nature of our financial relationships with partners",
-  "kk": "Серіктестермен қаржылық қатынастардың сипатын ашып көрсетеміз"
- },
  "Не публикуем утверждения о статусе центра без документального подтверждения": {
   "en": "We do not publish claims about a center's status without documentary proof",
   "kk": "Құжатпен расталмаған орталық мәртебесі туралы мәлімдемелерді жарияламаймыз"
@@ -1870,10 +1866,6 @@
  "Согласие на трансграничную передачу данных": {
   "en": "Consent to cross-border data transfer",
   "kk": "Деректерді трансшекаралық беруге келісім"
- },
- "Раскрытие финансовых отношений с партнёрами": {
-  "en": "Disclosure of financial relationships with partners",
-  "kk": "Серіктестермен қаржылық қатынастарды ашу"
  },
  "Правила публикации клинических случаев": {
   "en": "Rules for publishing clinical cases",

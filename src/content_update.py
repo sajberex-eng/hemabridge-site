@@ -205,3 +205,5 @@ import re as _re2
 s, _n = _re2.subn(r'\s*<div class="note"><p><strong>Раскрытие финансовых отношений\.</strong>.*?</p></div>', '', s, flags=_re2.S); assert _n == 1
 s, _n = _re2.subn(r'\s*<div class="note"><p><strong>Финансовые отношения с партнёрами\.</strong>.*?</p></div>', '', s, flags=_re2.S); assert _n == 1
 s = rep(s, ' Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».', '')
+s, _n = _re2.subn(r'\s*<li>Раскрываем характер финансовых отношений с партнёрами</li>', '', s); assert _n == 1
+s, _n = _re2.subn(r'\s*<li><strong>Раскрытие финансовых отношений с партнёрами</strong><span class="pending">На юридической экспертизе</span></li>', '', s); assert _n == 1
