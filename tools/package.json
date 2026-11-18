@@ -1,0 +1,6 @@
+{
+  "name": "hemabridge-qa-tools",
+  "private": true,
+  "description": "Screenshot and language QA helpers for index.html (not part of the deployed site)",
+  "dependencies": { "playwright": "1.48.2" }
+}
