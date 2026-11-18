@@ -736,3 +736,6 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .stage > details:first-of-type{margin-top:12px}
 .gov-h{margin:26px 0 8px;font-size:1.15rem}
 .rule-list a{overflow-wrap:anywhere}
+.hc-cards{margin:28px 0}.hc-cards .fields{grid-template-columns:44% 1fr}
+.rule-list li,.rule-list .pending{overflow-wrap:anywhere;white-space:normal}
+.hc-cards .tpl h3{margin-bottom:12px}
