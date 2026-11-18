@@ -43,7 +43,8 @@ There is no test suite. Verify visually and with the page's own checks:
 - Ready-made helpers live in `tools/` (see `tools/README.md`): `shot.js`, `vp.js`, `langvp.js`, `langqa.js`, `keys.js`. They are not part of the deployed site.
 - Playwright with the preinstalled Chromium: use `executablePath: '/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell'` (the full `chrome` binary refuses the old headless mode). Load `file:///.../index.html#home`, test 1440 and 390 widths, light and dark (`colorScheme`), and every language (preset `localStorage['hb-lang']` via `addInitScript`).
 - Always check: no page errors, no horizontal overflow (`documentElement.scrollWidth - innerWidth`), no Cyrillic left in the English view.
-- `/home/user/.claude/skills/impeccable/scripts/impeccable detect --json index.html` runs the design-slop detector (known false positives: `dark-glow`, `cramped-padding` on `.table-scroll`).
+- `.claude/skills/impeccable/scripts/impeccable detect --json index.html` runs the design-slop detector (known false positives: `dark-glow`, `cramped-padding` on `.table-scroll`).
+- Design skills (Impeccable, Taste, Emil Kowalski) are vendored in `.claude/skills/` (see its README); `PRODUCT.md` and `.impeccable/surfaces/index-html.md` are the context Impeccable reads.
 
 ## Release and git
 
