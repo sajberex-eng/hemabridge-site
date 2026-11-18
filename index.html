@@ -719,6 +719,42 @@ html[lang="kk"] .page-head h1{max-width:28ch}
   .rt-list button[aria-pressed="true"] svg{background:var(--accent-ink);border-color:var(--accent-ink);stroke:var(--on-accent);--ico-fill:transparent}
 }
 html[lang="kk"] .fields{grid-template-columns:46% 1fr}
+/* ---- November 2026 content: nine stages, contacts, questionnaire, clinics ---- */
+.rt-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.rt-tags .place{margin-left:0;vertical-align:0}
+.rt-more{margin:10px 0 0;font-size:.92rem;font-weight:600}
+.stages{list-style:none;counter-reset:st;margin:56px 0 0;padding:0;display:grid;gap:16px}
+.stage{counter-increment:st;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px 22px 92px}
+.stage::before{content:counter(st);position:absolute;left:26px;top:24px;width:44px;height:44px;border-radius:50%;background:var(--clinic-wash);color:var(--clinic);font:700 1.15rem/44px var(--font);text-align:center;font-variant-numeric:lining-nums}
+.stage h3{margin:0 0 10px;font-size:1.4rem}
+.stage > p{margin:0 0 8px;max-width:72ch}
+.stage .gets{color:var(--muted)}
+.stage .gets strong{color:var(--ink)}
+.stage details{margin-top:12px;border-top:1px solid var(--line)}
+.stage summary{cursor:pointer;list-style:none;padding:14px 0 4px;font-weight:600;color:var(--accent-ink);display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.stage summary::-webkit-details-marker{display:none}
+.stage summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s var(--ease)}
+.stage details[open] summary::after{transform:translateY(2px) rotate(225deg)}
+.stage-meta{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:10px 0 18px;font-size:.95rem}
+.stage-meta dt{color:var(--muted)}
+.stage-meta dd{margin:0}
+.stage-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 32px;padding-bottom:6px}
+.stage-cols h4{margin:0 0 6px;color:var(--clinic)}
+.stage-cols .plain{font-size:.96rem}
+.tbd{color:var(--muted);font-style:italic}
+.foot-grid .foot-h{margin-top:20px}
+.contact-list li{font-size:1.05rem;color:var(--ink)}
+.clinics-grid{grid-template-columns:repeat(auto-fill,minmax(min(360px,100%),1fr));margin-top:28px}
+.clinics-grid .tpl-head{margin-bottom:14px}
+.tpl .src{margin:14px 0 0;overflow-wrap:anywhere}
+#questionnaire .actions{margin-top:22px}
+@media (max-width:640px){
+  .stage{padding:20px 18px 16px}
+  .stage::before{position:static;display:block;margin-bottom:12px}
+  .stage-cols{grid-template-columns:1fr}
+  .stage-meta{grid-template-columns:1fr;gap:2px}
+  .stage-meta dd{margin-bottom:8px}
+}
 </style>
 </head>
 <body>
@@ -807,7 +843,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
                 <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
-            <desc id="rt-desc">Маршрут начинается и заканчивается в Казахстане. После врачебной оценки возможно лечение в Казахстане без поездки. Зарубежный этап включает согласование врач–врач, организацию и лечение, затем передачу случая и наблюдение дома.</desc>
+            <desc id="rt-desc">Маршрут из девяти этапов начинается и заканчивается в Казахстане. Этапы с первого по шестой проходят дома и онлайн. После этапа «Предложение» возможно лечение в Казахстане без поездки. В партнёрском центре проходит только лечение, затем передача случая и наблюдение дома.</desc>
             <defs>
               <symbol id="i1" viewBox="0 0 24 24"><path style="fill:var(--ico-fill);stroke:none" d="M7 3h7l4 4v14H7z"/><path d="M7 3h7l4 4v14H7z M14 3v4h4 M9.8 12h5.4 M9.8 15.6h5.4"/></symbol>
               <symbol id="i2" viewBox="0 0 24 24"><circle style="fill:var(--ico-fill);stroke:none" cx="18.5" cy="11" r="2.4"/><path d="M5 3.5v4.5a4 4 0 0 0 8 0V3.5 M9 12v2.5a4.8 4.8 0 0 0 9.5 0V13.4"/><circle cx="18.5" cy="11" r="2.4"/></symbol>
@@ -822,39 +858,41 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
             <rect class="rt-band abroad" x="0" y="52" width="1000" height="84" rx="16"/>
             <rect class="rt-band" x="0" y="190" width="1000" height="84" rx="16"/>
             <text class="rt-band-label" x="18" y="74">Партнёрский центр</text>
-            <text class="rt-band-label" x="635" y="262" text-anchor="middle">Казахстан</text>
-            <path class="rt-branch" d="M190 254 C190 312 220 318 262 318 L290 318"/>
-            <path class="rt-branch" d="M958 210 C992 190 990 150 990 124"/>
+            <text class="rt-band-label" x="700" y="262" text-anchor="middle">Казахстан</text>
+            <path class="rt-branch" d="M470 256 C470 312 500 318 540 318 L560 318"/>
+            <path class="rt-branch" d="M950 210 C992 190 990 150 990 124"/>
             <path class="rt-branch" d="M983 134 L990 118 L997 134" stroke-dasharray="0"/>
             <text class="rt-branch-label" x="996" y="40" text-anchor="end">Контроль и телемедицина</text>
-            <text class="rt-branch-label" x="298" y="323">Лечение в Казахстане — поездка не нужна</text>
-            <path class="rt-line rt-draw" id="rtLine" d="M80 232 L410 232 C470 232 470 94 530 94 L740 94 C800 94 800 232 860 232 L950 232"/>
+            <text class="rt-branch-label" x="568" y="323">Лечение в Казахстане — поездка не нужна</text>
+            <path class="rt-line rt-draw" id="rtLine" d="M70 232 L570 232 C635 232 635 94 700 94 C765 94 765 232 830 232 L940 232"/>
             <g id="rtStops">
-              <g class="rt-stop" data-step="0" transform="translate(80 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Документы</text></g>
-              <g class="rt-stop" data-step="1" transform="translate(190 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Оценка врача</text></g>
-              <g class="rt-stop" data-step="2" transform="translate(300 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i3" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Анализы в РК</text></g>
-              <g class="rt-stop" data-step="3" transform="translate(410 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i4" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Выбор центра</text></g>
-              <g class="rt-stop" data-step="4" transform="translate(530 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Врач — врач</text></g>
-              <g class="rt-stop" data-step="5" transform="translate(635 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Организация</text></g>
-              <g class="rt-stop" data-step="6" transform="translate(740 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
-              <g class="rt-stop" data-step="7" transform="translate(860 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i8" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Передача</text></g>
-              <g class="rt-stop" data-step="8" transform="translate(950 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
+              <g class="rt-stop" data-step="0" transform="translate(70 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Заявка</text></g>
+              <g class="rt-stop" data-step="1" transform="translate(170 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Знакомство</text></g>
+              <g class="rt-stop" data-step="2" transform="translate(270 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i3" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Подготовка</text></g>
+              <g class="rt-stop" data-step="3" transform="translate(370 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i4" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Консилиумы</text></g>
+              <g class="rt-stop" data-step="4" transform="translate(470 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Предложение</text></g>
+              <g class="rt-stop" data-step="5" transform="translate(570 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Организация</text></g>
+              <g class="rt-stop" data-step="6" transform="translate(700 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
+              <g class="rt-stop" data-step="7" transform="translate(830 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i8" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Передача</text></g>
+              <g class="rt-stop" data-step="8" transform="translate(940 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
             </g>
           </svg>
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
           <div class="big"><span id="rtNum">1</span><span class="of">/9</span></div>
           <div class="rt-body" id="rtBody" data-i18n-skip>
-            <h3 id="rtTitle">Обращение и документы <span class="place">Казахстан</span></h3>
-            <p id="rtText">Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p>
-            <p class="who" id="rtWho">Кто отвечает: координатор документооборота</p>
+            <h3 id="rtTitle">Заявка и документы</h3>
+            <p class="rt-tags" id="rtTags"></p>
+            <p id="rtText">Заполните короткую форму и приложите документы, которые у вас есть. Если чего-то не хватает, мы подскажем.</p>
+            <p class="who" id="rtWho">Вы получаете: подтверждение в WhatsApp с номером обращения.</p>
+            <p class="rt-more"><a id="rtMore" href="#stage-1">Подробнее об этапе</a></p>
           </div>
           <div class="rt-pager">
             <button type="button" id="rtPrev" aria-label="Предыдущий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
             <button type="button" id="rtNext" aria-label="Следующий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
-        <figcaption class="small">Маршрут начинается и заканчивается дома. Зарубежный этап — только одна из его частей и только по врачебному решению.</figcaption>
+        <figcaption class="small">Маршрут может завершиться на любом этапе. Первые два этапа бесплатны, решение о продолжении всегда за вами.</figcaption>
       </figure>
     </div>
   </section>
@@ -1107,28 +1145,170 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div>
       <div class="crumb"><a href="#home">Главная</a> / Как это работает</div>
       <h1>Как проходит маршрут пациента</h1>
-      <p class="lead">Каждый этап имеет ответственного. Медицинские решения принимает врачебное ядро, организационные — операционная команда.</p>
+      <p class="lead">Девять этапов: от заявки до наблюдения дома. Первые два этапа бесплатны, решение о продолжении всегда за вами.</p>
       </div>
       <img class="illus" src="img/route-panorama.webp" width="1400" height="934" loading="lazy" decoding="async" alt="Маршрут пациента: от дома в Казахстане через мост к партнёрской клинике">
     </div>
   </section>
   <section class="section">
-    <div class="wrap split">
-      <div>
-        <h2>Девять этапов</h2>
-        <p>Маршрут может завершиться уже на втором этапе — если врачебная оценка покажет, что лечение возможно в Казахстане.</p>
-        <a class="btn btn-primary" href="#apply">Начать с оценки</a>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <h2>Девять этапов</h2>
+          <p>Маршрут может завершиться на любом этапе. Если консилиумы покажут, что лечение возможно в Казахстане, поездка не нужна.</p>
+          <a class="btn btn-primary" href="#apply">Оставить заявку</a>
+        </div>
+        <div>
+          <p>Первые два этапа бесплатные: вы отправляете документы и знакомитесь с программой. Медицинская работа начинается на третьем этапе, после вашего согласия и оплаты первого транша. Дальнейшие шаги оплачиваются только тогда, когда вы выбрали конкретный вариант лечения.</p>
+          <p>Вы можете отказаться после «Знакомства с программой» или после получения предложения, и это нормально.</p>
+          <div class="note"><p><strong>Первый транш — 50 000 тенге.</strong> Это услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ». В неё входят этапы 3–5: подготовка случая, консилиумы с центрами, предложение и план.</p></div>
+        </div>
       </div>
-      <ol class="steps">
-        <li><h3>Обращение и документы <span class="place">Казахстан</span></h3><p>Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p><p class="who">Кто отвечает: координатор документооборота</p></li>
-        <li><h3>Врачебная оценка <span class="place">Казахстан</span></h3><p>Гематолог изучает случай и формулирует клинический вопрос: что нужно пациенту и где это может быть сделано.</p><p class="who">Кто отвечает: гематологи программы</p></li>
-        <li><h3>Дополнительные анализы в Казахстане <span class="place">Казахстан</span></h3><p>Недостающие исследования выполняются дома — до поездки, если это клинически оправдано.</p><p class="who">Кто отвечает: гематологи программы, лечащий врач</p></li>
-        <li><h3>Подбор центра</h3><p>Центр выбирается по клинической задаче и внутренней матрице отбора, а не по коммерческим условиям.</p><p class="who">Кто отвечает: гематологи программы</p></li>
-        <li><h3>Согласование с зарубежным врачом <span class="place abroad">Партнёрский центр</span></h3><p>Врач–врач обсуждение структурированного медицинского резюме, план лечения и предварительная смета от центра.</p><p class="who">Кто отвечает: гематологи программы</p></li>
-        <li><h3>Организация поездки</h3><p>Документы, приглашение, логистика, перевод, связь с семьёй.</p><p class="who">Кто отвечает: операционный блок</p></li>
-        <li><h3>Лечение <span class="place abroad">Партнёрский центр</span></h3><p>Мы остаёмся на связи с лечащей командой центра и с пациентом.</p><p class="who">Кто отвечает: партнёрский центр, гематологи программы</p></li>
-        <li><h3>Возвращение и структурированная передача <span class="place">Казахстан</span></h3><p>Выписка, план наблюдения и рекомендации передаются лечащему врачу в Казахстане в согласованном формате.</p><p class="who">Кто отвечает: гематологи программы</p></li>
-        <li><h3>Долгосрочное наблюдение и обратная связь <span class="place">Казахстан</span><span class="place abroad">Партнёрский центр</span></h3><p>Наблюдение продолжается в Казахстане, а связь с партнёрской клиникой не прерывается. В зависимости от клинической ситуации это может быть:</p><ul class="ticks"><li>контрольные точки мониторинга и совместное ведение с лечащим врачом</li><li>повторные консультации в партнёрской клинике по графику наблюдения</li><li>контроль анализов с пересылкой биоматериала в партнёрскую лабораторию</li><li>телемедицинские консилиумы по сложным вопросам и при отклонениях</li></ul><p class="who">Кто отвечает: гематологи программы, лечащий врач, партнёрский центр</p></li>
+      <ol class="stages">
+        <li class="stage" id="stage-1">
+          <h3>Заявка и документы</h3>
+          <p class="rt-tags"><span class="place">Онлайн</span><span class="place">Бесплатно</span></p>
+          <p>Заполните короткую форму и приложите документы, которые у вас есть. Если чего-то не хватает, мы подскажем.</p>
+          <p class="gets"><strong>Вы получаете:</strong> подтверждение в WhatsApp с номером обращения.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Онлайн, на сайте</dd><dt>Оплата</dt><dd>Бесплатно</dd><dt>Кто отвечает</dt><dd>Администратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Вы заполняете короткую форму: как к вам обращаться, номер телефона с WhatsApp и в двух-трёх предложениях, с чем вы обращаетесь.</li><li>К заявке вы прикладываете документы, которые есть на руках. Если чего-то нет, это не повод откладывать обращение: недостающее мы подскажем позже.</li><li>Перед отправкой вы знакомитесь с пользовательским соглашением и согласием на обработку персональных данных и отмечаете галочку.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Заполнить форму. Обратиться может сам пациент или родственник с согласия пациента.</li><li>Приложить документы: выписки из стационара, заключения гематолога, результаты анализов крови и костного мозга, гистологии и иммуногистохимии, молекулярных и цитогенетических исследований, описания КТ, ПЭТ-КТ и МРТ, сведения о проведённом лечении.</li><li>Проверить, что номер телефона указан верно и на нём есть WhatsApp.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Принимаем заявку и документы, регистрируем обращение под номером.</li><li>Администратор проверяет, что документы открываются и читаются, и при необходимости уточняет детали в WhatsApp.</li><li>Медицинский куратор получает ваши документы для просмотра перед первым созвоном.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Сообщение в WhatsApp о том, что документы получены, с номером обращения.</li><li>Сообщение от администратора: он предложит время для «Знакомства с программой».</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-2">
+          <h3>Знакомство с программой</h3>
+          <p class="rt-tags"><span class="place">Онлайн</span><span class="place">Бесплатно</span><span class="place">15 минут</span></p>
+          <p>Короткий видеозвонок: объясняем, как работает программа и чем она может помочь вам. Это не медицинская консультация.</p>
+          <p class="gets"><strong>Вы получаете:</strong> предложение в WhatsApp со стоимостью и сроками следующего этапа.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Онлайн, видеозвонок</dd><dt>Оплата</dt><dd>Бесплатно</dd><dt>Кто отвечает</dt><dd>Медицинский куратор (врач) и администратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Медицинский куратор заранее просматривает ваши документы, поэтому разговор идёт предметно.</li><li>Мы рассказываем, как устроен маршрут, какие этапы возможны в вашей ситуации, кто за что отвечает, сколько это занимает времени и сколько стоит следующий этап.</li><li>Вы задаёте вопросы. К звонку можно подключить близкого человека.</li><li>На этом звонке мы не ставим диагноз и не назначаем лечение. Медицинскую позицию формируют консилиумы на следующих этапах.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Выбрать удобное время звонка.</li><li>Подготовить вопросы, которые для вас важны.</li><li>После звонка спокойно принять решение, продолжать ли маршрут.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Объясняем порядок работы, роли команды и условия.</li><li>Определяем, какие консилиумы и с какими по профилю центрами имеет смысл провести.</li><li>Отправляем вам письменное предложение.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Короткое предложение в WhatsApp: какие консилиумы планируются и с каким профилем центров (без названий клиник на этом этапе), стоимость первого этапа работы, сроки и ссылка на оферту.</li><li>Время подумать. Отказ на этом этапе — нормальный исход, и он ничего вам не стоит.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-3">
+          <h3>Подготовка случая</h3>
+          <p class="rt-tags"><span class="place">Казахстан</span><span class="place">Первый транш</span></p>
+          <p>Готовим ваш случай к обсуждению с зарубежными врачами. Недостающие исследования делаются дома, до любой поездки.</p>
+          <p class="gets"><strong>Вы получаете:</strong> медицинское резюме и, если нужно, список недостающих исследований.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Казахстан</dd><dt>Оплата</dt><dd>Входит в первый транш. Дополнительные анализы, если они нужны, оплачиваются отдельно</dd><dt>Кто отвечает</dt><dd>Медицинский куратор, гематологи программы</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Вы принимаете оферту и оплачиваете первый транш. С этого момента начинается платная медицинская часть работы.</li><li>Медицинский куратор формулирует клинический вопрос: что именно нужно решить и какие варианты стоит рассмотреть.</li><li>Составляется структурированное медицинское резюме в едином формате, понятном зарубежным врачам.</li><li>Если для решения не хватает данных, мы говорим, какие исследования нужны и где их сделать в Казахстане. Например, это может быть пересмотр гистологических препаратов, молекулярно-генетические или цитогенетические исследования, HLA-типирование, КТ или ПЭТ-КТ.</li><li>Документы переводятся на английский или на язык центра.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Принять оферту и оплатить первый транш.</li><li>При необходимости сдать дополнительные анализы и прислать результаты.</li><li>Ответить на уточняющие вопросы куратора.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Готовим медицинское резюме и полный переведённый пакет документов.</li><li>Подсказываем, где и как сделать недостающие исследования.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Понятный список недостающих исследований, если они нужны.</li><li>Готовый к обсуждению случай, оформленный так, чтобы центры могли ответить предметно.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-4">
+          <h3>Консилиумы с центрами</h3>
+          <p class="rt-tags"><span class="place">Дистанционно</span><span class="place">Первый транш</span></p>
+          <p>Медицинский куратор обсуждает ваш случай с врачами нескольких профильных центров. Это и есть медицинская консультация.</p>
+          <p class="gets"><strong>Вы получаете:</strong> ответы центров: метод, план, сроки и предварительная смета.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Дистанционно: Казахстан и партнёрские центры</dd><dt>Оплата</dt><dd>Входит в первый транш</dd><dt>Кто отвечает</dt><dd>Медицинский куратор, гематологи программы</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Мы выбираем несколько центров под вашу клиническую задачу. Центр выбирается по внутренней матрице отбора: аккредитация, опыт и объёмы по нужному методу, прозрачность результатов, готовность к общению врач–врач. Коммерческие условия не являются критерием выбора.</li><li>Консилиумы проходят в формате врач–врач: ваш случай обсуждают специалисты, а не менеджеры.</li><li>Каждый центр отвечает, может ли он помочь, каким методом, по какому плану, в какие сроки и с какой предварительной сметой.</li><li>Если консилиум покажет, что равноценное лечение возможно в Казахстане, этот вариант тоже рассматривается.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Оставаться на связи: центры могут запросить дополнительные данные.</li><li>Сообщать куратору об изменениях самочувствия или лечения.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Представляем ваш случай центрам и ведём переписку с ними.</li><li>Собираем и сравниваем ответы центров по одним и тем же критериям.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Сообщения о ходе консилиумов от администратора.</li><li>Итоги консилиумов передаются вам в виде предложения на следующем этапе.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-5">
+          <h3>Предложение и план</h3>
+          <p class="rt-tags"><span class="place">Онлайн</span><span class="place">Первый транш</span></p>
+          <p>Вы получаете 2–3 варианта и разбираете их с медицинским куратором. Решение принимаете вы.</p>
+          <p class="gets"><strong>Вы получаете:</strong> документ «Предложение и план дальнейших действий».</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Онлайн: документ и видеозвонок</dd><dt>Оплата</dt><dd>Входит в первый транш. Следующий транш оплачивается, только если вы выбрали вариант</dd><dt>Кто отвечает</dt><dd>Медицинский куратор, администратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Мы готовим документ «Предложение и план дальнейших действий» с 2–3 вариантами.</li><li>По каждому варианту указаны центр и страна (или лечение в Казахстане), метод лечения, ориентировочные сроки, стоимость лечения по смете центра и стоимость наших услуг, что нужно сделать до поездки и условия следующего транша.</li><li>На видеозвонке медицинский куратор разбирает с вами варианты, их плюсы и минусы и отвечает на вопросы.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Изучить предложение, при желании вместе с семьёй и лечащим врачом.</li><li>Выбрать вариант или отказаться от продолжения.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Объясняем различия между вариантами простым языком.</li><li>После вашего выбора согласовываем с центром дальнейшие шаги.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Письменное предложение с вариантами. Оно остаётся у вас, даже если вы решите не продолжать.</li><li>Ответы на ваши вопросы на видеозвонке.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-6">
+          <h3>Организация поездки</h3>
+          <p class="rt-tags"><span class="place">Казахстан</span><span class="place">По выбранному варианту</span></p>
+          <p>Готовим поездку, чтобы вы приехали в центр с полным пакетом документов и понятным планом.</p>
+          <p class="gets"><strong>Вы получаете:</strong> памятку поездки: даты, адреса, контакты.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Казахстан</dd><dt>Оплата</dt><dd>Следующий транш по выбранному варианту. Лечение оплачивается по смете центра</dd><dt>Кто отвечает</dt><dd>Администратор (операционный блок), медицинский куратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Подтверждаем с центром дату госпитализации или первого визита.</li><li>Получаем от центра приглашение и помогаем с визой, если она нужна.</li><li>По вашему желанию помогаем с билетами, проживанием и переводчиком на месте.</li><li>Передаём центру полный пакет документов до вашего приезда.</li><li>Если перед поездкой нужна подготовка или стабилизация состояния, она проводится в Казахстане вместе с вашим лечащим врачом.</li><li>По желанию подключаем психологическое сопровождение для вас и семьи (отдельная услуга).</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Оплатить следующий транш и лечение по согласованному порядку.</li><li>Подготовить паспорт и документы для визы.</li><li>Согласовать с лечащим врачом в Казахстане приём лекарств до отъезда.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Координируем все организационные шаги с центром.</li><li>Составляем для вас памятку поездки.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Памятку: даты, адреса, контакты центра и куратора, что взять с собой (документы, лекарства, результаты исследований).</li><li>Подтверждение от центра о дате приёма.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-7">
+          <h3>Лечение в центре</h3>
+          <p class="rt-tags"><span class="place abroad">Партнёрский центр</span><span class="place">По смете центра</span></p>
+          <p>Лечение проводит центр по согласованному плану. Мы на связи с вами и с вашими врачами.</p>
+          <p class="gets"><strong>Вы получаете:</strong> постоянный контакт с куратором на всё время лечения.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Партнёрский центр</dd><dt>Оплата</dt><dd>Лечение по смете центра. Наше сопровождение входит в выбранный вариант</dd><dt>Срок</dt><dd>Определяется методом лечения и указывается в плане центра</dd><dt>Кто отвечает</dt><dd>Партнёрский центр, медицинский куратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Центр проводит лечение по плану, который был согласован на консилиуме.</li><li>Медицинский куратор поддерживает связь с лечащими врачами центра и знает о ключевых решениях.</li><li>Если план лечения меняется, мы обсуждаем это с вами и помогаем разобраться.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Проходить лечение и сообщать куратору о вопросах и трудностях.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Остаёмся на связи с центром и с вами.</li><li>Объясняем происходящее на понятном вам языке.</li><li>Помогаем решать организационные вопросы на месте.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Постоянный контакт с куратором на всё время лечения.</li><li>Понимание того, что происходит и что будет дальше.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-8">
+          <h3>Возвращение и передача</h3>
+          <p class="rt-tags"><span class="place">Казахстан</span><span class="place">По выбранному варианту</span></p>
+          <p>Выписку и план наблюдения передаём вашему лечащему врачу в Казахстане.</p>
+          <p class="gets"><strong>Вы получаете:</strong> переведённую выписку и график контрольных точек.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Казахстан</dd><dt>Оплата</dt><dd>Входит в выбранный вариант</dd><dt>Кто отвечает</dt><dd>Медицинский куратор</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>До выписки получаем от центра выписку, рекомендации и план наблюдения.</li><li>Переводим документы и передаём их вашему лечащему врачу в Казахстане в согласованном формате.</li><li>При необходимости организуем разговор врач–врач между центром и вашим лечащим врачом.</li><li>Проверяем, что назначенные лекарства и анализы доступны вам дома.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Сообщить контакты лечащего врача в Казахстане и дать согласие на передачу ему документов.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Готовим и передаём пакет документов после лечения.</li><li>Составляем график контрольных точек.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Переведённую выписку и план наблюдения с датами контрольных точек.</li><li>Понимание, к кому обращаться дома и в какой ситуации.</li></ul></div>
+            </div>
+          </details>
+        </li>
+        <li class="stage" id="stage-9">
+          <h3>Долгосрочное наблюдение</h3>
+          <p class="rt-tags"><span class="place">Казахстан и центр</span><span class="place">По выбранному варианту</span></p>
+          <p>Наблюдение продолжается дома, а связь с центром не прерывается.</p>
+          <p class="gets"><strong>Вы получаете:</strong> врачи в Казахстане и в центре видят одну и ту же картину.</p>
+          <details>
+            <summary>Подробнее</summary>
+            <dl class="stage-meta"><dt>Где</dt><dd>Казахстан и партнёрский центр</dd><dt>Оплата</dt><dd>По выбранному варианту</dd><dt>Срок</dt><dd>Длительность и частота визитов определяются планом наблюдения, согласованным с центром</dd><dt>Кто отвечает</dt><dd>Медицинский куратор, ваш лечащий врач, партнёрский центр</dd></dl>
+            <div class="stage-cols">
+              <div><h4>Что происходит</h4><ul class="plain"><li>Контрольные точки мониторинга и совместное ведение с вашим лечащим врачом.</li><li>Повторные консультации в партнёрском центре по графику наблюдения.</li><li>Контроль анализов с пересылкой биоматериала в партнёрскую лабораторию, если это нужно.</li><li>Телемедицинские консилиумы по сложным вопросам и при отклонениях от плана.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Приходить на контрольные визиты и сдавать анализы по графику.</li><li>Сообщать куратору о любых изменениях самочувствия.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Следим за графиком наблюдения и напоминаем о контрольных точках.</li><li>Передаём результаты центру и организуем телеконсилиум, если что-то идёт не по плану.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Непрерывность лечения: врачи в Казахстане и в центре видят одну и ту же картину.</li></ul></div>
+            </div>
+          </details>
+        </li>
       </ol>
     </div>
   </section>
@@ -1305,60 +1485,38 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   <section class="section">
     <div class="wrap">
       <h2>Центры</h2>
-      <p class="small">Эти центры сейчас проходят проверку по матрице отбора. Мы публикуем только те сведения, которые подтверждены первоисточником, — остальные поля заполняются по мере проверки.</p>
-      <div class="tpl-grid" style="margin-top:24px">
-
+      <p class="lead">Эти центры сейчас проходят проверку по матрице отбора. Партнёрами они станут только после подписания меморандума.</p><p class="small">Сведения взяты с официальных сайтов клиник и государственных порталов, актуальны на ноябрь 2026. Пометка «по данным клиники» означает, что мы ещё не получили независимого подтверждения. Клинику под ваш случай подбирают врачи на этапе консилиумов.</p>
+      <div class="tpl-grid clinics-grid">
         <article class="tpl">
-          <div class="tpl-head"><div class="avatar">логотип</div><div><h3>Florence Nightingale</h3><span class="pending">Проверка идёт</span></div></div>
-          <dl class="fields">
-            <dt>Страна, город</dt><dd class="v">Турция, Стамбул</dd>
-            <dt>Профиль</dt><dd class="v">Центр трансплантации костного мозга в составе группы клиник</dd>
-            <dt>ТКМ</dt><dd class="v">Аутологичная, аллогенная, гаплоидентичная</dd>
-            <dt>Аккредитации</dt><dd class="v">JACIE — программа ТКМ; JCI — госпиталь</dd>
-            <dt>Объёмы</dt><dd class="v">Более 100 трансплантаций в год, свыше 1500 с 2008 года — по данным клиники</dd>
-            <dt>CAR-T</dt><dd>уточняется</dd>
-            <dt>Клинические исследования</dt><dd>уточняется</dd>
-            <dt>Совместное ведение</dt><dd>уточняется</dd>
-            <dt>Языки</dt><dd>уточняется</dd>
-          </dl>
-          <div class="chips"><span class="chip">ТКМ</span><span class="chip">JACIE</span><span class="chip">Турция</span></div>
-          <p class="small" style="margin-top:12px">Источник: <a href="https://www.groupflorence.com" rel="noopener">groupflorence.com</a></p>
+          <div class="tpl-head"><div><h3>Florence Nightingale</h3><span class="pending">Проверка идёт</span></div></div>
+          <dl class="fields"><dt>Страна, город</dt><dd class="v">Турция, Стамбул</dd><dt>Профиль</dt><dd class="v">Частная группа больниц (с 1989 года), центр трансплантации костного мозга</dd><dt>ТКМ</dt><dd class="v">Аутологичная и аллогенная</dd><dt>Аккредитации</dt><dd class="v">JCI — Istanbul Florence Nightingale Hospital, с 2013 года; JACIE — по данным клиники, год и область не указаны</dd><dt>Объёмы</dt><dd class="v">По данным клиники — более 100 трансплантаций в год; общее число на разных страницах клиники указано по-разному (от 1100 до 1500)</dd><dt>Оснащение</dt><dd class="v">Отделение ТКМ с HEPA-фильтрацией воздуха</dd><dt>Иностранным пациентам</dt><dd class="v">Международный центр, переводчики и трансфер; среди языков команды — русский и английский</dd></dl>
+          <div class="chips"><span class="chip">ТКМ</span><span class="chip">Турция</span></div>
+          <p class="small src">Источники: <a href="https://www.groupflorence.com/departments/comprehensive-transplant-center/" rel="noopener">groupflorence.com</a>, <a href="https://www.florence.com.tr/en-us/medical-units/bone-marrow-transplant-center" rel="noopener">florence.com.tr</a></p>
         </article>
-
         <article class="tpl">
-          <div class="tpl-head"><div class="avatar">логотип</div><div><h3>Medipol Mega</h3><span class="pending">Переговоры</span></div></div>
-          <dl class="fields">
-            <dt>Страна, город</dt><dd class="v">Турция, Стамбул</dd>
-            <dt>Профиль</dt><dd class="v">Университетский многопрофильный госпитальный комплекс</dd>
-            <dt>ТКМ</dt><dd>уточняется</dd>
-            <dt>CAR-T</dt><dd>уточняется</dd>
-            <dt>Аккредитации</dt><dd>уточняется</dd>
-            <dt>Объёмы</dt><dd>уточняется</dd>
-            <dt>Клинические исследования</dt><dd>уточняется</dd>
-            <dt>Совместное ведение</dt><dd>уточняется</dd>
-            <dt>Языки</dt><dd>уточняется</dd>
-          </dl>
-          <div class="chips"><span class="chip">Турция</span></div>
-          <p class="small" style="margin-top:12px">Данные запрошены у клиники.</p>
+          <div class="tpl-head"><div><h3>Medipol Mega</h3><span class="pending">Переговоры</span></div></div>
+          <dl class="fields"><dt>Страна, город</dt><dd class="v">Турция, Стамбул</dd><dt>Профиль</dt><dd class="v">Университетская больница Istanbul Medipol University, комплекс открыт в 2012 году</dd><dt>ТКМ</dt><dd class="v">Аутологичная и аллогенная; отдельные отделения для взрослых и для детей</dd><dt>Структура центра</dt><dd class="v">Амбулаторная и стационарная службы, аферез, лаборатория обработки стволовых клеток, блок интенсивной терапии</dd><dt>Аккредитации</dt><dd class="v">JCI по стандартам Academic Medical Center, с 2014 года — по данным клиники</dd><dt>Иностранным пациентам</dt><dd class="v">Международный центр с услугами перевода; у центра ТКМ есть страница на русском языке</dd></dl>
+          <div class="chips"><span class="chip">ТКМ</span><span class="chip">Турция</span></div>
+          <p class="small src">Источники: <a href="https://medipol.com.tr/ru/diagnosis-and-treatment/medical-centers/bone-marrow-stem-cell-transplantation" rel="noopener">medipol.com.tr</a>, <a href="https://medipolglobal.com/centers/bone-marrow-transplantation" rel="noopener">medipolglobal.com</a></p>
         </article>
-
         <article class="tpl">
-          <div class="tpl-head"><div class="avatar">логотип</div><div><h3>Max Healthcare</h3><span class="pending">Проверка идёт</span></div></div>
-          <dl class="fields">
-            <dt>Страна, город</dt><dd class="v">Индия, Дели NCR и другие города сети</dd>
-            <dt>Профиль</dt><dd class="v">Сеть многопрофильных госпиталей с программой ТКМ</dd>
-            <dt>ТКМ</dt><dd class="v">Аутологичная, аллогенная, гаплоидентичная, пуповинная кровь</dd>
-            <dt>CAR-T</dt><dd class="v">Заявлена как направление, детали уточняются</dd>
-            <dt>Международный отдел</dt><dd class="v">Есть</dd>
-            <dt>Аккредитации</dt><dd>уточняется</dd>
-            <dt>Объёмы</dt><dd>уточняется</dd>
-            <dt>Совместное ведение</dt><dd>уточняется</dd>
-            <dt>Языки</dt><dd>уточняется</dd>
-          </dl>
-          <div class="chips"><span class="chip">ТКМ</span><span class="chip">Индия</span></div>
-          <p class="small" style="margin-top:12px">Источник: <a href="https://www.maxhealthcare.in/our-specialities/bone-marrow-transplant" rel="noopener">maxhealthcare.in</a></p>
+          <div class="tpl-head"><div><h3>Acıbadem</h3><span class="pending">Проверка идёт</span></div></div>
+          <dl class="fields"><dt>Страна, города</dt><dd class="v">Турция: Стамбул, Адана, Анкара</dd><dt>Профиль</dt><dd class="v">Частная группа больниц; центры ТКМ для взрослых и для детей</dd><dt>ТКМ</dt><dd class="v">Аутологичная, аллогенная, гаплоидентичная</dd><dt>CAR-T</dt><dd class="v">Доступна; клетки производятся в лаборатории Acıbadem Labcell — по данным клиники</dd><dt>Аккредитации</dt><dd class="v">JCI — больницы Adana и Maslak (с 2010), Atakent (с 2017), Altunizade (с 2019) — по данным клиники</dd><dt>Иностранным пациентам</dt><dd class="v">Представительство в Астане, поддержка на русском и английском; русскоязычный сайт</dd></dl>
+          <div class="chips"><span class="chip">ТКМ</span><span class="chip">CAR-T</span><span class="chip">Турция</span></div>
+          <p class="small src">Источники: <a href="https://www.acibadem.com.tr/en/service/bone-marrow-transplant-unit-adult/" rel="noopener">acibadem.com.tr</a>, <a href="https://acibademinternational.com/international-offices/office-kazakhstan-astana/" rel="noopener">acibademinternational.com</a>, <a href="https://www.acibadem.com.ru/stem-cell-transfer/" rel="noopener">acibadem.com.ru</a></p>
         </article>
-
+        <article class="tpl">
+          <div class="tpl-head"><div><h3>Max Healthcare (Saket)</h3><span class="pending">Проверка идёт</span></div></div>
+          <dl class="fields"><dt>Страна, город</dt><dd class="v">Индия, Нью-Дели (Сакет)</dd><dt>Профиль</dt><dd class="v">Max Super Speciality Hospital, Saket — многопрофильная больница сети Max Healthcare; East Block — подразделение Devki Devi Foundation</dd><dt>ТКМ</dt><dd class="v">Аутологичная, аллогенная, гаплоидентичная; есть детская ТКМ</dd><dt>CAR-T</dt><dd class="v">Проводится для отдельных пациентов с опухолями крови — по данным клиники</dd><dt>Аккредитации</dt><dd class="v">JCI и NABH — по данным клиники</dd><dt>Оснащение</dt><dd class="v">Палаты с HEPA-фильтрацией</dd><dt>Иностранным пациентам</dt><dd class="v">Международный отдел: координатор, приглашение для медицинской визы, трансфер; переводчики, включая русский язык</dd></dl>
+          <div class="chips"><span class="chip">ТКМ</span><span class="chip">CAR-T</span><span class="chip">Индия</span></div>
+          <p class="small src">Источники: <a href="https://www.maxhealthcare.in/our-specialities/bone-marrow-transplant" rel="noopener">maxhealthcare.in</a>, <a href="https://healinindia.gov.in/hospital/max-super-speciality-hospital-east-block-a-unit-of-devki-devi-foundation" rel="noopener">healinindia.gov.in</a></p>
+        </article>
+        <article class="tpl">
+          <div class="tpl-head"><div><h3>Минский НПЦ хирургии, трансплантологии и гематологии</h3><span class="pending">Проверка идёт</span></div></div>
+          <dl class="fields"><dt>Страна, город</dt><dd class="v">Беларусь, Минск</dd><dt>Профиль</dt><dd class="v">Государственный научно-практический центр; Республиканский центр гематологии и пересадки костного мозга работает с 1993 года</dd><dt>ТКМ</dt><dd class="v">Аутологичная, аллогенная родственная и неродственная</dd><dt>CAR-T</dt><dd class="v">Услуга заявлена на сайте центра, в том числе при множественной миеломе</dd><dt>Объёмы</dt><dd class="v">Более 2000 трансплантаций за время работы — по данным центра, период не указан</dd><dt>Структура</dt><dd class="v">Гематологические отделения, отделение ТКМ, лаборатория HLA-типирования, собственное производство клеточных продуктов</dd><dt>Иностранным пациентам</dt><dd class="v">Платная помощь иностранным гражданам по отдельному прейскуранту; обслуживание на русском языке</dd></dl>
+          <div class="chips"><span class="chip">ТКМ</span><span class="chip">CAR-T</span><span class="chip">Беларусь</span></div>
+          <p class="small src">Источники: <a href="https://msth.by/respublikanskij-tsentr-gematologii-i-peresadki-kostnogo-mozga" rel="noopener">msth.by</a>, <a href="https://www.msthps.by/services/transplantatsiya/kostnogo-mozga-i-stvolovykh-kletok-perifericheskoy-krovi/" rel="noopener">msthps.by</a></p>
+        </article>
       </div>
       <div class="note" style="margin-top:24px"><p><strong>Что означают пометки.</strong> «Проверка по матрице идёт» — центр рассматривается как партнёр, часть сведений подтверждена первоисточником, остальные запрошены. Пока проверка и договор не завершены, мы не называем центр партнёром и не направляем туда пациентов.</p></div>
 <div class="note"><p><strong>Финансовые отношения с партнёрами.</strong> Характер финансовых отношений с каждым центром раскрывается в разделе <a href="#cost">«Стоимость»</a> в юридически допустимом объёме.</p></div>
@@ -1550,7 +1708,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   </section>
   <section class="section">
     <div class="wrap split">
-      <div><h2>Что получает центр</h2><div class="actions"><a class="btn btn-primary" href="#contacts-block" data-scroll>Стать партнёром</a></div><img class="illus" src="img/doctor-to-doctor.webp" width="900" height="900" loading="lazy" decoding="async" alt="Врач-гематолог на видеосвязи с врачом партнёрской клиники"></div>
+      <div><h2>Что получает центр</h2><div class="actions"><a class="btn btn-primary" href="#questionnaire" data-scroll>Скачать опросник</a><a class="btn btn-ghost" href="#partner-contacts" data-scroll>Контакты для партнёров</a></div><img class="illus" src="img/doctor-to-doctor.webp" width="900" height="900" loading="lazy" decoding="async" alt="Врач-гематолог на видеосвязи с врачом партнёрской клиники"></div>
       <ul class="rule-list">
         <li><strong>Структурированный medical summary</strong>В едином формате, с клиническим вопросом.</li>
         <li><strong>Полный пакет документов</strong>Проверенный и переведённый.</li>
@@ -1560,6 +1718,35 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
         <li><strong>Совместное ведение</strong>После возвращения пациента — вместе с врачами в Казахстане.</li>
         <li><strong>План наблюдения</strong>С обратной связью центру.</li>
       </ul>
+    </div>
+  </section>
+  <section class="section" id="questionnaire">
+    <div class="wrap split">
+      <div>
+        <h2>Опросник для клиник</h2>
+        <p class="lead">С опросника начинается отбор центра. По нему наши врачи сравнивают клиники по одним и тем же критериям.</p>
+        <div class="actions q-files" data-i18n-skip>
+          <a class="btn btn-primary" href="docs/hemabridge-partner-questionnaire-ru.xlsx" download lang="ru">Скачать на русском (.xlsx)</a>
+          <a class="btn btn-ghost" href="docs/hemabridge-partner-questionnaire-kk.xlsx" download lang="kk">Қазақ тілінде жүктеу (.xlsx)</a>
+          <a class="btn btn-ghost" href="docs/hemabridge-partner-questionnaire-en.xlsx" download lang="en">Download in English (.xlsx)</a>
+        </div>
+        <p class="small">Файл Excel на русском, казахском и английском языках: 97 вопросов на четырёх закладках.</p>
+      </div>
+      <div>
+        <ul class="rule-list">
+          <li><strong>1. Медицинская информация</strong>Опыт программы, нозологии, трансплантация, поиск донора, результаты лечения, клеточная терапия, диагностика, инфраструктура — 58 вопросов.</li>
+          <li><strong>2. Организационные вопросы</strong>Общие сведения, совместное ведение, логистика, юридические вопросы — 24 вопроса.</li>
+          <li><strong>3. Финансовая сторона</strong>Пакетные цены, состав пакета, депозит и порядок оплаты — 9 вопросов.</li>
+          <li><strong>4. Данные клиники</strong>Сильные стороны, преимущества для пациентов и ограничения — 6 вопросов.</li>
+        </ul>
+        <div class="note"><p><strong>Как заполнить и отправить.</strong> Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл отправьте на почту для партнёров.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="partner-contacts">
+    <div class="wrap split">
+      <div><h2>Контакты для партнёров</h2><p class="lead">Для вопросов о сотрудничестве и отправки заполненного опросника.</p></div>
+      <ul class="rule-list contact-list"><li>Телефон: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
     </div>
   </section>
 </div>
@@ -1649,7 +1836,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div class="cost-parts">
         <div><p class="who">Определяет зарубежный центр</p><h2>Медицинская стоимость</h2><p>Смета на лечение формируется центром после изучения документов. Мы не публикуем гарантированных цен до получения сметы.</p></div>
         <div><p class="who">Зависят от маршрута</p><h2>Организационные расходы</h2><p>Перелёт, проживание, виза, перевод, трансфер. Оцениваются индивидуально.</p></div>
-        <div><p class="who">Услуги проекта</p><h2>Стоимость сопровождения</h2><p>Условия публикуются после утверждения финансовой модели центром.</p><span class="pending">На утверждении</span></div>
+        <div><p class="who">Услуги проекта</p><h2>Стоимость сопровождения</h2><p><strong>Первый транш — 50 000 тенге.</strong> Услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ»: подготовка случая, консилиумы с центрами, предложение и план.</p><p>Стоимость следующих этапов зависит от выбранного варианта и указывается в документе «Предложение и план».</p><p><a href="#route">Что входит в каждый этап</a></p></div>
       </div>
       <div class="note"><p><strong>Раскрытие финансовых отношений.</strong> Если программа получает вознаграждение от зарубежных центров, характер этих отношений будет раскрыт здесь в юридически допустимом объёме. Финансовые условия не влияют на врачебный выбор центра.</p></div>
     </div>
@@ -1784,7 +1971,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
         <li><strong>Политика конфиденциальности</strong><span class="pending">На юридической экспертизе</span></li>
         <li><strong>Согласие на обработку персональных и медицинских данных</strong><span class="pending">На юридической экспертизе</span></li>
         <li><strong>Согласие на трансграничную передачу данных</strong><span class="pending">На юридической экспертизе</span></li>
-        <li><strong>Договор с пациентом (оферта)</strong><span class="pending">На юридической экспертизе</span></li>
+        <li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту и оплатили первый транш. Ссылку на оферту вы получаете после «Знакомства с программой», до любой оплаты.<br><span class="pending">Текст оферты готовится к публикации</span></li>
         <li><strong>Раскрытие финансовых отношений с партнёрами</strong><span class="pending">На юридической экспертизе</span></li>
         <li><strong>Правила публикации клинических случаев</strong><span class="pending">На юридической экспертизе</span></li>
         <li><strong>Медицинский дисклеймер</strong>Информация на сайте носит ознакомительный характер и не является медицинской рекомендацией. Решение о лечении принимается врачом после очной или дистанционной консультации.</li>
@@ -1835,19 +2022,22 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
         <ul><li><a href="#physicians">Для врачей</a></li><li><a href="#partners">Партнёрам-клиникам</a></li><li><a href="#clinics">Клиники</a></li><li><a href="#doctors">Врачи и команда</a></li><li><a href="#about">О программе</a></li></ul>
       </div>
       <div>
-        <h4>Контакты</h4>
+        <h4>Контакты для пациентов</h4>
+        <ul><li>Телефон: <span class="tbd">будет добавлен</span></li><li>WhatsApp: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
+        <h4 class="foot-h">Контакты для партнёров</h4>
+        <ul><li>Телефон: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
+        <h4 class="foot-h">Центр гематологии</h4>
         <ul>
           <li>Телефон: <a href="tel:+77770793165">+7 777 079 3165</a></li>
           <li>E-mail: <a href="mailto:info@hemcenter.kz">info@hemcenter.kz</a></li>
           <li>Сайт центра: <a href="https://hemcenter.kz/ru" data-hc rel="noopener">hemcenter.kz</a></li>
           <li>Астана, ул. Кенесары, 4Б</li>
-          <li class="ph small">Отдельная линия программы — уточняется</li>
         </ul>
       </div>
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-10-20.4"></span></p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-18.1"></span></p>
     </div>
   </div>
 </footer>
@@ -1863,7 +2053,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-10-20.4';
+  var VERSION = '2026-11-18.1';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
@@ -2044,17 +2234,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   }
 
   // interactive route map: each stop opens its description below the map
-  var STEPS = [
-    {t:'Обращение и документы', p:['Казахстан'], d:'Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.', w:'координатор документооборота'},
-    {t:'Врачебная оценка', p:['Казахстан'], d:'Гематолог изучает случай и формулирует клинический вопрос: что нужно пациенту и где это может быть сделано.', w:'гематологи программы'},
-    {t:'Дополнительные анализы в Казахстане', p:['Казахстан'], d:'Недостающие исследования выполняются дома — до поездки, если это клинически оправдано.', w:'гематологи программы, лечащий врач'},
-    {t:'Подбор центра', p:[], d:'Центр выбирается по клинической задаче и внутренней матрице отбора, а не по коммерческим условиям.', w:'гематологи программы'},
-    {t:'Согласование с зарубежным врачом', p:['Партнёрский центр'], d:'Врач–врач обсуждение структурированного медицинского резюме, план лечения и предварительная смета от центра.', w:'гематологи программы'},
-    {t:'Организация поездки', p:[], d:'Документы, приглашение, логистика, перевод, связь с семьёй.', w:'операционный блок'},
-    {t:'Лечение', p:['Партнёрский центр'], d:'Мы остаёмся на связи с лечащей командой центра и с пациентом.', w:'партнёрский центр, гематологи программы'},
-    {t:'Возвращение и структурированная передача', p:['Казахстан'], d:'Выписка, план наблюдения и рекомендации передаются лечащему врачу в Казахстане в согласованном формате.', w:'гематологи программы'},
-    {t:'Долгосрочное наблюдение и обратная связь', p:['Казахстан','Партнёрский центр'], d:'Наблюдение продолжается в Казахстане, а связь с партнёрской клиникой не прерывается: контрольные анализы, повторные консультации и телемедицинские консилиумы.', w:'гематологи программы, лечащий врач, партнёрский центр'}
-  ];
+  var STEPS = [{"t": "Заявка и документы", "p": ["Онлайн", "Бесплатно"], "a": false, "d": "Заполните короткую форму и приложите документы, которые у вас есть. Если чего-то не хватает, мы подскажем.", "g": "подтверждение в WhatsApp с номером обращения."}, {"t": "Знакомство с программой", "p": ["Онлайн", "Бесплатно", "15 минут"], "a": false, "d": "Короткий видеозвонок: объясняем, как работает программа и чем она может помочь вам. Это не медицинская консультация.", "g": "предложение в WhatsApp со стоимостью и сроками следующего этапа."}, {"t": "Подготовка случая", "p": ["Казахстан", "Первый транш"], "a": false, "d": "Готовим ваш случай к обсуждению с зарубежными врачами. Недостающие исследования делаются дома, до любой поездки.", "g": "медицинское резюме и, если нужно, список недостающих исследований."}, {"t": "Консилиумы с центрами", "p": ["Дистанционно", "Первый транш"], "a": false, "d": "Медицинский куратор обсуждает ваш случай с врачами нескольких профильных центров. Это и есть медицинская консультация.", "g": "ответы центров: метод, план, сроки и предварительная смета."}, {"t": "Предложение и план", "p": ["Онлайн", "Первый транш"], "a": false, "d": "Вы получаете 2–3 варианта и разбираете их с медицинским куратором. Решение принимаете вы.", "g": "документ «Предложение и план дальнейших действий»."}, {"t": "Организация поездки", "p": ["Казахстан", "По выбранному варианту"], "a": false, "d": "Готовим поездку, чтобы вы приехали в центр с полным пакетом документов и понятным планом.", "g": "памятку поездки: даты, адреса, контакты."}, {"t": "Лечение в центре", "p": ["Партнёрский центр", "По смете центра"], "a": true, "d": "Лечение проводит центр по согласованному плану. Мы на связи с вами и с вашими врачами.", "g": "постоянный контакт с куратором на всё время лечения."}, {"t": "Возвращение и передача", "p": ["Казахстан", "По выбранному варианту"], "a": false, "d": "Выписку и план наблюдения передаём вашему лечащему врачу в Казахстане.", "g": "переведённую выписку и график контрольных точек."}, {"t": "Долгосрочное наблюдение", "p": ["Казахстан и центр", "По выбранному варианту"], "a": false, "d": "Наблюдение продолжается дома, а связь с центром не прерывается.", "g": "врачи в Казахстане и в центре видят одну и ту же картину."}];
   var stops = Array.prototype.slice.call(document.querySelectorAll('.rt-stop'));
   var rtBody = document.getElementById('rtBody');
   var rtCur = 0, rtTimer, rtItems = [];
@@ -2063,9 +2243,13 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   function paintStep(i){
     var s = STEPS[i];
     document.getElementById('rtNum').textContent = i + 1;
-    document.getElementById('rtTitle').innerHTML = esc(tr(s.t)) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(tr(p)) + '</span>'; }).join('');
+    document.getElementById('rtTitle').textContent = tr(s.t);
+    document.getElementById('rtTags').innerHTML = s.p.map(function(p){ return '<span class="place' + (p === 'Партнёрский центр' ? ' abroad' : '') + '">' + esc(tr(p)) + '</span>'; }).join(' ');
     document.getElementById('rtText').textContent = tr(s.d);
-    document.getElementById('rtWho').textContent = tr('Кто отвечает') + ': ' + tr(s.w);
+    document.getElementById('rtWho').textContent = tr('Вы получаете') + ': ' + tr(s.g);
+    var more = document.getElementById('rtMore');
+    more.textContent = tr('Подробнее об этапе');
+    more.setAttribute('href', '#stage-' + (i + 1));
   }
   function selectStep(i, focus){
     if(i < 0 || i >= STEPS.length) return;
@@ -2096,7 +2280,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     list.setAttribute('data-i18n-skip', '');
     STEPS.forEach(function(st, k){
       var li = document.createElement('li');
-      var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
+      var abroad = !!st.a;
       li.className = abroad ? 'abroad' : '';
       var b = document.createElement('button');
       b.type = 'button';
@@ -2115,8 +2299,8 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
   };
   // every Russian string used by this script, so the translation tool can list them
-  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
-    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.w]); }, []));
+  window.__i18nDyn = ['Вы получаете', 'Подробнее об этапе', 'Этап', 'Этапы маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g], x.p); }, []));
   refreshDynamic = function(){
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
@@ -2197,6 +2381,16 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     var radio = document.querySelector('form[data-wizard] input[name="req"][value="' + r.getAttribute('data-req') + '"]');
     if(radio) radio.checked = true;
   });
+
+  // "#stage-N" opens that stage's details on the route page
+  function openStageFromHash(){
+    var m = /^#stage-(\d)$/.exec(location.hash);
+    var el = m && document.getElementById('stage-' + m[1]);
+    var d = el && el.querySelector('details');
+    if(d){ d.open = true; el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openStageFromHash);
+  openStageFromHash();
   window.addEventListener('hashchange', route);
   route();
   initLang();

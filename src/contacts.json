@@ -1,0 +1,5 @@
+{
+ "_note": "Пустое значение выводится на сайте как «будет добавлен». Заполните и пересоберите: cd src && python3 build.py",
+ "patients": {"phone": "", "whatsapp": "", "email": ""},
+ "partners": {"phone": "", "email": ""}
+}

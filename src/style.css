@@ -692,3 +692,39 @@ html[lang="kk"] .page-head h1{max-width:28ch}
   .rt-list button[aria-pressed="true"] svg{background:var(--accent-ink);border-color:var(--accent-ink);stroke:var(--on-accent);--ico-fill:transparent}
 }
 html[lang="kk"] .fields{grid-template-columns:46% 1fr}
+/* ---- November 2026 content: nine stages, contacts, questionnaire, clinics ---- */
+.rt-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.rt-tags .place{margin-left:0;vertical-align:0}
+.rt-more{margin:10px 0 0;font-size:.92rem;font-weight:600}
+.stages{list-style:none;counter-reset:st;margin:56px 0 0;padding:0;display:grid;gap:16px}
+.stage{counter-increment:st;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px 22px 92px}
+.stage::before{content:counter(st);position:absolute;left:26px;top:24px;width:44px;height:44px;border-radius:50%;background:var(--clinic-wash);color:var(--clinic);font:700 1.15rem/44px var(--font);text-align:center;font-variant-numeric:lining-nums}
+.stage h3{margin:0 0 10px;font-size:1.4rem}
+.stage > p{margin:0 0 8px;max-width:72ch}
+.stage .gets{color:var(--muted)}
+.stage .gets strong{color:var(--ink)}
+.stage details{margin-top:12px;border-top:1px solid var(--line)}
+.stage summary{cursor:pointer;list-style:none;padding:14px 0 4px;font-weight:600;color:var(--accent-ink);display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.stage summary::-webkit-details-marker{display:none}
+.stage summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s var(--ease)}
+.stage details[open] summary::after{transform:translateY(2px) rotate(225deg)}
+.stage-meta{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:10px 0 18px;font-size:.95rem}
+.stage-meta dt{color:var(--muted)}
+.stage-meta dd{margin:0}
+.stage-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 32px;padding-bottom:6px}
+.stage-cols h4{margin:0 0 6px;color:var(--clinic)}
+.stage-cols .plain{font-size:.96rem}
+.tbd{color:var(--muted);font-style:italic}
+.foot-grid .foot-h{margin-top:20px}
+.contact-list li{font-size:1.05rem;color:var(--ink)}
+.clinics-grid{grid-template-columns:repeat(auto-fill,minmax(min(360px,100%),1fr));margin-top:28px}
+.clinics-grid .tpl-head{margin-bottom:14px}
+.tpl .src{margin:14px 0 0;overflow-wrap:anywhere}
+#questionnaire .actions{margin-top:22px}
+@media (max-width:640px){
+  .stage{padding:20px 18px 16px}
+  .stage::before{position:static;display:block;margin-bottom:12px}
+  .stage-cols{grid-template-columns:1fr}
+  .stage-meta{grid-template-columns:1fr;gap:2px}
+  .stage-meta dd{margin-bottom:8px}
+}

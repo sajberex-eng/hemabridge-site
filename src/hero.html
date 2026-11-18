@@ -34,7 +34,7 @@
                 <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
-            <desc id="rt-desc">Маршрут начинается и заканчивается в Казахстане. После врачебной оценки возможно лечение в Казахстане без поездки. Зарубежный этап включает согласование врач–врач, организацию и лечение, затем передачу случая и наблюдение дома.</desc>
+            <desc id="rt-desc">Маршрут из девяти этапов начинается и заканчивается в Казахстане. Этапы с первого по шестой проходят дома и онлайн. После этапа «Предложение» возможно лечение в Казахстане без поездки. В партнёрском центре проходит только лечение, затем передача случая и наблюдение дома.</desc>
             <defs>
               <symbol id="i1" viewBox="0 0 24 24"><path style="fill:var(--ico-fill);stroke:none" d="M7 3h7l4 4v14H7z"/><path d="M7 3h7l4 4v14H7z M14 3v4h4 M9.8 12h5.4 M9.8 15.6h5.4"/></symbol>
               <symbol id="i2" viewBox="0 0 24 24"><circle style="fill:var(--ico-fill);stroke:none" cx="18.5" cy="11" r="2.4"/><path d="M5 3.5v4.5a4 4 0 0 0 8 0V3.5 M9 12v2.5a4.8 4.8 0 0 0 9.5 0V13.4"/><circle cx="18.5" cy="11" r="2.4"/></symbol>
@@ -49,39 +49,41 @@
             <rect class="rt-band abroad" x="0" y="52" width="1000" height="84" rx="16"/>
             <rect class="rt-band" x="0" y="190" width="1000" height="84" rx="16"/>
             <text class="rt-band-label" x="18" y="74">Партнёрский центр</text>
-            <text class="rt-band-label" x="635" y="262" text-anchor="middle">Казахстан</text>
-            <path class="rt-branch" d="M190 254 C190 312 220 318 262 318 L290 318"/>
-            <path class="rt-branch" d="M958 210 C992 190 990 150 990 124"/>
+            <text class="rt-band-label" x="700" y="262" text-anchor="middle">Казахстан</text>
+            <path class="rt-branch" d="M470 256 C470 312 500 318 540 318 L560 318"/>
+            <path class="rt-branch" d="M950 210 C992 190 990 150 990 124"/>
             <path class="rt-branch" d="M983 134 L990 118 L997 134" stroke-dasharray="0"/>
             <text class="rt-branch-label" x="996" y="40" text-anchor="end">Контроль и телемедицина</text>
-            <text class="rt-branch-label" x="298" y="323">Лечение в Казахстане — поездка не нужна</text>
-            <path class="rt-line rt-draw" id="rtLine" d="M80 232 L410 232 C470 232 470 94 530 94 L740 94 C800 94 800 232 860 232 L950 232"/>
+            <text class="rt-branch-label" x="568" y="323">Лечение в Казахстане — поездка не нужна</text>
+            <path class="rt-line rt-draw" id="rtLine" d="M70 232 L570 232 C635 232 635 94 700 94 C765 94 765 232 830 232 L940 232"/>
             <g id="rtStops">
-              <g class="rt-stop" data-step="0" transform="translate(80 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Документы</text></g>
-              <g class="rt-stop" data-step="1" transform="translate(190 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Оценка врача</text></g>
-              <g class="rt-stop" data-step="2" transform="translate(300 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i3" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Анализы в РК</text></g>
-              <g class="rt-stop" data-step="3" transform="translate(410 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i4" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Выбор центра</text></g>
-              <g class="rt-stop" data-step="4" transform="translate(530 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Врач — врач</text></g>
-              <g class="rt-stop" data-step="5" transform="translate(635 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Организация</text></g>
-              <g class="rt-stop" data-step="6" transform="translate(740 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
-              <g class="rt-stop" data-step="7" transform="translate(860 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i8" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Передача</text></g>
-              <g class="rt-stop" data-step="8" transform="translate(950 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
+              <g class="rt-stop" data-step="0" transform="translate(70 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i1" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Заявка</text></g>
+              <g class="rt-stop" data-step="1" transform="translate(170 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i2" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Знакомство</text></g>
+              <g class="rt-stop" data-step="2" transform="translate(270 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i3" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Подготовка</text></g>
+              <g class="rt-stop" data-step="3" transform="translate(370 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i4" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Консилиумы</text></g>
+              <g class="rt-stop" data-step="4" transform="translate(470 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Предложение</text></g>
+              <g class="rt-stop" data-step="5" transform="translate(570 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Организация</text></g>
+              <g class="rt-stop" data-step="6" transform="translate(700 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
+              <g class="rt-stop" data-step="7" transform="translate(830 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i8" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Передача</text></g>
+              <g class="rt-stop" data-step="8" transform="translate(940 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
             </g>
           </svg>
         </div>
         <div class="rt-detail" id="rtDetail" aria-live="polite">
           <div class="big"><span id="rtNum">1</span><span class="of">/9</span></div>
           <div class="rt-body" id="rtBody">
-            <h3 id="rtTitle">Обращение и документы <span class="place">Казахстан</span></h3>
-            <p id="rtText">Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.</p>
-            <p class="who" id="rtWho">Кто отвечает: координатор документооборота</p>
+            <h3 id="rtTitle">Заявка и документы</h3>
+            <p class="rt-tags" id="rtTags"></p>
+            <p id="rtText">Заполните короткую форму и приложите документы, которые у вас есть. Если чего-то не хватает, мы подскажем.</p>
+            <p class="who" id="rtWho">Вы получаете: подтверждение в WhatsApp с номером обращения.</p>
+            <p class="rt-more"><a id="rtMore" href="#stage-1">Подробнее об этапе</a></p>
           </div>
           <div class="rt-pager">
             <button type="button" id="rtPrev" aria-label="Предыдущий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
             <button type="button" id="rtNext" aria-label="Следующий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
-        <figcaption class="small">Маршрут начинается и заканчивается дома. Зарубежный этап — только одна из его частей и только по врачебному решению.</figcaption>
+        <figcaption class="small">Маршрут может завершиться на любом этапе. Первые два этапа бесплатны, решение о продолжении всегда за вами.</figcaption>
       </figure>
     </div>
   </section>

@@ -1,15 +1,5 @@
   // interactive route map: each stop opens its description below the map
-  var STEPS = [
-    {t:'Обращение и документы', p:['Казахстан'], d:'Вы заполняете форму и прикладываете выписки, заключения, результаты исследований. Координатор проверяет полноту пакета.', w:'координатор документооборота'},
-    {t:'Врачебная оценка', p:['Казахстан'], d:'Гематолог изучает случай и формулирует клинический вопрос: что нужно пациенту и где это может быть сделано.', w:'гематологи программы'},
-    {t:'Дополнительные анализы в Казахстане', p:['Казахстан'], d:'Недостающие исследования выполняются дома — до поездки, если это клинически оправдано.', w:'гематологи программы, лечащий врач'},
-    {t:'Подбор центра', p:[], d:'Центр выбирается по клинической задаче и внутренней матрице отбора, а не по коммерческим условиям.', w:'гематологи программы'},
-    {t:'Согласование с зарубежным врачом', p:['Партнёрский центр'], d:'Врач–врач обсуждение структурированного медицинского резюме, план лечения и предварительная смета от центра.', w:'гематологи программы'},
-    {t:'Организация поездки', p:[], d:'Документы, приглашение, логистика, перевод, связь с семьёй.', w:'операционный блок'},
-    {t:'Лечение', p:['Партнёрский центр'], d:'Мы остаёмся на связи с лечащей командой центра и с пациентом.', w:'партнёрский центр, гематологи программы'},
-    {t:'Возвращение и структурированная передача', p:['Казахстан'], d:'Выписка, план наблюдения и рекомендации передаются лечащему врачу в Казахстане в согласованном формате.', w:'гематологи программы'},
-    {t:'Долгосрочное наблюдение и обратная связь', p:['Казахстан','Партнёрский центр'], d:'Наблюдение продолжается в Казахстане, а связь с партнёрской клиникой не прерывается: контрольные анализы, повторные консультации и телемедицинские консилиумы.', w:'гематологи программы, лечащий врач, партнёрский центр'}
-  ];
+  var STEPS = /*__STEPS__*/[];
   var stops = Array.prototype.slice.call(document.querySelectorAll('.rt-stop'));
   var rtBody = document.getElementById('rtBody');
   var rtCur = 0, rtTimer, rtItems = [];
@@ -18,9 +8,13 @@
   function paintStep(i){
     var s = STEPS[i];
     document.getElementById('rtNum').textContent = i + 1;
-    document.getElementById('rtTitle').innerHTML = esc(tr(s.t)) + s.p.map(function(p){ return ' <span class="place' + (p === 'Казахстан' ? '' : ' abroad') + '">' + esc(tr(p)) + '</span>'; }).join('');
+    document.getElementById('rtTitle').textContent = tr(s.t);
+    document.getElementById('rtTags').innerHTML = s.p.map(function(p){ return '<span class="place' + (p === 'Партнёрский центр' ? ' abroad' : '') + '">' + esc(tr(p)) + '</span>'; }).join(' ');
     document.getElementById('rtText').textContent = tr(s.d);
-    document.getElementById('rtWho').textContent = tr('Кто отвечает') + ': ' + tr(s.w);
+    document.getElementById('rtWho').textContent = tr('Вы получаете') + ': ' + tr(s.g);
+    var more = document.getElementById('rtMore');
+    more.textContent = tr('Подробнее об этапе');
+    more.setAttribute('href', '#stage-' + (i + 1));
   }
   function selectStep(i, focus){
     if(i < 0 || i >= STEPS.length) return;
@@ -51,7 +45,7 @@
     list.setAttribute('data-i18n-skip', '');
     STEPS.forEach(function(st, k){
       var li = document.createElement('li');
-      var abroad = st.p.length === 1 && st.p[0] !== 'Казахстан';
+      var abroad = !!st.a;
       li.className = abroad ? 'abroad' : '';
       var b = document.createElement('button');
       b.type = 'button';
@@ -70,8 +64,8 @@
     done: 'Демонстрационный режим: форма заполнена корректно, но данные не отправлены. После запуска здесь появится подтверждение и следующий шаг.'
   };
   // every Russian string used by this script, so the translation tool can list them
-  window.__i18nDyn = ['Кто отвечает', 'Этап', 'Этапы маршрута', 'Казахстан', 'Партнёрский центр', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
-    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.w]); }, []));
+  window.__i18nDyn = ['Вы получаете', 'Подробнее об этапе', 'Этап', 'Этапы маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g], x.p); }, []));
   refreshDynamic = function(){
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
@@ -152,3 +146,13 @@
     var radio = document.querySelector('form[data-wizard] input[name="req"][value="' + r.getAttribute('data-req') + '"]');
     if(radio) radio.checked = true;
   });
+
+  // "#stage-N" opens that stage's details on the route page
+  function openStageFromHash(){
+    var m = /^#stage-(\d)$/.exec(location.hash);
+    var el = m && document.getElementById('stage-' + m[1]);
+    var d = el && el.querySelector('details');
+    if(d){ d.open = true; el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openStageFromHash);
+  openStageFromHash();
