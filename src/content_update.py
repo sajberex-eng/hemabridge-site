@@ -76,7 +76,8 @@ def _slot(label, v, fmt, empty):
     return '<li>%s: %s</li>' % (label, fmt(v) if v else '<span class="tbd">%s</span>' % empty)
 def _contact_items(k):
     c = _C[k]
-    out = _slot('Телефон', c.get('phone'), _tel, 'будет добавлен')
+    out = '<li>Координатор проекта: %s</li>' % _e(c['coordinator']) if c.get('coordinator') else ''
+    out += _slot('Телефон', c.get('phone'), _tel, 'будет добавлен')
     if 'whatsapp' in c: out += _slot('WhatsApp', c.get('whatsapp'), _wa, 'будет добавлен')
     out += _slot('E-mail', c.get('email'), _mail, 'будет добавлен')
     return out
@@ -84,15 +85,13 @@ def _contact_items(k):
 _old_contacts = s[s.index('        <h4>Контакты</h4>\n        <ul>'):s.index('        </ul>\n      </div>\n    </div>\n    <div class="foot-legal">')]
 s = s.replace(_old_contacts, '''        <h4>Контакты для пациентов</h4>
         <ul>%s</ul>
-        <h4 class="foot-h">Контакты для партнёров</h4>
-        <ul>%s</ul>
         <h4 class="foot-h">Центр гематологии</h4>
         <ul>
           <li>Телефон: <a href="tel:+77770793165">+7 777 079 3165</a></li>
           <li>E-mail: <a href="mailto:info@hemcenter.kz">info@hemcenter.kz</a></li>
           <li>Сайт центра: <a href="https://hemcenter.kz" rel="noopener">hemcenter.kz</a></li>
           <li>Астана, ул. Кенесары, 4Б</li>
-''' % (_contact_items('patients'), _contact_items('partners')))
+''' % _contact_items('patients'))
 
 # ---------- 4. Partners page: questionnaire download + partner contacts ----------
 _q = '''  <section class="section" id="questionnaire">
@@ -114,23 +113,17 @@ _q = '''  <section class="section" id="questionnaire">
           <li><strong>3. Финансовая сторона</strong>Пакетные цены, состав пакета, депозит и порядок оплаты — 9 вопросов.</li>
           <li><strong>4. Данные клиники</strong>Сильные стороны, преимущества для пациентов и ограничения — 6 вопросов.</li>
         </ul>
-        <div class="note"><p><strong>Как заполнить и отправить.</strong> Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл отправьте на почту для партнёров.</p></div>
+        <div class="note"><p><strong>Как заполнить и отправить.</strong> Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл верните сотруднику программы, от которого вы его получили.</p></div>
       </div>
     </div>
   </section>
-  <section class="section" id="partner-contacts">
-    <div class="wrap split">
-      <div><h2>Контакты для партнёров</h2><p class="lead">Для вопросов о сотрудничестве и отправки заполненного опросника.</p></div>
-      <ul class="rule-list contact-list">%s</ul>
-    </div>
-  </section>
-''' % _contact_items('partners')
+'''
 _p = s.index('<div class="page" data-page="partners"')
 _pe = s.index('<!-- ================= О ПРОЕКТЕ', _p)
 _blk = s[_p:_pe]
 _cut = _blk.rindex('</div>')
 _blk = _blk[:_cut] + _q + _blk[_cut:]
-_blk = _blk.replace('<a class="btn btn-primary" href="#contacts-block" data-scroll>Стать партнёром</a>', '<a class="btn btn-primary" href="#questionnaire" data-scroll>Скачать опросник</a><a class="btn btn-ghost" href="#partner-contacts" data-scroll>Контакты для партнёров</a>')
+_blk = _blk.replace('<a class="btn btn-primary" href="#contacts-block" data-scroll>Стать партнёром</a>', '<a class="btn btn-primary" href="#questionnaire" data-scroll>Скачать опросник</a>')
 assert 'Скачать опросник</a>' in _blk
 s = s[:_p] + _blk + s[_pe:]
 

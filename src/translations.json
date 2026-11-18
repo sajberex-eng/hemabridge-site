@@ -2419,10 +2419,6 @@
   "en": "How to fill in and send it.",
   "kk": "Қалай толтырып, жіберуге болады."
  },
- "Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл отправьте на почту для партнёров.": {
-  "en": "Enter answers in the “Clinic's answer” column and give the source and date next to them. Questions with “Critical” priority are mandatory: without answers to them we cannot recommend the center to patients. Send the completed file to the partners' e-mail address.",
-  "kk": "Жауаптар «Клиниканың жауабы» бағанына енгізіледі, қасына дереккөз бен күнін көрсетіңіз. «Өте маңызды» басымдығы бар сұрақтар міндетті: оларға жауапсыз біз орталықты пациенттерге ұсына алмаймыз. Толтырылған файлды серіктестерге арналған поштаға жіберіңіз."
- },
  "Для вопросов о сотрудничестве и отправки заполненного опросника.": {
   "en": "For questions about cooperation and sending the completed questionnaire.",
   "kk": "Ынтымақтастық туралы сұрақтар және толтырылған сауалнаманы жіберу үшін."
@@ -2898,5 +2894,13 @@
  "Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.": {
   "en": "The information on this website is for general information only and does not replace a doctor's consultation. Sending documents does not mean that treatment is automatically prescribed or that the need for treatment abroad is confirmed.",
   "kk": "Сайттағы ақпарат танысу үшін ғана берілген және дәрігер кеңесін алмастырмайды. Құжаттарды жіберу емнің автоматты түрде тағайындалатынын немесе шетелде емделу қажеттілігінің расталатынын білдірмейді."
+ },
+ "Координатор проекта: Дана Сабит": {
+  "en": "Project coordinator: Dana Sabit",
+  "kk": "Жоба үйлестірушісі: Дана Сабит"
+ },
+ "Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл верните сотруднику программы, от которого вы его получили.": {
+  "en": "Enter answers in the “Clinic's answer” column and give the source and date next to them. Questions with “Critical” priority are mandatory: without answers to them we cannot recommend the center to patients. Return the completed file to the program staff member who sent it to you.",
+  "kk": "Жауаптар «Клиниканың жауабы» бағанына енгізіледі, қасына дереккөз бен күнін көрсетіңіз. «Өте маңызды» басымдығы бар сұрақтар міндетті: оларға жауапсыз біз орталықты пациенттерге ұсына алмаймыз. Толтырылған файлды оны Сізге жіберген бағдарлама қызметкеріне қайтарыңыз."
  }
 }

@@ -19,7 +19,7 @@ UI = {
                 '6. Фильтр в строке заголовка позволяет показать один подраздел или только вопросы с приоритетом «Критично».',
                 'Пример формата ответа (гаплоидентичные ТКМ): «2025 г. — 48 гапло-ТКМ, ПТЦф; 2024 г. — 41» (пример, не данные клиники).',
                 'Не включайте в ответы персональные данные пациентов.',
-                'Заполненный файл отправьте на адрес для партнёров, указанный на сайте программы в разделе «Партнёрам-клиникам».']},
+                'Заполненный файл верните сотруднику программы, от которого вы его получили.']},
  'en': {'file': 'hemabridge-partner-questionnaire-en.xlsx', 'head': ['No.', 'Subsection', 'Question', 'Priority', "Clinic's answer", 'Source / date'],
         'clinic': 'Clinic (name, city, country):', 'filled': 'Completed by (name, position, e-mail):', 'date': 'Date completed:',
         'how_tab': 'How to complete', 'how_title': 'HemaBridge questionnaire for clinics: how to complete it',
@@ -33,7 +33,7 @@ UI = {
                 '6. Use the filter in the header row to show one subsection or only the "Critical" questions.',
                 'Example of an answer format (haploidentical HSCT): "2025 — 48 haplo-HSCT, PTCy; 2024 — 41" (an example, not clinic data).',
                 'Please do not include any patient personal data in your answers.',
-                'Send the completed file to the partner e-mail address given on the program website, section "For partner clinics".']},
+                'Return the completed file to the program staff member who sent it to you.']},
  'kk': {'file': 'hemabridge-partner-questionnaire-kk.xlsx', 'head': ['№', 'Бөлімше', 'Сұрақ', 'Басымдық', 'Клиниканың жауабы', 'Дереккөз / күні'],
         'clinic': 'Клиника (атауы, қаласы, елі):', 'filled': 'Толтырған (аты-жөні, лауазымы, e-mail):', 'date': 'Толтырылған күні:',
         'how_tab': 'Қалай толтыру керек', 'how_title': 'Клиникаларға арналған HemaBridge сауалнамасы: қалай толтыру керек',
@@ -47,7 +47,7 @@ UI = {
                 '6. Тақырып жолындағы сүзгі бір бөлімшені немесе тек «Өте маңызды» сұрақтарды көрсетуге мүмкіндік береді.',
                 'Жауап пішімінің мысалы (гаплоидентті СКТ): «2025 ж. — 48 гапло-СКТ, ПТЦф; 2024 ж. — 41» (мысал, клиника дерегі емес).',
                 'Жауаптарға науқастардың дербес деректерін қоспаңыз.',
-                'Толтырылған файлды бағдарлама сайтының «Серіктес клиникаларға» бөлімінде көрсетілген серіктестерге арналған мекенжайға жіберіңіз.']},
+                'Толтырылған файлды оны Сізге жіберген бағдарлама қызметкеріне қайтарыңыз.']},
 }
 def build(lang, data):
     ui = UI[lang]; wb = Workbook(); wb.remove(wb.active)

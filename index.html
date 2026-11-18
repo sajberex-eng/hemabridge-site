@@ -766,6 +766,17 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .hc-cards{margin:28px 0}.hc-cards .fields{grid-template-columns:44% 1fr}
 .rule-list li,.rule-list .pending{overflow-wrap:anywhere;white-space:normal}
 .hc-cards .tpl h3{margin-bottom:12px}
+/* "Для врачей": compact spacing so the head and the two lists fit one screen */
+[data-page="physicians"] .page-head{padding:44px 0 36px}
+[data-page="physicians"] .page-head .crumb{margin-bottom:12px}
+[data-page="physicians"] .page-head .actions{margin-top:20px}
+[data-page="physicians"] .section{padding:56px 0}
+[data-page="physicians"] .section h2{margin-bottom:.35em}
+[data-page="physicians"] .ticks li{padding:5px 0 5px 32px}
+[data-page="physicians"] .ticks li::before{top:11px}
+[data-page="physicians"] .ticks li::after{top:16px}
+[data-page="physicians"] .cols-2{gap:32px}
+@media (max-width:640px){[data-page="physicians"] .section{padding:44px 0}[data-page="physicians"] .page-head{padding:32px 0 28px}}
 </style>
 </head>
 <body>
@@ -1620,7 +1631,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   </section>
   <section class="section">
     <div class="wrap split">
-      <div><h2>Что получает центр</h2><div class="actions"><a class="btn btn-primary" href="#questionnaire" data-scroll>Скачать опросник</a><a class="btn btn-ghost" href="#partner-contacts" data-scroll>Контакты для партнёров</a></div><img class="illus" src="img/doctor-to-doctor.webp" width="900" height="900" loading="lazy" decoding="async" alt="Врач-гематолог на видеосвязи с врачом партнёрской клиники"></div>
+      <div><h2>Что получает центр</h2><div class="actions"><a class="btn btn-primary" href="#questionnaire" data-scroll>Скачать опросник</a></div><img class="illus" src="img/doctor-to-doctor.webp" width="900" height="900" loading="lazy" decoding="async" alt="Врач-гематолог на видеосвязи с врачом партнёрской клиники"></div>
       <ul class="rule-list">
         <li><strong>Структурированный medical summary</strong>В едином формате, с клиническим вопросом.</li>
         <li><strong>Полный пакет документов</strong>Проверенный и переведённый.</li>
@@ -1668,14 +1679,8 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
           <li><strong>3. Финансовая сторона</strong>Пакетные цены, состав пакета, депозит и порядок оплаты — 9 вопросов.</li>
           <li><strong>4. Данные клиники</strong>Сильные стороны, преимущества для пациентов и ограничения — 6 вопросов.</li>
         </ul>
-        <div class="note"><p><strong>Как заполнить и отправить.</strong> Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл отправьте на почту для партнёров.</p></div>
+        <div class="note"><p><strong>Как заполнить и отправить.</strong> Ответы вносятся в столбец «Ответ клиники», рядом укажите источник и дату. Вопросы с приоритетом «Критично» обязательны: без ответа на них мы не можем рекомендовать центр пациентам. Заполненный файл верните сотруднику программы, от которого вы его получили.</p></div>
       </div>
-    </div>
-  </section>
-  <section class="section" id="partner-contacts">
-    <div class="wrap split">
-      <div><h2>Контакты для партнёров</h2><p class="lead">Для вопросов о сотрудничестве и отправки заполненного опросника.</p></div>
-      <ul class="rule-list contact-list"><li>Телефон: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
     </div>
   </section>
 </div>
@@ -1959,9 +1964,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       </div>
       <div>
         <h4>Контакты для пациентов</h4>
-        <ul><li>Телефон: <span class="tbd">будет добавлен</span></li><li>WhatsApp: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
-        <h4 class="foot-h">Контакты для партнёров</h4>
-        <ul><li>Телефон: <span class="tbd">будет добавлен</span></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
+        <ul><li>Координатор проекта: Дана Сабит</li><li>Телефон: <a href="tel:+77793600939">+7 779 360 0939</a></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
         <h4 class="foot-h">Центр гематологии</h4>
         <ul>
           <li>Телефон: <a href="tel:+77770793165">+7 777 079 3165</a></li>
@@ -1973,7 +1976,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-18.8"></span></p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-18.9"></span></p>
     </div>
   </div>
 </footer>
@@ -1989,7 +1992,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-11-18.8';
+  var VERSION = '2026-11-18.9';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
