@@ -54,6 +54,6 @@ There is no test suite. Verify visually and with the page's own checks:
 
 - Work on `hemabridge-redesign`; `main` only has the initial README. Commit and push after each change (GitHub is the source the server deploys from).
 - Line endings are LF (`.gitattributes`); `rep()` anchors contain `\n`, so CRLF checkouts would break the build.
-- Deploy: push, then on the server run `tools/deploy.sh <webroot>` (git pull + copy of the public files + backup), e.g. from PowerShell `ssh USER@HOST "bash ~/hemabridge-site/tools/deploy.sh WEBROOT"`. Details in `DEPLOY.md`. All six public items are required (a missing `i18n/` makes KZ/EN do nothing, a missing `docs/` breaks the questionnaire and offer links).
+- Deploy: push, then on the server run `tools/deploy.sh <webroot>` (git pull + copy of the public files + backup), e.g. from PowerShell `ssh USER@HOST "bash ~/hemabridge-site/tools/deploy.sh WEBROOT"`. Details in `DEPLOY.md`. The real SSH login, server address and webroot are kept only in the local, git-ignored `CLAUDE.local.md` (the repo is public: never commit them). All six public items are required (a missing `i18n/` makes KZ/EN do nothing, a missing `docs/` breaks the questionnaire and offer links).
 - After deploying, check the footer stamp on https://bridge.hemcenter.kz/ (`data-v` attribute). The site is intentionally `noindex` (meta + `robots.txt`) until launch.
 - Never publish internal margins or cost breakdowns (e.g. from the follow-up deck); follow-up prices stay hidden until the owner approves them.
