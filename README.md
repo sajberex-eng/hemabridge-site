@@ -9,11 +9,11 @@
 - `i18n/` — словари английского и казахского (`en.js`, `kk.js`), собираются из `src/translations.json`.
 - `img/` — иллюстрации (WebP, ~840 КБ суммарно).
 - `src/` — исходники редизайна: `original.html` (исходная версия), `style.css`, `hero.html`, `wizard.html`, `extra.js`, `i18n_*`, `translations.json` и `build.py`, который собирает `index.html` и словари. Подробности для разработки — в `CLAUDE.md`.
-- `PRODUCT.md` — описание продукта и бриф; `PLAN.md` — план работ; `DEPLOY-InfinityFree.md` — инструкция по размещению.
+- `PRODUCT.md` — описание продукта и бриф; `PLAN.md` — текущее состояние и открытые вопросы; `DEPLOY.md` — как обновить сайт на https://bridge.hemcenter.kz/.
 
 ## Пересборка
 ```
-cd src && python3 build.py
+cd src; python build.py
 ```
 
 ## Важно

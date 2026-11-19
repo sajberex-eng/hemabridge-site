@@ -1,10 +1,10 @@
 # QA tools (not deployed)
 
-Playwright helpers used to check `../index.html` after a build. Run from this folder.
+Playwright helpers used to check `../index.html` after a build. Run from this folder (PowerShell or bash).
 
 ```
-npm install                       # once; PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 if a Chromium is already installed
-export CHROMIUM_PATH=/path/to/chrome-or-headless_shell   # optional; defaults to the cloud container's headless shell
+npm install; npx playwright install chromium   # once (on a local PC)
+# optional: CHROMIUM_PATH=/path/to/chrome-or-headless_shell (see browser.js for the default)
 
 node shot.js ../index.html OUT_DIR PREFIX home route apply   # full-page shots, 1280/390, light/dark; prints errors and horizontal overflow
 node vp.js home 1440 900 out.png [light|dark] [scrollY]      # one viewport screenshot

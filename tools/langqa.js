@@ -2,14 +2,14 @@
 const { chromium } = require('playwright'); const fs=require('fs');
 const lang=process.argv[2]; const shots=process.argv[3];
 const PAGES=['home','route','diseases','tech','clinics','doctors','physicians','partners','about','cost','faq','apply','legal','cabinet'];
-(async()=>{const b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell'});
+(async()=>{const b=await chromium.launch({executablePath:require('./browser')});
 const report=[];
 for(const [w,h] of [[1440,900],[390,844]]){
   const ctx=await b.newContext({viewport:{width:w,height:h},reducedMotion:'reduce'});
   await ctx.addInitScript(l=>{try{localStorage.setItem('hb-lang',l)}catch(e){}},lang);
   const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('requestfailed',r=>errs.push('reqfail '+r.url()));
   for(const pg of PAGES){
-    await p.goto('file://'+require('path').resolve(__dirname,'../index.html')+'#'+pg);await p.waitForTimeout(700);
+    await p.goto(require('url').pathToFileURL(require('path').resolve(__dirname,'../index.html')).href+'#'+pg);await p.waitForTimeout(700);
     const r=await p.evaluate((lang)=>{
       const out={cyr:[],clip:[],overflowX:document.documentElement.scrollWidth-innerWidth};
       const page=document.querySelector('[data-page]:not([hidden])');
