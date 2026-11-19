@@ -1,5 +1,5 @@
 # Content update of November 2026; exec'd by build.py on the assembled page `s` (after fixes_home.py, before i18n_patch.py).
-# Data lives next to this file: route.json (nine stages), contacts.json (phones/e-mails, empty = "будет добавлен"),
+# Data lives next to this file: route.json (six route steps), contacts.json (phones/e-mails, empty = "будет добавлен"),
 # clinics.json (centre cards with sources). Shares `rep`, `B` with build.py.
 import json as _json, html as _html, os as _os
 
@@ -8,7 +8,11 @@ _R = _json.load(open(B + 'route.json', encoding='utf-8'))
 _C = _json.load(open(B + 'contacts.json', encoding='utf-8'))
 _T = _R['service']
 
-# ---------- 1. Route page: five steps ----------
+# Clinics page: the centres are candidates until a memorandum is signed, so the title says just «Клиники»
+s = rep(s, 'data-page="clinics" data-title="Клиники-партнёры"', 'data-page="clinics" data-title="Клиники"')
+s = rep(s, '<h1>Клиники-партнёры</h1>', '<h1>Клиники</h1>')
+
+# ---------- 1. Route page: six steps ----------
 def _ul(items): return '<ul class="plain">' + ''.join('<li>%s</li>' % _e(i) for i in items) + '</ul>'
 def _tags(st): return ''.join('<span class="place%s">%s</span>' % (' ours' if t == 'Услуга HemaBridge' else '', _e(t)) for t in st['tags'])
 _cards = ''

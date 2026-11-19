@@ -875,10 +875,6 @@
   "en": "/ Clinics",
   "kk": "/ Клиникалар"
  },
- "Клиники-партнёры": {
-  "en": "Partner clinics",
-  "kk": "Серіктес клиникалар"
- },
  "Мы не составляем рейтингов «лучших клиник мира». Центр выбирается под клиническую задачу конкретного пациента.": {
   "en": "We do not compile rankings of the “best clinics in the world.” The center is chosen to fit the clinical needs of each individual patient.",
   "kk": "Біз «әлемдегі ең үздік клиникалар» рейтингін жасамаймыз. Орталық нақты науқастың клиникалық міндетіне қарай таңдалады."
@@ -1035,21 +1031,9 @@
   "en": "“Matrix review in progress”: the center is being considered as a partner; some information has been confirmed by the primary source, and the rest has been requested. Until the review and the contract are complete, we do not call the center a partner and do not refer patients there.",
   "kk": "«Матрица бойынша тексеру жүріп жатыр» — орталық серіктес ретінде қарастырылуда, мәліметтердің бір бөлігі бастапқы дереккөзбен расталған, қалғандары сұратылған. Тексеру мен шарт аяқталмайынша, біз орталықты серіктес деп атамаймыз және оған науқастарды жолдамаймыз."
  },
- "Финансовые отношения с партнёрами.": {
-  "en": "Financial relationships with partners.",
-  "kk": "Серіктестермен қаржылық қатынастар."
- },
- "Характер финансовых отношений с каждым центром раскрывается в разделе": {
-  "en": "The nature of our financial relationship with each center is disclosed in the",
-  "kk": "Әр орталықпен қаржылық қатынастардың сипаты"
- },
  "«Стоимость»": {
   "en": "“Cost”",
   "kk": "«Құны»"
- },
- "в юридически допустимом объёме.": {
-  "en": "section, to the extent legally permitted.",
-  "kk": "бөлімінде заң рұқсат ететін көлемде ашып көрсетіледі."
  },
  "/ Врачи": {
   "en": "/ Doctors",
@@ -1519,46 +1503,6 @@
   "en": "Follow-up after return is a mandatory part of the route.",
   "kk": "Оралғаннан кейінгі бақылау — маршруттың міндетті бөлігі."
  },
- "Профиль и статус": {
-  "en": "Profile and status",
-  "kk": "Бейіні мен мәртебесі"
- },
- "Частная профильная клиника гематологии и онкогематологии.": {
-  "en": "A private specialized clinic for hematology and oncohematology.",
-  "kk": "Гематология және онкогематология бейініндегі жеке клиника."
- },
- "Формулировка о статусе — на проверке": {
-  "en": "Status wording is under review",
-  "kk": "Мәртебе туралы тұжырым тексерілуде"
- },
- "Утверждения вида «первая» или «единственная» публикуем только с документальным подтверждением.": {
-  "en": "We publish claims such as “the first” or “the only” only with documentary proof.",
-  "kk": "«Алғашқы» немесе «жалғыз» сияқты мәлімдемелерді тек құжатпен расталған жағдайда жариялаймыз."
- },
- "Филиалы": {
-  "en": "Branches",
-  "kk": "Филиалдар"
- },
- "Города и адреса филиалов, режим работы, как попасть на приём.": {
-  "en": "Branch cities and addresses, opening hours, how to book an appointment.",
-  "kk": "Филиалдардың қалалары мен мекенжайлары, жұмыс уақыты, қабылдауға қалай жазылуға болады."
- },
- "Список уточняется": {
-  "en": "List being finalized",
-  "kk": "Тізім нақтылануда"
- },
- "Собственная лаборатория": {
-  "en": "Our own laboratory",
-  "kk": "Меншікті зертхана"
- },
- "Перечень исследований, которые выполняются в лаборатории центра, — включая те, что нужны для подготовки к ТКМ и клеточной терапии.": {
-  "en": "The list of tests performed in the center's laboratory, including those needed to prepare for BMT and cell therapy.",
-  "kk": "Орталық зертханасында жасалатын зерттеулер тізімі, соның ішінде СКТ мен жасушалық терапияға дайындалуға қажеттілері."
- },
- "Перечень уточняется": {
-  "en": "List being finalized",
-  "kk": "Тізім нақтылануда"
- },
  "/ Стоимость": {
   "en": "/ Cost",
   "kk": "/ Құны"
@@ -1598,14 +1542,6 @@
  "Услуги проекта": {
   "en": "Project services",
   "kk": "Жоба қызметтері"
- },
- "Раскрытие финансовых отношений.": {
-  "en": "Disclosure of financial relationships.",
-  "kk": "Қаржылық қатынастарды ашу."
- },
- "Если программа получает вознаграждение от зарубежных центров, характер этих отношений будет раскрыт здесь в юридически допустимом объёме. Финансовые условия не влияют на врачебный выбор центра.": {
-  "en": "If the program receives remuneration from centers abroad, the nature of these relationships will be disclosed here to the extent legally permitted. Financial terms do not influence the medical choice of a center.",
-  "kk": "Егер бағдарлама шетелдік орталықтардан сыйақы алатын болса, бұл қатынастардың сипаты осы жерде заң рұқсат ететін көлемде ашылады. Қаржылық шарттар орталықты дәрігерлік таңдауға әсер етпейді."
  },
  "Государственный маршрут": {
   "en": "The state route",
@@ -1954,10 +1890,6 @@
  "Астана, ул. Кенесары, 4Б": {
   "en": "Astana, 4B Kenesary St.",
   "kk": "Астана, Кенесары көшесі, 4Б"
- },
- "Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом. Характер финансовых отношений с партнёрами раскрывается в разделе «Стоимость».": {
-  "en": "The information on this website is for general information only and does not replace a doctor's consultation. Sending documents does not mean that treatment is automatically prescribed or that the need for treatment abroad is confirmed. The nature of our financial relationships with partners is disclosed in the “Cost” section.",
-  "kk": "Сайттағы ақпарат танысу үшін ғана берілген және дәрігер кеңесін алмастырмайды. Құжаттарды жіберу емнің автоматты түрде тағайындалатынын немесе шетелде емделу қажеттілігінің расталатынын білдірмейді. Серіктестермен қаржылық қатынастардың сипаты «Құны» бөлімінде ашылады."
  },
  "· © 2026 ТОО «Центр гематологии» ·": {
   "en": "· © 2026 Hematology Center LLP ·",
@@ -2371,10 +2303,6 @@
   "en": "Download questionnaire",
   "kk": "Сауалнаманы жүктеу"
  },
- "Контакты для партнёров": {
-  "en": "Contacts for partners",
-  "kk": "Серіктестерге арналған байланыс"
- },
  "Опросник для клиник": {
   "en": "Questionnaire for clinics",
   "kk": "Клиникаларға арналған сауалнама"
@@ -2419,10 +2347,6 @@
   "en": "How to fill in and send it.",
   "kk": "Қалай толтырып, жіберуге болады."
  },
- "Для вопросов о сотрудничестве и отправки заполненного опросника.": {
-  "en": "For questions about cooperation and sending the completed questionnaire.",
-  "kk": "Ынтымақтастық туралы сұрақтар және толтырылған сауалнаманы жіберу үшін."
- },
  "будет добавлен": {
   "en": "to be added",
   "kk": "қосылады"
@@ -2434,10 +2358,6 @@
  "Контакты для пациентов": {
   "en": "Contacts for patients",
   "kk": "Пациенттерге арналған байланыс"
- },
- "WhatsApp:": {
-  "en": "WhatsApp:",
-  "kk": "WhatsApp:"
  },
  "Вы получаете": {
   "en": "You receive",
@@ -2647,21 +2567,9 @@
   "en": "Price to be announced",
   "kk": "Құны есептелуде"
  },
- "После возвращения вы наблюдаетесь у нас. Срок зависит от ситуации: 1, 6 или 12 месяцев.": {
-  "en": "After you return, your follow-up is with us. The duration depends on your situation: 1, 6 or 12 months.",
-  "kk": "Оралғаннан кейін Сіз біздің бақылауымызда боласыз. Мерзімі жағдайға байланысты: 1, 6 немесе 12 ай."
- },
  "консультации наших врачей и тактику, согласованную с клиникой, где вы лечились.": {
   "en": "consultations with our doctors and a treatment plan agreed with the clinic where you were treated.",
   "kk": "біздің дәрігерлердің кеңестері және Сіз емделген клиникамен келісілген ем тактикасы."
- },
- "Отдельная услуга. Стоимость рассчитывается и будет опубликована": {
-  "en": "A separate service. The price is being calculated and will be published",
-  "kk": "Жеке қызмет. Құны есептелуде және жарияланады"
- },
- "От 1 до 12 месяцев, в зависимости от ситуации": {
-  "en": "From 1 to 12 months, depending on the situation",
-  "kk": "Жағдайға байланысты 1 айдан 12 айға дейін"
  },
  "Мы ведём вас после возвращения и консультируем.": {
   "en": "We look after you and advise you after your return.",
@@ -2710,10 +2618,6 @@
  "Диспансерное наблюдение после возвращения": {
   "en": "Follow-up care after your return",
   "kk": "Оралғаннан кейінгі диспансерлік бақылау"
- },
- "— стоимость рассчитывается.": {
-  "en": "— price to be announced.",
-  "kk": "— құны есептелуде."
  },
  "Что входит в каждый шаг": {
   "en": "What each step includes",
@@ -2770,14 +2674,6 @@
  "Если после консультации мы вместе решаем идти по программе, вы знакомитесь с публичным договором-офертой и принимаете его. Только после этого оформляется платная услуга.": {
   "en": "If after the consultation we decide together to go ahead with the program, you read the public offer agreement and accept it. Only then is the paid service arranged.",
   "kk": "Егер кеңестен кейін бағдарлама бойынша жүруді бірге шешсек, Сіз жария оферта шартымен танысып, оны қабылдайсыз. Ақылы қызмет содан кейін ғана ресімделеді."
- },
- "Текст оферты можно прочитать заранее.": {
-  "en": "You can read the text of the offer in advance.",
-  "kk": "Оферта мәтінін алдын ала оқуға болады."
- },
- "Посмотреть текст оферты": {
-  "en": "View the text of the offer",
-  "kk": "Оферта мәтінін қарау"
  },
  "Вы оплачиваете услугу по принятой оферте. С этого момента начинается платная работа.": {
   "en": "You pay for the service under the accepted offer. From this point the paid work begins.",
@@ -3066,5 +2962,13 @@
  "Анализы и ПЭТ-КТ в планы не входят: их оплачивают отдельно или получают по ОСМС. Стоимость планов будет опубликована после утверждения.": {
   "en": "Tests and PET-CT are not included in the plans: they are paid for separately or covered by compulsory social health insurance (OSMS). Plan prices will be published once approved.",
   "kk": "Талдаулар мен ПЭТ-КТ жоспарларға кірмейді: олар бөлек төленеді немесе МӘМС бойынша алынады. Жоспарлардың құны бекітілгеннен кейін жарияланады."
+ },
+ "Основной текст оферты готовится к публикации, приложение 1 уже можно прочитать.": {
+  "en": "The main text of the offer is being prepared for publication; Appendix 1 can already be read.",
+  "kk": "Офертаның негізгі мәтіні жариялауға дайындалуда, № 1 қосымшамен қазір танысуға болады."
+ },
+ "Об оферте и приложении 1": {
+  "en": "About the offer and Appendix 1",
+  "kk": "Оферта және № 1 қосымша туралы"
  }
 }

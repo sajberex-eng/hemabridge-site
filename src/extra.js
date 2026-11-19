@@ -37,7 +37,7 @@
     rtBody.classList.add('swap');
     rtTimer = setTimeout(function(){ paintStep(i); rtBody.classList.remove('swap'); }, 140);
   }
-  // phones: the wide map becomes a vertical list of the same nine stops
+  // phones: the wide map becomes a vertical list of the same route steps
   var rtScroll = document.querySelector('.route-scroll');
   if(stops.length && rtScroll){
     var list = document.createElement('ol');
@@ -129,6 +129,13 @@
       go(cur + 1, true);
     });
     prev.addEventListener('click', function(){ f.querySelector('.form-result').classList.remove('show'); go(cur - 1, true); });
+    // Enter in a field of an earlier step means "Next", not "submit the whole form"
+    f.addEventListener('keydown', function(e){
+      if(e.key !== 'Enter' || e.isComposing || cur === steps.length - 1) return;
+      if(!e.target || e.target.tagName !== 'INPUT') return;
+      e.preventDefault();
+      next.click();
+    });
     f.addEventListener('submit', function(){
       if(f.checkValidity()){ setTimeout(function(){ go(0); }, 0); return; }
       var bad = f.querySelector(':invalid');

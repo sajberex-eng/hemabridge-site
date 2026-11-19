@@ -1,5 +1,5 @@
 """Builds the partner questionnaire workbooks in ../docs from questionnaire.json (and questionnaire_en.json if present).
-Run: python3 make_questionnaire.py   (needs openpyxl). The public file has one answer column and no internal columns."""
+Run: python make_questionnaire.py   (needs openpyxl). The public file has one answer column and no internal columns."""
 import json, os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side

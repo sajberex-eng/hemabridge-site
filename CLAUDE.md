@@ -29,7 +29,7 @@ The footer version stamp (`версия YYYY-MM-DD.N`) is a string in `build.py`
 
 ## Architecture
 
-- Hash routing: one HTML file, 13 `<div class="page" data-page="...">` blocks shown/hidden by `route()`; `#kz`/`#en` are legacy hashes that now just switch language. A hash that is not a page id but an element id (e.g. `#kz-prep`, `#referral-form`) scrolls inside its page.
+- Hash routing: one HTML file, 14 `<div class="page" data-page="...">` blocks shown/hidden by `route()`; `#kz`/`#en` are legacy hashes that now just switch language. A hash that is not a page id but an element id (e.g. `#kz-prep`, `#referral-form`) scrolls inside its page.
 - i18n: Russian text lives in the HTML; `tr()` looks up the **normalized Russian string** (whitespace collapsed) in a dictionary (`window.__I18N_en` / `__I18N_kk`, lazy-loaded from `i18n/*.js`). `applyDom()` swaps every text node and `alt/aria-label/title/placeholder/data-label` attribute, remembering originals in WeakMaps so switching back to RU works. Consequences:
   - Mixed-content paragraphs (text around a link, `<abbr>`, `<span>`) are separate keys; translate fragments so they read as one sentence in order.
   - Any change to Russian copy changes its key, so the translation silently falls back to Russian until `src/translations.json` is updated. Strings produced by scripts are listed in `window.__i18nDyn` (in `extra.js`); containers filled by JS use `data-i18n-skip` and are re-painted by `refreshDynamic()`.
@@ -53,7 +53,7 @@ There is no test suite. Verify visually and with the page's own checks:
 ## Release and git
 
 - Work on `hemabridge-redesign`; `main` only has the initial README. Commit and push after each change (GitHub is the source the server deploys from).
-- Line endings are LF (`.gitattributes`); `rep()` anchors contain `\n`, so CRLF checkouts would break the build.
+- Line endings are LF (`.gitattributes`). The Python build reads files in text mode, so it survives a CRLF checkout, but shell scripts (e.g. `.claude/skills/impeccable/scripts/impeccable`) break with CRLF. Git for Windows sets `core.autocrlf=true` system-wide, so the local clone sets `core.autocrlf=false`; after cloning elsewhere on Windows run `git config core.autocrlf false; git rm -r --cached -q .; git reset --hard` in a clean tree.
 - Deploy is automatic: a cron job on the server runs a deploy script every 2 minutes that fetches `hemabridge-redesign` and rsyncs the public files to the webroot when the commit changes. So a push goes live in ~2 minutes; no manual step. Details in `DEPLOY.md`. The real SSH login, server address, key location, script path and webroot are kept only in the local, git-ignored `CLAUDE.local.md` (the repo is public: never commit them). The script never deletes files from the webroot, and it skips `src/`, `tools/`, `*.md`, `*.py`. All six public items are required (a missing `i18n/` makes KZ/EN do nothing, a missing `docs/` breaks the questionnaire and offer links).
 - After deploying, check the footer stamp on https://bridge.hemcenter.kz/ (`data-v` attribute). The site is intentionally `noindex` (meta + `robots.txt`) until launch.
 - Never publish internal margins or cost breakdowns (e.g. from the follow-up deck); follow-up prices stay hidden until the owner approves them.

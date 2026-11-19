@@ -10,7 +10,7 @@ web
 
 ## Stack
 
-static HTML/CSS/JS, один файл `index.html` без сборки. Хостинг: сервер Центра гематологии, https://bridge.hemcenter.kz/ (раньше — тестовый InfinityFree). Ограничение: никакого серверного кода, формы — демо.
+static HTML/CSS/JS, один файл `index.html`, который собирается скриптом `src/build.py`. Хостинг: сервер Центра гематологии, https://bridge.hemcenter.kz/ (раньше — тестовый InfinityFree). Ограничение: никакого серверного кода, формы — демо.
 
 ## Users
 

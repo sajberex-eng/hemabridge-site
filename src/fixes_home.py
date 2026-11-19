@@ -1,6 +1,7 @@
 # Impeccable critique fixes for the home page; exec'd by build.py on the assembled page `s`.
 import re as _re
-# move unfinished "О Центре" placeholder cards to the About page
+# move unfinished "О Центре" placeholder cards to the About page. This creates the «О Центре гематологии» section there;
+# content_update.py (step 9) later replaces the cards inside it with facts from hemcenter.kz, so only the section survives.
 a=s.index('      <div class="cols-3" style="margin-top:34px">\n        <div class="tpl">\n          <h3>Профиль и статус</h3>')
 b=s.index('      <div class="note"><p>Благодаря собственной лаборатории',a)
 tpl=s[a:b]; s=s[:a]+s[b:]
