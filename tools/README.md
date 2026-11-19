@@ -12,3 +12,8 @@ node langvp.js en|kz home 1440 900 out.png [scrollY|selector]  # same, in Englis
 node langqa.js en|kz [SHOTS_DIR]                             # all pages at 1440 and 390: leftover Cyrillic (en), clipped or colliding labels, overflow
 node keys.js                                                 # rewrites ../src/keys.json from window.__i18nKeys()
 ```
+
+## Deploy to the server (bridge.hemcenter.kz)
+
+On the server, once: `git clone -b hemabridge-redesign https://github.com/sajberex-eng/hemabridge-site.git ~/hemabridge-site`.
+Then after every change: `bash ~/hemabridge-site/tools/deploy.sh /path/to/webroot` (pulls from GitHub, backs up the webroot to `~/hemabridge-backups/`, copies only the public files).
