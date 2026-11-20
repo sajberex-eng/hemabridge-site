@@ -875,18 +875,6 @@
   "en": "Florence Nightingale",
   "kk": "Florence Nightingale"
  },
- "Проверка идёт": {
-  "en": "Review in progress",
-  "kk": "Тексеру жүріп жатыр"
- },
- "Страна, город": {
-  "en": "Country, city",
-  "kk": "Ел, қала"
- },
- "Турция, Стамбул": {
-  "en": "Turkey, Istanbul",
-  "kk": "Түркия, Стамбул"
- },
  "Профиль": {
   "en": "Profile",
   "kk": "Бейін"
@@ -895,17 +883,9 @@
   "en": "BMT",
   "kk": "СКТ"
  },
- "Аутологичная, аллогенная, гаплоидентичная": {
-  "en": "Autologous, allogeneic, haploidentical",
-  "kk": "Аутологиялық, аллогендік, гаплоидентті"
- },
  "Аккредитации": {
   "en": "Accreditations",
   "kk": "Аккредиттеулер"
- },
- "Объёмы": {
-  "en": "Volumes",
-  "kk": "Көлемдер"
  },
  "CAR-T": {
   "en": "CAR-T",
@@ -927,10 +907,6 @@
   "en": "Medipol Mega",
   "kk": "Medipol Mega"
  },
- "Переговоры": {
-  "en": "In negotiation",
-  "kk": "Келіссөздер"
- },
  "Индия": {
   "en": "India",
   "kk": "Үндістан"
@@ -938,14 +914,6 @@
  "maxhealthcare.in": {
   "en": "maxhealthcare.in",
   "kk": "maxhealthcare.in"
- },
- "Что означают пометки.": {
-  "en": "What the labels mean.",
-  "kk": "Белгілер нені білдіреді."
- },
- "«Проверка по матрице идёт» — центр рассматривается как партнёр, часть сведений подтверждена первоисточником, остальные запрошены. Пока проверка и договор не завершены, мы не называем центр партнёром и не направляем туда пациентов.": {
-  "en": "“Matrix review in progress”: the center is being considered as a partner; some information has been confirmed by the primary source, and the rest has been requested. Until the review and the contract are complete, we do not call the center a partner and do not refer patients there.",
-  "kk": "«Матрица бойынша тексеру жүріп жатыр» — орталық серіктес ретінде қарастырылуда, мәліметтердің бір бөлігі бастапқы дереккөзбен расталған, қалғандары сұратылған. Тексеру мен шарт аяқталмайынша, біз орталықты серіктес деп атамаймыз және оған науқастарды жолдамаймыз."
  },
  "«Стоимость»": {
   "en": "“Cost”",
@@ -1823,29 +1791,13 @@
   "en": "These centers are currently being reviewed against our selection matrix. They will become partners only after a memorandum is signed.",
   "kk": "Бұл орталықтар қазір іріктеу матрицасы бойынша тексеруден өтуде. Олар меморандумға қол қойылғаннан кейін ғана серіктес болады."
  },
- "Сведения взяты с официальных сайтов клиник и государственных порталов, актуальны на ноябрь 2026. Пометка «по данным клиники» означает, что мы ещё не получили независимого подтверждения. Клинику под ваш случай подбирают врачи на этапе консилиумов.": {
-  "en": "The information is taken from the clinics' official websites and government portals and is current as of November 2026. The note “as reported by the clinic” means that we have not yet received independent confirmation. The clinic for your case is chosen by doctors at the case conference stage.",
-  "kk": "Мәліметтер клиникалардың ресми сайттарынан және мемлекеттік порталдардан алынды, 2026 жылғы қарашадағы жағдай бойынша өзекті. «Клиниканың дерегі бойынша» белгісі біздің әлі тәуелсіз растау алмағанымызды білдіреді. Сіздің жағдайыңызға клиниканы консилиумдар кезеңінде дәрігерлер іріктейді."
- },
  "Частная группа больниц (с 1989 года), центр трансплантации костного мозга": {
   "en": "Private hospital group (since 1989), bone marrow transplantation center",
   "kk": "Жеке ауруханалар тобы (1989 жылдан бері), сүйек кемігін транспланттау орталығы"
  },
- "Аутологичная и аллогенная": {
-  "en": "Autologous and allogeneic",
-  "kk": "Аутологиялық және аллогендік"
- },
  "JCI — Istanbul Florence Nightingale Hospital, с 2013 года; JACIE — по данным клиники, год и область не указаны": {
   "en": "JCI — Istanbul Florence Nightingale Hospital, since 2013; JACIE — as reported by the clinic, year and scope not stated",
   "kk": "JCI — Istanbul Florence Nightingale Hospital, 2013 жылдан бері; JACIE — клиниканың дерегі бойынша, жылы мен саласы көрсетілмеген"
- },
- "По данным клиники — более 100 трансплантаций в год; общее число на разных страницах клиники указано по-разному (от 1100 до 1500)": {
-  "en": "As reported by the clinic, more than 100 transplants a year; the total number is given differently on different pages of the clinic's website (from 1,100 to 1,500)",
-  "kk": "Клиниканың дерегі бойынша — жылына 100-ден астам транспланттау; жалпы саны клиника сайтының әр бетінде әртүрлі көрсетілген (1100-ден 1500-ге дейін)"
- },
- "Оснащение": {
-  "en": "Facilities",
-  "kk": "Жабдықталуы"
  },
  "Отделение ТКМ с HEPA-фильтрацией воздуха": {
   "en": "BMT unit with HEPA air filtration",
@@ -1859,10 +1811,6 @@
   "en": "International center, interpreters and transfers; the team's languages include Russian and English",
   "kk": "Халықаралық орталық, аудармашылар мен трансфер; топ сөйлейтін тілдердің арасында орыс және ағылшын тілдері бар"
  },
- "Источники:": {
-  "en": "Sources:",
-  "kk": "Дереккөздер:"
- },
  "florence.com.tr": {
   "en": "florence.com.tr",
   "kk": "florence.com.tr"
@@ -1871,21 +1819,9 @@
   "en": "Istanbul Medipol University teaching hospital, complex opened in 2012",
   "kk": "Istanbul Medipol University университеттік ауруханасы, кешен 2012 жылы ашылған"
  },
- "Аутологичная и аллогенная; отдельные отделения для взрослых и для детей": {
-  "en": "Autologous and allogeneic; separate units for adults and for children",
-  "kk": "Аутологиялық және аллогендік; ересектер мен балаларға арналған жеке бөлімшелер"
- },
- "Структура центра": {
-  "en": "Center structure",
-  "kk": "Орталық құрылымы"
- },
  "Амбулаторная и стационарная службы, аферез, лаборатория обработки стволовых клеток, блок интенсивной терапии": {
   "en": "Outpatient and inpatient services, apheresis, stem cell processing laboratory, intensive care unit",
   "kk": "Амбулаториялық және стационарлық қызметтер, аферез, бағаналы жасушаларды өңдеу зертханасы, қарқынды терапия блогы"
- },
- "JCI по стандартам Academic Medical Center, с 2014 года — по данным клиники": {
-  "en": "JCI under Academic Medical Center standards, since 2014 — as reported by the clinic",
-  "kk": "Academic Medical Center стандарттары бойынша JCI, 2014 жылдан бері — клиниканың дерегі бойынша"
  },
  "Международный центр с услугами перевода; у центра ТКМ есть страница на русском языке": {
   "en": "International center with interpreting services; the BMT center has a page in Russian",
@@ -1903,25 +1839,9 @@
   "en": "Acıbadem",
   "kk": "Acıbadem"
  },
- "Страна, города": {
-  "en": "Country, cities",
-  "kk": "Ел, қалалар"
- },
- "Турция: Стамбул, Адана, Анкара": {
-  "en": "Turkey: Istanbul, Adana, Ankara",
-  "kk": "Түркия: Стамбул, Адана, Анкара"
- },
  "Частная группа больниц; центры ТКМ для взрослых и для детей": {
   "en": "Private hospital group; BMT centers for adults and for children",
   "kk": "Жеке ауруханалар тобы; ересектер мен балаларға арналған СКТ орталықтары"
- },
- "Доступна; клетки производятся в лаборатории Acıbadem Labcell — по данным клиники": {
-  "en": "Available; cells are manufactured at the Acıbadem Labcell laboratory — as reported by the clinic",
-  "kk": "Қолжетімді; жасушалар Acıbadem Labcell зертханасында өндіріледі — клиниканың дерегі бойынша"
- },
- "JCI — больницы Adana и Maslak (с 2010), Atakent (с 2017), Altunizade (с 2019) — по данным клиники": {
-  "en": "JCI — Adana and Maslak hospitals (since 2010), Atakent (since 2017), Altunizade (since 2019) — as reported by the clinic",
-  "kk": "JCI — Adana және Maslak ауруханалары (2010 жылдан бері), Atakent (2017 жылдан бері), Altunizade (2019 жылдан бері) — клиниканың дерегі бойынша"
  },
  "Представительство в Астане, поддержка на русском и английском; русскоязычный сайт": {
   "en": "Office in Astana, support in Russian and English; Russian-language website",
@@ -1943,25 +1863,9 @@
   "en": "Max Healthcare (Saket)",
   "kk": "Max Healthcare (Saket)"
  },
- "Индия, Нью-Дели (Сакет)": {
-  "en": "India, New Delhi (Saket)",
-  "kk": "Үндістан, Нью-Дели (Сакет)"
- },
  "Max Super Speciality Hospital, Saket — многопрофильная больница сети Max Healthcare; East Block — подразделение Devki Devi Foundation": {
   "en": "Max Super Speciality Hospital, Saket — a multi-specialty hospital in the Max Healthcare network; East Block is a unit of the Devki Devi Foundation",
   "kk": "Max Super Speciality Hospital, Saket — Max Healthcare желісінің көпбейінді ауруханасы; East Block — Devki Devi Foundation бөлімшесі"
- },
- "Аутологичная, аллогенная, гаплоидентичная; есть детская ТКМ": {
-  "en": "Autologous, allogeneic, haploidentical; pediatric BMT available",
-  "kk": "Аутологиялық, аллогендік, гаплоидентті; балалар СКТ-сы бар"
- },
- "Проводится для отдельных пациентов с опухолями крови — по данным клиники": {
-  "en": "Performed for selected patients with blood cancers — as reported by the clinic",
-  "kk": "Қан ісіктері бар жекелеген пациенттерге жүргізіледі — клиниканың дерегі бойынша"
- },
- "JCI и NABH — по данным клиники": {
-  "en": "JCI and NABH — as reported by the clinic",
-  "kk": "JCI және NABH — клиниканың дерегі бойынша"
  },
  "Палаты с HEPA-фильтрацией": {
   "en": "Rooms with HEPA filtration",
@@ -1979,29 +1883,9 @@
   "en": "Minsk Scientific and Practical Center for Surgery, Transplantology and Hematology",
   "kk": "Минск хирургия, трансплантология және гематология ғылыми-практикалық орталығы"
  },
- "Беларусь, Минск": {
-  "en": "Belarus, Minsk",
-  "kk": "Беларусь, Минск"
- },
  "Государственный научно-практический центр; Республиканский центр гематологии и пересадки костного мозга работает с 1993 года": {
   "en": "State scientific and practical center; the Republican Center for Hematology and Bone Marrow Transplantation has been operating since 1993",
   "kk": "Мемлекеттік ғылыми-практикалық орталық; Республикалық гематология және сүйек кемігін транспланттау орталығы 1993 жылдан бері жұмыс істейді"
- },
- "Аутологичная, аллогенная родственная и неродственная": {
-  "en": "Autologous, allogeneic related and unrelated",
-  "kk": "Аутологиялық, аллогендік туыстық және туыстық емес"
- },
- "Услуга заявлена на сайте центра, в том числе при множественной миеломе": {
-  "en": "The service is listed on the center's website, including for multiple myeloma",
-  "kk": "Қызмет орталықтың сайтында көрсетілген, оның ішінде көптік миелома кезінде"
- },
- "Более 2000 трансплантаций за время работы — по данным центра, период не указан": {
-  "en": "More than 2,000 transplants over the years of operation — as reported by the center, period not stated",
-  "kk": "Жұмыс істеген уақыт ішінде 2000-нан астам транспланттау — орталықтың дерегі бойынша, кезеңі көрсетілмеген"
- },
- "Структура": {
-  "en": "Structure",
-  "kk": "Құрылымы"
  },
  "Гематологические отделения, отделение ТКМ, лаборатория HLA-типирования, собственное производство клеточных продуктов": {
   "en": "Hematology departments, BMT unit, HLA typing laboratory, in-house production of cell products",
@@ -3042,5 +2926,149 @@
  "Ведение после возвращения": {
   "en": "Follow-up after return",
   "kk": "Оралғаннан кейінгі бақылау"
+ },
+ "Сведения взяты с официальных сайтов клиник и государственных порталов; дата проверки указана в карточке каждой клиники. Клинику под ваш случай подбирают врачи на этапе консилиумов.": {
+  "en": "Information is taken from the clinics' official websites and government portals; the date it was checked is shown in each clinic's card. The clinic for your case is chosen by physicians at the case conference stage.",
+  "kk": "Мәліметтер клиникалардың ресми сайттарынан және мемлекеттік порталдардан алынған; тексерілген күні әр клиниканың карточкасында көрсетілген. Сіздің жағдайыңызға клиниканы консилиумдар кезеңінде дәрігерлер таңдайды."
+ },
+ "Поиск": {
+  "en": "Search",
+  "kk": "Іздеу"
+ },
+ "Название или город": {
+  "en": "Name or city",
+  "kk": "Атауы немесе қала"
+ },
+ "Все страны": {
+  "en": "All countries",
+  "kk": "Барлық елдер"
+ },
+ "Метод": {
+  "en": "Treatment",
+  "kk": "Әдіс"
+ },
+ "Любой метод": {
+  "en": "Any treatment",
+  "kk": "Кез келген әдіс"
+ },
+ "ТКМ аутологичная": {
+  "en": "Autologous BMT",
+  "kk": "Аутологиялық СКТ"
+ },
+ "ТКМ аллогенная": {
+  "en": "Allogeneic BMT",
+  "kk": "Аллогендік СКТ"
+ },
+ "ТКМ гаплоидентичная": {
+  "en": "Haploidentical BMT",
+  "kk": "Гаплоидентті СКТ"
+ },
+ "Статус": {
+  "en": "Status",
+  "kk": "Мәртебе"
+ },
+ "Любой статус": {
+  "en": "Any status",
+  "kk": "Кез келген мәртебе"
+ },
+ "Сбросить": {
+  "en": "Reset",
+  "kk": "Тазарту"
+ },
+ "Показано {n} из {m}": {
+  "en": "Showing {n} of {m}",
+  "kk": "{m} клиниканың {n} көрсетілген"
+ },
+ "ауто": {
+  "en": "auto",
+  "kk": "ауто"
+ },
+ "алло": {
+  "en": "allo",
+  "kk": "алло"
+ },
+ "гапло": {
+  "en": "haplo",
+  "kk": "гапло"
+ },
+ "Страна и город": {
+  "en": "Country and city",
+  "kk": "Ел және қала"
+ },
+ "Аутологичная": {
+  "en": "Autologous",
+  "kk": "Аутологиялық"
+ },
+ "Аллогенная": {
+  "en": "Allogeneic",
+  "kk": "Аллогендік"
+ },
+ "Гаплоидентичная": {
+  "en": "Haploidentical",
+  "kk": "Гаплоидентті"
+ },
+ "да": {
+  "en": "yes",
+  "kk": "иә"
+ },
+ "нет": {
+  "en": "no",
+  "kk": "жоқ"
+ },
+ "Да": {
+  "en": "Yes",
+  "kk": "Иә"
+ },
+ "Нет": {
+  "en": "No",
+  "kk": "Жоқ"
+ },
+ "нет данных": {
+  "en": "no data",
+  "kk": "дерек жоқ"
+ },
+ "Нет данных": {
+  "en": "No data",
+  "kk": "Дерек жоқ"
+ },
+ "Оснащение и структура": {
+  "en": "Facilities and structure",
+  "kk": "Жабдықталуы және құрылымы"
+ },
+ "Источники": {
+  "en": "Sources",
+  "kk": "Дереккөздер"
+ },
+ "Сведения проверены": {
+  "en": "Information checked",
+  "kk": "Мәліметтер тексерілген"
+ },
+ "требует перепроверки": {
+  "en": "needs rechecking",
+  "kk": "қайта тексеруді қажет етеді"
+ },
+ "по данным клиники": {
+  "en": "as reported by the clinic",
+  "kk": "клиниканың дерегі бойынша"
+ },
+ "Сведения с сайта клиники, ещё не подтверждённые независимо": {
+  "en": "Information from the clinic's website, not yet independently confirmed",
+  "kk": "Клиника сайтындағы, әлі тәуелсіз расталмаған мәліметтер"
+ },
+ "— сведения с сайта клиники, которые мы ещё не подтвердили независимо.": {
+  "en": "— information from the clinic's website that we have not yet confirmed independently.",
+  "kk": "— клиника сайтындағы, біз әлі тәуелсіз растамаған мәліметтер."
+ },
+ "Ничего не найдено. Измените условия поиска или сбросьте фильтры.": {
+  "en": "Nothing found. Change the search terms or reset the filters.",
+  "kk": "Ештеңе табылмады. Іздеу шарттарын өзгертіңіз немесе сүзгілерді тазартыңыз."
+ },
+ "Что означают статусы.": {
+  "en": "What the statuses mean.",
+  "kk": "Мәртебелер нені білдіреді."
+ },
+ "«Кандидат · проверка» — центр проверяется по матрице отбора: часть сведений подтверждена первоисточником, остальные запрошены. «Кандидат · переговоры» — идут переговоры о меморандуме. «Партнёр» — меморандум подписан. Пока центр не стал партнёром, мы не направляем туда пациентов от имени программы.": {
+  "en": "\"Candidate · under review\" means the center is being checked against the selection matrix: some information is confirmed by the primary source, the rest has been requested. \"Candidate · in negotiation\" means a memorandum is being negotiated. \"Partner\" means the memorandum has been signed. Until a center becomes a partner, we do not refer patients there on behalf of the program.",
+  "kk": "«Үміткер · тексерілуде» — орталық іріктеу матрицасы бойынша тексеріледі: мәліметтердің бір бөлігі бастапқы дереккөзбен расталған, қалғаны сұратылған. «Үміткер · келіссөздер» — меморандум бойынша келіссөздер жүріп жатыр. «Серіктес» — меморандумға қол қойылған. Орталық серіктес болмайынша, біз бағдарлама атынан науқастарды онда жібермейміз."
  }
 }

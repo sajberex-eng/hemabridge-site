@@ -178,3 +178,43 @@
   }
   window.addEventListener('hashchange', openStageFromHash);
   openStageFromHash();
+  // clinics page: search and filters over the rendered list (without JS the whole list is shown)
+  (function(){
+    var form = document.querySelector('.cl-tools');
+    if(!form) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll('details.cl'));
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.cl-group'));
+    var count = document.querySelector('.cl-count'), empty = document.querySelector('.cl-empty');
+    var q = form.querySelector('input[type=search]');
+    var sel = {}; Array.prototype.forEach.call(form.querySelectorAll('select[data-f]'), function(s){ sel[s.getAttribute('data-f')] = s; });
+    var COUNT = 'Показано {n} из {m}';
+    window.__i18nDyn.push(COUNT);
+    function apply(){
+      var words = (q.value || '').toLowerCase().split(/\s+/).filter(Boolean), n = 0;
+      items.forEach(function(d){
+        var ok = (!sel.country.value || d.getAttribute('data-country') === sel.country.value)
+          && (!sel.status.value || d.getAttribute('data-status') === sel.status.value)
+          && (!sel.method.value || (' ' + d.getAttribute('data-m') + ' ').indexOf(' ' + sel.method.value + ' ') >= 0)
+          && words.every(function(w){ return d.getAttribute('data-q').indexOf(w) >= 0; });
+        d.hidden = !ok; if(ok) n++;
+      });
+      groups.forEach(function(g){
+        var k = g.querySelectorAll('details.cl:not([hidden])').length, c = g.querySelector('.cl-n');
+        g.hidden = !k; if(c) c.textContent = k;
+      });
+      count.textContent = tr(COUNT).replace('{n}', n).replace('{m}', items.length);
+      empty.hidden = n > 0;
+    }
+    form.hidden = false; count.hidden = false;
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    form.addEventListener('submit', function(e){ e.preventDefault(); });
+    form.addEventListener('reset', function(){ setTimeout(apply, 0); });
+    var rd = refreshDynamic; refreshDynamic = function(){ rd(); apply(); };
+    function openFromHash(){
+      var d = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if(d && d.classList && d.classList.contains('cl')){ d.hidden = false; d.open = true; d.scrollIntoView({block: 'start'}); }
+    }
+    window.addEventListener('hashchange', openFromHash);
+    apply(); openFromHash();
+  })();

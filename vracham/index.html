@@ -719,8 +719,6 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .stage-cols .plain{font-size:.96rem}
 .tbd{color:var(--muted);font-style:italic}
 .foot-grid .foot-h{margin-top:20px}
-.clinics-grid{grid-template-columns:repeat(auto-fill,minmax(min(360px,100%),1fr));margin-top:28px}
-.clinics-grid .tpl-head{margin-bottom:14px}
 .tpl .src{margin:14px 0 0;overflow-wrap:anywhere}
 #questionnaire .actions{margin-top:22px}
 @media (max-width:640px){
@@ -778,6 +776,57 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero.hero-bridge .hero-sub{color:var(--ink)}}
 @media (max-width:640px){.hero.hero-bridge .hero-sub .l{display:block}}
 .hero.hero-bridge .actions{margin-top:clamp(20px,2.4vw,34px)}
+/* ---- clinics: groups by country, one accordion row per clinic, same card fields for every clinic ---- */
+.cl-tools{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr)) auto;gap:12px;align-items:end;margin-top:28px;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.cl-tools[hidden]{display:none}
+.cl-f{display:flex;flex-direction:column;gap:6px;margin:0;font-size:.82rem;font-weight:600;color:var(--muted)}
+.cl-f input[type=search]{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:11px 14px}
+.cl-f input[type=search]:focus{outline:none;border-color:var(--clinic-lit);background:var(--surface);box-shadow:0 0 0 4px var(--clinic-wash)}
+.cl-f select{padding:11px 12px}
+.cl-reset{padding:11px 20px}
+.cl-count{margin:12px 0 0;color:var(--muted)}
+.cl-list{margin-top:20px}
+.cl-group{margin-top:28px}
+.cl-group[hidden]{display:none}
+.cl-group h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:1.15rem}
+.cl-n{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 8px;border-radius:999px;background:var(--clinic-wash);color:var(--clinic);font:700 .8rem/1 var(--font)}
+.cl{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin-top:10px;transition:border-color .2s var(--ease)}
+.cl[hidden]{display:none}
+.cl[open]{border-color:var(--line-strong)}
+.cl summary{display:grid;grid-template-columns:minmax(0,1fr) auto auto 20px;align-items:center;gap:8px 16px;padding:16px 20px;cursor:pointer;list-style:none;border-radius:var(--radius)}
+.cl summary::-webkit-details-marker{display:none}
+.cl summary::after{content:"";width:9px;height:9px;justify-self:end;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-3px) rotate(45deg);transition:transform .2s var(--ease)}
+.cl[open] summary::after{transform:translateY(2px) rotate(-135deg)}
+.cl summary:hover .cl-name{color:var(--clinic)}
+.cl-head{display:flex;flex-direction:column;gap:2px;min-width:0}
+.cl-name{font-weight:700;color:var(--ink);overflow-wrap:anywhere;transition:color .2s var(--ease)}
+.cl-city{font-size:.88rem;color:var(--muted)}
+.cl-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.cl-tags .tag{font-size:.76rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--clinic-wash);color:var(--clinic);white-space:nowrap}
+.cl-tags .tag-cart{background:var(--accent-wash);color:var(--accent-ink)}
+.cl-st{font-size:.76rem;font-weight:600;white-space:nowrap;padding:3px 10px;border-radius:999px;color:var(--warn);background:color-mix(in srgb,var(--warn) 10%,transparent)}
+.cl-st.st-partner{color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent)}
+.cl-card{margin:0;padding:4px 20px 18px}
+.cl-row{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr);gap:4px 20px;padding:10px 0;border-top:1px solid var(--line)}
+.cl-row dt{color:var(--muted);font-size:.9rem}
+.cl-row dd{margin:0;overflow-wrap:anywhere}
+.cl-row dd p{margin:6px 0 0}
+.cl-tkm{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
+.cl-tkm .t-unknown,.cl-tkm .t-no,.nd,dd > .t-unknown{color:var(--muted)}
+.said{display:inline-block;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:999px;color:var(--muted);border:1px dashed var(--line-strong);white-space:nowrap;vertical-align:1px}
+.stale{font-size:.76rem;font-weight:600;color:var(--warn)}
+.cl-empty{margin-top:20px;padding:18px 20px;border:1px dashed var(--line-strong);border-radius:var(--radius);color:var(--muted)}
+.cl-foot{margin-top:18px;color:var(--muted)}
+@media (max-width:900px){.cl-tools{grid-template-columns:repeat(2,minmax(0,1fr))}.cl-search{grid-column:1/-1}}
+@media (max-width:640px){
+  .cl-tools{grid-template-columns:minmax(0,1fr);padding:14px}
+  .cl summary{grid-template-columns:minmax(0,1fr) 20px;padding:14px 16px}
+  .cl summary::after{grid-row:1;grid-column:2}
+  .cl-tags,.cl-st{grid-column:1;justify-content:flex-start;justify-self:start}
+  .cl-card{padding:2px 16px 14px}
+  .cl-row{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.cl summary::after,.cl,.cl-name{transition:none}}
 </style>
 </head>
 <body>
@@ -945,7 +994,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
-      <p><a href="../dokumenty/">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.10"></span></p>
+      <p><a href="../dokumenty/">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.11"></span></p>
     </div>
   </div>
 </footer>
@@ -953,7 +1002,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 <script>
 (function(){
   var pages = Array.prototype.slice.call(document.querySelectorAll('[data-page]'));
-  var ROOT = "../", URLS = {"home": "../", "route": "../marshrut/", "diseases": "../zabolevaniya/", "tech": "../tehnologii/", "bmt": "../transplantaciya-kostnogo-mozga/", "car-t": "../car-t/", "aftercare": "../vedenie-posle-lecheniya/", "second-opinion": "../vtoroe-mnenie/", "clinics": "../kliniki/", "doctors": "../vrachi/", "physicians": "../vracham/", "partners": "../partneram/", "about": "../o-programme/", "cost": "../stoimost/", "faq": "../voprosy/", "apply": "../zayavka/", "legal": "../dokumenty/", "cabinet": "../kabinet/"}, ANCHORS = {"cart": "tech", "drugs": "tech", "followup": "aftercare", "i1": "home", "i2": "home", "i3": "home", "i4": "home", "i5": "home", "i6": "home", "i7": "home", "i8": "home", "i9": "home", "kz-prep": "home", "offer": "legal", "questionnaire": "partners", "referral-form": "physicians", "rt-desc": "home", "rt-title": "home", "rtBody": "home", "rtDetail": "home", "rtLine": "home", "rtMore": "home", "rtNext": "home", "rtNum": "home", "rtOf": "home", "rtPrev": "home", "rtStops": "home", "rtTags": "home", "rtText": "home", "rtTitle": "home", "rtWho": "home", "second": "tech", "selection": "partners", "stage-1": "route", "stage-2": "route", "stage-3": "route", "stage-4": "route", "stage-5": "route", "stage-6": "route", "tkm": "tech"};
+  var ROOT = "../", URLS = {"home": "../", "route": "../marshrut/", "diseases": "../zabolevaniya/", "tech": "../tehnologii/", "bmt": "../transplantaciya-kostnogo-mozga/", "car-t": "../car-t/", "aftercare": "../vedenie-posle-lecheniya/", "second-opinion": "../vtoroe-mnenie/", "clinics": "../kliniki/", "doctors": "../vrachi/", "physicians": "../vracham/", "partners": "../partneram/", "about": "../o-programme/", "cost": "../stoimost/", "faq": "../voprosy/", "apply": "../zayavka/", "legal": "../dokumenty/", "cabinet": "../kabinet/"}, ANCHORS = {"acibadem": "clinics", "cart": "tech", "drugs": "tech", "florence-nightingale": "clinics", "followup": "aftercare", "i1": "home", "i2": "home", "i3": "home", "i4": "home", "i5": "home", "i6": "home", "i7": "home", "i8": "home", "i9": "home", "kz-prep": "home", "max-saket": "clinics", "medipol-mega": "clinics", "minsk-npc": "clinics", "offer": "legal", "questionnaire": "partners", "referral-form": "physicians", "rt-desc": "home", "rt-title": "home", "rtBody": "home", "rtDetail": "home", "rtLine": "home", "rtMore": "home", "rtNext": "home", "rtNum": "home", "rtOf": "home", "rtPrev": "home", "rtStops": "home", "rtTags": "home", "rtText": "home", "rtTitle": "home", "rtWho": "home", "second": "tech", "selection": "partners", "stage-1": "route", "stage-2": "route", "stage-3": "route", "stage-4": "route", "stage-5": "route", "stage-6": "route", "tkm": "tech"};
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
   var langBtns = Array.prototype.slice.call(document.querySelectorAll('[data-lang]'));
   var nav = document.getElementById('nav');
@@ -962,7 +1011,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-11-20.10';
+  var VERSION = '2026-11-20.11';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
@@ -1313,6 +1362,46 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   }
   window.addEventListener('hashchange', openStageFromHash);
   openStageFromHash();
+  // clinics page: search and filters over the rendered list (without JS the whole list is shown)
+  (function(){
+    var form = document.querySelector('.cl-tools');
+    if(!form) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll('details.cl'));
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.cl-group'));
+    var count = document.querySelector('.cl-count'), empty = document.querySelector('.cl-empty');
+    var q = form.querySelector('input[type=search]');
+    var sel = {}; Array.prototype.forEach.call(form.querySelectorAll('select[data-f]'), function(s){ sel[s.getAttribute('data-f')] = s; });
+    var COUNT = 'Показано {n} из {m}';
+    window.__i18nDyn.push(COUNT);
+    function apply(){
+      var words = (q.value || '').toLowerCase().split(/\s+/).filter(Boolean), n = 0;
+      items.forEach(function(d){
+        var ok = (!sel.country.value || d.getAttribute('data-country') === sel.country.value)
+          && (!sel.status.value || d.getAttribute('data-status') === sel.status.value)
+          && (!sel.method.value || (' ' + d.getAttribute('data-m') + ' ').indexOf(' ' + sel.method.value + ' ') >= 0)
+          && words.every(function(w){ return d.getAttribute('data-q').indexOf(w) >= 0; });
+        d.hidden = !ok; if(ok) n++;
+      });
+      groups.forEach(function(g){
+        var k = g.querySelectorAll('details.cl:not([hidden])').length, c = g.querySelector('.cl-n');
+        g.hidden = !k; if(c) c.textContent = k;
+      });
+      count.textContent = tr(COUNT).replace('{n}', n).replace('{m}', items.length);
+      empty.hidden = n > 0;
+    }
+    form.hidden = false; count.hidden = false;
+    form.addEventListener('input', apply);
+    form.addEventListener('change', apply);
+    form.addEventListener('submit', function(e){ e.preventDefault(); });
+    form.addEventListener('reset', function(){ setTimeout(apply, 0); });
+    var rd = refreshDynamic; refreshDynamic = function(){ rd(); apply(); };
+    function openFromHash(){
+      var d = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if(d && d.classList && d.classList.contains('cl')){ d.hidden = false; d.open = true; d.scrollIntoView({block: 'start'}); }
+    }
+    window.addEventListener('hashchange', openFromHash);
+    apply(); openFromHash();
+  })();
   window.addEventListener('hashchange', route);
   route();
   initLang();

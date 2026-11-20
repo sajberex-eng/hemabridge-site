@@ -181,24 +181,24 @@ s = s[:_p] + _blk + s[_pe:]
 s = rep(s, '<li><strong>Договор с пациентом (оферта)</strong><span class="pending">На юридической экспертизе</span></li>',
         '<li id="offer"><strong>Публичный договор-оферта</strong>Платная часть программы начинается после того, как вы приняли оферту. С офертой вы знакомитесь после консультации врача, до любой оплаты.<br><a href="docs/hemabridge-offer-appendix-1-ru.pdf" target="_blank" rel="noopener">Приложение № 1. Согласие пациента и Доверенные лица (PDF, проект)</a><br><span class="pending">Основной текст оферты готовится к публикации</span></li>')
 
-# ---------- 6. Clinics page: candidate centres with sources ----------
+# ---------- 6. Clinics page: candidate centres, grouped by country, one accordion card per clinic ----------
+# Data: clinics.json (written from the coordinator's table by clinics_sheet.py); schema and markup: clinics_lib.py.
+import sys as _sys
+_sys.path.insert(0, B)
+import clinics_lib as _CL
 _K = _json.load(open(B + 'clinics.json', encoding='utf-8'))
-_cl = ''
-for _c in _K['clinics']:
-    _rows = ''.join('<dt>%s</dt><dd class="v">%s</dd>' % (_e(k), _e(v)) for k, v in _c['rows'])
-    _src = ', '.join('<a href="%s" rel="noopener">%s</a>' % (_e(u), _e(n)) for n, u in _c['sources'])
-    _cl += '''        <article class="tpl">
-          <div class="tpl-head"><div><h3>%s</h3><span class="pending">%s</span></div></div>
-          <dl class="fields">%s</dl>
-          <div class="chips">%s</div>
-          <p class="small src">Источники: %s</p>
-        </article>
-''' % (_e(_c['name']), _e(_c['status']), _rows, ''.join('<span class="chip">%s</span>' % _e(x) for x in _c['chips']), _src)
+_err, _warn = _CL.validate(_K)
+for _w in _warn: print('clinics: предупреждение:', _w)
+if _err:
+    print('clinics.json: ошибки:\n  ' + '\n  '.join(_err)); raise SystemExit(1)
+_cl, EXTRA_TR = _CL.render(_K)
 _a = s.index('<div class="tpl-grid" style="margin-top:24px">', s.index('<div class="page" data-page="clinics"'))
 _b = s.index('<div class="note"', _a)
-s = s[:_a] + '<div class="tpl-grid clinics-grid">\n' + _cl + '      </div>\n      ' + s[_b:]
+s = s[:_a] + _cl.lstrip() + '      ' + s[_b:]
 s = rep(s, '<p class="small">Эти центры сейчас проходят проверку по матрице отбора. Мы публикуем только те сведения, которые подтверждены первоисточником, — остальные поля заполняются по мере проверки.</p>',
-        '<p class="lead">Эти центры сейчас проходят проверку по матрице отбора. Партнёрами они станут только после подписания меморандума.</p><p class="small">Сведения взяты с официальных сайтов клиник и государственных порталов, актуальны на %s. Пометка «по данным клиники» означает, что мы ещё не получили независимого подтверждения. Клинику под ваш случай подбирают врачи на этапе консилиумов.</p>' % _e(_K['checked']))
+        '<p class="lead">Эти центры сейчас проходят проверку по матрице отбора. Партнёрами они станут только после подписания меморандума.</p><p class="small">Сведения взяты с официальных сайтов клиник и государственных порталов; дата проверки указана в карточке каждой клиники. Клинику под ваш случай подбирают врачи на этапе консилиумов.</p>')
+s = rep(s, '<div class="note" style="margin-top:24px"><p><strong>Что означают пометки.</strong> «Проверка по матрице идёт» — центр рассматривается как партнёр, часть сведений подтверждена первоисточником, остальные запрошены. Пока проверка и договор не завершены, мы не называем центр партнёром и не направляем туда пациентов.</p></div>',
+        '<div class="note" style="margin-top:24px"><p><strong>Что означают статусы.</strong> «Кандидат · проверка» — центр проверяется по матрице отбора: часть сведений подтверждена первоисточником, остальные запрошены. «Кандидат · переговоры» — идут переговоры о меморандуме. «Партнёр» — меморандум подписан. Пока центр не стал партнёром, мы не направляем туда пациентов от имени программы.</p></div>')
 
 # ---------- 7. Clinics page shows the centres first; the selection matrix moves to the partners page ----------
 _cp = s.index('<div class="page" data-page="clinics"')

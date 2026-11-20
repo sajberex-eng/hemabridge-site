@@ -124,7 +124,7 @@ s=rep(s,"""<p class="lead">Программу ведёт профильная к
         <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в собственной лаборатории центра">
       </div>""")
 s=rep(s,'<meta name="viewport" content="width=device-width, initial-scale=1">','<meta name="viewport" content="width=device-width, initial-scale=1">\n<meta name="robots" content="noindex, nofollow">')
-s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-20.10</p>')
+s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-20.11</p>')
 s=rep(s,'<meta name="robots" content="noindex, nofollow">','<meta name="robots" content="noindex, nofollow">\n<meta http-equiv="Cache-Control" content="no-cache">')
 exec(open(B+'fixes_home.py',encoding='utf-8').read())
 exec(open(B+'content_update.py',encoding='utf-8').read())

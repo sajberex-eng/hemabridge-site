@@ -3,6 +3,9 @@ import json, os
 _tp = B + 'translations.json'
 if os.path.exists(_tp):
     _tr = json.load(open(_tp, encoding='utf-8'))
+    # translations kept next to their data (clinics.json via clinics_lib.render); translations.json wins on a clash
+    for _k, _v in globals().get('EXTRA_TR', {}).items():
+        _tr.setdefault(_k, _v)
     _out = B + '../i18n/'
     os.makedirs(_out, exist_ok=True)
     for _lang in ('en', 'kk'):

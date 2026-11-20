@@ -1,59 +1,254 @@
 {
- "_note": "Сведения собраны 18.11.2026 из поисковой выдачи по официальным сайтам клиник (прямое открытие страниц из среды сборки было недоступно). Перед запуском сверить каждую строку с указанной страницей. Статус клиники — рабочий, не партнёрский.",
- "checked": "ноябрь 2026",
+ "_note": "Источник данных для страницы «Клиники». Координатор ведёт таблицу (src/clinics.xlsx или Google Таблица), файл обновляется командой `python clinics_sheet.py import <таблица>`; вручную не править. Сведения на 20.11.2026 собраны из поисковой выдачи по официальным сайтам клиник (18.11.2026); перед запуском сверить каждую строку с указанными страницами.",
  "clinics": [
-  {"name": "Florence Nightingale", "status": "Проверка идёт", "chips": ["ТКМ", "Турция"],
-   "rows": [
-    ["Страна, город", "Турция, Стамбул"],
-    ["Профиль", "Частная группа больниц (с 1989 года), центр трансплантации костного мозга"],
-    ["ТКМ", "Аутологичная и аллогенная"],
-    ["Аккредитации", "JCI — Istanbul Florence Nightingale Hospital, с 2013 года; JACIE — по данным клиники, год и область не указаны"],
-    ["Объёмы", "По данным клиники — более 100 трансплантаций в год; общее число на разных страницах клиники указано по-разному (от 1100 до 1500)"],
-    ["Оснащение", "Отделение ТКМ с HEPA-фильтрацией воздуха"],
-    ["Иностранным пациентам", "Международный центр, переводчики и трансфер; среди языков команды — русский и английский"]
+  {
+   "id": "florence-nightingale",
+   "name": "Florence Nightingale",
+   "country": "Турция",
+   "city": "Стамбул",
+   "status": "check",
+   "checked": "2026-11",
+   "profile": "Частная группа больниц (с 1989 года), центр трансплантации костного мозга",
+   "tkm": {
+    "auto": "yes",
+    "allo": "yes",
+    "haplo": "unknown"
+   },
+   "tkm_note": "",
+   "cart": "unknown",
+   "cart_note": "",
+   "accreditation": "JCI — Istanbul Florence Nightingale Hospital, с 2013 года; JACIE — по данным клиники, год и область не указаны",
+   "facilities": "Отделение ТКМ с HEPA-фильтрацией воздуха",
+   "foreign": "Международный центр, переводчики и трансфер; среди языков команды — русский и английский",
+   "clinic_said": [],
+   "sources": [
+    [
+     "groupflorence.com",
+     "https://www.groupflorence.com/departments/comprehensive-transplant-center/"
+    ],
+    [
+     "florence.com.tr",
+     "https://www.florence.com.tr/en-us/medical-units/bone-marrow-transplant-center"
+    ]
    ],
-   "sources": [["groupflorence.com", "https://www.groupflorence.com/departments/comprehensive-transplant-center/"], ["florence.com.tr", "https://www.florence.com.tr/en-us/medical-units/bone-marrow-transplant-center"]]},
-  {"name": "Medipol Mega", "status": "Переговоры", "chips": ["ТКМ", "Турция"],
-   "rows": [
-    ["Страна, город", "Турция, Стамбул"],
-    ["Профиль", "Университетская больница Istanbul Medipol University, комплекс открыт в 2012 году"],
-    ["ТКМ", "Аутологичная и аллогенная; отдельные отделения для взрослых и для детей"],
-    ["Структура центра", "Амбулаторная и стационарная службы, аферез, лаборатория обработки стволовых клеток, блок интенсивной терапии"],
-    ["Аккредитации", "JCI по стандартам Academic Medical Center, с 2014 года — по данным клиники"],
-    ["Иностранным пациентам", "Международный центр с услугами перевода; у центра ТКМ есть страница на русском языке"]
+   "en": {
+    "city": "Istanbul",
+    "profile": "Private hospital group (since 1989), bone marrow transplantation center",
+    "accreditation": "JCI — Istanbul Florence Nightingale Hospital, since 2013; JACIE — as reported by the clinic, year and scope not stated",
+    "facilities": "BMT unit with HEPA air filtration",
+    "foreign": "International center, interpreters and transfers; the team's languages include Russian and English"
+   },
+   "kk": {
+    "city": "Стамбул",
+    "profile": "Жеке ауруханалар тобы (1989 жылдан бері), сүйек кемігін транспланттау орталығы",
+    "accreditation": "JCI — Istanbul Florence Nightingale Hospital, 2013 жылдан бері; JACIE — клиниканың дерегі бойынша, жылы мен саласы көрсетілмеген",
+    "facilities": "Ауаны HEPA-сүзгілеуі бар СКТ бөлімшесі",
+    "foreign": "Халықаралық орталық, аудармашылар мен трансфер; топ сөйлейтін тілдердің арасында орыс және ағылшын тілдері бар"
+   }
+  },
+  {
+   "id": "medipol-mega",
+   "name": "Medipol Mega",
+   "country": "Турция",
+   "city": "Стамбул",
+   "status": "talks",
+   "checked": "2026-11",
+   "profile": "Университетская больница Istanbul Medipol University, комплекс открыт в 2012 году",
+   "tkm": {
+    "auto": "yes",
+    "allo": "yes",
+    "haplo": "unknown"
+   },
+   "tkm_note": "Отдельные отделения для взрослых и для детей",
+   "cart": "unknown",
+   "cart_note": "",
+   "accreditation": "JCI по стандартам Academic Medical Center, с 2014 года",
+   "facilities": "Амбулаторная и стационарная службы, аферез, лаборатория обработки стволовых клеток, блок интенсивной терапии",
+   "foreign": "Международный центр с услугами перевода; у центра ТКМ есть страница на русском языке",
+   "clinic_said": [
+    "accreditation"
    ],
-   "sources": [["medipol.com.tr", "https://medipol.com.tr/ru/diagnosis-and-treatment/medical-centers/bone-marrow-stem-cell-transplantation"], ["medipolglobal.com", "https://medipolglobal.com/centers/bone-marrow-transplantation"]]},
-  {"name": "Acıbadem", "status": "Проверка идёт", "chips": ["ТКМ", "CAR-T", "Турция"],
-   "rows": [
-    ["Страна, города", "Турция: Стамбул, Адана, Анкара"],
-    ["Профиль", "Частная группа больниц; центры ТКМ для взрослых и для детей"],
-    ["ТКМ", "Аутологичная, аллогенная, гаплоидентичная"],
-    ["CAR-T", "Доступна; клетки производятся в лаборатории Acıbadem Labcell — по данным клиники"],
-    ["Аккредитации", "JCI — больницы Adana и Maslak (с 2010), Atakent (с 2017), Altunizade (с 2019) — по данным клиники"],
-    ["Иностранным пациентам", "Представительство в Астане, поддержка на русском и английском; русскоязычный сайт"]
+   "sources": [
+    [
+     "medipol.com.tr",
+     "https://medipol.com.tr/ru/diagnosis-and-treatment/medical-centers/bone-marrow-stem-cell-transplantation"
+    ],
+    [
+     "medipolglobal.com",
+     "https://medipolglobal.com/centers/bone-marrow-transplantation"
+    ]
    ],
-   "sources": [["acibadem.com.tr", "https://www.acibadem.com.tr/en/service/bone-marrow-transplant-unit-adult/"], ["acibademinternational.com", "https://acibademinternational.com/international-offices/office-kazakhstan-astana/"], ["acibadem.com.ru", "https://www.acibadem.com.ru/stem-cell-transfer/"]]},
-  {"name": "Max Healthcare (Saket)", "status": "Проверка идёт", "chips": ["ТКМ", "CAR-T", "Индия"],
-   "rows": [
-    ["Страна, город", "Индия, Нью-Дели (Сакет)"],
-    ["Профиль", "Max Super Speciality Hospital, Saket — многопрофильная больница сети Max Healthcare; East Block — подразделение Devki Devi Foundation"],
-    ["ТКМ", "Аутологичная, аллогенная, гаплоидентичная; есть детская ТКМ"],
-    ["CAR-T", "Проводится для отдельных пациентов с опухолями крови — по данным клиники"],
-    ["Аккредитации", "JCI и NABH — по данным клиники"],
-    ["Оснащение", "Палаты с HEPA-фильтрацией"],
-    ["Иностранным пациентам", "Международный отдел: координатор, приглашение для медицинской визы, трансфер; переводчики, включая русский язык"]
+   "en": {
+    "city": "Istanbul",
+    "profile": "Istanbul Medipol University teaching hospital, complex opened in 2012",
+    "tkm_note": "Separate units for adults and for children",
+    "accreditation": "JCI under Academic Medical Center standards, since 2014",
+    "facilities": "Outpatient and inpatient services, apheresis, stem cell processing laboratory, intensive care unit",
+    "foreign": "International center with interpreting services; the BMT center has a page in Russian"
+   },
+   "kk": {
+    "city": "Стамбул",
+    "profile": "Istanbul Medipol University университеттік ауруханасы, кешен 2012 жылы ашылған",
+    "tkm_note": "Ересектер мен балаларға арналған жеке бөлімшелер",
+    "accreditation": "Academic Medical Center стандарттары бойынша JCI, 2014 жылдан бері",
+    "facilities": "Амбулаториялық және стационарлық қызметтер, аферез, бағаналы жасушаларды өңдеу зертханасы, қарқынды терапия блогы",
+    "foreign": "Аударма қызметтері бар халықаралық орталық; СКТ орталығының орыс тіліндегі беті бар"
+   }
+  },
+  {
+   "id": "acibadem",
+   "name": "Acıbadem",
+   "country": "Турция",
+   "city": "Стамбул, Адана, Анкара",
+   "status": "check",
+   "checked": "2026-11",
+   "profile": "Частная группа больниц; центры ТКМ для взрослых и для детей",
+   "tkm": {
+    "auto": "yes",
+    "allo": "yes",
+    "haplo": "yes"
+   },
+   "tkm_note": "",
+   "cart": "yes",
+   "cart_note": "Клетки производятся в собственной лаборатории Acıbadem Labcell",
+   "accreditation": "JCI — больницы Adana и Maslak (с 2010), Atakent (с 2017), Altunizade (с 2019)",
+   "facilities": "",
+   "foreign": "Представительство в Астане, поддержка на русском и английском; русскоязычный сайт",
+   "clinic_said": [
+    "cart",
+    "accreditation"
    ],
-   "sources": [["maxhealthcare.in", "https://www.maxhealthcare.in/our-specialities/bone-marrow-transplant"], ["healinindia.gov.in", "https://healinindia.gov.in/hospital/max-super-speciality-hospital-east-block-a-unit-of-devki-devi-foundation"]]},
-  {"name": "Минский НПЦ хирургии, трансплантологии и гематологии", "status": "Проверка идёт", "chips": ["ТКМ", "CAR-T", "Беларусь"],
-   "rows": [
-    ["Страна, город", "Беларусь, Минск"],
-    ["Профиль", "Государственный научно-практический центр; Республиканский центр гематологии и пересадки костного мозга работает с 1993 года"],
-    ["ТКМ", "Аутологичная, аллогенная родственная и неродственная"],
-    ["CAR-T", "Услуга заявлена на сайте центра, в том числе при множественной миеломе"],
-    ["Объёмы", "Более 2000 трансплантаций за время работы — по данным центра, период не указан"],
-    ["Структура", "Гематологические отделения, отделение ТКМ, лаборатория HLA-типирования, собственное производство клеточных продуктов"],
-    ["Иностранным пациентам", "Платная помощь иностранным гражданам по отдельному прейскуранту; обслуживание на русском языке"]
+   "sources": [
+    [
+     "acibadem.com.tr",
+     "https://www.acibadem.com.tr/en/service/bone-marrow-transplant-unit-adult/"
+    ],
+    [
+     "acibademinternational.com",
+     "https://acibademinternational.com/international-offices/office-kazakhstan-astana/"
+    ],
+    [
+     "acibadem.com.ru",
+     "https://www.acibadem.com.ru/stem-cell-transfer/"
+    ]
    ],
-   "sources": [["msth.by", "https://msth.by/respublikanskij-tsentr-gematologii-i-peresadki-kostnogo-mozga"], ["msthps.by", "https://www.msthps.by/services/transplantatsiya/kostnogo-mozga-i-stvolovykh-kletok-perifericheskoy-krovi/"]]}
+   "en": {
+    "city": "Istanbul, Adana, Ankara",
+    "profile": "Private hospital group; BMT centers for adults and for children",
+    "cart_note": "Cells are manufactured at the group's own Acıbadem Labcell laboratory",
+    "accreditation": "JCI — Adana and Maslak hospitals (since 2010), Atakent (since 2017), Altunizade (since 2019)",
+    "foreign": "Office in Astana, support in Russian and English; Russian-language website"
+   },
+   "kk": {
+    "city": "Стамбул, Адана, Анкара",
+    "profile": "Жеке ауруханалар тобы; ересектер мен балаларға арналған СКТ орталықтары",
+    "cart_note": "Жасушалар Acıbadem Labcell өз зертханасында өндіріледі",
+    "accreditation": "JCI — Adana және Maslak ауруханалары (2010 жылдан бері), Atakent (2017 жылдан бері), Altunizade (2019 жылдан бері)",
+    "foreign": "Астанадағы өкілдік, орыс және ағылшын тілдерінде қолдау; орыс тіліндегі сайт"
+   }
+  },
+  {
+   "id": "max-saket",
+   "name": "Max Healthcare (Saket)",
+   "country": "Индия",
+   "city": "Нью-Дели (Сакет)",
+   "status": "check",
+   "checked": "2026-11",
+   "profile": "Max Super Speciality Hospital, Saket — многопрофильная больница сети Max Healthcare; East Block — подразделение Devki Devi Foundation",
+   "tkm": {
+    "auto": "yes",
+    "allo": "yes",
+    "haplo": "yes"
+   },
+   "tkm_note": "Есть детская ТКМ",
+   "cart": "yes",
+   "cart_note": "Для отдельных пациентов с опухолями крови",
+   "accreditation": "JCI и NABH",
+   "facilities": "Палаты с HEPA-фильтрацией",
+   "foreign": "Международный отдел: координатор, приглашение для медицинской визы, трансфер; переводчики, включая русский язык",
+   "clinic_said": [
+    "cart",
+    "accreditation"
+   ],
+   "sources": [
+    [
+     "maxhealthcare.in",
+     "https://www.maxhealthcare.in/our-specialities/bone-marrow-transplant"
+    ],
+    [
+     "healinindia.gov.in",
+     "https://healinindia.gov.in/hospital/max-super-speciality-hospital-east-block-a-unit-of-devki-devi-foundation"
+    ]
+   ],
+   "en": {
+    "city": "New Delhi (Saket)",
+    "profile": "Max Super Speciality Hospital, Saket — a multi-specialty hospital in the Max Healthcare network; East Block is a unit of the Devki Devi Foundation",
+    "tkm_note": "Pediatric BMT available",
+    "cart_note": "For selected patients with blood cancers",
+    "accreditation": "JCI and NABH",
+    "facilities": "Rooms with HEPA filtration",
+    "foreign": "International department: coordinator, invitation for a medical visa, transfers; interpreters, including Russian"
+   },
+   "kk": {
+    "city": "Нью-Дели (Сакет)",
+    "profile": "Max Super Speciality Hospital, Saket — Max Healthcare желісінің көпбейінді ауруханасы; East Block — Devki Devi Foundation бөлімшесі",
+    "tkm_note": "Балалар СКТ-сы бар",
+    "cart_note": "Қан ісіктері бар жекелеген пациенттерге",
+    "accreditation": "JCI және NABH",
+    "facilities": "HEPA-сүзгілеуі бар палаталар",
+    "foreign": "Халықаралық бөлім: үйлестіруші, медициналық визаға шақыру, трансфер; аудармашылар, оның ішінде орыс тілі"
+   }
+  },
+  {
+   "id": "minsk-npc",
+   "name": "Минский НПЦ хирургии, трансплантологии и гематологии",
+   "country": "Беларусь",
+   "city": "Минск",
+   "status": "check",
+   "checked": "2026-11",
+   "profile": "Государственный научно-практический центр; Республиканский центр гематологии и пересадки костного мозга работает с 1993 года",
+   "tkm": {
+    "auto": "yes",
+    "allo": "yes",
+    "haplo": "unknown"
+   },
+   "tkm_note": "Аллогенная — от родственного и неродственного донора",
+   "cart": "yes",
+   "cart_note": "В том числе при множественной миеломе",
+   "accreditation": "",
+   "facilities": "Гематологические отделения, отделение ТКМ, лаборатория HLA-типирования, собственное производство клеточных продуктов",
+   "foreign": "Платная помощь иностранным гражданам по отдельному прейскуранту; обслуживание на русском языке",
+   "clinic_said": [
+    "cart"
+   ],
+   "sources": [
+    [
+     "msth.by",
+     "https://msth.by/respublikanskij-tsentr-gematologii-i-peresadki-kostnogo-mozga"
+    ],
+    [
+     "msthps.by",
+     "https://www.msthps.by/services/transplantatsiya/kostnogo-mozga-i-stvolovykh-kletok-perifericheskoy-krovi/"
+    ]
+   ],
+   "en": {
+    "name": "Minsk Scientific and Practical Center for Surgery, Transplantology and Hematology",
+    "city": "Minsk",
+    "profile": "State scientific and practical center; the Republican Center for Hematology and Bone Marrow Transplantation has been operating since 1993",
+    "tkm_note": "Allogeneic — from related and unrelated donors",
+    "cart_note": "Including for multiple myeloma",
+    "facilities": "Hematology departments, BMT unit, HLA typing laboratory, in-house production of cell products",
+    "foreign": "Paid care for foreign nationals under a separate price list; service in Russian"
+   },
+   "kk": {
+    "name": "Минск хирургия, трансплантология және гематология ғылыми-практикалық орталығы",
+    "city": "Минск",
+    "profile": "Мемлекеттік ғылыми-практикалық орталық; Республикалық гематология және сүйек кемігін транспланттау орталығы 1993 жылдан бері жұмыс істейді",
+    "tkm_note": "Аллогендік — туыс және туыс емес донордан",
+    "cart_note": "Оның ішінде көптік миелома кезінде",
+    "facilities": "Гематология бөлімшелері, СКТ бөлімшесі, HLA-типтеу зертханасы, жасушалық өнімдерді өз өндірісі",
+    "foreign": "Шетел азаматтарына жеке прейскурант бойынша ақылы көмек; орыс тілінде қызмет көрсету"
+   }
+  }
  ]
 }
