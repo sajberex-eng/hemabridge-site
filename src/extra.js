@@ -66,8 +66,22 @@
   };
   // every Russian string used by this script, so the translation tool can list them
   window.__i18nDyn = ['Вы получаете', 'Подробнее о шаге', 'Шаг', 'Шаги маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(window.__hbSlogans || [])
     .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g || '', x.n || ''], x.p); }, []));
+  // home headline: keep the rule under «HemaBridge» exactly as wide as the slogan's longest line
+  function fitSloganLine(){
+    var sl = document.querySelector('.hb-slogan');
+    if(!sl || !sl.firstChild) return;
+    var r = document.createRange(); r.selectNodeContents(sl);
+    var w = 0, rects = r.getClientRects();
+    for(var k = 0; k < rects.length; k++) w = Math.max(w, rects[k].width);
+    if(w) sl.parentNode.style.setProperty('--hbw', Math.ceil(w) + 'px');
+  }
+  fitSloganLine();
+  window.addEventListener('resize', fitSloganLine);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitSloganLine);
   refreshDynamic = function(){
+    fitSloganLine();
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
     var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Шаги маршрута'));

@@ -124,11 +124,12 @@ s=rep(s,"""<p class="lead">Программу ведёт профильная к
         <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в собственной лаборатории центра">
       </div>""")
 s=rep(s,'<meta name="viewport" content="width=device-width, initial-scale=1">','<meta name="viewport" content="width=device-width, initial-scale=1">\n<meta name="robots" content="noindex, nofollow">')
-s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-20.1</p>')
+s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-20.9</p>')
 s=rep(s,'<meta name="robots" content="noindex, nofollow">','<meta name="robots" content="noindex, nofollow">\n<meta http-equiv="Cache-Control" content="no-cache">')
 exec(open(B+'fixes_home.py',encoding='utf-8').read())
 exec(open(B+'content_update.py',encoding='utf-8').read())
 exec(open(B+'i18n_patch.py',encoding='utf-8').read())
+exec(open(B+'seo.py',encoding='utf-8').read())
 # js
 s=rep(s,'''  window.addEventListener('hashchange', route);''',open(B+'extra.js',encoding='utf-8').read().replace('/*__STEPS__*/[]', __import__('json').dumps([{'t':x['title'],'p':x['tags'],'a':x['abroad'],'d':x['text'],'g':x.get('gets',''),'n':x.get('note',''),'i':x['icon']} for x in __import__('json').load(open(B+'route.json',encoding='utf-8'))['stages']], ensure_ascii=False))+'''  window.addEventListener('hashchange', route);''')
 open(B+'../index.html','w',encoding='utf-8').write(s)
