@@ -753,7 +753,10 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .fu-algo li{counter-increment:fu;position:relative;padding:0 0 14px 40px}
 .fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
 /* ---- hero v7: the name and what it is for lead; the three short promises sit under it ---- */
-.hero.hero-bridge h1{font-weight:700}
+.hero.hero-bridge h1{font-weight:700;width:fit-content;max-width:100%;margin-inline:auto}
+/* the rule under the name is as wide as the slogan's longest line (--hbw is set by fitSloganLine() when the slogan wraps) */
+.hero.hero-bridge h1 .hb-name::after{content:"";display:block;height:1.5px;width:var(--hbw,100%);max-width:100%;margin:.14em auto 0;background:var(--accent)}
+.hero.hero-bridge h1 .hb-slogan{padding-top:.16em}
 .hero.hero-bridge h1 .l{display:block}
 .hero.hero-bridge .hero-sub{margin:clamp(14px,1.6vw,22px) auto 0;max-width:none;font:600 clamp(1.12rem,1.75vw,1.6rem)/1.35 var(--display);color:var(--clinic-dark);text-wrap:balance}
 :root[data-theme="dark"] .hero.hero-bridge .hero-sub{color:var(--ink)}
@@ -814,7 +817,19 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 <div class="page" data-page="home" data-title="Врачебная маршрутизация пациентов с заболеваниями крови">
   <section class="hero hero-bridge">
     <div class="wrap">
-      <h1><span class="l">HemaBridge —</span> <span class="l">мост для лечения за рубежом</span></h1>
+      <h1><span class="l hb-name">HemaBridge</span> <span class="l hb-slogan">лечение за рубежом с врачом дома</span></h1>
+      <script>
+      /* one of four slogans per visit, never the same twice in a row; runs before first paint */
+      (function(){
+        var v = window.__hbSlogans = ['лечение за рубежом с врачом дома', 'мост к лечению за рубежом', 'лечение крови за рубежом', 'за рубеж на лечение и обратно домой'];
+        var last = -1, i;
+        try{ last = +localStorage.getItem('hb-slogan'); }catch(e){}
+        do{ i = Math.floor(Math.random() * v.length); }while(i === last);
+        try{ localStorage.setItem('hb-slogan', i); }catch(e){}
+        var el = document.querySelector('.hb-slogan');
+        if(el) el.textContent = v[i];
+      })();
+      </script>
       <p class="hero-sub"><span class="l">Один пациент. Один маршрут.</span> <span class="l">Команда врачей в двух странах.</span></p>
       <div class="actions">
         <a class="btn btn-primary" href="#apply">Получить врачебную оценку <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -1991,7 +2006,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.2"></span></p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.4"></span></p>
     </div>
   </div>
 </footer>
@@ -2007,7 +2022,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-11-20.2';
+  var VERSION = '2026-11-20.4';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
@@ -2255,8 +2270,22 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   };
   // every Russian string used by this script, so the translation tool can list them
   window.__i18nDyn = ['Вы получаете', 'Подробнее о шаге', 'Шаг', 'Шаги маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(window.__hbSlogans || [])
     .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g || '', x.n || ''], x.p); }, []));
+  // home headline: keep the rule under «HemaBridge» exactly as wide as the slogan's longest line
+  function fitSloganLine(){
+    var sl = document.querySelector('.hb-slogan');
+    if(!sl || !sl.firstChild) return;
+    var r = document.createRange(); r.selectNodeContents(sl);
+    var w = 0, rects = r.getClientRects();
+    for(var k = 0; k < rects.length; k++) w = Math.max(w, rects[k].width);
+    if(w) sl.parentNode.style.setProperty('--hbw', Math.ceil(w) + 'px');
+  }
+  fitSloganLine();
+  window.addEventListener('resize', fitSloganLine);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitSloganLine);
   refreshDynamic = function(){
+    fitSloganLine();
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
     var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Шаги маршрута'));

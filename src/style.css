@@ -718,7 +718,10 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .fu-algo li{counter-increment:fu;position:relative;padding:0 0 14px 40px}
 .fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
 /* ---- hero v7: the name and what it is for lead; the three short promises sit under it ---- */
-.hero.hero-bridge h1{font-weight:700}
+.hero.hero-bridge h1{font-weight:700;width:fit-content;max-width:100%;margin-inline:auto}
+/* the rule under the name is as wide as the slogan's longest line (--hbw is set by fitSloganLine() when the slogan wraps) */
+.hero.hero-bridge h1 .hb-name::after{content:"";display:block;height:1.5px;width:var(--hbw,100%);max-width:100%;margin:.14em auto 0;background:var(--accent)}
+.hero.hero-bridge h1 .hb-slogan{padding-top:.16em}
 .hero.hero-bridge h1 .l{display:block}
 .hero.hero-bridge .hero-sub{margin:clamp(14px,1.6vw,22px) auto 0;max-width:none;font:600 clamp(1.12rem,1.75vw,1.6rem)/1.35 var(--display);color:var(--clinic-dark);text-wrap:balance}
 :root[data-theme="dark"] .hero.hero-bridge .hero-sub{color:var(--ink)}
