@@ -250,6 +250,9 @@ a.card:active{transform:translateY(-1px) scale(.995)}
 .outcomes li.first::before{background:var(--accent);border-color:var(--accent)}
 .outcomes strong{display:block;font-family:var(--display);font-size:1.12rem;margin-bottom:2px}
 .note{background:var(--accent-wash);border-radius:var(--radius);padding:22px 26px;margin-top:28px}
+.cta-note{margin-top:44px;padding:28px 30px}
+.cta-note h2{margin:0 0 .4em;font-size:clamp(1.4rem,2.2vw,1.8rem)}
+.cta-note .actions{margin-top:18px}
 .note p{max-width:none}
 .note p:last-child{margin-bottom:0}
 .kz .note{background:var(--surface)}
@@ -370,7 +373,12 @@ td.us{background:color-mix(in srgb,var(--accent-wash) 55%,transparent);color:var
 .faq details>div{padding:0 0 22px;color:var(--muted)}
 
 /* ---------- forms ---------- */
-.form{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);max-width:880px}
+.form,.contact-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);max-width:880px}
+.contact-panel h2{margin-top:0}
+.contact-panel .actions{margin-top:24px}
+.contact-more{margin-top:34px;gap:32px}
+.contact-more h3{margin-top:0}
+.contact-panel .small{margin-top:26px;color:var(--muted)}
 .form fieldset{border:0;padding:0;margin:0 0 30px;min-width:0}
 .form legend{font:700 1.3rem var(--display);margin-bottom:16px;padding:0}
 .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
@@ -468,7 +476,7 @@ textarea{min-height:104px;resize:vertical}
   .cols-2,.cols-3,.card-grid,.kz-list,.form-grid,.radios,.foot-grid,.matrix,.cost-parts,.team{grid-template-columns:1fr}
   .card.feature{grid-column:auto}
   .team div.core{grid-column:auto}
-  .form{padding:24px 20px;border-radius:var(--radius)}
+  .form,.contact-panel{padding:24px 20px;border-radius:var(--radius)}
   .btn{width:100%}
   .wz-nav .btn{width:auto;flex:1}
   .route-figure{padding:18px 8px 12px;border-radius:var(--radius)}
@@ -777,7 +785,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
         </div>
       </details>
       <a class="nav-mobile" href="#apply">Получить врачебную оценку</a>
-      <a class="nav-mobile" href="tel:+77770793165">Позвонить: <span class="num">+7 777 079 3165</span></a>
+      <a class="nav-mobile" href="tel:+77710854362">Позвонить: <span class="num">+7 771 085 4362</span></a>
       <div class="lang" role="group" aria-label="Язык сайта">
         <button type="button" data-lang="ru" aria-pressed="true">RU</button>
         <button type="button" data-lang="kz" aria-pressed="false">KZ</button>
@@ -832,7 +840,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
                 <div class="route-scroll">
           <svg viewBox="0 0 1000 340" role="group" aria-labelledby="rt-title rt-desc">
             <title id="rt-title">Клинический маршрут пациента</title>
-            <desc id="rt-desc">Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.</desc>
+            <desc id="rt-desc">Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — персональное ведение у гематолога в Казахстане.</desc>
             <defs>
               <symbol id="i1" viewBox="0 0 24 24"><path style="fill:var(--ico-fill);stroke:none" d="M7 3h7l4 4v14H7z"/><path d="M7 3h7l4 4v14H7z M14 3v4h4 M9.8 12h5.4 M9.8 15.6h5.4"/></symbol>
               <symbol id="i2" viewBox="0 0 24 24"><circle style="fill:var(--ico-fill);stroke:none" cx="18.5" cy="11" r="2.4"/><path d="M5 3.5v4.5a4 4 0 0 0 8 0V3.5 M9 12v2.5a4.8 4.8 0 0 0 9.5 0V13.4"/><circle cx="18.5" cy="11" r="2.4"/></symbol>
@@ -860,7 +868,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
               <g class="rt-stop" data-step="2" transform="translate(410 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i5" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="-36">Консилиумы</text></g>
               <g class="rt-stop ext" data-step="3" transform="translate(570 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i6" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Договор</text></g>
               <g class="rt-stop ext" data-step="4" transform="translate(750 94)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i7" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="56">Лечение</text></g>
-              <g class="rt-stop" data-step="5" transform="translate(920 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Наблюдение</text></g>
+              <g class="rt-stop" data-step="5" transform="translate(920 232)"><circle class="halo" r="34"/><circle class="disc" r="23"/><use class="ico" href="#i9" x="-12" y="-12" width="24" height="24"/><text class="lbl" y="50">Ведение</text></g>
             </g>
           </svg>
         </div>
@@ -878,7 +886,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
             <button type="button" id="rtNext" aria-label="Следующий этап"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
-        <figcaption class="small">Услуги программы — консультация, консилиумы по договору-оферте и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.</figcaption>
+        <figcaption class="small">Услуги программы — консультация, консилиумы по договору-оферте и персональное ведение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.</figcaption>
       </figure>
     </div>
   </section>
@@ -1089,7 +1097,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
           <ol>
             <li><i>1</i><span><b>Исходная ситуация</b>Диагноз и вопрос, с которым пришла семья</span></li>
             <li><i>2</i><span><b>Решение врачей</b>Что сделали дома и нужна ли была поездка</span></li>
-            <li><i>3</i><span><b>Возвращение домой</b>Как идёт наблюдение после лечения</span></li>
+            <li><i>3</i><span><b>Возвращение домой</b>Как идёт ведение после лечения</span></li>
           </ol>
           <p class="small">Первые истории готовятся к публикации — только с согласия пациентов.</p>
         </div>
@@ -1113,11 +1121,11 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     <div class="wrap closing-row">
       <div>
         <h2>Остались вопросы?</h2>
-        <p class="lead">Позвоните координатору программы — подскажем, с чего начать и какие документы собрать.</p>
+        <p class="lead">Позвоните или напишите в WhatsApp координатору программы — подскажем, с чего начать и какие документы собрать.</p>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="tel:+77770793165"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="num">+7 777 079 3165</span></a>
-        <a class="btn btn-ghost" href="#apply">Получить врачебную оценку</a>
+        <a class="btn btn-primary" href="tel:+77710854362"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="num">+7 771 085 4362</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/77710854362" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/></svg>Написать в WhatsApp</a>
       </div>
     </div>
   </section>
@@ -1131,7 +1139,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div>
       <div class="crumb"><a href="#home">Главная</a> / Как это работает</div>
       <h1>Как проходит маршрут пациента</h1>
-      <p class="lead">Шесть шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.</p>
+      <p class="lead">Шесть шагов: от консультации врача до ведения у гематолога дома. Консультация бесплатна, решение о продолжении всегда за вами.</p>
       </div>
       <img class="illus" src="img/route-panorama.webp" width="1400" height="934" loading="lazy" decoding="async" alt="Маршрут пациента: от дома в Казахстане через мост к партнёрской клинике">
     </div>
@@ -1145,7 +1153,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
           <a class="btn btn-primary" href="#apply">Оставить заявку</a>
         </div>
         <div>
-          <p>Услуги программы — это консультация врача, международные консилиумы с отчётом и наблюдение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.</p>
+          <p>Услуги программы — это консультация врача, международные консилиумы с отчётом и персональное ведение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.</p>
           <p>Договор на лечение вы заключаете напрямую с зарубежной клиникой. Лечение, его оплата и организация поездки — зона ответственности клиники.</p>
           <div class="note"><p><strong>Консилиумы и отбор клиник — 50 000 тенге.</strong> Полное название услуги: «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ». Оплачивается после принятия договора-оферты. Консультация до этого бесплатна.</p></div>
         </div>
@@ -1202,19 +1210,19 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
           <p>Вы едете в клинику и проходите лечение по договору с ней. За лечение отвечает клиника.</p>
         </li>
         <li class="stage" id="stage-6">
-          <h3>Диспансерное наблюдение в Казахстане</h3>
+          <h3>Персональное ведение у гематолога</h3>
           <p class="rt-tags"><span class="place ours">Услуга HemaBridge</span><span class="place">Стоимость рассчитывается</span></p>
-          <p>После возвращения вы наблюдаетесь у нас. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.</p>
-          <p class="gets"><strong>Вы получаете:</strong> консультации наших врачей и тактику, согласованную с клиникой, где вы лечились.</p>
-          <p class="rt-more"><a href="#followup">Планы наблюдения</a></p>
+          <p>После возвращения вас ведут гематологи программы в Казахстане, при необходимости вместе с зарубежными специалистами, в том числе из клиники, где вы лечились. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.</p>
+          <p class="gets"><strong>Вы получаете:</strong> консультации наших врачей, тактику, согласованную с клиникой, где вы лечились, и при необходимости консультации зарубежных специалистов.</p>
+          <p class="rt-more"><a href="#followup">Планы ведения</a></p>
           <details>
             <summary>Подробнее</summary>
             <dl class="stage-meta"><dt>Где</dt><dd>Центр гематологии, Казахстан</dd><dt>Оплата</dt><dd>Отдельная услуга. Стоимость уточняется</dd><dt>Срок</dt><dd>1, 3 или 6 месяцев, в зависимости от вида лечения и состояния</dd><dt>Кто отвечает</dt><dd>Гематологи программы</dd></dl>
             <div class="stage-cols">
               <div><h4>Что происходит</h4><ul class="plain"><li>Мы ведём вас после возвращения и консультируем.</li><li>Связываемся с клиникой и вашим врачом, который проводил лечение: по телемедицине или письменно. Согласуем тактику и назначения.</li><li>При необходимости вы можете вернуться в клинику за рубежом для контрольных исследований.</li></ul></div>
-              <div><h4>Что делаете вы</h4><ul class="plain"><li>Приходить на приёмы и сдавать анализы по плану наблюдения.</li><li>Сообщать врачу о любых изменениях самочувствия.</li></ul></div>
-              <div><h4>Что делаем мы</h4><ul class="plain"><li>Наблюдаем за вашим состоянием и результатами анализов.</li><li>Обсуждаем с клиникой вопросы, которые возникают по ходу наблюдения.</li></ul></div>
-              <div><h4>Что вы получаете</h4><ul class="plain"><li>Наблюдение у гематологов дома, без разрыва с клиникой, где проходило лечение.</li></ul></div>
+              <div><h4>Что делаете вы</h4><ul class="plain"><li>Приходить на приёмы и сдавать анализы по плану ведения.</li><li>Сообщать врачу о любых изменениях самочувствия.</li></ul></div>
+              <div><h4>Что делаем мы</h4><ul class="plain"><li>Наблюдаем за вашим состоянием и результатами анализов.</li><li>Обсуждаем с клиникой и при необходимости с зарубежными специалистами вопросы, которые возникают по ходу лечения.</li></ul></div>
+              <div><h4>Что вы получаете</h4><ul class="plain"><li>Ведение у гематологов дома, без разрыва с клиникой, где проходило лечение, и с консультациями зарубежных специалистов при необходимости.</li></ul></div>
             </div>
           </details>
         </li>
@@ -1248,8 +1256,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div>
       <div class="crumb"><a href="#home">Главная</a> / Заболевания</div>
       <h1>Заболевания системы крови</h1>
-      <p class="lead">Коротко о заболевании и о том, в каких ситуациях обсуждается зарубежный этап лечения.</p>
-      <span class="updated">Дата актуализации: сентябрь 2026. Материалы проходят медицинскую редактуру.</span>
+      <p class="lead">Лечение зависит от точного диагноза и состояния пациента. Не всегда требуется поездка за рубеж — сначала врач оценивает доступные возможности.</p>
       </div>
       <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в лаборатории центра гематологии">
     </div>
@@ -1259,7 +1266,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Острые лейкозы</h2><p class="small">Острый миелоидный и острый лимфобластный лейкоз</p></div>
         <div>
-          <p>Острые лейкозы развиваются быстро и требуют интенсивного лечения. Для части пациентов в первой или последующей ремиссии обсуждается аллогенная трансплантация костного мозга.</p>
+          <p>Острый миелоидный и острый лимфобластный лейкоз требуют своевременного лечения. Применяются лекарственная терапия, трансплантация стволовых клеток, а при некоторых формах В-клеточного лейкоза — CAR-T-терапия.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Оценка показаний к алло-ТКМ и времени её проведения</li><li>Раннее <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование пациента и родственников, подготовка к донорскому поиску</li><li>Второе мнение по диагнозу и группе риска</li><li>Оценка кандидатуры на CAR-T при рецидивирующем или рефрактерном В-ОЛЛ</li></ul>
           </div>
@@ -1268,7 +1275,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Хронические лейкозы</h2><p class="small">Хронический миелолейкоз, хронический лимфолейкоз и другие</p></div>
         <div>
-          <p>Большинство пациентов с хроническими лейкозами получают лечение в Казахстане. Вопрос о внешнем этапе возникает при резистентности, непереносимости терапии или прогрессировании.</p>
+          <p>Хронический миелолейкоз и хронический лимфолейкоз часто удаётся контролировать современными препаратами. Иногда достаточно наблюдения. При неэффективности лечения может потребоваться консультация специализированного центра.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Экспертная оценка при неудаче терапии</li><li>Расширенная молекулярная диагностика</li><li>Доступ к препаратам, недоступным в стране</li><li>Оценка показаний к ТКМ или клеточной терапии</li></ul>
           </div>
@@ -1277,7 +1284,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Лимфомы</h2><p class="small">Ходжкинские и неходжкинские, агрессивные и индолентные</p></div>
         <div>
-          <p>Лимфомы — большая группа заболеваний с разным течением и подходами к лечению. Для точного выбора терапии особенно важны корректный морфологический и иммуногистохимический диагноз.</p>
+          <p>Лимфомы — опухолевые заболевания лимфатической системы. В зависимости от вида заболевания применяются лекарственная терапия, облучение, трансплантация стволовых клеток и CAR-T-терапия.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Пересмотр гистологии и второе мнение при редких и спорных вариантах</li><li>Оценка показаний к аутологичной ТКМ</li><li>Оценка кандидатуры на CAR-T при рецидивах и рефрактерном течении</li><li>Доступ к недоступным препаратам и клиническим исследованиям</li></ul>
           </div>
@@ -1286,7 +1293,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Множественная миелома</h2></div>
         <div>
-          <p>Лечение миеломы включает несколько линий терапии и у подходящих пациентов — аутологичную трансплантацию. При рецидивах выбор терапии определяется предшествующим лечением.</p>
+          <p>Заболевание плазматических клеток костного мозга. Лечение включает комбинации современных препаратов, аутологичную трансплантацию, а в отдельных случаях — CAR-T и другие виды иммунотерапии.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Планирование ауто-ТКМ и её организация</li><li>Оценка кандидатуры на CAR-T и другие современные методы при рецидиве</li><li>Проверка доступности препаратов последующих линий</li></ul>
           </div>
@@ -1295,7 +1302,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Миелодиспластические заболевания</h2><p class="small">Миелодиспластические синдромы (неоплазии) и пограничные состояния</p></div>
         <div>
-          <p>Тактика зависит от группы риска. Для пациентов высокого риска аллогенная трансплантация остаётся единственным потенциально радикальным методом.</p>
+          <p>При этих заболеваниях нарушается образование нормальных клеток крови. Лечение зависит от группы риска и может включать поддерживающую терапию, лекарственные препараты или трансплантацию стволовых клеток.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Стратификация риска с использованием молекулярных данных</li><li>Оценка показаний к алло-ТКМ и донорский поиск</li><li>Второе мнение по морфологическому диагнозу</li></ul>
           </div>
@@ -1304,22 +1311,27 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <article class="disease">
         <div><h2>Апластическая анемия</h2></div>
         <div>
-          <p>Лечение включает иммуносупрессивную терапию и аллогенную трансплантацию. Выбор зависит от тяжести, возраста и наличия совместимого донора.</p>
+          <p>Заболевание, при котором костный мозг вырабатывает недостаточно клеток крови. Основные методы лечения — иммуносупрессивная терапия и трансплантация донорских стволовых клеток.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Раннее <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование пациента и семьи</li><li>Оценка показаний и организация алло-ТКМ</li><li>Исключение наследственных синдромов костномозговой недостаточности</li></ul>
           </div>
         </div>
       </article>
       <article class="disease">
-        <div><h2>Другие заболевания системы крови</h2></div>
+        <div><h2>Редкие заболевания крови</h2></div>
         <div>
-          <p>Редкие и сложные для диагностики состояния, в которых решающее значение имеет опыт специализированного центра.</p>
+          <p>Редкие и сложные заболевания требуют точной диагностики и индивидуального подхода. Мы помогаем получить экспертное мнение и определить возможные варианты лечения.</p>
           <div class="task"><h3>Чем мы можем помочь</h3>
             <ul class="plain"><li>Второе мнение и пересмотр диагноза</li><li>Специализированная диагностика, недоступная в стране</li><li>Определение, где и как продолжить лечение</li></ul>
           </div>
         </div>
       </article>
-      <p class="small" style="margin-top:28px">Информация носит ознакомительный характер и не заменяет консультацию врача. Сведения о доступности препаратов и методов проверяются на дату обращения.</p>
+      <div class="note cta-note">
+        <h2>Нужно ли вам лечение за рубежом?</h2>
+        <p>Начните с консультации гематолога. Мы изучим медицинские документы и поможем определить дальнейшие шаги.</p>
+        <div class="actions"><a class="btn btn-primary" href="#apply">Получить врачебную оценку</a></div>
+      </div>
+      <p class="small" style="margin-top:28px">Информация носит справочный характер и не заменяет консультацию врача. Сведения о доступности препаратов и методов проверяются на дату обращения.</p>
     </div>
   </section>
 </div>
@@ -1331,8 +1343,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div>
         <div class="crumb"><a href="#home">Главная</a> / Технологии</div>
         <h1>Технологии и виды помощи</h1>
-        <p class="lead">У каждого направления свой маршрут. Везде он начинается с оценки врача и заканчивается наблюдением дома.</p>
-        <span class="updated">Дата актуализации: сентябрь 2026</span>
+        <p class="lead">У каждого направления свой маршрут. Везде он начинается с оценки врача и заканчивается ведением у гематолога дома.</p>
       </div>
       <img class="illus" src="img/cells-hands.webp" width="900" height="900" loading="lazy" decoding="async" alt="Ладони бережно держат клетки крови и медицинскую папку">
     </div>
@@ -1341,22 +1352,22 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     <div class="wrap">
       <div class="flow-block" id="tkm">
         <h2>Трансплантация костного мозга (ТКМ)</h2>
-        <p>Аутологичная и аллогенная трансплантация гемопоэтических стволовых клеток. <abbr title="Анализ на тканевую совместимость — нужен для подбора донора">HLA</abbr>-типирование, подбор донора и подготовку можно выполнить в Центре гематологии, не выезжая в партнёрскую клинику: пациент отправляется туда уже с готовыми материалами, на саму трансплантацию. После неё работает модель совместного ведения пациента клиникой и врачами в Казахстане, с контролем анализов и телемедицинскими консилиумами.</p>
+        <p>Метод лечения с использованием собственных или донорских кроветворных стволовых клеток. Мы помогаем оценить показания, пройти обследование, подготовиться к трансплантации и организовать последующее наблюдение.</p>
         <ol class="flow"><li><span>Показания</span></li><li><span>HLA и подбор донора</span></li><li><span>Подготовка в центре</span></li><li><span>Согласование</span></li><li><span>Трансплантация</span></li><li><span>Совместное ведение</span></li><li><span>Контроль и телемедицина</span></li></ol>
       </div>
       <div class="flow-block" id="cart">
         <h2>CAR-T-клеточная терапия</h2>
-        <p>Метод, при котором собственные Т-лимфоциты пациента модифицируются для распознавания опухолевых клеток. Применяется по зарегистрированным показаниям у тщательно отобранных пациентов. Ключевой этап — оценка кандидата: не каждому пациенту метод подходит.</p>
+        <p>Современный метод, при котором иммунные клетки пациента изменяют для распознавания опухоли. Применяется при отдельных видах лейкозов, лимфом и множественной миеломы.</p>
         <ol class="flow"><li><span>Оценка кандидата</span></li><li><span>Диагностика</span></li><li><span>Подготовка</span></li><li><span>Зарубежный этап</span></li><li><span>Наблюдение</span></li></ol>
       </div>
       <div class="flow-block" id="drugs">
-        <h2>Недоступные препараты</h2>
-        <p>Когда показанный препарат не зарегистрирован или недоступен в Казахстане, мы проверяем законные варианты доступа и согласуем схему лечения с зарубежным специалистом.</p>
+        <h2>Современная лекарственная терапия</h2>
+        <p>Таргетные препараты и иммунотерапия позволяют воздействовать на определённые механизмы заболевания. Выбор лечения зависит от диагноза, ранее проведённой терапии и доступности препаратов.</p>
         <ol class="flow"><li><span>Клиническая задача</span></li><li><span>Проверка доступности</span></li><li><span>Согласование</span></li><li><span>Лечение</span></li><li><span>Follow-up</span></li></ol>
       </div>
       <div class="flow-block" id="second">
         <h2>Второе мнение</h2>
-        <p>Дистанционная консультация зарубежного специалиста по конкретному клиническому вопросу — без поездки пациента.</p>
+        <p>Консультация зарубежного специалиста помогает уточнить диагноз и оценить варианты лечения. Во многих случаях это возможно дистанционно, без поездки пациента.</p>
         <ol class="flow"><li><span>Документы</span></li><li><span>Клинический вопрос</span></li><li><span>Зарубежный специалист</span></li><li><span>Заключение</span></li><li><span>Решение о маршруте</span></li></ol>
         <div class="actions"><a class="btn btn-primary" href="#apply">Получить второе мнение</a></div>
       </div>
@@ -1537,33 +1548,15 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   </section>
   <section class="section" id="referral-form">
     <div class="wrap">
-      <h2>Форма направления</h2>
-      <form class="form" data-demo novalidate>
-        <span class="demo-flag">Демонстрационная форма — данные никуда не отправляются</span>
-        <fieldset>
-          <legend>Направляющий врач</legend>
-          <div class="form-grid">
-            <div><label for="r-name">ФИО</label><input id="r-name" type="text" required autocomplete="name"></div>
-            <div><label for="r-spec">Специальность</label><input id="r-spec" type="text" required></div>
-            <div><label for="r-org">Медицинская организация, город</label><input id="r-org" type="text" required></div>
-            <div><label for="r-contact">Телефон или e-mail</label><input id="r-contact" type="text" required></div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Пациент</legend>
-          <div class="form-grid">
-            <div><label for="r-pat">Инициалы пациента</label><input id="r-pat" type="text" required></div>
-            <div><label for="r-age">Возраст</label><input id="r-age" type="number" min="0" max="120" required></div>
-            <div class="full"><label for="r-dx">Диагноз</label><input id="r-dx" type="text" required></div>
-            <div class="full"><label for="r-q">Клинический вопрос</label><textarea id="r-q" required></textarea></div>
-            <div class="full"><label for="r-tx">Проведённая терапия <span class="opt">(кратко)</span></label><textarea id="r-tx"></textarea></div>
-          </div>
-        </fieldset>
-        <div class="upload" aria-disabled="true"><strong>Защищённая загрузка документов</strong>Будет доступна после юридической экспертизы и проверки информационной безопасности.</div>
-        <label class="check"><input type="checkbox" required> <span>Пациент проинформирован о направлении и дал согласие на передачу медицинских данных</span></label>
-        <div class="actions"><button class="btn btn-primary" type="submit">Направить пациента</button></div>
-        <div class="form-result" role="status" data-i18n-skip></div>
-      </form>
+      <h2>Как направить пациента</h2>
+      <div class="contact-panel">
+        <p class="lead">Позвоните или напишите в WhatsApp координатору программы. Договоримся о передаче медицинского резюме и согласуем консультацию с гематологом программы.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/77710854362" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/></svg>Написать в WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+77710854362"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="num">+7 771 085 4362</span></a>
+        </div>
+        <p class="small">Онлайн-форма направления появится после подключения защищённого сервера в Казахстане. Передавайте персональные данные пациента только с его согласия.</p>
+      </div>
     </div>
   </section>
   <section class="section">
@@ -1742,7 +1735,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div class="cost-parts">
         <div><p class="who">Определяет зарубежный центр</p><h2>Медицинская стоимость</h2><p>Смета на лечение формируется центром после изучения документов. Мы не публикуем гарантированных цен до получения сметы.</p></div>
         <div><p class="who">Зависят от маршрута</p><h2>Организационные расходы</h2><p>Перелёт, проживание, виза, перевод, трансфер. Оцениваются индивидуально.</p></div>
-        <div><p class="who">Услуги проекта</p><h2>Услуги программы</h2><p><strong>Консультация врача — бесплатно.</strong></p><p><strong>Консилиумы и отбор клиник — 50 000 тенге.</strong> Услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ»: поиск клиник, консилиумы, перевод документов при необходимости и отчёт.</p><p><strong>Диспансерное наблюдение после возвращения</strong> — планы на 1, 3 и 6 месяцев, стоимость уточняется. <a href="#followup">Что входит в планы</a></p><p><a href="#route">Что входит в каждый шаг</a></p></div>
+        <div><p class="who">Услуги проекта</p><h2>Услуги программы</h2><p><strong>Консультация врача — бесплатно.</strong></p><p><strong>Консилиумы и отбор клиник — 50 000 тенге.</strong> Услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ»: поиск клиник, консилиумы, перевод документов при необходимости и отчёт.</p><p><strong>Персональное ведение у гематолога после возвращения</strong> — планы на 1, 3 и 6 месяцев, стоимость уточняется. <a href="#followup">Что входит в планы</a></p><p><a href="#route">Что входит в каждый шаг</a></p></div>
       </div>
     </div>
   </section>
@@ -1750,8 +1743,8 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     <div class="wrap">
       <div class="split">
         <div>
-          <h2>Планы наблюдения после возвращения</h2>
-          <p>Наблюдение — отдельная услуга программы. Есть планы на 1, 3 и 6 месяцев. Врач подбирает план по виду лечения и вашему состоянию.</p>
+          <h2>Планы ведения после возвращения</h2>
+          <p>Персональное ведение у гематолога — отдельная услуга программы. При необходимости к нему подключаются зарубежные специалисты. Есть планы на 1, 3 и 6 месяцев. Врач подбирает план по виду лечения и вашему состоянию.</p>
         </div>
         <div>
           <ol class="plain fu-algo">
@@ -1824,74 +1817,36 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       <div>
       <div class="crumb"><a href="#home">Главная</a> / Обращение</div>
       <h1>Получить врачебную оценку</h1>
-      <p class="lead">Расскажите о ситуации. Врач-гематолог изучит информацию и свяжется с вами, чтобы обсудить возможный маршрут.</p>
+      <p class="lead">Напишите или позвоните координатору программы. Врач-гематолог изучит документы и свяжется с вами, чтобы обсудить возможный маршрут.</p>
       </div>
       <img class="illus" src="img/patient-videocall.webp" width="900" height="900" loading="lazy" decoding="async" alt="Пациентка дома на видеосвязи с врачом-гематологом">
     </div>
   </section>
   <section class="section" style="padding-top:10px">
     <div class="wrap">
-      <form class="form" data-demo data-wizard novalidate>
-        <span class="demo-flag">Демонстрационная форма — данные никуда не отправляются</span>
-        <ol class="wz-progress" aria-label="Шаги заявки">
-          <li class="now"><span>Суть обращения</span></li>
-          <li><span>О пациенте</span></li>
-          <li><span>Согласие</span></li>
-        </ol>
-        <div class="wz-step active" data-wz-step="1">
-          <p class="wz-reassure">Три коротких шага. Можно вернуться назад и исправить ответы.</p>
-          <fieldset>
-            <legend>Что вам нужно</legend>
-            <div class="radios">
-              <label class="radio"><input type="radio" name="req" value="eval" required checked> Оценка необходимости лечения за рубежом</label>
-              <label class="radio"><input type="radio" name="req" value="second"> Второе мнение</label>
-              <label class="radio"><input type="radio" name="req" value="tkm"> Трансплантация костного мозга</label>
-              <label class="radio"><input type="radio" name="req" value="cart"> CAR-T-терапия</label>
-              <label class="radio"><input type="radio" name="req" value="drug"> Недоступный препарат</label>
-              <label class="radio"><input type="radio" name="req" value="other"> Другая сложная ситуация</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Как с вами связаться</legend>
-            <div class="form-grid">
-              <div><label for="a-phone">Телефон</label><input id="a-phone" type="tel" required autocomplete="tel" placeholder="+7"></div>
-              <div><label for="a-mail">E-mail <span class="opt">(необязательно)</span></label><input id="a-mail" type="email" autocomplete="email"></div>
-            </div>
-          </fieldset>
+      <div class="contact-panel">
+        <h2>Как обратиться сейчас</h2>
+        <p class="lead">Напишите в WhatsApp или позвоните координатору программы. Коротко расскажите о ситуации — мы подскажем, какие документы нужны, и договоримся о консультации гематолога.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/77710854362" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5z"/></svg>Написать в WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+77710854362"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="num">+7 771 085 4362</span></a>
         </div>
-        <div class="wz-step" data-wz-step="2">
-          <fieldset>
-            <legend>Пациент</legend>
-            <div class="form-grid">
-              <div class="full"><label for="a-name">ФИО пациента</label><input id="a-name" type="text" required autocomplete="name"></div>
-              <div><label for="a-age">Возраст</label><input id="a-age" type="number" min="0" max="120" required></div>
-              <div><label for="a-city">Город, страна</label><input id="a-city" type="text" required></div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Медицинская информация</legend>
-            <div class="form-grid">
-              <div><label for="a-dx">Диагноз</label><input id="a-dx" type="text" required></div>
-              <div><label for="a-date">Дата установления диагноза <span class="opt">(если знаете)</span></label><input id="a-date" type="date"></div>
-              <div class="full"><label for="a-why">Причина обращения</label><textarea id="a-why" required></textarea></div>
-              <div class="full"><label for="a-prev">Предшествующая терапия <span class="opt">(необязательно)</span></label><textarea id="a-prev"></textarea></div>
-              <div class="full"><label for="a-cur">Текущая терапия <span class="opt">(необязательно)</span></label><textarea id="a-cur"></textarea></div>
-            </div>
-          </fieldset>
+        <div class="cols-2 contact-more">
+          <div>
+            <h3>Что подготовить</h3>
+            <ul class="plain">
+              <li>Последние выписки и заключения врачей</li>
+              <li>Результаты анализов и исследований, в том числе костного мозга, если они есть</li>
+              <li>Сведения о проведённом и текущем лечении</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Как передать документы</h3>
+            <p>Не отправляйте медицинские документы до разговора с координатором: он подскажет, как передать их безопасно.</p>
+          </div>
         </div>
-        <div class="wz-step" data-wz-step="3">
-          <div class="upload" aria-disabled="true"><strong>Загрузка документов</strong>Будет доступна после юридической экспертизы и проверки информационной безопасности. Пока координатор свяжется с вами и подскажет, как безопасно передать документы.</div>
-          <div class="disclaimer">Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</div>
-          <label class="check"><input type="checkbox" required> <span>Я даю согласие на обработку персональных и медицинских данных в соответствии с <a href="#legal">политикой конфиденциальности</a></span></label>
-          <div class="actions wz-final"><button class="btn btn-primary" type="submit">Отправить на врачебную оценку</button></div>
-        </div>
-        <div class="wz-nav">
-          <button class="btn btn-ghost" type="button" data-wz-prev hidden>Назад</button>
-          <p class="wz-hint" data-wz-count data-i18n-skip>Шаг 1 из 3</p>
-          <button class="btn btn-primary" type="button" data-wz-next>Далее</button>
-        </div>
-        <div class="form-result" role="status" data-i18n-skip></div>
-      </form>
+        <p class="small">Онлайн-заявка появится после юридической экспертизы и подключения защищённого сервера в Казахстане. Обращение не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
+      </div>
     </div>
   </section>
 </div>
@@ -1962,7 +1917,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
       </div>
       <div>
         <h4>Контакты для пациентов</h4>
-        <ul><li>Координатор проекта: Дана Сабит</li><li>Телефон: <a href="tel:+77793600939">+7 779 360 0939</a></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
+        <ul><li>Координатор проекта: Дана Сабит</li><li>Телефон: <a href="tel:+77710854362">+7 771 085 4362</a></li><li>WhatsApp: <a href="https://wa.me/77710854362" rel="noopener">+7 771 085 4362</a></li><li>E-mail: <span class="tbd">будет добавлен</span></li></ul>
         <h4 class="foot-h">Центр гематологии</h4>
         <ul>
           <li>Телефон: <a href="tel:+77770793165">+7 777 079 3165</a></li>
@@ -1974,7 +1929,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
-      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-19.1"></span></p>
+      <p><a href="#legal">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.1"></span></p>
     </div>
   </div>
 </footer>
@@ -1990,7 +1945,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-11-19.1';
+  var VERSION = '2026-11-20.1';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
@@ -2171,7 +2126,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   }
 
   // interactive route map: each stop opens its description below the map
-  var STEPS = [{"t": "Консультация врача", "p": ["Услуга HemaBridge", "Бесплатно"], "a": false, "d": "Врач-гематолог знакомится с вами и вашими близкими, изучает документы и выясняет, что вам нужно. Это обычная врачебная консультация.", "g": "понимание, может ли программа вам помочь, и что делать дальше.", "n": "", "i": 2}, {"t": "Договор-оферта", "p": ["Услуга HemaBridge", "До любой оплаты"], "a": false, "d": "Если после консультации мы вместе решаем идти по программе, вы знакомитесь с публичным договором-офертой и принимаете его. Только после этого оформляется платная услуга.", "g": "", "n": "Основной текст оферты готовится к публикации, приложение 1 уже можно прочитать.", "i": 1}, {"t": "Международные консилиумы и отбор клиник", "p": ["Услуга HemaBridge", "50 000 тенге"], "a": false, "d": "После принятия оферты мы ищем клиники под вашу задачу, проводим консилиумы с их врачами и при необходимости переводим документы.", "g": "отчёт: клиники, их особенности и рекомендации, возможность проведения планируемой процедуры и примерная стоимость.", "n": "", "i": 5}, {"t": "Договор с клиникой и подготовка", "p": ["Зона ответственности клиники"], "a": false, "d": "Вы выбираете наиболее подходящую клинику и заключаете договор напрямую с ней. Условия, оплата и организация лечения — зона ответственности клиники, а не программы.", "g": "", "n": "По согласованию с клиникой подготовительное лечение можно пройти в Казахстане.", "i": 6}, {"t": "Лечение за рубежом", "p": ["Зарубежная клиника", "По договору с клиникой"], "a": true, "d": "Вы едете в клинику и проходите лечение по договору с ней. За лечение отвечает клиника.", "g": "", "n": "", "i": 7}, {"t": "Диспансерное наблюдение в Казахстане", "p": ["Услуга HemaBridge", "Стоимость рассчитывается"], "a": false, "d": "После возвращения вы наблюдаетесь у нас. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.", "g": "консультации наших врачей и тактику, согласованную с клиникой, где вы лечились.", "n": "", "i": 9}];
+  var STEPS = [{"t": "Консультация врача", "p": ["Услуга HemaBridge", "Бесплатно"], "a": false, "d": "Врач-гематолог знакомится с вами и вашими близкими, изучает документы и выясняет, что вам нужно. Это обычная врачебная консультация.", "g": "понимание, может ли программа вам помочь, и что делать дальше.", "n": "", "i": 2}, {"t": "Договор-оферта", "p": ["Услуга HemaBridge", "До любой оплаты"], "a": false, "d": "Если после консультации мы вместе решаем идти по программе, вы знакомитесь с публичным договором-офертой и принимаете его. Только после этого оформляется платная услуга.", "g": "", "n": "Основной текст оферты готовится к публикации, приложение 1 уже можно прочитать.", "i": 1}, {"t": "Международные консилиумы и отбор клиник", "p": ["Услуга HemaBridge", "50 000 тенге"], "a": false, "d": "После принятия оферты мы ищем клиники под вашу задачу, проводим консилиумы с их врачами и при необходимости переводим документы.", "g": "отчёт: клиники, их особенности и рекомендации, возможность проведения планируемой процедуры и примерная стоимость.", "n": "", "i": 5}, {"t": "Договор с клиникой и подготовка", "p": ["Зона ответственности клиники"], "a": false, "d": "Вы выбираете наиболее подходящую клинику и заключаете договор напрямую с ней. Условия, оплата и организация лечения — зона ответственности клиники, а не программы.", "g": "", "n": "По согласованию с клиникой подготовительное лечение можно пройти в Казахстане.", "i": 6}, {"t": "Лечение за рубежом", "p": ["Зарубежная клиника", "По договору с клиникой"], "a": true, "d": "Вы едете в клинику и проходите лечение по договору с ней. За лечение отвечает клиника.", "g": "", "n": "", "i": 7}, {"t": "Персональное ведение у гематолога", "p": ["Услуга HemaBridge", "Стоимость рассчитывается"], "a": false, "d": "После возвращения вас ведут гематологи программы в Казахстане, при необходимости вместе с зарубежными специалистами, в том числе из клиники, где вы лечились. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.", "g": "консультации наших врачей, тактику, согласованную с клиникой, где вы лечились, и при необходимости консультации зарубежных специалистов.", "n": "", "i": 9}];
   var stops = Array.prototype.slice.call(document.querySelectorAll('.rt-stop'));
   var rtBody = document.getElementById('rtBody');
   var rtCur = 0, rtTimer, rtItems = [];

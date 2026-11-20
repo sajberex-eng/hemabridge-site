@@ -51,7 +51,7 @@ s=rep(s,'''        <p class="small">Раздел готовится к публ�
           <ol>
             <li><i>1</i><span><b>Исходная ситуация</b>Диагноз и вопрос, с которым пришла семья</span></li>
             <li><i>2</i><span><b>Решение врачей</b>Что сделали дома и нужна ли была поездка</span></li>
-            <li><i>3</i><span><b>Возвращение домой</b>Как идёт наблюдение после лечения</span></li>
+            <li><i>3</i><span><b>Возвращение домой</b>Как идёт ведение после лечения</span></li>
           </ol>
           <p class="small">Первые истории готовятся к публикации — только с согласия пациентов.</p>
         </div>''')
@@ -104,7 +104,10 @@ def doc(m):
             '            '+dl+'\n            '+chips+'\n          </div>\n        </article>')
 s,n=re.subn(r'<article class="tpl">\s*<div class="tpl-head"><div class="avatar">фото</div><div><h3>ФИО врача</h3><span class="pending">Профиль готовится</span></div></div>\s*(<dl class="fields">.*?</dl>)\s*(<div class="chips">.*?</div>)\s*</article>',doc,s,flags=re.S)
 assert n==3,n
-# apply wizard
+# apply wizard. Online forms stay off until patient data can be stored on a server in Kazakhstan (KZ law);
+# while False, content_update.py replaces the wizard and the referral form with phone/WhatsApp panels.
+# The wizard translations were dropped from translations.json in v2026-11-20.1; restore them from git history when enabling.
+FORM_ENABLED = False
 a=s.index('      <form class="form" data-demo novalidate>\n        <span class="demo-flag">Демонстрационная форма — данные никуда не отправляются</span>\n        <fieldset>\n          <legend>Что вам нужно</legend>')
 b=s.index('</form>',a)+len('</form>')
 s=s[:a]+open(B+'wizard.html',encoding='utf-8').read().rstrip('\n')+s[b:]
@@ -121,7 +124,7 @@ s=rep(s,"""<p class="lead">Программу ведёт профильная к
         <img class="illus" src="img/lab-microscope.webp" width="900" height="900" loading="lazy" decoding="async" alt="Микроскоп и пробирки в собственной лаборатории центра">
       </div>""")
 s=rep(s,'<meta name="viewport" content="width=device-width, initial-scale=1">','<meta name="viewport" content="width=device-width, initial-scale=1">\n<meta name="robots" content="noindex, nofollow">')
-s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-19.1</p>')
+s=rep(s,'· © 2026 ТОО «Центр гематологии»</p>','· © 2026 ТОО «Центр гематологии» · версия 2026-11-20.1</p>')
 s=rep(s,'<meta name="robots" content="noindex, nofollow">','<meta name="robots" content="noindex, nofollow">\n<meta http-equiv="Cache-Control" content="no-cache">')
 exec(open(B+'fixes_home.py',encoding='utf-8').read())
 exec(open(B+'content_update.py',encoding='utf-8').read())

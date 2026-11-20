@@ -483,10 +483,6 @@
   "en": "Returning home",
   "kk": "Үйге оралу"
  },
- "Как идёт наблюдение после лечения": {
-  "en": "How follow-up works after treatment",
-  "kk": "Емнен кейінгі бақылау қалай жүреді"
- },
  "Первые истории готовятся к публикации — только с согласия пациентов.": {
   "en": "The first stories are being prepared for publication, only with the patients' consent.",
   "kk": "Алғашқы оқиғалар жариялауға дайындалуда — тек науқастардың келісімімен."
@@ -510,10 +506,6 @@
  "Остались вопросы?": {
   "en": "Still have questions?",
   "kk": "Сұрақтарыңыз бар ма?"
- },
- "Позвоните координатору программы — подскажем, с чего начать и какие документы собрать.": {
-  "en": "Call the program coordinator. We will tell you where to start and which documents to gather.",
-  "kk": "Бағдарлама үйлестірушісіне қоңырау шалыңыз — неден бастау керектігін және қандай құжаттар жинау қажеттігін айтамыз."
  },
  "Главная": {
   "en": "Home",
@@ -563,14 +555,6 @@
   "en": "Blood disorders",
   "kk": "Қан жүйесінің аурулары"
  },
- "Коротко о заболевании и о том, в каких ситуациях обсуждается зарубежный этап лечения.": {
-  "en": "A brief overview of each condition and the situations in which a stage of treatment abroad is considered.",
-  "kk": "Ауру туралы қысқаша және емдеудің шетелдік кезеңі қандай жағдайларда талқыланатыны туралы."
- },
- "Дата актуализации: сентябрь 2026. Материалы проходят медицинскую редактуру.": {
-  "en": "Last updated: September 2026. Content undergoes medical review.",
-  "kk": "Жаңартылған күні: 2026 жылғы қыркүйек. Материалдар медициналық редакциядан өтеді."
- },
  "Острые лейкозы": {
   "en": "Acute leukemias",
   "kk": "Жедел лейкоздар"
@@ -578,10 +562,6 @@
  "Острый миелоидный и острый лимфобластный лейкоз": {
   "en": "Acute myeloid and acute lymphoblastic leukemia",
   "kk": "Жедел миелоидты және жедел лимфобластты лейкоз"
- },
- "Острые лейкозы развиваются быстро и требуют интенсивного лечения. Для части пациентов в первой или последующей ремиссии обсуждается аллогенная трансплантация костного мозга.": {
-  "en": "Acute leukemias develop quickly and require intensive treatment. For some patients in first or subsequent remission, allogeneic bone marrow transplantation is considered.",
-  "kk": "Жедел лейкоздар тез дамиды және қарқынды емдеуді қажет етеді. Бірінші немесе кейінгі ремиссиядағы науқастардың бір бөлігі үшін аллогендік сүйек кемігін транспланттау талқыланады."
  },
  "Чем мы можем помочь": {
   "en": "How we can help",
@@ -615,10 +595,6 @@
   "en": "Chronic myeloid leukemia, chronic lymphocytic leukemia and others",
   "kk": "Созылмалы миелолейкоз, созылмалы лимфолейкоз және басқалары"
  },
- "Большинство пациентов с хроническими лейкозами получают лечение в Казахстане. Вопрос о внешнем этапе возникает при резистентности, непереносимости терапии или прогрессировании.": {
-  "en": "Most patients with chronic leukemias are treated in Kazakhstan. A stage abroad is considered in cases of resistance or intolerance to therapy, or disease progression.",
-  "kk": "Созылмалы лейкоздары бар науқастардың көпшілігі Қазақстанда ем алады. Шетелдік кезең туралы мәселе резистенттілік, терапияны көтере алмау немесе ауру үдегенде туындайды."
- },
  "Экспертная оценка при неудаче терапии": {
   "en": "Expert evaluation when therapy fails",
   "kk": "Терапия нәтиже бермегенде сараптамалық бағалау"
@@ -643,10 +619,6 @@
   "en": "Hodgkin and non-Hodgkin, aggressive and indolent",
   "kk": "Ходжкиндік және ходжкиндік емес, агрессивті және индолентті"
  },
- "Лимфомы — большая группа заболеваний с разным течением и подходами к лечению. Для точного выбора терапии особенно важны корректный морфологический и иммуногистохимический диагноз.": {
-  "en": "Lymphomas are a large group of diseases with different courses and treatment approaches. An accurate morphological and immunohistochemical diagnosis is especially important for choosing the right therapy.",
-  "kk": "Лимфомалар — ағымы мен емдеу тәсілдері әртүрлі аурулардың үлкен тобы. Терапияны дәл таңдау үшін дұрыс морфологиялық және иммуногистохимиялық диагноз ерекше маңызды."
- },
  "Пересмотр гистологии и второе мнение при редких и спорных вариантах": {
   "en": "Histology review and second opinion for rare or uncertain cases",
   "kk": "Сирек және даулы нұсқаларда гистологияны қайта қарау және екінші пікір"
@@ -666,10 +638,6 @@
  "Множественная миелома": {
   "en": "Multiple myeloma",
   "kk": "Көптік миелома"
- },
- "Лечение миеломы включает несколько линий терапии и у подходящих пациентов — аутологичную трансплантацию. При рецидивах выбор терапии определяется предшествующим лечением.": {
-  "en": "Myeloma treatment involves several lines of therapy and, for eligible patients, autologous transplantation. At relapse, the choice of therapy depends on previous treatment.",
-  "kk": "Миеломаны емдеу терапияның бірнеше желісін және жарамды науқастарда аутологиялық транспланттауды қамтиды. Қайталану кезінде терапияны таңдау бұрынғы емге байланысты анықталады."
  },
  "Планирование ауто-ТКМ и её организация": {
   "en": "Planning and organizing autologous BMT",
@@ -691,10 +659,6 @@
   "en": "Myelodysplastic syndromes (neoplasms) and borderline conditions",
   "kk": "Миелодиспластикалық синдромдар (неоплазиялар) және шекаралық жағдайлар"
  },
- "Тактика зависит от группы риска. Для пациентов высокого риска аллогенная трансплантация остаётся единственным потенциально радикальным методом.": {
-  "en": "The approach depends on the risk group. For high-risk patients, allogeneic transplantation remains the only potentially curative method.",
-  "kk": "Емдеу тактикасы қауіп тобына байланысты. Жоғары қауіпті науқастар үшін аллогендік транспланттау радикалды нәтиже беруі мүмкін жалғыз әдіс болып қала береді."
- },
  "Стратификация риска с использованием молекулярных данных": {
   "en": "Risk stratification using molecular data",
   "kk": "Молекулалық деректерді пайдаланып қауіпті стратификациялау"
@@ -711,10 +675,6 @@
   "en": "Aplastic anemia",
   "kk": "Апластикалық анемия"
  },
- "Лечение включает иммуносупрессивную терапию и аллогенную трансплантацию. Выбор зависит от тяжести, возраста и наличия совместимого донора.": {
-  "en": "Treatment includes immunosuppressive therapy and allogeneic transplantation. The choice depends on severity, age and the availability of a compatible donor.",
-  "kk": "Емдеу иммуносупрессивті терапия мен аллогендік транспланттауды қамтиды. Таңдау аурудың ауырлығына, жасқа және сәйкес донордың болуына байланысты."
- },
  "-типирование пациента и семьи": {
   "en": "-typing of the patient and family",
   "kk": "-типтеу (науқас пен отбасы мүшелері)"
@@ -726,14 +686,6 @@
  "Исключение наследственных синдромов костномозговой недостаточности": {
   "en": "Ruling out inherited bone marrow failure syndromes",
   "kk": "Сүйек кемігі жеткіліксіздігінің тұқым қуалайтын синдромдарын жоққа шығару"
- },
- "Другие заболевания системы крови": {
-  "en": "Other blood disorders",
-  "kk": "Қан жүйесінің басқа аурулары"
- },
- "Редкие и сложные для диагностики состояния, в которых решающее значение имеет опыт специализированного центра.": {
-  "en": "Rare conditions that are difficult to diagnose, where the experience of a specialized center is decisive.",
-  "kk": "Мамандандырылған орталықтың тәжірибесі шешуші мәнге ие болатын сирек және диагностикасы күрделі жағдайлар."
  },
  "Второе мнение и пересмотр диагноза": {
   "en": "Second opinion and diagnosis review",
@@ -747,10 +699,6 @@
   "en": "Deciding where and how to continue treatment",
   "kk": "Емдеуді қайда және қалай жалғастыру керектігін анықтау"
  },
- "Информация носит ознакомительный характер и не заменяет консультацию врача. Сведения о доступности препаратов и методов проверяются на дату обращения.": {
-  "en": "This information is for general information only and does not replace a doctor's consultation. The availability of medicines and methods is checked as of the date of your request.",
-  "kk": "Ақпарат танысу үшін берілген және дәрігер консультациясын алмастырмайды. Дәрілер мен әдістердің қолжетімділігі туралы мәліметтер өтініш берілген күнгі жағдай бойынша тексеріледі."
- },
  "/ Технологии": {
   "en": "/ Technologies",
   "kk": "/ Технологиялар"
@@ -759,25 +707,9 @@
   "en": "Technologies and types of care",
   "kk": "Технологиялар және көмек түрлері"
  },
- "У каждого направления свой маршрут. Везде он начинается с оценки врача и заканчивается наблюдением дома.": {
-  "en": "Each area has its own route. In every case, it starts with a doctor's evaluation and ends with follow-up at home.",
-  "kk": "Әр бағыттың өз маршруты бар. Ол барлық жағдайда дәрігердің бағалауынан басталып, елдегі бақылаумен аяқталады."
- },
- "Дата актуализации: сентябрь 2026": {
-  "en": "Last updated: September 2026",
-  "kk": "Жаңартылған күні: 2026 жылғы қыркүйек"
- },
  "Трансплантация костного мозга (ТКМ)": {
   "en": "Bone marrow transplantation (BMT)",
   "kk": "Сүйек кемігін транспланттау (СКТ)"
- },
- "Аутологичная и аллогенная трансплантация гемопоэтических стволовых клеток.": {
-  "en": "Autologous and allogeneic hematopoietic stem cell transplantation.",
-  "kk": "Гемопоэздік бағаналы жасушаларды аутологиялық және аллогендік транспланттау."
- },
- "-типирование, подбор донора и подготовку можно выполнить в Центре гематологии, не выезжая в партнёрскую клинику: пациент отправляется туда уже с готовыми материалами, на саму трансплантацию. После неё работает модель совместного ведения пациента клиникой и врачами в Казахстане, с контролем анализов и телемедицинскими консилиумами.": {
-  "en": "-typing, donor matching and preparation can be done at the Hematology Center without traveling to the partner clinic: the patient goes there with everything already prepared, for the transplantation itself. Afterwards, the clinic and doctors in Kazakhstan provide shared care, with lab test monitoring and teleconsultations.",
-  "kk": "-типтеуді, донор іріктеуді және дайындықты серіктес клиникаға бармай-ақ Гематология орталығында жүргізуге болады: науқас ол жаққа дайын материалдармен, тек транспланттаудың өзіне барады. Одан кейін клиника мен Қазақстандағы дәрігерлердің науқасты бірлесіп жүргізу (shared care) моделі жұмыс істейді: талдаулар бақыланады, телемедициналық консилиумдар өткізіледі."
  },
  "Показания": {
   "en": "Indications",
@@ -803,10 +735,6 @@
   "en": "Shared care",
   "kk": "Бірлесіп жүргізу"
  },
- "Метод, при котором собственные Т-лимфоциты пациента модифицируются для распознавания опухолевых клеток. Применяется по зарегистрированным показаниям у тщательно отобранных пациентов. Ключевой этап — оценка кандидата: не каждому пациенту метод подходит.": {
-  "en": "A method in which the patient's own T lymphocytes are modified to recognize tumor cells. It is used for approved indications in carefully selected patients. The key step is candidate evaluation: the method is not suitable for every patient.",
-  "kk": "Науқастың өз Т-лимфоциттері ісік жасушаларын тану үшін модификацияланатын әдіс. Тіркелген көрсетілімдер бойынша мұқият іріктелген науқастарда қолданылады. Негізгі кезең — үміткерді бағалау: әдіс әр науқасқа сәйкес келе бермейді."
- },
  "Оценка кандидата": {
   "en": "Candidate evaluation",
   "kk": "Үміткерді бағалау"
@@ -823,14 +751,6 @@
   "en": "Stage abroad",
   "kk": "Шетелдік кезең"
  },
- "Недоступные препараты": {
-  "en": "Medicines not available in Kazakhstan",
-  "kk": "Қазақстанда қолжетімсіз дәрілер"
- },
- "Когда показанный препарат не зарегистрирован или недоступен в Казахстане, мы проверяем законные варианты доступа и согласуем схему лечения с зарубежным специалистом.": {
-  "en": "When an indicated medicine is not registered or not available in Kazakhstan, we check the legal options for access and agree on the treatment regimen with a specialist abroad.",
-  "kk": "Көрсетілген дәрі Қазақстанда тіркелмеген немесе қолжетімсіз болса, біз оған қол жеткізудің заңды жолдарын тексеріп, емдеу схемасын шетелдік маманмен келісеміз."
- },
  "Клиническая задача": {
   "en": "Clinical need",
   "kk": "Клиникалық міндет"
@@ -842,10 +762,6 @@
  "Follow-up": {
   "en": "Follow-up",
   "kk": "Бақылау"
- },
- "Дистанционная консультация зарубежного специалиста по конкретному клиническому вопросу — без поездки пациента.": {
-  "en": "A remote consultation with a specialist abroad on a specific clinical question, without the patient having to travel.",
-  "kk": "Шетелдік маманның нақты клиникалық сұрақ бойынша қашықтан кеңесі — науқастың сапарға шығуы қажет емес."
  },
  "Клинический вопрос": {
   "en": "Clinical question",
@@ -1239,70 +1155,6 @@
   "en": "Preparation plan in Kazakhstan",
   "kk": "Қазақстандағы дайындық жоспары"
  },
- "Форма направления": {
-  "en": "Referral form",
-  "kk": "Жолдама нысаны"
- },
- "Демонстрационная форма — данные никуда не отправляются": {
-  "en": "Demo form: data is not sent anywhere",
-  "kk": "Демонстрациялық нысан — деректер ешқайда жіберілмейді"
- },
- "Направляющий врач": {
-  "en": "Referring physician",
-  "kk": "Жолдаушы дәрігер"
- },
- "ФИО": {
-  "en": "Full name",
-  "kk": "Аты-жөні"
- },
- "Специальность": {
-  "en": "Specialty",
-  "kk": "Мамандығы"
- },
- "Медицинская организация, город": {
-  "en": "Medical organization, city",
-  "kk": "Медициналық ұйым, қала"
- },
- "Телефон или e-mail": {
-  "en": "Phone or e-mail",
-  "kk": "Телефон немесе e-mail"
- },
- "Пациент": {
-  "en": "Patient",
-  "kk": "Науқас"
- },
- "Инициалы пациента": {
-  "en": "Patient's initials",
-  "kk": "Науқастың аты-жөнінің бас әріптері"
- },
- "Возраст": {
-  "en": "Age",
-  "kk": "Жасы"
- },
- "Диагноз": {
-  "en": "Diagnosis",
-  "kk": "Диагноз"
- },
- "Проведённая терапия": {
-  "en": "Treatment received",
-  "kk": "Жүргізілген ем"
- },
- "(кратко)": {
-  "en": "(brief)",
-  "kk": "(қысқаша)"
- },
- "Защищённая загрузка документов": {
-  "en": "Secure document upload",
-  "kk": "Құжаттарды қорғалған түрде жүктеу"
- },
- "Будет доступна после юридической экспертизы и проверки информационной безопасности.": {
-  "en": "Will be available after legal review and an information security check.",
-  "kk": "Құқықтық сараптама мен ақпараттық қауіпсіздік тексерісінен кейін қолжетімді болады."
- },
- "Пациент проинформирован о направлении и дал согласие на передачу медицинских данных": {
-  "en": "The patient has been informed about the referral and has consented to the transfer of medical data",
-  "kk": "Науқас жолдама туралы хабардар етілді және медициналық деректерін беруге келісім берді"
- },
  "Профессиональный канал связи": {
   "en": "Professional communication channel",
   "kk": "Кәсіби байланыс арнасы"
@@ -1655,129 +1507,13 @@
   "en": "/ Request",
   "kk": "/ Өтініш"
  },
- "Расскажите о ситуации. Врач-гематолог изучит информацию и свяжется с вами, чтобы обсудить возможный маршрут.": {
-  "en": "Tell us about your situation. A hematologist will review the information and contact you to discuss a possible route.",
-  "kk": "Жағдайыңыз туралы айтып беріңіз. Гематолог дәрігер ақпаратты зерделеп, ықтимал маршрутты талқылау үшін Сізбен хабарласады."
- },
- "Суть обращения": {
-  "en": "Your request",
-  "kk": "Өтініштің мәні"
- },
- "О пациенте": {
-  "en": "About the patient",
-  "kk": "Науқас туралы"
- },
- "Согласие": {
-  "en": "Consent",
-  "kk": "Келісім"
- },
- "Три коротких шага. Можно вернуться назад и исправить ответы.": {
-  "en": "Three short steps. You can go back and change your answers.",
-  "kk": "Үш қысқа қадам. Артқа оралып, жауаптарыңызды түзетуге болады."
- },
- "Что вам нужно": {
-  "en": "What you need",
-  "kk": "Сізге не қажет"
- },
- "Оценка необходимости лечения за рубежом": {
-  "en": "Assessment of whether treatment abroad is needed",
-  "kk": "Шетелде емделу қажеттілігін бағалау"
- },
  "CAR-T-терапия": {
   "en": "CAR-T therapy",
   "kk": "CAR-T терапиясы"
  },
- "Недоступный препарат": {
-  "en": "A medicine not available in Kazakhstan",
-  "kk": "Қазақстанда қолжетімсіз дәрі"
- },
- "Другая сложная ситуация": {
-  "en": "Another complex situation",
-  "kk": "Басқа күрделі жағдай"
- },
- "Как с вами связаться": {
-  "en": "How to contact you",
-  "kk": "Сізбен қалай байланысуға болады"
- },
- "Телефон": {
-  "en": "Phone",
-  "kk": "Телефон"
- },
- "E-mail": {
-  "en": "E-mail",
-  "kk": "E-mail"
- },
- "(необязательно)": {
-  "en": "(optional)",
-  "kk": "(міндетті емес)"
- },
- "ФИО пациента": {
-  "en": "Patient's full name",
-  "kk": "Науқастың аты-жөні"
- },
- "Город, страна": {
-  "en": "City, country",
-  "kk": "Қала, ел"
- },
- "Медицинская информация": {
-  "en": "Medical information",
-  "kk": "Медициналық ақпарат"
- },
- "Дата установления диагноза": {
-  "en": "Date of diagnosis",
-  "kk": "Диагноз қойылған күн"
- },
- "(если знаете)": {
-  "en": "(if known)",
-  "kk": "(білсеңіз)"
- },
- "Причина обращения": {
-  "en": "Reason for your request",
-  "kk": "Өтініш себебі"
- },
- "Предшествующая терапия": {
-  "en": "Previous therapy",
-  "kk": "Бұрынғы терапия"
- },
- "Текущая терапия": {
-  "en": "Current therapy",
-  "kk": "Ағымдағы терапия"
- },
- "Загрузка документов": {
-  "en": "Document upload",
-  "kk": "Құжаттарды жүктеу"
- },
- "Будет доступна после юридической экспертизы и проверки информационной безопасности. Пока координатор свяжется с вами и подскажет, как безопасно передать документы.": {
-  "en": "Will be available after a legal review and an information security check. For now, a coordinator will contact you and explain how to send your documents safely.",
-  "kk": "Құқықтық сараптама мен ақпараттық қауіпсіздік тексерісінен кейін қолжетімді болады. Әзірге үйлестіруші Сізбен хабарласып, құжаттарды қалай қауіпсіз жіберуге болатынын айтады."
- },
- "Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.": {
-  "en": "Sending documents does not mean that treatment is automatically prescribed or that the need for treatment abroad is confirmed.",
-  "kk": "Құжаттарды жіберу емнің автоматты түрде тағайындалатынын немесе шетелде емделу қажеттілігінің расталатынын білдірмейді."
- },
- "Я даю согласие на обработку персональных и медицинских данных в соответствии с": {
-  "en": "I consent to the processing of my personal and medical data in accordance with the",
-  "kk": "Мен дербес және медициналық деректерімді мына құжатқа сәйкес өңдеуге келісім беремін:"
- },
- "политикой конфиденциальности": {
-  "en": "privacy policy",
-  "kk": "құпиялылық саясаты"
- },
- "Отправить на врачебную оценку": {
-  "en": "Send for medical evaluation",
-  "kk": "Дәрігерлік бағалауға жіберу"
- },
- "Назад": {
-  "en": "Back",
-  "kk": "Артқа"
- },
  "Шаг 1 из 3": {
   "en": "Step 1 of 3",
   "kk": "1-қадам (барлығы 3)"
- },
- "Далее": {
-  "en": "Next",
-  "kk": "Келесі"
  },
  "/ Юридическая информация": {
   "en": "/ Legal information",
@@ -1990,10 +1726,6 @@
  "Пациентка дома на видеосвязи с врачом-гематологом": {
   "en": "A female patient at home on a video call with a hematologist",
   "kk": "Науқас әйел үйде гематолог дәрігермен бейнебайланыста"
- },
- "Шаги заявки": {
-  "en": "Request steps",
-  "kk": "Өтініш қадамдары"
  },
  "Врачебная маршрутизация пациентов с заболеваниями крови": {
   "en": "Medical routing for patients with blood diseases",
@@ -2559,17 +2291,9 @@
   "en": "You travel to the clinic and receive treatment under your contract with it. The clinic is responsible for the treatment.",
   "kk": "Сіз клиникаға барып, онымен жасалған шарт бойынша ем аласыз. Емге клиника жауап береді."
  },
- "Диспансерное наблюдение в Казахстане": {
-  "en": "Follow-up care in Kazakhstan",
-  "kk": "Қазақстандағы диспансерлік бақылау"
- },
  "Стоимость рассчитывается": {
   "en": "Price to be announced",
   "kk": "Құны есептелуде"
- },
- "консультации наших врачей и тактику, согласованную с клиникой, где вы лечились.": {
-  "en": "consultations with our doctors and a treatment plan agreed with the clinic where you were treated.",
-  "kk": "біздің дәрігерлердің кеңестері және Сіз емделген клиникамен келісілген ем тактикасы."
  },
  "Мы ведём вас после возвращения и консультируем.": {
   "en": "We look after you and advise you after your return.",
@@ -2583,10 +2307,6 @@
   "en": "If needed, you can return to the clinic abroad for check-up tests.",
   "kk": "Қажет болса, бақылау зерттеулері үшін шетелдік клиникаға қайта баруыңызға болады."
  },
- "Приходить на приёмы и сдавать анализы по плану наблюдения.": {
-  "en": "Attend appointments and have tests done according to the follow-up plan.",
-  "kk": "Бақылау жоспары бойынша қабылдауларға келу және талдау тапсыру."
- },
  "Сообщать врачу о любых изменениях самочувствия.": {
   "en": "Tell your doctor about any changes in how you feel.",
   "kk": "Көңіл күйіңіздегі кез келген өзгеріс туралы дәрігерге хабарлау."
@@ -2594,14 +2314,6 @@
  "Наблюдаем за вашим состоянием и результатами анализов.": {
   "en": "We monitor your condition and test results.",
   "kk": "Жағдайыңыз бен талдау нәтижелерін бақылаймыз."
- },
- "Обсуждаем с клиникой вопросы, которые возникают по ходу наблюдения.": {
-  "en": "We discuss with the clinic any questions that arise during follow-up.",
-  "kk": "Бақылау барысында туындайтын мәселелерді клиникамен талқылаймыз."
- },
- "Наблюдение у гематологов дома, без разрыва с клиникой, где проходило лечение.": {
-  "en": "Follow-up with hematologists at home, without losing touch with the clinic where you were treated.",
-  "kk": "Ем алған клиникамен байланысты үзбей, үйде гематологтардың бақылауында болу."
  },
  "Услуги программы": {
   "en": "Program services",
@@ -2614,10 +2326,6 @@
  "Услуга «Проведение международных консилиумов и отбор клиник по возможности CAR-T терапии/ТКМ»: поиск клиник, консилиумы, перевод документов при необходимости и отчёт.": {
   "en": "Service “International case conferences and selection of clinics for possible CAR-T therapy/BMT”: finding clinics, case conferences, translation of documents if needed, and a report.",
   "kk": "«Халықаралық консилиумдар өткізу және CAR-T терапиясы/СКТ мүмкіндігі бойынша клиникаларды іріктеу» қызметі: клиникаларды іздеу, консилиумдар, қажет болса құжаттарды аудару және есеп."
- },
- "Диспансерное наблюдение после возвращения": {
-  "en": "Follow-up care after your return",
-  "kk": "Оралғаннан кейінгі диспансерлік бақылау"
  },
  "Что входит в каждый шаг": {
   "en": "What each step includes",
@@ -2635,29 +2343,13 @@
   "en": "Step",
   "kk": "Қадам"
  },
- "Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — диспансерное наблюдение в Казахстане.": {
-  "en": "The six-step route starts and ends in Kazakhstan. The doctor's consultation and the international case conferences are program services. After the case conferences, treatment in Kazakhstan with no travel may be possible. The contract with the clinic and treatment abroad are the clinic's responsibility. After your return comes follow-up care in Kazakhstan.",
-  "kk": "Алты қадамнан тұратын маршрут Қазақстанда басталып, Қазақстанда аяқталады. Дәрігер кеңесі мен халықаралық консилиумдар — бағдарлама қызметтері. Консилиумдардан кейін сапарсыз Қазақстанда емделу мүмкін болуы ықтимал. Клиникамен шарт және шетелде емделу — клиниканың жауапкершілік аймағы. Оралғаннан кейін — Қазақстандағы диспансерлік бақылау."
- },
  "Оферта": {
   "en": "Offer",
   "kk": "Оферта"
  },
- "Услуги программы — консультация, консилиумы по договору-оферте и наблюдение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.": {
-  "en": "The program's services are the consultation, the case conferences under the offer agreement, and follow-up care after your return. You sign the treatment contract directly with the clinic.",
-  "kk": "Бағдарлама қызметтері — кеңес, оферта шарты бойынша консилиумдар және оралғаннан кейінгі бақылау. Емдеу шартын Сіз клиникамен тікелей жасасасыз."
- },
- "Шесть шагов: от консультации врача до наблюдения дома. Консультация бесплатна, решение о продолжении всегда за вами.": {
-  "en": "Six steps: from the doctor's consultation to follow-up care at home. The consultation is free, and the decision to continue is always yours.",
-  "kk": "Алты қадам: дәрігер кеңесінен үйдегі бақылауға дейін. Кеңес тегін, ал жалғастыру туралы шешімді әрқашан Сіз қабылдайсыз."
- },
  "Шесть шагов": {
   "en": "Six steps",
   "kk": "Алты қадам"
- },
- "Услуги программы — это консультация врача, международные консилиумы с отчётом и наблюдение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.": {
-  "en": "The program's services are the doctor's consultation, the international case conferences with a report, and follow-up care after your return. The paid part begins only after you have accepted the offer agreement.",
-  "kk": "Бағдарлама қызметтері — дәрігер кеңесі, есебі бар халықаралық консилиумдар және оралғаннан кейінгі бақылау. Ақылы бөлік Сіз оферта шартын қабылдағаннан кейін ғана басталады."
  },
  "Если мы вместе решаем идти по программе, следующий шаг — договор-оферта.": {
   "en": "If we decide together to go ahead with the program, the next step is the offer agreement.",
@@ -2799,14 +2491,6 @@
   "en": "Enter answers in the “Clinic's answer” column and give the source and date next to them. Questions with “Critical” priority are mandatory: without answers to them we cannot recommend the center to patients. Return the completed file to the program staff member who sent it to you.",
   "kk": "Жауаптар «Клиниканың жауабы» бағанына енгізіледі, қасына дереккөз бен күнін көрсетіңіз. «Өте маңызды» басымдығы бар сұрақтар міндетті: оларға жауапсыз біз орталықты пациенттерге ұсына алмаймыз. Толтырылған файлды оны Сізге жіберген бағдарлама қызметкеріне қайтарыңыз."
  },
- "После возвращения вы наблюдаетесь у нас. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.": {
-  "en": "After you return, you are followed up by us. There are 1-, 3- and 6-month plans: the doctor chooses a plan based on your type of treatment and your condition.",
-  "kk": "Оралғаннан кейін Сіз бізде бақылауда боласыз. 1, 3 және 6 айлық жоспарлар бар: дәрігер жоспарды ем түріне және Сіздің жағдайыңызға қарай таңдайды."
- },
- "Планы наблюдения": {
-  "en": "Follow-up plans",
-  "kk": "Бақылау жоспарлары"
- },
  "Отдельная услуга. Стоимость уточняется": {
   "en": "A separate service. Price to be confirmed",
   "kk": "Жеке қызмет. Құны нақтылануда"
@@ -2822,14 +2506,6 @@
  "Что входит в планы": {
   "en": "What the plans include",
   "kk": "Жоспарларға не кіреді"
- },
- "Планы наблюдения после возвращения": {
-  "en": "Follow-up plans after your return",
-  "kk": "Оралғаннан кейінгі бақылау жоспарлары"
- },
- "Наблюдение — отдельная услуга программы. Есть планы на 1, 3 и 6 месяцев. Врач подбирает план по виду лечения и вашему состоянию.": {
-  "en": "Follow-up is a separate program service. There are 1-, 3- and 6-month plans. The doctor chooses a plan based on your type of treatment and your condition.",
-  "kk": "Бақылау — бағдарламаның жеке қызметі. 1, 3 және 6 айлық жоспарлар бар. Дәрігер жоспарды ем түріне және Сіздің жағдайыңызға қарай таңдайды."
  },
  "До возвращения.": {
   "en": "Before you return.",
@@ -2970,5 +2646,205 @@
  "Об оферте и приложении 1": {
   "en": "About the offer and Appendix 1",
   "kk": "Оферта және № 1 қосымша туралы"
+ },
+ "Маршрут из шести шагов начинается и заканчивается в Казахстане. Консультация врача и международные консилиумы — услуги программы. После консилиумов возможно лечение в Казахстане без поездки. Договор с клиникой и лечение за рубежом — зона ответственности клиники. После возвращения — персональное ведение у гематолога в Казахстане.": {
+  "en": "The six-step route starts and ends in Kazakhstan. The doctor's consultation and international case conferences are program services. After the case conferences, treatment in Kazakhstan without travel is possible. The contract with the clinic and treatment abroad are the clinic's responsibility. After you return, a hematologist provides personal follow-up care in Kazakhstan.",
+  "kk": "Алты қадамнан тұратын бағыт Қазақстанда басталып, Қазақстанда аяқталады. Дәрігер кеңесі мен халықаралық консилиумдар — бағдарлама қызметтері. Консилиумдардан кейін шетелге бармай-ақ Қазақстанда емделуге болады. Клиникамен шарт және шетелдегі ем — клиниканың жауапкершілігі. Оралғаннан кейін — Қазақстанда гематологтың жеке бақылауы."
+ },
+ "Ведение": {
+  "en": "Follow-up",
+  "kk": "Бақылау"
+ },
+ "Услуги программы — консультация, консилиумы по договору-оферте и персональное ведение после возвращения. Договор на лечение вы заключаете напрямую с клиникой.": {
+  "en": "Program services: consultation, case conferences under the public offer, and personal follow-up care after you return. You sign the treatment contract directly with the clinic.",
+  "kk": "Бағдарлама қызметтері — кеңес, оферта шарты бойынша консилиумдар және оралғаннан кейінгі жеке бақылау. Емдеу шартын клиникамен тікелей жасасасыз."
+ },
+ "Как идёт ведение после лечения": {
+  "en": "How follow-up care works after treatment",
+  "kk": "Емнен кейінгі бақылау қалай жүреді"
+ },
+ "Позвоните или напишите в WhatsApp координатору программы — подскажем, с чего начать и какие документы собрать.": {
+  "en": "Call or message the program coordinator on WhatsApp — we will tell you where to start and which documents to collect.",
+  "kk": "Бағдарлама үйлестірушісіне қоңырау шалыңыз немесе WhatsApp-қа жазыңыз — неден бастау керегін және қандай құжаттар жинау қажетін айтамыз."
+ },
+ "Написать в WhatsApp": {
+  "en": "Message on WhatsApp",
+  "kk": "WhatsApp-қа жазу"
+ },
+ "Шесть шагов: от консультации врача до ведения у гематолога дома. Консультация бесплатна, решение о продолжении всегда за вами.": {
+  "en": "Six steps: from the doctor's consultation to follow-up care with a hematologist at home. The consultation is free, and the decision to continue is always yours.",
+  "kk": "Алты қадам: дәрігер кеңесінен бастап үйде гематологтың бақылауына дейін. Кеңес тегін, әрі қарай жалғастыру туралы шешім әрқашан сізде."
+ },
+ "Услуги программы — это консультация врача, международные консилиумы с отчётом и персональное ведение после возвращения. Платная часть начинается только после того, как вы приняли договор-оферту.": {
+  "en": "Program services are the doctor's consultation, international case conferences with a report, and personal follow-up care after you return. The paid part starts only after you accept the public offer.",
+  "kk": "Бағдарлама қызметтері — дәрігер кеңесі, есебі бар халықаралық консилиумдар және оралғаннан кейінгі жеке бақылау. Ақылы бөлігі тек оферта шартын қабылдағаннан кейін басталады."
+ },
+ "Персональное ведение у гематолога": {
+  "en": "Personal follow-up with a hematologist",
+  "kk": "Гематологтың жеке бақылауы"
+ },
+ "После возвращения вас ведут гематологи программы в Казахстане, при необходимости вместе с зарубежными специалистами, в том числе из клиники, где вы лечились. Есть планы на 1, 3 и 6 месяцев: врач подбирает план по виду лечения и вашему состоянию.": {
+  "en": "After you return, the program's hematologists in Kazakhstan look after you, together with specialists abroad when needed, including those from the clinic where you were treated. There are 1-, 3- and 6-month plans: the doctor chooses one based on the type of treatment and your condition.",
+  "kk": "Оралғаннан кейін сізді Қазақстандағы бағдарлама гематологтары бақылайды, қажет болса шетелдік мамандармен, соның ішінде емделген клиникаңыздың мамандарымен бірге. 1, 3 және 6 айлық жоспарлар бар: дәрігер жоспарды ем түріне және жағдайыңызға қарай таңдайды."
+ },
+ "консультации наших врачей, тактику, согласованную с клиникой, где вы лечились, и при необходимости консультации зарубежных специалистов.": {
+  "en": "consultations with our doctors, a plan agreed with the clinic where you were treated, and consultations with specialists abroad when needed.",
+  "kk": "біздің дәрігерлердің кеңестері, емделген клиникаңызбен келісілген тактика және қажет болса шетелдік мамандардың кеңестері."
+ },
+ "Планы ведения": {
+  "en": "Follow-up plans",
+  "kk": "Бақылау жоспарлары"
+ },
+ "Приходить на приёмы и сдавать анализы по плану ведения.": {
+  "en": "Attend appointments and take tests according to the follow-up plan.",
+  "kk": "Бақылау жоспары бойынша қабылдауларға келу және талдау тапсыру."
+ },
+ "Обсуждаем с клиникой и при необходимости с зарубежными специалистами вопросы, которые возникают по ходу лечения.": {
+  "en": "We discuss questions that arise during treatment with the clinic and, when needed, with specialists abroad.",
+  "kk": "Ем барысында туындайтын сұрақтарды клиникамен және қажет болса шетелдік мамандармен талқылаймыз."
+ },
+ "Ведение у гематологов дома, без разрыва с клиникой, где проходило лечение, и с консультациями зарубежных специалистов при необходимости.": {
+  "en": "Follow-up care with hematologists at home, without losing contact with the clinic where you were treated, and with consultations from specialists abroad when needed.",
+  "kk": "Үйде гематологтардың бақылауы, емделген клиникамен байланысты үзбей және қажет болса шетелдік мамандардың кеңестерімен."
+ },
+ "Лечение зависит от точного диагноза и состояния пациента. Не всегда требуется поездка за рубеж — сначала врач оценивает доступные возможности.": {
+  "en": "Treatment depends on the diagnosis and the patient's condition. Travelling abroad is not always necessary — a hematologist first assesses the available options.",
+  "kk": "Емдеу тәсілі нақты диагнозға және науқастың жағдайына байланысты. Шетелде емделу әрдайым қажет емес — алдымен дәрігер қолжетімді мүмкіндіктерді бағалайды."
+ },
+ "Острый миелоидный и острый лимфобластный лейкоз требуют своевременного лечения. Применяются лекарственная терапия, трансплантация стволовых клеток, а при некоторых формах В-клеточного лейкоза — CAR-T-терапия.": {
+  "en": "Acute myeloid and acute lymphoblastic leukemias require prompt treatment. Options include drug therapy, stem cell transplantation, and CAR-T cell therapy for certain types of B-cell leukemia.",
+  "kk": "Жедел миелоидты және лимфобластты лейкоздар дер кезінде емдеуді қажет етеді. Дәрілік терапия, дің жасушаларын трансплантациялау, ал В-жасушалы лейкоздың кейбір түрлерінде CAR-T терапиясы қолданылуы мүмкін."
+ },
+ "Хронический миелолейкоз и хронический лимфолейкоз часто удаётся контролировать современными препаратами. Иногда достаточно наблюдения. При неэффективности лечения может потребоваться консультация специализированного центра.": {
+  "en": "Chronic myeloid and chronic lymphocytic leukemias can often be managed with modern medicines. Some patients need monitoring only. A specialist consultation may be helpful when treatment is ineffective.",
+  "kk": "Созылмалы миелоидты және лимфоциттік лейкоздарды заманауи дәрілермен жиі бақылауда ұстауға болады. Кейде тек бақылау жеткілікті. Ем нәтиже бермесе, мамандандырылған орталықтың кеңесі қажет болуы мүмкін."
+ },
+ "Лимфомы — опухолевые заболевания лимфатической системы. В зависимости от вида заболевания применяются лекарственная терапия, облучение, трансплантация стволовых клеток и CAR-T-терапия.": {
+  "en": "Lymphomas are cancers of the lymphatic system. Depending on the type, treatment may include drug therapy, radiotherapy, stem cell transplantation, or CAR-T cell therapy.",
+  "kk": "Лимфомалар — лимфа жүйесінің ісік аурулары. Аурудың түріне қарай дәрілік терапия, сәулелік ем, дің жасушаларын трансплантациялау немесе CAR-T терапиясы қолданылады."
+ },
+ "Заболевание плазматических клеток костного мозга. Лечение включает комбинации современных препаратов, аутологичную трансплантацию, а в отдельных случаях — CAR-T и другие виды иммунотерапии.": {
+  "en": "Multiple myeloma is a cancer of plasma cells in the bone marrow. Treatment includes combinations of modern medicines, autologous stem cell transplantation, and, in selected cases, CAR-T cell therapy or other immunotherapies.",
+  "kk": "Сүйек кемігіндегі плазмалық жасушалардың ісік ауруы. Емдеуде заманауи дәрілердің үйлесімі, аутологиялық трансплантация, ал жекелеген жағдайларда CAR-T және басқа иммунотерапия әдістері қолданылады."
+ },
+ "При этих заболеваниях нарушается образование нормальных клеток крови. Лечение зависит от группы риска и может включать поддерживающую терапию, лекарственные препараты или трансплантацию стволовых клеток.": {
+  "en": "These conditions affect the bone marrow's ability to produce healthy blood cells. Depending on risk, treatment may include supportive care, medicines, or stem cell transplantation.",
+  "kk": "Бұл ауруларда қалыпты қан жасушаларының түзілуі бұзылады. Емдеу қауіп деңгейіне байланысты: қолдаушы терапия, дәрілік ем немесе дің жасушаларын трансплантациялау."
+ },
+ "Заболевание, при котором костный мозг вырабатывает недостаточно клеток крови. Основные методы лечения — иммуносупрессивная терапия и трансплантация донорских стволовых клеток.": {
+  "en": "Aplastic anemia occurs when the bone marrow does not produce enough blood cells. Main treatment options include immunosuppressive therapy and donor stem cell transplantation.",
+  "kk": "Сүйек кемігі қан жасушаларын жеткілікті мөлшерде өндірмейтін ауру. Негізгі емдеу әдістері — иммундық жүйені бәсеңдететін терапия және донорлық дің жасушаларын трансплантациялау."
+ },
+ "Редкие заболевания крови": {
+  "en": "Rare Blood Disorders",
+  "kk": "Сирек кездесетін қан аурулары"
+ },
+ "Редкие и сложные заболевания требуют точной диагностики и индивидуального подхода. Мы помогаем получить экспертное мнение и определить возможные варианты лечения.": {
+  "en": "Rare and complex blood disorders require accurate diagnosis and individualized care. We help patients obtain expert opinions and explore appropriate treatment options.",
+  "kk": "Сирек және күрделі ауруларда нақты диагноз қою және жеке емдеу жоспарын таңдау маңызды. Біз мамандардың қосымша пікірін алуға және емдеу мүмкіндіктерін бағалауға көмектесеміз."
+ },
+ "Нужно ли вам лечение за рубежом?": {
+  "en": "Do you need treatment abroad?",
+  "kk": "Сізге шетелде емделу қажет пе?"
+ },
+ "Начните с консультации гематолога. Мы изучим медицинские документы и поможем определить дальнейшие шаги.": {
+  "en": "Start with a hematologist's consultation. We will review your medical records and help identify the appropriate next steps.",
+  "kk": "Алдымен гематологпен кеңесіңіз. Біз медициналық құжаттарды қарап, келесі қадамдарды анықтауға көмектесеміз."
+ },
+ "Информация носит справочный характер и не заменяет консультацию врача. Сведения о доступности препаратов и методов проверяются на дату обращения.": {
+  "en": "This information is for general guidance and does not replace medical advice. Availability of medicines and methods is checked as of the date of your request.",
+  "kk": "Ақпарат анықтамалық сипатта берілген және дәрігер кеңесін алмастырмайды. Дәрілер мен әдістердің қолжетімділігі өтініш берілген күнге тексеріледі."
+ },
+ "У каждого направления свой маршрут. Везде он начинается с оценки врача и заканчивается ведением у гематолога дома.": {
+  "en": "Each direction has its own route. It always starts with a doctor's assessment and ends with follow-up care by a hematologist at home.",
+  "kk": "Әр бағыттың өз маршруты бар. Ол әрқашан дәрігердің бағалауынан басталып, үйде гематологтың бақылауымен аяқталады."
+ },
+ "Метод лечения с использованием собственных или донорских кроветворных стволовых клеток. Мы помогаем оценить показания, пройти обследование, подготовиться к трансплантации и организовать последующее наблюдение.": {
+  "en": "A treatment using the patient's own or donor blood-forming stem cells. We help assess eligibility, arrange pre-transplant testing, prepare for treatment, and coordinate follow-up care.",
+  "kk": "Науқастың өз немесе донордың қан түзуші дің жасушаларын қолданатын емдеу әдісі. Біз көрсетілімдерді бағалауға, тексеруден өтуге, трансплантацияға дайындалуға және кейінгі бақылауды ұйымдастыруға көмектесеміз."
+ },
+ "Современный метод, при котором иммунные клетки пациента изменяют для распознавания опухоли. Применяется при отдельных видах лейкозов, лимфом и множественной миеломы.": {
+  "en": "An advanced treatment that modifies a patient's immune cells to recognize cancer cells. It is used for selected types of leukemia, lymphoma, and multiple myeloma.",
+  "kk": "Науқастың иммундық жасушалары ісік жасушаларын тануы үшін өзгертілетін заманауи әдіс. Лейкоздың, лимфоманың және көптік миеломаның кейбір түрлерінде қолданылады."
+ },
+ "Современная лекарственная терапия": {
+  "en": "Modern Drug Therapies",
+  "kk": "Заманауи дәрілік терапия"
+ },
+ "Таргетные препараты и иммунотерапия позволяют воздействовать на определённые механизмы заболевания. Выбор лечения зависит от диагноза, ранее проведённой терапии и доступности препаратов.": {
+  "en": "Targeted medicines and immunotherapies act on specific disease mechanisms. Treatment selection depends on the diagnosis, previous therapies, and availability of medicines.",
+  "kk": "Нысаналы препараттар мен иммунотерапия аурудың белгілі бір механизмдеріне әсер етеді. Емдеу тәсілі диагнозға, бұрын жүргізілген емге және дәрілердің қолжетімділігіне байланысты таңдалады."
+ },
+ "Консультация зарубежного специалиста помогает уточнить диагноз и оценить варианты лечения. Во многих случаях это возможно дистанционно, без поездки пациента.": {
+  "en": "A consultation with an international specialist can help confirm a diagnosis and evaluate treatment options. In many cases, this can be arranged remotely without travelling abroad.",
+  "kk": "Шетелдік маманның кеңесі диагнозды нақтылауға және емдеу нұсқаларын бағалауға көмектеседі. Көп жағдайда кеңесті шетелге бармай-ақ алуға болады."
+ },
+ "Как направить пациента": {
+  "en": "How to refer a patient",
+  "kk": "Науқасты қалай жолдауға болады"
+ },
+ "Позвоните или напишите в WhatsApp координатору программы. Договоримся о передаче медицинского резюме и согласуем консультацию с гематологом программы.": {
+  "en": "Call or message the program coordinator on WhatsApp. We will arrange how to send the medical summary and schedule a consultation with the program's hematologist.",
+  "kk": "Бағдарлама үйлестірушісіне қоңырау шалыңыз немесе WhatsApp-қа жазыңыз. Медициналық түйіндемені беру тәсілін келісіп, бағдарлама гематологымен кеңес уақытын белгілейміз."
+ },
+ "Онлайн-форма направления появится после подключения защищённого сервера в Казахстане. Передавайте персональные данные пациента только с его согласия.": {
+  "en": "An online referral form will be available once a secure server in Kazakhstan is connected. Share the patient's personal data only with their consent.",
+  "kk": "Онлайн жолдама нысаны Қазақстандағы қорғалған сервер қосылғаннан кейін пайда болады. Науқастың жеке деректерін тек оның келісімімен беріңіз."
+ },
+ "Персональное ведение у гематолога после возвращения": {
+  "en": "Personal follow-up with a hematologist after you return",
+  "kk": "Оралғаннан кейін гематологтың жеке бақылауы"
+ },
+ "Планы ведения после возвращения": {
+  "en": "Follow-up plans after you return",
+  "kk": "Оралғаннан кейінгі бақылау жоспарлары"
+ },
+ "Персональное ведение у гематолога — отдельная услуга программы. При необходимости к нему подключаются зарубежные специалисты. Есть планы на 1, 3 и 6 месяцев. Врач подбирает план по виду лечения и вашему состоянию.": {
+  "en": "Personal follow-up with a hematologist is a separate program service. Specialists abroad join when needed. There are 1-, 3- and 6-month plans. The doctor chooses a plan based on the type of treatment and your condition.",
+  "kk": "Гематологтың жеке бақылауы — бағдарламаның жеке қызметі. Қажет болса оған шетелдік мамандар қосылады. 1, 3 және 6 айлық жоспарлар бар. Дәрігер жоспарды ем түріне және жағдайыңызға қарай таңдайды."
+ },
+ "Напишите или позвоните координатору программы. Врач-гематолог изучит документы и свяжется с вами, чтобы обсудить возможный маршрут.": {
+  "en": "Message or call the program coordinator. A hematologist will review your documents and contact you to discuss a possible route.",
+  "kk": "Бағдарлама үйлестірушісіне жазыңыз немесе қоңырау шалыңыз. Гематолог дәрігер құжаттарды қарап, мүмкін маршрутты талқылау үшін сізбен байланысады."
+ },
+ "Как обратиться сейчас": {
+  "en": "How to contact us now",
+  "kk": "Қазір қалай хабарласуға болады"
+ },
+ "Напишите в WhatsApp или позвоните координатору программы. Коротко расскажите о ситуации — мы подскажем, какие документы нужны, и договоримся о консультации гематолога.": {
+  "en": "Message the program coordinator on WhatsApp or call. Briefly describe the situation — we will tell you which documents are needed and arrange a consultation with a hematologist.",
+  "kk": "Бағдарлама үйлестірушісіне WhatsApp-қа жазыңыз немесе қоңырау шалыңыз. Жағдайды қысқаша айтыңыз — қандай құжаттар керек екенін айтып, гематолог кеңесін ұйымдастырамыз."
+ },
+ "Что подготовить": {
+  "en": "What to prepare",
+  "kk": "Не дайындау керек"
+ },
+ "Последние выписки и заключения врачей": {
+  "en": "Recent discharge summaries and doctors' reports",
+  "kk": "Соңғы шығару эпикриздері мен дәрігерлер қорытындылары"
+ },
+ "Результаты анализов и исследований, в том числе костного мозга, если они есть": {
+  "en": "Test and examination results, including bone marrow tests, if available",
+  "kk": "Талдаулар мен зерттеулердің нәтижелері, соның ішінде сүйек кемігінің, егер бар болса"
+ },
+ "Сведения о проведённом и текущем лечении": {
+  "en": "Information about past and current treatment",
+  "kk": "Жүргізілген және қазіргі ем туралы мәліметтер"
+ },
+ "Как передать документы": {
+  "en": "How to send documents",
+  "kk": "Құжаттарды қалай беруге болады"
+ },
+ "Не отправляйте медицинские документы до разговора с координатором: он подскажет, как передать их безопасно.": {
+  "en": "Please do not send medical documents before talking to the coordinator: they will tell you how to share them securely.",
+  "kk": "Үйлестірушімен сөйлеспей тұрып медициналық құжаттарды жібермеңіз: ол оларды қауіпсіз беру жолын айтады."
+ },
+ "Онлайн-заявка появится после юридической экспертизы и подключения защищённого сервера в Казахстане. Обращение не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.": {
+  "en": "Online applications will open after the legal review and once a secure server in Kazakhstan is connected. Contacting us does not mean treatment is automatically prescribed or that treatment abroad is confirmed as necessary.",
+  "kk": "Онлайн өтінім заңдық сараптамадан кейін және Қазақстандағы қорғалған сервер қосылғаннан кейін пайда болады. Хабарласу емнің автоматты түрде тағайындалуын немесе шетелде емделу қажеттілігінің расталуын білдірмейді."
+ },
+ "WhatsApp:": {
+  "en": "WhatsApp:",
+  "kk": "WhatsApp:"
  }
 }

@@ -223,6 +223,9 @@ a.card:active{transform:translateY(-1px) scale(.995)}
 .outcomes li.first::before{background:var(--accent);border-color:var(--accent)}
 .outcomes strong{display:block;font-family:var(--display);font-size:1.12rem;margin-bottom:2px}
 .note{background:var(--accent-wash);border-radius:var(--radius);padding:22px 26px;margin-top:28px}
+.cta-note{margin-top:44px;padding:28px 30px}
+.cta-note h2{margin:0 0 .4em;font-size:clamp(1.4rem,2.2vw,1.8rem)}
+.cta-note .actions{margin-top:18px}
 .note p{max-width:none}
 .note p:last-child{margin-bottom:0}
 .kz .note{background:var(--surface)}
@@ -343,7 +346,12 @@ td.us{background:color-mix(in srgb,var(--accent-wash) 55%,transparent);color:var
 .faq details>div{padding:0 0 22px;color:var(--muted)}
 
 /* ---------- forms ---------- */
-.form{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);max-width:880px}
+.form,.contact-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);max-width:880px}
+.contact-panel h2{margin-top:0}
+.contact-panel .actions{margin-top:24px}
+.contact-more{margin-top:34px;gap:32px}
+.contact-more h3{margin-top:0}
+.contact-panel .small{margin-top:26px;color:var(--muted)}
 .form fieldset{border:0;padding:0;margin:0 0 30px;min-width:0}
 .form legend{font:700 1.3rem var(--display);margin-bottom:16px;padding:0}
 .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
@@ -441,7 +449,7 @@ textarea{min-height:104px;resize:vertical}
   .cols-2,.cols-3,.card-grid,.kz-list,.form-grid,.radios,.foot-grid,.matrix,.cost-parts,.team{grid-template-columns:1fr}
   .card.feature{grid-column:auto}
   .team div.core{grid-column:auto}
-  .form{padding:24px 20px;border-radius:var(--radius)}
+  .form,.contact-panel{padding:24px 20px;border-radius:var(--radius)}
   .btn{width:100%}
   .wz-nav .btn{width:auto;flex:1}
   .route-figure{padding:18px 8px 12px;border-radius:var(--radius)}
