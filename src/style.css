@@ -85,9 +85,9 @@ p{margin:0 0 1em;max-width:70ch;text-wrap:pretty}
 .more-panel a{border-radius:var(--radius-sm)}
 @keyframes pop{from{opacity:0;transform:translateY(-4px) scale(.97)}}
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;flex-shrink:0;background:var(--surface);margin-left:6px}
-.lang button{border:0;background:none;color:var(--muted);font:600 .78rem var(--font);padding:5px 10px;border-radius:999px;cursor:pointer;transition:background-color .18s var(--ease),color .18s var(--ease)}
-.lang button:hover{color:var(--ink)}
-.lang button[aria-pressed="true"]{background:var(--clinic);color:var(--paper)}
+.lang button,.lang a{text-decoration:none;border:0;background:none;color:var(--muted);font:600 .78rem var(--font);padding:5px 10px;border-radius:999px;cursor:pointer;transition:background-color .18s var(--ease),color .18s var(--ease)}
+.lang button:hover,.lang a:hover{color:var(--ink)}
+.lang button[aria-pressed="true"],.lang a[aria-current]{background:var(--clinic);color:var(--paper)}
 .theme-btn{flex-shrink:0;width:40px;height:40px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center;margin-left:4px;transition:background-color .18s var(--ease),transform .12s var(--ease)}
 .theme-btn:hover{background:var(--sunk)}
 .theme-btn:active{transform:scale(.94)}

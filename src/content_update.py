@@ -149,7 +149,7 @@ _q = '''  <section class="section" id="questionnaire">
       <div>
         <h2>Опросник для клиник</h2>
         <p class="lead">С опросника начинается отбор центра. По нему наши врачи сравнивают клиники по одним и тем же критериям.</p>
-        <div class="actions q-files" data-i18n-skip>
+        <div class="actions q-files" data-i18n-skip="keep">
           <a class="btn btn-primary" href="docs/hemabridge-partner-questionnaire-ru.xlsx" download lang="ru">Скачать на русском (.xlsx)</a>
           <a class="btn btn-ghost" href="docs/hemabridge-partner-questionnaire-kk.xlsx" download lang="kk">Қазақ тілінде жүктеу (.xlsx)</a>
           <a class="btn btn-ghost" href="docs/hemabridge-partner-questionnaire-en.xlsx" download lang="en">Download in English (.xlsx)</a>

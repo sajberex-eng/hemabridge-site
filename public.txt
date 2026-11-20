@@ -6,6 +6,8 @@ robots.txt
 i18n/
 img/
 docs/
+en/
+kk/
 marshrut/
 zabolevaniya/
 tehnologii/

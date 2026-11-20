@@ -6,7 +6,7 @@ Playwright helpers used to check the built site. They start a local server over 
 npm install; npx playwright install chromium   # once (on a local PC)
 # optional: CHROMIUM_PATH=/path/to/chrome-or-headless_shell (see browser.js for the default)
 
-node site.js [SHOTS_DIR]                                     # whole site, run after every build (takes a few minutes): errors, overflow, one h1, unique titles, canonical, JSON-LD, noindex, links and anchors, old #hashes, Cyrillic left in English
+node site.js [SHOTS_DIR]                                     # whole site in RU, /kk/ and /en/, run after every build (takes a few minutes): errors, overflow, one h1, unique titles, canonical, hreflang, JSON-LD, noindex, links and anchors, old #hashes, ?lang= and saved-language redirects, Cyrillic left in English
 node serve.js                                                # browse the site at http://localhost:8765/
 node shot.js OUT_DIR PREFIX home route apply                 # full-page shots, 1280/390, light/dark; prints errors and horizontal overflow
 node vp.js home 1440 900 out.png [light|dark] [scrollY]      # one viewport screenshot
