@@ -3155,12 +3155,20 @@
   "en": "More about the second opinion",
   "kk": "Екінші пікір туралы толығырақ"
  },
- "HemaBridge —": {
-  "en": "HemaBridge —",
-  "kk": "HemaBridge —"
+ "лечение за рубежом с врачом дома": {
+  "en": "treatment abroad with your doctor at home",
+  "kk": "шетелде емделу — өз дәрігеріңізбен бірге"
  },
- "мост для лечения за рубежом": {
+ "мост к лечению за рубежом": {
   "en": "a bridge to treatment abroad",
   "kk": "шетелде емделуге апарар көпір"
+ },
+ "лечение крови за рубежом": {
+  "en": "blood disease treatment abroad",
+  "kk": "қан ауруларын шетелде емдеу"
+ },
+ "за рубеж на лечение и обратно домой": {
+  "en": "abroad for treatment and back home",
+  "kk": "шетелге емделуге барып, үйге оралу"
  }
 }

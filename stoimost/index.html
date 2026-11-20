@@ -755,7 +755,10 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .more-link{margin:18px 0 0;font-weight:600}
 .page-head .pending{margin:14px 0 0}
 /* ---- hero v7: the name and what it is for lead; the three short promises sit under it ---- */
-.hero.hero-bridge h1{font-weight:700}
+.hero.hero-bridge h1{font-weight:700;width:fit-content;max-width:100%;margin-inline:auto}
+/* the rule under the name is as wide as the slogan's longest line (--hbw is set by fitSloganLine() when the slogan wraps) */
+.hero.hero-bridge h1 .hb-name::after{content:"";display:block;height:1.5px;width:var(--hbw,100%);max-width:100%;margin:.14em auto 0;background:var(--accent)}
+.hero.hero-bridge h1 .hb-slogan{padding-top:.16em}
 .hero.hero-bridge h1 .l{display:block}
 .hero.hero-bridge .hero-sub{margin:clamp(14px,1.6vw,22px) auto 0;max-width:none;font:600 clamp(1.12rem,1.75vw,1.6rem)/1.35 var(--display);color:var(--clinic-dark);text-wrap:balance}
 :root[data-theme="dark"] .hero.hero-bridge .hero-sub{color:var(--ink)}
@@ -877,7 +880,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
     </div>
     <div class="foot-legal">
       <p>Информация на сайте носит ознакомительный характер и не заменяет консультацию врача. Отправка документов не означает автоматического назначения лечения или подтверждения необходимости лечения за рубежом.</p>
-      <p><a href="../dokumenty/">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.3"></span></p>
+      <p><a href="../dokumenty/">Юридическая информация</a> · © 2026 ТОО «Центр гематологии» · <span class="ver" data-v="2026-11-20.5"></span></p>
     </div>
   </div>
 </footer>
@@ -894,7 +897,7 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   var line = document.getElementById('rtLine');
 
   /* ---------- language switching (RU source text, EN/KK dictionaries loaded on demand) ---------- */
-  var VERSION = '2026-11-20.3';
+  var VERSION = '2026-11-20.5';
   var DICTS = {};
   var LANG = 'ru';                         // dictionary key: ru | en | kk
   var BTN2KEY = {ru: 'ru', en: 'en', kz: 'kk'};
@@ -1133,8 +1136,22 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
   };
   // every Russian string used by this script, so the translation tool can list them
   window.__i18nDyn = ['Вы получаете', 'Подробнее о шаге', 'Шаг', 'Шаги маршрута', 'Включить светлую тему', 'Включить тёмную тему', 'версия', 'Шаг 1 из 3', 'Шаг 2 из 3', 'Шаг 3 из 3', FORM_MSG.step, FORM_MSG.all, FORM_MSG.done]
+    .concat(window.__hbSlogans || [])
     .concat(STEPS.reduce(function(acc, x){ return acc.concat([x.t, x.d, x.g || '', x.n || ''], x.p); }, []));
+  // home headline: keep the rule under «HemaBridge» exactly as wide as the slogan's longest line
+  function fitSloganLine(){
+    var sl = document.querySelector('.hb-slogan');
+    if(!sl || !sl.firstChild) return;
+    var r = document.createRange(); r.selectNodeContents(sl);
+    var w = 0, rects = r.getClientRects();
+    for(var k = 0; k < rects.length; k++) w = Math.max(w, rects[k].width);
+    if(w) sl.parentNode.style.setProperty('--hbw', Math.ceil(w) + 'px');
+  }
+  fitSloganLine();
+  window.addEventListener('resize', fitSloganLine);
+  if(document.fonts && document.fonts.ready) document.fonts.ready.then(fitSloganLine);
   refreshDynamic = function(){
+    fitSloganLine();
     labelStops();
     rtItems.forEach(function(b, k){ var t = b.querySelector('.t'); if(t) t.textContent = tr(STEPS[k].t); });
     var l = document.querySelector('.rt-list'); if(l) l.setAttribute('aria-label', tr('Шаги маршрута'));
