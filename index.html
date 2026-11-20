@@ -754,6 +754,14 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
 .more-link{margin:18px 0 0;font-weight:600}
 .page-head .pending{margin:14px 0 0}
+/* ---- hero v7: the name and what it is for lead; the three short promises sit under it ---- */
+.hero.hero-bridge h1{font-weight:700}
+.hero.hero-bridge h1 .l{display:block}
+.hero.hero-bridge .hero-sub{margin:clamp(14px,1.6vw,22px) auto 0;max-width:none;font:600 clamp(1.12rem,1.75vw,1.6rem)/1.35 var(--display);color:var(--clinic-dark);text-wrap:balance}
+:root[data-theme="dark"] .hero.hero-bridge .hero-sub{color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero.hero-bridge .hero-sub{color:var(--ink)}}
+@media (max-width:640px){.hero.hero-bridge .hero-sub .l{display:block}}
+.hero.hero-bridge .actions{margin-top:clamp(20px,2.4vw,34px)}
 </style>
 </head>
 <body>
@@ -807,7 +815,8 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 <div class="page" data-seo-title="HemaBridge — лечение заболеваний крови за рубежом с врачом в Казахстане" data-page="home" data-title="Врачебная маршрутизация пациентов с заболеваниями крови">
   <section class="hero hero-bridge">
     <div class="wrap">
-      <h1><span class="l">Один пациент. Один маршрут.</span> <span class="l">Команда врачей в двух странах.</span></h1>
+      <h1><span class="l">HemaBridge —</span> <span class="l">мост для лечения за рубежом</span></h1>
+      <p class="hero-sub"><span class="l">Один пациент. Один маршрут.</span> <span class="l">Команда врачей в двух странах.</span></p>
       <div class="actions">
         <a class="btn btn-primary" href="zayavka/">Получить врачебную оценку <svg class="arr" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="zayavka/" data-req="second">Получить второе мнение</a>
