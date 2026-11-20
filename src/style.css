@@ -717,3 +717,5 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .fu-algo{counter-reset:fu;margin:0;padding:0;list-style:none}
 .fu-algo li{counter-increment:fu;position:relative;padding:0 0 14px 40px}
 .fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.more-link{margin:18px 0 0;font-weight:600}
+.page-head .pending{margin:14px 0 0}
