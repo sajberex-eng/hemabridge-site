@@ -9,7 +9,7 @@ for(const [w,h] of [[1440,900],[390,844]]){
   await ctx.addInitScript(l=>{try{localStorage.setItem('hb-lang',l)}catch(e){}},lang);
   const p=await ctx.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('requestfailed',r=>errs.push('reqfail '+r.url()));
   for(const pg of PAGES){
-    await p.goto(require('url').pathToFileURL(require('path').resolve(__dirname,'../index.html')).href+'#'+pg);await p.waitForTimeout(700);
+    await p.goto((await require('./pageurl')())(pg));await p.waitForTimeout(700);
     const r=await p.evaluate((lang)=>{
       const out={cyr:[],clip:[],overflowX:document.documentElement.scrollWidth-innerWidth};
       const page=document.querySelector('[data-page]:not([hidden])');

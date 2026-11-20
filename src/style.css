@@ -725,6 +725,8 @@ html[lang="kk"] .fields{grid-template-columns:46% 1fr}
 .fu-algo{counter-reset:fu;margin:0;padding:0;list-style:none}
 .fu-algo li{counter-increment:fu;position:relative;padding:0 0 14px 40px}
 .fu-algo li::before{content:counter(fu);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-wash);color:var(--accent-ink);font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.more-link{margin:18px 0 0;font-weight:600}
+.page-head .pending{margin:14px 0 0}
 /* ---- hero v7: the name and what it is for lead; the three short promises sit under it ---- */
 .hero.hero-bridge h1{font-weight:700;width:fit-content;max-width:100%;margin-inline:auto}
 /* the rule under the name is as wide as the slogan's longest line (--hbw is set by fitSloganLine() when the slogan wraps) */
